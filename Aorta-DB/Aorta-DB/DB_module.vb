@@ -12,7 +12,7 @@ Module DB_module
     Public Function login(user As Decimal, pass As String)
         connect_db()
         Dim username As String = user.ToString
-        Dim password As String = pass
+        Dim password As String = Hash512(pass)
         Dim sqlSporring = "select * from users where username=@username " &
                           "and password=@password"
         Dim sql As New MySqlCommand(sqlSporring, tilkobling)
