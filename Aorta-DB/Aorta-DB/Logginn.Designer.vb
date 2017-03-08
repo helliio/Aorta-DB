@@ -29,6 +29,7 @@ Partial Class Logginn
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnNyBruker = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -57,7 +58,7 @@ Partial Class Logginn
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(96, 152)
+        Me.Button1.Location = New System.Drawing.Point(96, 170)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(98, 21)
         Me.Button1.TabIndex = 3
@@ -66,7 +67,7 @@ Partial Class Logginn
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(83, 179)
+        Me.Button2.Location = New System.Drawing.Point(83, 197)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(123, 52)
         Me.Button2.TabIndex = 3
@@ -91,6 +92,15 @@ Partial Class Logginn
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Personnummer:"
         '
+        'btnNyBruker
+        '
+        Me.btnNyBruker.Location = New System.Drawing.Point(94, 143)
+        Me.btnNyBruker.Name = "btnNyBruker"
+        Me.btnNyBruker.Size = New System.Drawing.Size(98, 21)
+        Me.btnNyBruker.TabIndex = 3
+        Me.btnNyBruker.Text = "Ny bruker"
+        Me.btnNyBruker.UseVisualStyleBackColor = True
+        '
         'Logginn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -99,12 +109,13 @@ Partial Class Logginn
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnNyBruker)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txtPassord)
         Me.Controls.Add(Me.TxtPersonnummer)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Logginn"
-        Me.Text = "L"
+        Me.Text = "Logg inn"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -117,4 +128,5 @@ Partial Class Logginn
     Friend WithEvents Button2 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents btnNyBruker As Button
 End Class
