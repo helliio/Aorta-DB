@@ -36,18 +36,20 @@ Partial Class NyBruker
         Me.txtFornavn = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtTelefon = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txtBekreftpass
         '
-        Me.txtBekreftpass.Location = New System.Drawing.Point(42, 254)
+        Me.txtBekreftpass.Location = New System.Drawing.Point(218, 137)
         Me.txtBekreftpass.Name = "txtBekreftpass"
         Me.txtBekreftpass.Size = New System.Drawing.Size(100, 20)
         Me.txtBekreftpass.TabIndex = 19
         '
         'txtPassord
         '
-        Me.txtPassord.Location = New System.Drawing.Point(42, 215)
+        Me.txtPassord.Location = New System.Drawing.Point(218, 98)
         Me.txtPassord.Name = "txtPassord"
         Me.txtPassord.Size = New System.Drawing.Size(100, 20)
         Me.txtPassord.TabIndex = 18
@@ -68,7 +70,7 @@ Partial Class NyBruker
         '
         'btnNybruker
         '
-        Me.btnNybruker.Location = New System.Drawing.Point(42, 280)
+        Me.btnNybruker.Location = New System.Drawing.Point(118, 229)
         Me.btnNybruker.Name = "btnNybruker"
         Me.btnNybruker.Size = New System.Drawing.Size(132, 49)
         Me.btnNybruker.TabIndex = 15
@@ -78,7 +80,7 @@ Partial Class NyBruker
         'lblBekreftpass
         '
         Me.lblBekreftpass.AutoSize = True
-        Me.lblBekreftpass.Location = New System.Drawing.Point(40, 238)
+        Me.lblBekreftpass.Location = New System.Drawing.Point(216, 121)
         Me.lblBekreftpass.Name = "lblBekreftpass"
         Me.lblBekreftpass.Size = New System.Drawing.Size(81, 13)
         Me.lblBekreftpass.TabIndex = 14
@@ -87,7 +89,7 @@ Partial Class NyBruker
         'lblPassord
         '
         Me.lblPassord.AutoSize = True
-        Me.lblPassord.Location = New System.Drawing.Point(40, 199)
+        Me.lblPassord.Location = New System.Drawing.Point(216, 82)
         Me.lblPassord.Name = "lblPassord"
         Me.lblPassord.Size = New System.Drawing.Size(45, 13)
         Me.lblPassord.TabIndex = 13
@@ -153,11 +155,29 @@ Partial Class NyBruker
         Me.Label2.TabIndex = 20
         Me.Label2.Text = "Fornavn"
         '
+        'txtTelefon
+        '
+        Me.txtTelefon.Location = New System.Drawing.Point(218, 59)
+        Me.txtTelefon.Name = "txtTelefon"
+        Me.txtTelefon.Size = New System.Drawing.Size(100, 20)
+        Me.txtTelefon.TabIndex = 25
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(215, 43)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(43, 13)
+        Me.Label3.TabIndex = 24
+        Me.Label3.Text = "Telefon"
+        '
         'NyBruker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(374, 341)
+        Me.Controls.Add(Me.txtTelefon)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtEtternavn)
         Me.Controls.Add(Me.txtFornavn)
         Me.Controls.Add(Me.Label1)
@@ -192,4 +212,6 @@ Partial Class NyBruker
     Friend WithEvents txtFornavn As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
+    Friend WithEvents txtTelefon As TextBox
+    Friend WithEvents Label3 As Label
 End Class
