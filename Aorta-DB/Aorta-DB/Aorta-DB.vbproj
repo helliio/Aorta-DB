@@ -95,6 +95,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ny_ansatt.Designer.vb">
+      <DependentUpon>ny_ansatt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ny_ansatt.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Main.resx">
@@ -105,6 +111,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ny_ansatt.resx">
+      <DependentUpon>ny_ansatt.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
