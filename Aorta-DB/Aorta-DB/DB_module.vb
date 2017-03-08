@@ -23,10 +23,10 @@ Module DB_module
         Dim leser = sql.ExecuteReader()
         If leser.HasRows Then
             close_db()
-            Return True
+            Return user
         Else
             close_db()
-            Return False
+            Return 0
         End If
     End Function
 End Module
