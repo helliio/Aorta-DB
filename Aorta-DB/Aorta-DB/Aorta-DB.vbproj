@@ -73,6 +73,24 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Blodprodukter.Designer.vb">
+      <DependentUpon>Blodprodukter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Blodprodukter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrukerHovedside.Designer.vb">
+      <DependentUpon>BrukerHovedside.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BrukerHovedside.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logginn.Designer.vb">
+      <DependentUpon>Logginn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logginn.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
