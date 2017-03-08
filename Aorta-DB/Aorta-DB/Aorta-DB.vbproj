@@ -74,6 +74,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DB_module.vb" />
+    <Compile Include="Ansatt.Designer.vb">
+      <DependentUpon>Ansatt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ansatt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DB-module.vb" />
+    <Compile Include="Blodprodukter.Designer.vb">
+      <DependentUpon>Blodprodukter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Blodprodukter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrukerHovedside.Designer.vb">
+      <DependentUpon>BrukerHovedside.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BrukerHovedside.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logginn.Designer.vb">
+      <DependentUpon>Logginn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logginn.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -96,8 +121,20 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Ny bruker.Designer.vb">
+      <DependentUpon>Ny bruker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ny bruker.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="BrukerHovedside.resx">
+      <DependentUpon>BrukerHovedside.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logginn.resx">
+      <DependentUpon>Logginn.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>
