@@ -32,39 +32,43 @@ Partial Class NyBruker
         Me.lblMail = New System.Windows.Forms.Label()
         Me.lblPersonnummer = New System.Windows.Forms.Label()
         Me.lblNybruker = New System.Windows.Forms.Label()
+        Me.txtEtternavn = New System.Windows.Forms.TextBox()
+        Me.txtFornavn = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txtBekreftpass
         '
-        Me.txtBekreftpass.Location = New System.Drawing.Point(43, 219)
+        Me.txtBekreftpass.Location = New System.Drawing.Point(42, 254)
         Me.txtBekreftpass.Name = "txtBekreftpass"
         Me.txtBekreftpass.Size = New System.Drawing.Size(100, 20)
         Me.txtBekreftpass.TabIndex = 19
         '
         'txtPassord
         '
-        Me.txtPassord.Location = New System.Drawing.Point(43, 173)
+        Me.txtPassord.Location = New System.Drawing.Point(42, 215)
         Me.txtPassord.Name = "txtPassord"
         Me.txtPassord.Size = New System.Drawing.Size(100, 20)
         Me.txtPassord.TabIndex = 18
         '
         'txtMail
         '
-        Me.txtMail.Location = New System.Drawing.Point(43, 127)
+        Me.txtMail.Location = New System.Drawing.Point(42, 176)
         Me.txtMail.Name = "txtMail"
         Me.txtMail.Size = New System.Drawing.Size(100, 20)
         Me.txtMail.TabIndex = 17
         '
         'txtPersonnummer
         '
-        Me.txtPersonnummer.Location = New System.Drawing.Point(42, 81)
+        Me.txtPersonnummer.Location = New System.Drawing.Point(42, 137)
         Me.txtPersonnummer.Name = "txtPersonnummer"
         Me.txtPersonnummer.Size = New System.Drawing.Size(100, 20)
         Me.txtPersonnummer.TabIndex = 16
         '
         'btnNybruker
         '
-        Me.btnNybruker.Location = New System.Drawing.Point(42, 256)
+        Me.btnNybruker.Location = New System.Drawing.Point(42, 280)
         Me.btnNybruker.Name = "btnNybruker"
         Me.btnNybruker.Size = New System.Drawing.Size(132, 49)
         Me.btnNybruker.TabIndex = 15
@@ -74,7 +78,7 @@ Partial Class NyBruker
         'lblBekreftpass
         '
         Me.lblBekreftpass.AutoSize = True
-        Me.lblBekreftpass.Location = New System.Drawing.Point(40, 203)
+        Me.lblBekreftpass.Location = New System.Drawing.Point(40, 238)
         Me.lblBekreftpass.Name = "lblBekreftpass"
         Me.lblBekreftpass.Size = New System.Drawing.Size(81, 13)
         Me.lblBekreftpass.TabIndex = 14
@@ -83,7 +87,7 @@ Partial Class NyBruker
         'lblPassord
         '
         Me.lblPassord.AutoSize = True
-        Me.lblPassord.Location = New System.Drawing.Point(40, 157)
+        Me.lblPassord.Location = New System.Drawing.Point(40, 199)
         Me.lblPassord.Name = "lblPassord"
         Me.lblPassord.Size = New System.Drawing.Size(45, 13)
         Me.lblPassord.TabIndex = 13
@@ -92,7 +96,7 @@ Partial Class NyBruker
         'lblMail
         '
         Me.lblMail.AutoSize = True
-        Me.lblMail.Location = New System.Drawing.Point(40, 112)
+        Me.lblMail.Location = New System.Drawing.Point(39, 160)
         Me.lblMail.Name = "lblMail"
         Me.lblMail.Size = New System.Drawing.Size(26, 13)
         Me.lblMail.TabIndex = 12
@@ -101,7 +105,7 @@ Partial Class NyBruker
         'lblPersonnummer
         '
         Me.lblPersonnummer.AutoSize = True
-        Me.lblPersonnummer.Location = New System.Drawing.Point(40, 65)
+        Me.lblPersonnummer.Location = New System.Drawing.Point(39, 121)
         Me.lblPersonnummer.Name = "lblPersonnummer"
         Me.lblPersonnummer.Size = New System.Drawing.Size(77, 13)
         Me.lblPersonnummer.TabIndex = 11
@@ -111,17 +115,53 @@ Partial Class NyBruker
         '
         Me.lblNybruker.AutoSize = True
         Me.lblNybruker.Font = New System.Drawing.Font("Calibri", 15.25!, System.Drawing.FontStyle.Bold)
-        Me.lblNybruker.Location = New System.Drawing.Point(38, 24)
+        Me.lblNybruker.Location = New System.Drawing.Point(38, 9)
         Me.lblNybruker.Name = "lblNybruker"
         Me.lblNybruker.Size = New System.Drawing.Size(98, 26)
         Me.lblNybruker.TabIndex = 10
         Me.lblNybruker.Text = "Ny Bruker"
+        '
+        'txtEtternavn
+        '
+        Me.txtEtternavn.Location = New System.Drawing.Point(42, 98)
+        Me.txtEtternavn.Name = "txtEtternavn"
+        Me.txtEtternavn.Size = New System.Drawing.Size(100, 20)
+        Me.txtEtternavn.TabIndex = 23
+        '
+        'txtFornavn
+        '
+        Me.txtFornavn.Location = New System.Drawing.Point(42, 59)
+        Me.txtFornavn.Name = "txtFornavn"
+        Me.txtFornavn.Size = New System.Drawing.Size(100, 20)
+        Me.txtFornavn.TabIndex = 22
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(39, 82)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(53, 13)
+        Me.Label1.TabIndex = 21
+        Me.Label1.Text = "Etternavn"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(39, 43)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(46, 13)
+        Me.Label2.TabIndex = 20
+        Me.Label2.Text = "Fornavn"
         '
         'NyBruker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(374, 341)
+        Me.Controls.Add(Me.txtEtternavn)
+        Me.Controls.Add(Me.txtFornavn)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtBekreftpass)
         Me.Controls.Add(Me.txtPassord)
         Me.Controls.Add(Me.txtMail)
@@ -148,4 +188,8 @@ Partial Class NyBruker
     Friend WithEvents lblMail As Label
     Friend WithEvents lblPersonnummer As Label
     Friend WithEvents lblNybruker As Label
+    Friend WithEvents txtEtternavn As TextBox
+    Friend WithEvents txtFornavn As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class
