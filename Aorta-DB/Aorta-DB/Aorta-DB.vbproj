@@ -73,7 +73,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DB-module.vb" />
+    <Compile Include="DB_module.vb" />
     <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
