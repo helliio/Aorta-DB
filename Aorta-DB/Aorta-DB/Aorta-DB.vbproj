@@ -133,6 +133,7 @@
     <Compile Include="NyBruker.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="User.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Ansatt.resx">
