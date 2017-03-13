@@ -36,8 +36,6 @@ Partial Class NyBruker
         Me.txtFornavn = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.txtTelefon = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.btnTilbake = New System.Windows.Forms.Button()
         Me.txtPoststed = New System.Windows.Forms.TextBox()
         Me.txtAdresse = New System.Windows.Forms.TextBox()
@@ -45,6 +43,8 @@ Partial Class NyBruker
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txtPostnummer = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtTelefon = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'txtBekreftpass
@@ -65,10 +65,10 @@ Partial Class NyBruker
         '
         'txtMail
         '
-        Me.txtMail.Location = New System.Drawing.Point(48, 214)
+        Me.txtMail.Location = New System.Drawing.Point(48, 254)
         Me.txtMail.Name = "txtMail"
         Me.txtMail.Size = New System.Drawing.Size(100, 20)
-        Me.txtMail.TabIndex = 25
+        Me.txtMail.TabIndex = 26
         '
         'txtPersonnummer
         '
@@ -107,7 +107,7 @@ Partial Class NyBruker
         'lblMail
         '
         Me.lblMail.AutoSize = True
-        Me.lblMail.Location = New System.Drawing.Point(45, 198)
+        Me.lblMail.Location = New System.Drawing.Point(45, 238)
         Me.lblMail.Name = "lblMail"
         Me.lblMail.Size = New System.Drawing.Size(26, 13)
         Me.lblMail.TabIndex = 12
@@ -163,22 +163,6 @@ Partial Class NyBruker
         Me.Label2.Size = New System.Drawing.Size(46, 13)
         Me.Label2.TabIndex = 20
         Me.Label2.Text = "Fornavn"
-        '
-        'txtTelefon
-        '
-        Me.txtTelefon.Location = New System.Drawing.Point(49, 254)
-        Me.txtTelefon.Name = "txtTelefon"
-        Me.txtTelefon.Size = New System.Drawing.Size(100, 20)
-        Me.txtTelefon.TabIndex = 26
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(46, 238)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(43, 13)
-        Me.Label3.TabIndex = 24
-        Me.Label3.Text = "Telefon"
         '
         'btnTilbake
         '
@@ -237,11 +221,29 @@ Partial Class NyBruker
         Me.Label6.TabIndex = 33
         Me.Label6.Text = "Postnummer"
         '
+        'txtTelefon
+        '
+        Me.txtTelefon.Location = New System.Drawing.Point(48, 215)
+        Me.txtTelefon.Name = "txtTelefon"
+        Me.txtTelefon.Size = New System.Drawing.Size(100, 20)
+        Me.txtTelefon.TabIndex = 25
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(45, 199)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(43, 13)
+        Me.Label3.TabIndex = 42
+        Me.Label3.Text = "Telefon"
+        '
         'NyBruker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(374, 341)
+        Me.Controls.Add(Me.txtTelefon)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtPostnummer)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.txtPoststed)
@@ -249,8 +251,6 @@ Partial Class NyBruker
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.btnTilbake)
-        Me.Controls.Add(Me.txtTelefon)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtEtternavn)
         Me.Controls.Add(Me.txtFornavn)
         Me.Controls.Add(Me.Label1)
@@ -285,8 +285,6 @@ Partial Class NyBruker
     Friend WithEvents txtFornavn As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents txtTelefon As TextBox
-    Friend WithEvents Label3 As Label
     Friend WithEvents btnTilbake As Button
     Friend WithEvents txtPoststed As TextBox
     Friend WithEvents txtAdresse As TextBox
@@ -294,4 +292,6 @@ Partial Class NyBruker
     Friend WithEvents Label5 As Label
     Friend WithEvents txtPostnummer As TextBox
     Friend WithEvents Label6 As Label
+    Friend WithEvents txtTelefon As TextBox
+    Friend WithEvents Label3 As Label
 End Class
