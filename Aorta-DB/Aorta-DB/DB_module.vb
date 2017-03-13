@@ -48,4 +48,19 @@ Module DB_module
 
         sql.ExecuteNonQuery()
     End Sub
+
+    Public Function return_user(persnr As Decimal)
+        Dim ret As New ArrayList
+        connect_db()
+        Dim sqlSporring = "SELECT * FROM `users` WHERE `username` = @persnr"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@persnr", persnr)
+        Dim reader As MySqlDataReader = sql.ExecuteReader
+        reader.Read()
+        For i As Integer = 0 To 9
+            ret.Add(reader.Item(i).ToString())
+        Next
+        close_db()
+        Return ret
+    End Function
 End Module
