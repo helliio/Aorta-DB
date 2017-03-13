@@ -98,6 +98,7 @@
     <Compile Include="InfoBruker.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Hash_module.vb" />
     <Compile Include="Logginn.Designer.vb">
       <DependentUpon>Logginn.vb</DependentUpon>
     </Compile>
