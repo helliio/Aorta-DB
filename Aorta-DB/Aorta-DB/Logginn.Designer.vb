@@ -23,12 +23,13 @@ Partial Class Logginn
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TxtPersonnummer = New System.Windows.Forms.TextBox()
+        Me.txtPassord = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.btnNyBruker = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -40,24 +41,24 @@ Partial Class Logginn
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Logg Inn"
         '
-        'TextBox1
+        'TxtPersonnummer
         '
-        Me.TextBox1.Location = New System.Drawing.Point(94, 70)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 1
+        Me.TxtPersonnummer.Location = New System.Drawing.Point(94, 70)
+        Me.TxtPersonnummer.Name = "TxtPersonnummer"
+        Me.TxtPersonnummer.Size = New System.Drawing.Size(100, 20)
+        Me.TxtPersonnummer.TabIndex = 1
         '
-        'TextBox2
+        'txtPassord
         '
-        Me.TextBox2.Location = New System.Drawing.Point(94, 113)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.TextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox2.TabIndex = 2
+        Me.txtPassord.Location = New System.Drawing.Point(94, 113)
+        Me.txtPassord.Name = "txtPassord"
+        Me.txtPassord.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPassord.Size = New System.Drawing.Size(100, 20)
+        Me.txtPassord.TabIndex = 2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(96, 152)
+        Me.Button1.Location = New System.Drawing.Point(96, 170)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(98, 21)
         Me.Button1.TabIndex = 3
@@ -66,7 +67,7 @@ Partial Class Logginn
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(83, 179)
+        Me.Button2.Location = New System.Drawing.Point(83, 197)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(123, 52)
         Me.Button2.TabIndex = 3
@@ -91,6 +92,15 @@ Partial Class Logginn
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Personnummer:"
         '
+        'btnNyBruker
+        '
+        Me.btnNyBruker.Location = New System.Drawing.Point(94, 143)
+        Me.btnNyBruker.Name = "btnNyBruker"
+        Me.btnNyBruker.Size = New System.Drawing.Size(98, 21)
+        Me.btnNyBruker.TabIndex = 3
+        Me.btnNyBruker.Text = "Ny bruker"
+        Me.btnNyBruker.UseVisualStyleBackColor = True
+        '
         'Logginn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -99,22 +109,24 @@ Partial Class Logginn
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.btnNyBruker)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtPassord)
+        Me.Controls.Add(Me.TxtPersonnummer)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Logginn"
-        Me.Text = "L"
+        Me.Text = "Logg inn"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TxtPersonnummer As TextBox
+    Friend WithEvents txtPassord As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents btnNyBruker As Button
 End Class
