@@ -1,7 +1,7 @@
 ﻿Public Class Logginn
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        'Debug.Print(login(TxtPersonnummer.Text, txtPassord.Text))
-        BrukerHovedside.Show()
+        Debug.Print(login(TxtPersonnummer.Text, txtPassord.Text))
+        'BrukerHovedside.Show()
         Me.Hide()
     End Sub
 

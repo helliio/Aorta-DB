@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class NyBruker
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class NyBruker
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.txtBekreftpass = New System.Windows.Forms.TextBox()
         Me.txtPassord = New System.Windows.Forms.TextBox()
@@ -53,7 +53,7 @@ Partial Class NyBruker
         Me.txtBekreftpass.Name = "txtBekreftpass"
         Me.txtBekreftpass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtBekreftpass.Size = New System.Drawing.Size(100, 20)
-        Me.txtBekreftpass.TabIndex = 19
+        Me.txtBekreftpass.TabIndex = 31
         '
         'txtPassord
         '
@@ -61,28 +61,28 @@ Partial Class NyBruker
         Me.txtPassord.Name = "txtPassord"
         Me.txtPassord.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassord.Size = New System.Drawing.Size(100, 20)
-        Me.txtPassord.TabIndex = 18
+        Me.txtPassord.TabIndex = 30
         '
         'txtMail
         '
         Me.txtMail.Location = New System.Drawing.Point(48, 214)
         Me.txtMail.Name = "txtMail"
         Me.txtMail.Size = New System.Drawing.Size(100, 20)
-        Me.txtMail.TabIndex = 17
+        Me.txtMail.TabIndex = 25
         '
         'txtPersonnummer
         '
         Me.txtPersonnummer.Location = New System.Drawing.Point(48, 175)
         Me.txtPersonnummer.Name = "txtPersonnummer"
         Me.txtPersonnummer.Size = New System.Drawing.Size(100, 20)
-        Me.txtPersonnummer.TabIndex = 16
+        Me.txtPersonnummer.TabIndex = 24
         '
         'btnNybruker
         '
         Me.btnNybruker.Location = New System.Drawing.Point(122, 290)
         Me.btnNybruker.Name = "btnNybruker"
         Me.btnNybruker.Size = New System.Drawing.Size(132, 49)
-        Me.btnNybruker.TabIndex = 15
+        Me.btnNybruker.TabIndex = 40
         Me.btnNybruker.Text = "Lag ny bruker"
         Me.btnNybruker.UseVisualStyleBackColor = True
         '
@@ -169,7 +169,7 @@ Partial Class NyBruker
         Me.txtTelefon.Location = New System.Drawing.Point(49, 254)
         Me.txtTelefon.Name = "txtTelefon"
         Me.txtTelefon.Size = New System.Drawing.Size(100, 20)
-        Me.txtTelefon.TabIndex = 25
+        Me.txtTelefon.TabIndex = 26
         '
         'Label3
         '
@@ -185,28 +185,28 @@ Partial Class NyBruker
         Me.btnTilbake.Location = New System.Drawing.Point(12, 12)
         Me.btnTilbake.Name = "btnTilbake"
         Me.btnTilbake.Size = New System.Drawing.Size(75, 23)
-        Me.btnTilbake.TabIndex = 26
+        Me.btnTilbake.TabIndex = 41
         Me.btnTilbake.Text = "Tilbake"
         Me.btnTilbake.UseVisualStyleBackColor = True
         '
         'txtPoststed
         '
-        Me.txtPoststed.Location = New System.Drawing.Point(222, 136)
+        Me.txtPoststed.Location = New System.Drawing.Point(222, 175)
         Me.txtPoststed.Name = "txtPoststed"
         Me.txtPoststed.Size = New System.Drawing.Size(100, 20)
-        Me.txtPoststed.TabIndex = 32
+        Me.txtPoststed.TabIndex = 29
         '
         'txtAdresse
         '
         Me.txtAdresse.Location = New System.Drawing.Point(222, 97)
         Me.txtAdresse.Name = "txtAdresse"
         Me.txtAdresse.Size = New System.Drawing.Size(100, 20)
-        Me.txtAdresse.TabIndex = 31
+        Me.txtAdresse.TabIndex = 27
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(219, 120)
+        Me.Label4.Location = New System.Drawing.Point(219, 159)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(48, 13)
         Me.Label4.TabIndex = 30
@@ -223,7 +223,7 @@ Partial Class NyBruker
         '
         'txtPostnummer
         '
-        Me.txtPostnummer.Location = New System.Drawing.Point(222, 175)
+        Me.txtPostnummer.Location = New System.Drawing.Point(222, 136)
         Me.txtPostnummer.Name = "txtPostnummer"
         Me.txtPostnummer.Size = New System.Drawing.Size(100, 20)
         Me.txtPostnummer.TabIndex = 28
@@ -231,10 +231,10 @@ Partial Class NyBruker
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(219, 159)
+        Me.Label6.Location = New System.Drawing.Point(219, 120)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(65, 13)
-        Me.Label6.TabIndex = 27
+        Me.Label6.TabIndex = 33
         Me.Label6.Text = "Postnummer"
         '
         'NyBruker
@@ -242,12 +242,12 @@ Partial Class NyBruker
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(374, 341)
+        Me.Controls.Add(Me.txtPostnummer)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.txtPoststed)
         Me.Controls.Add(Me.txtAdresse)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.txtPostnummer)
-        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.btnTilbake)
         Me.Controls.Add(Me.txtTelefon)
         Me.Controls.Add(Me.Label3)
