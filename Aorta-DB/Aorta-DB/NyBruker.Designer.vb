@@ -128,9 +128,9 @@ Partial Class NyBruker
         Me.lblNybruker.Font = New System.Drawing.Font("Calibri", 15.25!, System.Drawing.FontStyle.Bold)
         Me.lblNybruker.Location = New System.Drawing.Point(44, 47)
         Me.lblNybruker.Name = "lblNybruker"
-        Me.lblNybruker.Size = New System.Drawing.Size(98, 26)
+        Me.lblNybruker.Size = New System.Drawing.Size(97, 26)
         Me.lblNybruker.TabIndex = 10
-        Me.lblNybruker.Text = "Ny Bruker"
+        Me.lblNybruker.Text = "Ny bruker"
         '
         'txtEtternavn
         '
