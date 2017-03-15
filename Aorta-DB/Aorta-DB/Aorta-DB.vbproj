@@ -73,6 +73,45 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB_module.vb" />
+    <Compile Include="Ansatt.Designer.vb">
+      <DependentUpon>Ansatt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ansatt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Blodprodukter.Designer.vb">
+      <DependentUpon>Blodprodukter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Blodprodukter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BrukerHovedside.Designer.vb">
+      <DependentUpon>BrukerHovedside.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BrukerHovedside.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Global_val.vb" />
+    <Compile Include="IktHovedside.Designer.vb">
+      <DependentUpon>IktHovedside.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IktHovedside.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoBruker.Designer.vb">
+      <DependentUpon>InfoBruker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InfoBruker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hash_module.vb" />
+    <Compile Include="Logginn.Designer.vb">
+      <DependentUpon>Logginn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logginn.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -95,14 +134,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="ny_ansatt.Designer.vb">
-      <DependentUpon>ny_ansatt.vb</DependentUpon>
+    <Compile Include="NyAnsatt.Designer.vb">
+      <DependentUpon>NyAnsatt.vb</DependentUpon>
     </Compile>
-    <Compile Include="ny_ansatt.vb">
+    <Compile Include="NyAnsatt.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="NyBruker.Designer.vb">
+      <DependentUpon>NyBruker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NyBruker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Ansatt.resx">
+      <DependentUpon>Ansatt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Blodprodukter.resx">
+      <DependentUpon>Blodprodukter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BrukerHovedside.resx">
+      <DependentUpon>BrukerHovedside.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IktHovedside.resx">
+      <DependentUpon>IktHovedside.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoBruker.resx">
+      <DependentUpon>InfoBruker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logginn.resx">
+      <DependentUpon>Logginn.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
     </EmbeddedResource>
@@ -112,8 +176,11 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="ny_ansatt.resx">
-      <DependentUpon>ny_ansatt.vb</DependentUpon>
+    <EmbeddedResource Include="NyAnsatt.resx">
+      <DependentUpon>NyAnsatt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NyBruker.resx">
+      <DependentUpon>NyBruker.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -129,7 +196,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
