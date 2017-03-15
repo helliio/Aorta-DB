@@ -11,4 +11,16 @@
         fornavn = list(2)
         etternavn = list(3)
     End Sub
+    Public Function getPersonnr()
+        Return personnr
+    End Function
+    Public Function getUserType()
+        Return type
+    End Function
+    Public Function getFornavn()
+        Return fornavn
+    End Function
+    Public Function getEtternavn()
+        Return etternavn
+    End Function
 End Class
