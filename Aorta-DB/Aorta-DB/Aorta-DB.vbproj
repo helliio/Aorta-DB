@@ -92,6 +92,13 @@
     <Compile Include="BrukerHovedside.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Global_val.vb" />
+    <Compile Include="IktHovedside.Designer.vb">
+      <DependentUpon>IktHovedside.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IktHovedside.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="InfoBruker.Designer.vb">
       <DependentUpon>InfoBruker.vb</DependentUpon>
     </Compile>
@@ -127,6 +134,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NyAnsatt.Designer.vb">
+      <DependentUpon>NyAnsatt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NyAnsatt.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="NyBruker.Designer.vb">
       <DependentUpon>NyBruker.vb</DependentUpon>
     </Compile>
@@ -145,6 +158,9 @@
     <EmbeddedResource Include="BrukerHovedside.resx">
       <DependentUpon>BrukerHovedside.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IktHovedside.resx">
+      <DependentUpon>IktHovedside.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InfoBruker.resx">
       <DependentUpon>InfoBruker.vb</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +175,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NyAnsatt.resx">
+      <DependentUpon>NyAnsatt.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NyBruker.resx">
       <DependentUpon>NyBruker.vb</DependentUpon>

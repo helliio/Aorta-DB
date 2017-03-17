@@ -1,11 +1,6 @@
 ﻿Imports System.ComponentModel
 Imports System.Text.RegularExpressions
-
-Public Class NyBruker
-    Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
-        Logginn.Show()
-        Me.Hide()
-    End Sub
+Public Class NyAnsatt
     Function validateEmail(emailAddress) As Boolean
 
         Dim email As New Regex("([\w-+]+(?:\.[\w-+]+)*@(?:[\w-]+\.)+[a-zA-Z]{2,7})")
@@ -55,16 +50,14 @@ Public Class NyBruker
             Exit Sub
         End If
         Try
-            create_user(persnr, txtPassord.Text, txtFornavn.Text, txtEtternavn.Text, 0, tlf, txtMail.Text, txtAdresse.Text, postnr, txtPoststed.Text)
+            create_user(persnr, txtPassord.Text, txtFornavn.Text, txtEtternavn.Text, 1, tlf, txtMail.Text, txtAdresse.Text, postnr, txtPoststed.Text)
         Catch ex As Exception
             MsgBox("DB error")
             Exit Sub
         End Try
-        Logginn.Show()
-        Me.Hide()
     End Sub
 
-    Private Sub NyBruker_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+    Private Sub NyAnsatt_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         End
     End Sub
 End Class
