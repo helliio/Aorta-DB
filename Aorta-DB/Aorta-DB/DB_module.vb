@@ -61,10 +61,10 @@ Module DB_module
         close_db()
     End Sub
 
-    Public Function get_appointment(time As String, dates As String)
+    Public Function get_appointment_user(time As String, dates As String)
         Try
             connect_db()
-            Dim sqlSporring = "SELECT `username` FROM `appointments` WHERE `time` = @time AND `date` = @date"
+            Dim sqlSporring = "SELECT username FROM appointments WHERE time = @time AND date = @date"
             Dim sql As New MySqlCommand(sqlSporring, tilkobling)
             sql.Parameters.AddWithValue("@time", time)
             sql.Parameters.AddWithValue("@date", dates)
@@ -77,11 +77,32 @@ Module DB_module
         End Try
     End Function
 
+    Public Function get_appointment_date(user As Decimal)
+        Dim ret As New ArrayList
+        connect_db()
+        Dim sqlSporring = "SELECT time, date FROM appointments WHERE username = @persnr"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@persnr", user)
+        Dim da As New MySqlDataAdapter
+        Dim interntabell As New DataTable
+        da.SelectCommand = sql
+        da.Fill(interntabell)
+        close_db()
+        Dim rad As DataRow
+        Dim tid, dato As String
+        For Each rad In interntabell.Rows
+            tid = rad("time")
+            dato = rad("date")
+            ret.Add(tid & " " & dato)
+        Next
+        Return ret
+    End Function
+
 
     Public Function return_user(persnr As Decimal)
         Dim ret As New ArrayList
         connect_db()
-        Dim sqlSporring = "SELECT * FROM `users` WHERE `username` = @persnr"
+        Dim sqlSporring = "SELECT * FROM users WHERE username = @persnr"
         Dim sql As New MySqlCommand(sqlSporring, tilkobling)
         sql.Parameters.AddWithValue("@persnr", persnr)
         Dim reader As MySqlDataReader = sql.ExecuteReader
