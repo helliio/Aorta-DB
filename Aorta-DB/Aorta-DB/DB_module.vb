@@ -57,6 +57,7 @@ Module DB_module
         sql.Parameters.AddWithValue("@username", user)
         sql.Parameters.AddWithValue("@time", time)
         sql.Parameters.AddWithValue("@date", dates)
+        sql.ExecuteNonQuery()
         close_db()
     End Sub
 
