@@ -16,4 +16,9 @@
     Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
         Me.Close()
     End Sub
+
+    Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
+        TimeBestilling.Show()
+        Me.Hide()
+    End Sub
 End Class

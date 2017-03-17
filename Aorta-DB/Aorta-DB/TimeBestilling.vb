@@ -1,11 +1,6 @@
-﻿Public Class TimeBestilling
-    Private Sub DateTimePicker1_ValueChanged(sender As Object, e As EventArgs) Handles DateTimePicker1.ValueChanged
+﻿Imports System.ComponentModel
 
-    End Sub
-
-    Private Sub MonthCalendar1_DateChanged(sender As Object, e As DateRangeEventArgs)
-
-    End Sub
+Public Class TimeBestilling
 
     Private Sub TimeBestilling_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DateTimePicker1.Format = DateTimePickerFormat.Custom
@@ -34,6 +29,20 @@
     Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
         Debug.Print(DateTimePicker1.Text)
         Debug.Print(ComboBox1.Text & ":" & ComboBox2.Text)
+        Dim time As String = ComboBox1.Text & ":" & ComboBox2.Text
+        Dim result As Integer = MessageBox.Show("Er du sikker på at du vil ha time " & DateTimePicker1.Text & " klokka " & ComboBox1.Text & ":" & ComboBox2.Text, "Timebestilling", MessageBoxButtons.YesNo)
+        If result = DialogResult.Yes Then
+            create_appointment(bruker.getPersonnr, time, DateTimePicker1.Text)
+            Me.Close()
+        End If
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Me.Close()
+    End Sub
+
+    Private Sub TimeBestilling_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        BrukerHovedside.Show()
+        Me.Hide()
+    End Sub
 End Class
