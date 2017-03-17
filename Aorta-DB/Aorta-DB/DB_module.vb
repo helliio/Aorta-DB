@@ -80,7 +80,7 @@ Module DB_module
     Public Function get_appointment_date(user As Decimal)
         Dim ret As New ArrayList
         connect_db()
-        Dim sqlSporring = "SELECT time, date FROM appointments WHERE username = @persnr"
+        Dim sqlSporring = "SELECT time, date FROM appointments WHERE username = @persnr ORDER BY date DESC"
         Dim sql As New MySqlCommand(sqlSporring, tilkobling)
         sql.Parameters.AddWithValue("@persnr", user)
         Dim da As New MySqlDataAdapter
