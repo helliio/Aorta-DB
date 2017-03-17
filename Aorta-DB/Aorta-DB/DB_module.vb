@@ -47,6 +47,17 @@ Module DB_module
         sql.Parameters.AddWithValue("@city", city)
 
         sql.ExecuteNonQuery()
+        close_db()
+    End Sub
+
+    Public Sub create_appointment(user As Decimal, time As String, dates As String)
+        connect_db()
+        Dim sqlSporring = "insert into appointments (username, time, date) values (@username, @time, @date)"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@username", user)
+        sql.Parameters.AddWithValue("@time", time)
+        sql.Parameters.AddWithValue("@date", dates)
+        close_db()
     End Sub
 
     Public Function return_user(persnr As Decimal)
