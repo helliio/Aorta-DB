@@ -4,7 +4,7 @@ Public Class TimeBestilling
 
     Private Sub TimeBestilling_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DateTimePicker1.Format = DateTimePickerFormat.Custom
-        DateTimePicker1.CustomFormat = "dd/MM/yyyy"
+        DateTimePicker1.CustomFormat = "dd.MM.yyyy"
 
         ComboBox1.Text = "08"
         ComboBox1.Items.Add("08")
@@ -38,7 +38,7 @@ Public Class TimeBestilling
 
     Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
         Dim list As ArrayList = get_appointment_date(bruker.getPersonnr)
-        Dim time As String = ComboBox1.Text & ":" & ComboBox2.Text
+        Dim time As String = ComboBox1.Text & "." & ComboBox2.Text
         If list.Count > 0 Then
             If check_date(list(0)) = 1 Then
                 If get_appointment_user(time, DateTimePicker1.Text) = 0 Then
