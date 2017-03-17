@@ -26,6 +26,7 @@ Public Class TimeBestilling
         ComboBox2.Items.Add("50")
     End Sub
 
+
     Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
         Debug.Print(DateTimePicker1.Text)
         Debug.Print(ComboBox1.Text & ":" & ComboBox2.Text)
