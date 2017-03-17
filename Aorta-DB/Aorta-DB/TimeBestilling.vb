@@ -20,16 +20,20 @@
         ComboBox1.Items.Add("13")
         ComboBox1.Items.Add("14")
         ComboBox1.Items.Add("15")
+        ComboBox1.Items.Add("16")
 
         ComboBox2.Text = "00"
         ComboBox2.Items.Add("00")
-        ComboBox2.Items.Add("15")
+        ComboBox2.Items.Add("10")
+        ComboBox2.Items.Add("20")
         ComboBox2.Items.Add("30")
-        ComboBox2.Items.Add("45")
+        ComboBox2.Items.Add("40")
+        ComboBox2.Items.Add("50")
     End Sub
 
     Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
         Debug.Print(DateTimePicker1.Text)
         Debug.Print(ComboBox1.Text & ":" & ComboBox2.Text)
     End Sub
+
 End Class
