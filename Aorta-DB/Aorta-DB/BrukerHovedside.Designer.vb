@@ -30,6 +30,7 @@ Partial Class BrukerHovedside
         Me.btnBestill = New System.Windows.Forms.Button()
         Me.btnEgenerklæring = New System.Windows.Forms.Button()
         Me.btnInfo = New System.Windows.Forms.Button()
+        Me.btnLoggUt = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblBruker
@@ -103,11 +104,21 @@ Partial Class BrukerHovedside
         Me.btnInfo.Text = "btnInfo"
         Me.btnInfo.UseVisualStyleBackColor = True
         '
+        'btnLoggUt
+        '
+        Me.btnLoggUt.Location = New System.Drawing.Point(324, 44)
+        Me.btnLoggUt.Name = "btnLoggUt"
+        Me.btnLoggUt.Size = New System.Drawing.Size(61, 27)
+        Me.btnLoggUt.TabIndex = 5
+        Me.btnLoggUt.Text = "Logg ut"
+        Me.btnLoggUt.UseVisualStyleBackColor = True
+        '
         'BrukerHovedside
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(397, 304)
+        Me.ClientSize = New System.Drawing.Size(397, 305)
+        Me.Controls.Add(Me.btnLoggUt)
         Me.Controls.Add(Me.btnInfo)
         Me.Controls.Add(Me.btnEgenerklæring)
         Me.Controls.Add(Me.btnBestill)
@@ -131,4 +142,5 @@ Partial Class BrukerHovedside
     Friend WithEvents btnBestill As Button
     Friend WithEvents btnEgenerklæring As Button
     Friend WithEvents btnInfo As Button
+    Friend WithEvents btnLoggUt As Button
 End Class

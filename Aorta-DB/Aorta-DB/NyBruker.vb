@@ -3,8 +3,7 @@ Imports System.Text.RegularExpressions
 
 Public Class NyBruker
     Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
-        Logginn.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Function validateEmail(emailAddress) As Boolean
 
@@ -56,6 +55,7 @@ Public Class NyBruker
         End If
         Try
             create_user(persnr, txtPassord.Text, txtFornavn.Text, txtEtternavn.Text, 0, tlf, txtMail.Text, txtAdresse.Text, postnr, txtPoststed.Text)
+            Me.Close()
         Catch ex As Exception
             MsgBox("DB error")
             Exit Sub
@@ -65,6 +65,7 @@ Public Class NyBruker
     End Sub
 
     Private Sub NyBruker_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        End
+        Logginn.Show()
+        Me.Hide()
     End Sub
 End Class
