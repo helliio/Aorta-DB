@@ -61,6 +61,23 @@ Module DB_module
         close_db()
     End Sub
 
+    Public Function get_appointment(time As String, dates As String)
+        Try
+            connect_db()
+            Dim sqlSporring = "SELECT `username` FROM `appointments` WHERE `time` = @time AND `date` = @date"
+            Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+            sql.Parameters.AddWithValue("@time", time)
+            sql.Parameters.AddWithValue("@date", dates)
+            Dim reader As MySqlDataReader = sql.ExecuteReader
+            reader.Read()
+            Return reader.Item(0)
+            close_db()
+        Catch
+            Return 0
+        End Try
+    End Function
+
+
     Public Function return_user(persnr As Decimal)
         Dim ret As New ArrayList
         connect_db()
