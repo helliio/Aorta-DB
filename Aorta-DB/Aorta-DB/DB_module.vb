@@ -61,7 +61,7 @@ Module DB_module
         close_db()
     End Sub
 
-    Public Function get_appointment(time As String, dates As String)
+    Public Function get_appointment_user(time As String, dates As String)
         Try
             connect_db()
             Dim sqlSporring = "SELECT `username` FROM `appointments` WHERE `time` = @time AND `date` = @date"

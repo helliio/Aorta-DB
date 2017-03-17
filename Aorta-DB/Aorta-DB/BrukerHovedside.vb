@@ -6,6 +6,9 @@
 
     Private Sub BrukerHovedside_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         lblBruker.Text = "Velkommen " & bruker.getFornavn() & " " & bruker.getEtternavn()
+        listboxInfo.Items.Add("Blodtype: ")
+        listboxInfo.Items.Add("Antall givninger: ")
+        listboxInfo.Items.Add("Neste givning: " & )
     End Sub
 
     Private Sub btnInfo_Click(sender As Object, e As EventArgs) Handles btnInfo.Click

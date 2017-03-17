@@ -30,10 +30,16 @@ Public Class TimeBestilling
         Debug.Print(DateTimePicker1.Text)
         Debug.Print(ComboBox1.Text & ":" & ComboBox2.Text)
         Dim time As String = ComboBox1.Text & ":" & ComboBox2.Text
-        Dim result As Integer = MessageBox.Show("Er du sikker på at du vil ha time " & DateTimePicker1.Text & " klokka " & ComboBox1.Text & ":" & ComboBox2.Text, "Timebestilling", MessageBoxButtons.YesNo)
-        If result = DialogResult.Yes Then
-            create_appointment(bruker.getPersonnr, time, DateTimePicker1.Text)
-            Me.Close()
+        If get_appointment_user(time, DateTimePicker1.Text) = 0 Then
+            Dim result As Integer = MessageBox.Show("Er du sikker på at du vil ha time " & DateTimePicker1.Text & " klokka " & ComboBox1.Text & ":" & ComboBox2.Text, "Timebestilling", MessageBoxButtons.YesNo)
+            If result = DialogResult.Yes Then
+                create_appointment(bruker.getPersonnr, time, DateTimePicker1.Text)
+                Me.Close()
+            End If
+        ElseIf get_appointment_user(time, DateTimePicker1.Text) = bruker.getPersonnr Then
+            MsgBox("Du har allerede bestillt denne timen")
+        Else
+            MsgBox("Denne timen er allerede tatt")
         End If
     End Sub
 
