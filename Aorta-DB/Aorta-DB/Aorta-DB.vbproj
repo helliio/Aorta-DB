@@ -96,6 +96,52 @@
       <DependentUpon>EgenerklaeringLoggInn.vb</DependentUpon>
     </Compile>
     <Compile Include="EgenerklaeringLoggInn.vb">
+    <Compile Include="EgenErklaering.Designer.vb">
+      <DependentUpon>EgenErklaering.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenErklaering.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgenErklaering2.Designer.vb">
+      <DependentUpon>EgenErklaering2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenErklaering2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgenErklaering3.Designer.vb">
+      <DependentUpon>EgenErklaering3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenErklaering3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgenErklaering4.Designer.vb">
+      <DependentUpon>EgenErklaering4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenErklaering4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgenErklaering5.Designer.vb">
+      <DependentUpon>EgenErklaering5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenErklaering5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgenErklaering6.Designer.vb">
+      <DependentUpon>EgenErklaering6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenErklaering6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgenErklaering7.Designer.vb">
+      <DependentUpon>EgenErklaering7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenErklaering7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgenErklaering8.Designer.vb">
+      <DependentUpon>EgenErklaering8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenErklaering8.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Global_val.vb" />
@@ -172,6 +218,29 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EgenerklaeringLoggInn.resx">
       <DependentUpon>EgenerklaeringLoggInn.vb</DependentUpon>
+    <EmbeddedResource Include="EgenErklaering.resx">
+      <DependentUpon>EgenErklaering.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgenErklaering2.resx">
+      <DependentUpon>EgenErklaering2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgenErklaering3.resx">
+      <DependentUpon>EgenErklaering3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgenErklaering4.resx">
+      <DependentUpon>EgenErklaering4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgenErklaering5.resx">
+      <DependentUpon>EgenErklaering5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgenErklaering6.resx">
+      <DependentUpon>EgenErklaering6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgenErklaering7.resx">
+      <DependentUpon>EgenErklaering7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgenErklaering8.resx">
+      <DependentUpon>EgenErklaering8.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IktHovedside.resx">
       <DependentUpon>IktHovedside.vb</DependentUpon>
@@ -214,7 +283,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
