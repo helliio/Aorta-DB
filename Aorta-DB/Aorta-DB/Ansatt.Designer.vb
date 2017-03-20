@@ -33,6 +33,7 @@ Partial Class Ansatt
         Me.btnBrukere = New System.Windows.Forms.Button()
         Me.btnGivninger = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnLoggUt = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblAnsatt
@@ -134,11 +135,21 @@ Partial Class Ansatt
         Me.Button1.Text = "Ny blodgivning"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'btnLoggUt
+        '
+        Me.btnLoggUt.Location = New System.Drawing.Point(535, 303)
+        Me.btnLoggUt.Name = "btnLoggUt"
+        Me.btnLoggUt.Size = New System.Drawing.Size(75, 23)
+        Me.btnLoggUt.TabIndex = 11
+        Me.btnLoggUt.Text = "Logg ut"
+        Me.btnLoggUt.UseVisualStyleBackColor = True
+        '
         'Ansatt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(622, 338)
+        Me.Controls.Add(Me.btnLoggUt)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnGivninger)
         Me.Controls.Add(Me.btnBrukere)
@@ -168,4 +179,5 @@ Partial Class Ansatt
     Friend WithEvents btnBrukere As Button
     Friend WithEvents btnGivninger As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents btnLoggUt As Button
 End Class
