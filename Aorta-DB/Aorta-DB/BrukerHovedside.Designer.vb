@@ -31,6 +31,7 @@ Partial Class BrukerHovedside
         Me.btnEgenerklæring = New System.Windows.Forms.Button()
         Me.btnInfo = New System.Windows.Forms.Button()
         Me.btnLoggUt = New System.Windows.Forms.Button()
+        Me.btnAvbestill = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblBruker
@@ -55,9 +56,9 @@ Partial Class BrukerHovedside
         'listboxInfo
         '
         Me.listboxInfo.FormattingEnabled = True
-        Me.listboxInfo.Location = New System.Drawing.Point(15, 60)
+        Me.listboxInfo.Location = New System.Drawing.Point(12, 104)
         Me.listboxInfo.Name = "listboxInfo"
-        Me.listboxInfo.Size = New System.Drawing.Size(120, 95)
+        Me.listboxInfo.Size = New System.Drawing.Size(120, 17)
         Me.listboxInfo.TabIndex = 2
         '
         'listboxGivinger
@@ -71,7 +72,7 @@ Partial Class BrukerHovedside
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 44)
+        Me.Label3.Location = New System.Drawing.Point(12, 77)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(28, 13)
         Me.Label3.TabIndex = 3
@@ -79,7 +80,7 @@ Partial Class BrukerHovedside
         '
         'btnBestill
         '
-        Me.btnBestill.Location = New System.Drawing.Point(254, 230)
+        Me.btnBestill.Location = New System.Drawing.Point(254, 177)
         Me.btnBestill.Name = "btnBestill"
         Me.btnBestill.Size = New System.Drawing.Size(131, 62)
         Me.btnBestill.TabIndex = 4
@@ -88,7 +89,7 @@ Partial Class BrukerHovedside
         '
         'btnEgenerklæring
         '
-        Me.btnEgenerklæring.Location = New System.Drawing.Point(300, 176)
+        Me.btnEgenerklæring.Location = New System.Drawing.Point(300, 127)
         Me.btnEgenerklæring.Name = "btnEgenerklæring"
         Me.btnEgenerklæring.Size = New System.Drawing.Size(85, 44)
         Me.btnEgenerklæring.TabIndex = 5
@@ -97,7 +98,7 @@ Partial Class BrukerHovedside
         '
         'btnInfo
         '
-        Me.btnInfo.Location = New System.Drawing.Point(300, 126)
+        Me.btnInfo.Location = New System.Drawing.Point(300, 77)
         Me.btnInfo.Name = "btnInfo"
         Me.btnInfo.Size = New System.Drawing.Size(85, 44)
         Me.btnInfo.TabIndex = 5
@@ -113,11 +114,21 @@ Partial Class BrukerHovedside
         Me.btnLoggUt.Text = "Logg ut"
         Me.btnLoggUt.UseVisualStyleBackColor = True
         '
+        'btnAvbestill
+        '
+        Me.btnAvbestill.Location = New System.Drawing.Point(254, 245)
+        Me.btnAvbestill.Name = "btnAvbestill"
+        Me.btnAvbestill.Size = New System.Drawing.Size(131, 62)
+        Me.btnAvbestill.TabIndex = 6
+        Me.btnAvbestill.Text = "Avbestill givningstime"
+        Me.btnAvbestill.UseVisualStyleBackColor = True
+        '
         'BrukerHovedside
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(397, 305)
+        Me.ClientSize = New System.Drawing.Size(397, 309)
+        Me.Controls.Add(Me.btnAvbestill)
         Me.Controls.Add(Me.btnLoggUt)
         Me.Controls.Add(Me.btnInfo)
         Me.Controls.Add(Me.btnEgenerklæring)
@@ -143,4 +154,5 @@ Partial Class BrukerHovedside
     Friend WithEvents btnEgenerklæring As Button
     Friend WithEvents btnInfo As Button
     Friend WithEvents btnLoggUt As Button
+    Friend WithEvents btnAvbestill As Button
 End Class

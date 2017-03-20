@@ -71,7 +71,10 @@ Module DB_module
             sql.Parameters.AddWithValue("@date", dates)
             sql.ExecuteNonQuery()
             close_db()
+            Debug.Print(user.ToString + time + dates)
         Catch
+            Debug.Print("oh no")
+            Debug.Print(user.ToString + time + dates)
         End Try
     End Sub
 
