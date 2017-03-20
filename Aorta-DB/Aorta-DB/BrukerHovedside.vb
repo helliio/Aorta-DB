@@ -17,8 +17,7 @@
                 listboxGivinger.Items.Add(i)
             Else
                 Dim i As String = item.ToString("HH.mm dd.MM.yyyy")
-                Debug.Print(i)
-                listboxInfo.Items.Add(i)
+                lblNesteTime.Text = i
             End If
         Next
 
@@ -44,7 +43,7 @@
     End Sub
 
     Private Sub btnAvbestill_Click(sender As Object, e As EventArgs) Handles btnAvbestill.Click
-        Dim dato As String = listboxInfo.SelectedItem
+        Dim dato As String = lblNesteTime.Text
         Dim result As Integer = MessageBox.Show("Er du sikker på at du vil avbestille timen ", "Avbestilling", MessageBoxButtons.YesNo)
         If result = DialogResult.Yes Then
             Dim list = Split(dato, " ")

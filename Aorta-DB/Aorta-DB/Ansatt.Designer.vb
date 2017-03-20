@@ -71,21 +71,21 @@ Partial Class Ansatt
         Me.lblSok.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSok.Location = New System.Drawing.Point(405, 9)
         Me.lblSok.Name = "lblSok"
-        Me.lblSok.Size = New System.Drawing.Size(122, 14)
+        Me.lblSok.Size = New System.Drawing.Size(97, 14)
         Me.lblSok.TabIndex = 3
-        Me.lblSok.Text = "Søk i brukerdatabase"
+        Me.lblSok.Text = "Søk på en bruker"
         '
         'txtSok
         '
         Me.txtSok.Location = New System.Drawing.Point(408, 26)
         Me.txtSok.Name = "txtSok"
-        Me.txtSok.Size = New System.Drawing.Size(100, 20)
+        Me.txtSok.Size = New System.Drawing.Size(119, 20)
         Me.txtSok.TabIndex = 4
-        Me.txtSok.Text = "search"
+        Me.txtSok.Text = "Skriv inn personnummer"
         '
         'btnSok
         '
-        Me.btnSok.Location = New System.Drawing.Point(514, 26)
+        Me.btnSok.Location = New System.Drawing.Point(535, 27)
         Me.btnSok.Name = "btnSok"
         Me.btnSok.Size = New System.Drawing.Size(42, 20)
         Me.btnSok.TabIndex = 5

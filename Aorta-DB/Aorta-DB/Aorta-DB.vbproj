@@ -73,6 +73,18 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnsattBrukerOversikt.Designer.vb">
+      <DependentUpon>AnsattBrukerOversikt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnsattBrukerOversikt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlodGivning.Designer.vb">
+      <DependentUpon>BlodGivning.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BlodGivning.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DB_module.vb" />
     <Compile Include="Ansatt.Designer.vb">
       <DependentUpon>Ansatt.vb</DependentUpon>
@@ -158,11 +170,35 @@
     <Compile Include="TimeBestilling.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TimeInfoAnsatt.Designer.vb">
+      <DependentUpon>TimeInfoAnsatt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TimeInfoAnsatt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeInfoDonør.Designer.vb">
+      <DependentUpon>TimeInfoDonør.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TimeInfoDonør.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="User.vb" />
+    <Compile Include="VelgTime.Designer.vb">
+      <DependentUpon>VelgTime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VelgTime.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Ansatt.resx">
       <DependentUpon>Ansatt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnsattBrukerOversikt.resx">
+      <DependentUpon>AnsattBrukerOversikt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlodGivning.resx">
+      <DependentUpon>BlodGivning.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Blodprodukter.resx">
       <DependentUpon>Blodprodukter.vb</DependentUpon>
@@ -199,6 +235,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TimeBestilling.resx">
       <DependentUpon>TimeBestilling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeInfoAnsatt.resx">
+      <DependentUpon>TimeInfoAnsatt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VelgTime.resx">
+      <DependentUpon>VelgTime.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
