@@ -92,10 +92,6 @@
     <Compile Include="BrukerHovedside.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EgenerklaeringLoggInn.Designer.vb">
-      <DependentUpon>EgenerklaeringLoggInn.vb</DependentUpon>
-    </Compile>
-    <Compile Include="EgenerklaeringLoggInn.vb">
     <Compile Include="EgenErklaering.Designer.vb">
       <DependentUpon>EgenErklaering.vb</DependentUpon>
     </Compile>
@@ -142,6 +138,12 @@
       <DependentUpon>EgenErklaering8.vb</DependentUpon>
     </Compile>
     <Compile Include="EgenErklaering8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgenerklaeringLoggInn.Designer.vb">
+      <DependentUpon>EgenerklaeringLoggInn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenerklaeringLoggInn.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Global_val.vb" />
@@ -216,8 +218,6 @@
     <EmbeddedResource Include="BrukerHovedside.resx">
       <DependentUpon>BrukerHovedside.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EgenerklaeringLoggInn.resx">
-      <DependentUpon>EgenerklaeringLoggInn.vb</DependentUpon>
     <EmbeddedResource Include="EgenErklaering.resx">
       <DependentUpon>EgenErklaering.vb</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +241,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EgenErklaering8.resx">
       <DependentUpon>EgenErklaering8.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgenerklaeringLoggInn.resx">
+      <DependentUpon>EgenerklaeringLoggInn.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IktHovedside.resx">
       <DependentUpon>IktHovedside.vb</DependentUpon>
@@ -283,7 +286,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
