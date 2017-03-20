@@ -104,6 +104,54 @@
     <Compile Include="BrukerHovedside.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EgenErklaering.Designer.vb">
+      <DependentUpon>EgenErklaering.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenErklaering.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgenErklaering2.Designer.vb">
+      <DependentUpon>EgenErklaering2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenErklaering2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgenErklaering3.Designer.vb">
+      <DependentUpon>EgenErklaering3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenErklaering3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgenErklaering4.Designer.vb">
+      <DependentUpon>EgenErklaering4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenErklaering4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgenErklaering5.Designer.vb">
+      <DependentUpon>EgenErklaering5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenErklaering5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgenErklaering6.Designer.vb">
+      <DependentUpon>EgenErklaering6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenErklaering6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgenErklaering7.Designer.vb">
+      <DependentUpon>EgenErklaering7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenErklaering7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgenErklaering8.Designer.vb">
+      <DependentUpon>EgenErklaering8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenErklaering8.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="EgenerklaeringLoggInn.Designer.vb">
       <DependentUpon>EgenerklaeringLoggInn.vb</DependentUpon>
     </Compile>
@@ -205,6 +253,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BrukerHovedside.resx">
       <DependentUpon>BrukerHovedside.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgenErklaering.resx">
+      <DependentUpon>EgenErklaering.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgenErklaering2.resx">
+      <DependentUpon>EgenErklaering2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgenErklaering3.resx">
+      <DependentUpon>EgenErklaering3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgenErklaering4.resx">
+      <DependentUpon>EgenErklaering4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgenErklaering5.resx">
+      <DependentUpon>EgenErklaering5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgenErklaering6.resx">
+      <DependentUpon>EgenErklaering6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgenErklaering7.resx">
+      <DependentUpon>EgenErklaering7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EgenErklaering8.resx">
+      <DependentUpon>EgenErklaering8.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EgenerklaeringLoggInn.resx">
       <DependentUpon>EgenerklaeringLoggInn.vb</DependentUpon>
