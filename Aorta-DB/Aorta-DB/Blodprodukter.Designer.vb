@@ -32,7 +32,7 @@ Partial Class Blodprodukter
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 13)
+        Me.Label1.Location = New System.Drawing.Point(12, 39)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(73, 13)
         Me.Label1.TabIndex = 0
@@ -41,7 +41,7 @@ Partial Class Blodprodukter
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(34, 66)
+        Me.Label2.Location = New System.Drawing.Point(34, 85)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(71, 13)
         Me.Label2.TabIndex = 0
@@ -50,7 +50,7 @@ Partial Class Blodprodukter
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(180, 66)
+        Me.Label3.Location = New System.Drawing.Point(180, 85)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(107, 13)
         Me.Label3.TabIndex = 0
@@ -59,7 +59,7 @@ Partial Class Blodprodukter
         'listboxBlodGitt
         '
         Me.listboxBlodGitt.FormattingEnabled = True
-        Me.listboxBlodGitt.Location = New System.Drawing.Point(12, 82)
+        Me.listboxBlodGitt.Location = New System.Drawing.Point(12, 101)
         Me.listboxBlodGitt.Name = "listboxBlodGitt"
         Me.listboxBlodGitt.Size = New System.Drawing.Size(120, 95)
         Me.listboxBlodGitt.TabIndex = 1
@@ -67,7 +67,7 @@ Partial Class Blodprodukter
         'listboxBlodSendt
         '
         Me.listboxBlodSendt.FormattingEnabled = True
-        Me.listboxBlodSendt.Location = New System.Drawing.Point(170, 82)
+        Me.listboxBlodSendt.Location = New System.Drawing.Point(170, 101)
         Me.listboxBlodSendt.Name = "listboxBlodSendt"
         Me.listboxBlodSendt.Size = New System.Drawing.Size(129, 95)
         Me.listboxBlodSendt.TabIndex = 2
