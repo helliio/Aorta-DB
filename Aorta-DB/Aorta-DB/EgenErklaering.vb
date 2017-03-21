@@ -17,6 +17,7 @@ Public Class EgenErklaering
             If item >= d Then
                 Dim i As String = item.ToString("HH.mm dd.MM.yyyy")
                 Label14.Text = i
+                erklaring.setDate(i)
             End If
         Next
     End Sub
