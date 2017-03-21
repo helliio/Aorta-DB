@@ -146,6 +146,7 @@
     <Compile Include="EgenerklaeringLoggInn.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EgenErklaering_class.vb" />
     <Compile Include="Global_val.vb" />
     <Compile Include="IktHovedside.Designer.vb">
       <DependentUpon>IktHovedside.vb</DependentUpon>
