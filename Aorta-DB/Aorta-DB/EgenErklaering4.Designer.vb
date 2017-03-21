@@ -25,7 +25,8 @@ Partial Class EgenErklaering4
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.CheckBox30 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox29 = New System.Windows.Forms.CheckBox()
+        Me.btnTilbake = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -57,22 +58,33 @@ Partial Class EgenErklaering4
         Me.Button1.Text = "Neste vindu"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'CheckBox30
+        'CheckBox29
         '
-        Me.CheckBox30.AutoSize = True
-        Me.CheckBox30.Location = New System.Drawing.Point(312, 58)
-        Me.CheckBox30.Name = "CheckBox30"
-        Me.CheckBox30.Size = New System.Drawing.Size(48, 28)
-        Me.CheckBox30.TabIndex = 50
-        Me.CheckBox30.Text = "Ja"
-        Me.CheckBox30.UseVisualStyleBackColor = True
+        Me.CheckBox29.AutoSize = True
+        Me.CheckBox29.Location = New System.Drawing.Point(312, 58)
+        Me.CheckBox29.Name = "CheckBox29"
+        Me.CheckBox29.Size = New System.Drawing.Size(48, 28)
+        Me.CheckBox29.TabIndex = 50
+        Me.CheckBox29.Text = "Ja"
+        Me.CheckBox29.UseVisualStyleBackColor = True
+        '
+        'btnTilbake
+        '
+        Me.btnTilbake.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
+        Me.btnTilbake.Location = New System.Drawing.Point(429, 12)
+        Me.btnTilbake.Name = "btnTilbake"
+        Me.btnTilbake.Size = New System.Drawing.Size(58, 25)
+        Me.btnTilbake.TabIndex = 62
+        Me.btnTilbake.Text = "Tilbake"
+        Me.btnTilbake.UseVisualStyleBackColor = True
         '
         'EgenErklaering4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(499, 359)
-        Me.Controls.Add(Me.CheckBox30)
+        Me.Controls.Add(Me.btnTilbake)
+        Me.Controls.Add(Me.CheckBox29)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -88,5 +100,6 @@ Partial Class EgenErklaering4
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents CheckBox30 As CheckBox
+    Friend WithEvents CheckBox29 As CheckBox
+    Friend WithEvents btnTilbake As Button
 End Class
