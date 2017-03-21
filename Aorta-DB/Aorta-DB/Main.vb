@@ -1,7 +1,11 @@
 ﻿Public Class Main
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim d = DateTime.Now
-        Debug.Print(d.ToString("HH:mm dd/MM/yyyy"))
+        Dim booooo(3) As Boolean
+        booooo(0) = True
+        booooo(1) = True
+        booooo(2) = True
+        booooo(3) = True
+        DB_module.create_erklaring(1234324, booooo, "kjdshfdsfwf")
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnLoggInn.Click
         Logginn.Show()

@@ -50,6 +50,19 @@ Module DB_module
         close_db()
     End Sub
 
+    Public Sub create_erklaring(personnr As Decimal, inn As Array, land As String)
+        Dim sqlSporring = "INSERT INTO erklaring (pers"
+        For i As Integer = 1 To inn.Length
+            sqlSporring = sqlSporring & ", check" & i.ToString
+        Next
+        sqlSporring = sqlSporring & ", land) VALUES (@pers"
+        For i As Integer = 1 To inn.Length
+            sqlSporring = sqlSporring & ", @check" & i.ToString
+        Next
+        sqlSporring = sqlSporring & ", @land)"
+        Debug.Print(sqlSporring)
+    End Sub
+
     Public Sub create_appointment(user As Decimal, time As String, dates As String)
         connect_db()
         Dim sqlSporring = "INSERT INTO appointments (username, time, date) VALUES (@username, @time, @date)"
