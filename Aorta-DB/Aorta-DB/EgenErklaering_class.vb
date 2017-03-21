@@ -2,6 +2,7 @@
     Private answer(58) As Boolean
     Private pers As Decimal
     Private land As String
+    Private dato As String
     Public Sub New(ByVal personnummer As Decimal)
         pers = personnummer
         For index As Integer = 0 To 58
@@ -20,6 +21,9 @@
     Public Function getLand(inn As String)
         Return land(inn)
     End Function
+    Public Sub setDate(str As String)
+        dato = str
+    End Sub
     Public Sub send()
 
     End Sub
