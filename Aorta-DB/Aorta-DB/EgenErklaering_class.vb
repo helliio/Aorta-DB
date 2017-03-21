@@ -25,6 +25,8 @@
         dato = str
     End Sub
     Public Sub send()
-
+        Dim tmp = Split(dato, " ")
+        Dim id = CInt(get_appointment_id(tmp(0), tmp(1)))
+        create_erklaring(pers, id, answer, land)
     End Sub
 End Class

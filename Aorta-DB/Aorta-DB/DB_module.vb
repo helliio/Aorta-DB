@@ -50,17 +50,24 @@ Module DB_module
         close_db()
     End Sub
 
-    Public Sub create_erklaring(personnr As Decimal, inn As Array, land As String)
-        Dim sqlSporring = "INSERT INTO erklaring (pers"
+    Public Sub create_erklaring(personnr As Decimal, date_id As Integer, inn As Array, land As String)
+        Dim sqlSporring = "INSERT INTO erklaring (pers, date_id"
         For i As Integer = 1 To inn.Length
             sqlSporring = sqlSporring & ", check" & i.ToString
         Next
-        sqlSporring = sqlSporring & ", land) VALUES (@pers"
+        sqlSporring = sqlSporring & ", land) VALUES (@pers, @date_id"
         For i As Integer = 1 To inn.Length
-            sqlSporring = sqlSporring & ", @check" & i.ToString
+            sqlSporring = sqlSporring & ", " & inn(i - 1).ToString
         Next
         sqlSporring = sqlSporring & ", @land)"
         Debug.Print(sqlSporring)
+        connect_db()
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@pers", personnr)
+        sql.Parameters.AddWithValue("@date_id", date_id)
+        sql.Parameters.AddWithValue("@land", land)
+        sql.ExecuteNonQuery()
+        close_db()
     End Sub
 
     Public Sub create_appointment(user As Decimal, time As String, dates As String)
@@ -95,6 +102,22 @@ Module DB_module
         Try
             connect_db()
             Dim sqlSporring = "SELECT username FROM appointments WHERE time = @time AND date = @date"
+            Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+            sql.Parameters.AddWithValue("@time", time)
+            sql.Parameters.AddWithValue("@date", dates)
+            Dim reader As MySqlDataReader = sql.ExecuteReader
+            reader.Read()
+            Return reader.Item(0)
+            close_db()
+        Catch
+            Return 0
+        End Try
+    End Function
+
+    Public Function get_appointment_id(time As String, dates As String)
+        Try
+            connect_db()
+            Dim sqlSporring = "SELECT id FROM appointments WHERE time = @time AND date = @date"
             Dim sql As New MySqlCommand(sqlSporring, tilkobling)
             sql.Parameters.AddWithValue("@time", time)
             sql.Parameters.AddWithValue("@date", dates)
