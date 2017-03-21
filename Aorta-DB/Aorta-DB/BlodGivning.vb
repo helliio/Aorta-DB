@@ -3,9 +3,27 @@
     Private Sub BlodGivning_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox1.Items.Add("Ja")
         ComboBox1.Items.Add("Nei")
+        Global_val.erklaring = New EgenErklaering_class(giver_id)
+        Dim list As ArrayList = get_appointment_date(giver_id)
+        'Debug.Print(giver_id)
+        Dim dt_list As New ArrayList
+        Dim d = DateTime.Now
+        For Each item In list
+            dt_list.Add(CDate(item))
+        Next
+        For Each item As Date In dt_list
+            If item >= d Then
+                Dim i As String = item.ToString("HH.mm dd.MM.yyyy")
+                Label2.Text = i
+                erklaring.setDate(i)
+                'Debug.Print(i)
+            End If
+        Next
+        get_erklaring()
     End Sub
 
     Private Sub get_erklaring()
+        listboxEgenerklæring.Items.Clear()
         liste.Add("Vennligst besvar:") '0'
         liste.Add("- Har du fått informasjon om blodgivning?") '1'1
         liste.Add("- Føler du deg frisk nå?") '2'2
@@ -81,6 +99,24 @@
         liste.Add("- Har du deltatt i medikamentforsøk de siste 12 måneder?") '65'58
         liste.Add("- Jeg samtykker i at mitt plasma føres ut av Norge for legemiddelproduksjon.") '66'59
         liste.Add("- I hvilke(t) land er du født og oppvokst?") '67'60
+        Dim svar = erklaring.get_ans_db()
+        Dim counter As Integer = 0
+        For i As Integer = 0 To liste.Count - 1
+            If i <> 0 And i <> 7 And i <> 13 And i <> 31 And i <> 33 And i <> 49 And i <> 54 And i <> 56 Then
+                'Debug.Print(svar(counter))
+                If counter = 59 Then
+                    liste(i) = liste(i) & " : " & svar(counter)
+                ElseIf svar(counter) Then
+                    liste(i) = liste(i) & " : ja"
+                Else
+                    liste(i) = liste(i) & " : nei"
+                End If
+                counter += 1
+            End If
+        Next
+        For Each item As String In liste
+            listboxEgenerklæring.Items.Add(item)
+        Next
     End Sub
 
     Private Sub btnNeste_Click(sender As Object, e As EventArgs) Handles btnNeste.Click
@@ -91,5 +127,9 @@
             BlodGivning2.Show()
             Me.Hide()
         End If
+    End Sub
+
+    Private Sub btnOppdater_Click(sender As Object, e As EventArgs) Handles btnOppdater.Click
+        get_erklaring()
     End Sub
 End Class

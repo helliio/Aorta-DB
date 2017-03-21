@@ -60,7 +60,7 @@ Module DB_module
             sqlSporring = sqlSporring & ", " & inn(i - 1).ToString
         Next
         sqlSporring = sqlSporring & ", @land)"
-        Debug.Print(sqlSporring)
+        'Debug.Print(sqlSporring)
         connect_db()
         Dim sql As New MySqlCommand(sqlSporring, tilkobling)
         sql.Parameters.AddWithValue("@pers", personnr)
@@ -91,10 +91,10 @@ Module DB_module
             sql.Parameters.AddWithValue("@date", dates)
             sql.ExecuteNonQuery()
             close_db()
-            Debug.Print(user.ToString + time + dates)
+            'Debug.Print(user.ToString + time + dates)
         Catch
-            Debug.Print("oh no")
-            Debug.Print(user.ToString + time + dates)
+            'Debug.Print("oh no")
+            'Debug.Print(user.ToString + time + dates)
         End Try
     End Sub
 
@@ -161,6 +161,22 @@ Module DB_module
         Dim reader As MySqlDataReader = sql.ExecuteReader
         reader.Read()
         For i As Integer = 0 To 9
+            ret.Add(reader.Item(i).ToString())
+        Next
+        close_db()
+        Return ret
+    End Function
+
+    Public Function return_erklaring(persnr As Decimal, dato As Integer)
+        Dim ret As New ArrayList
+        connect_db()
+        Dim sqlSporring = "SELECT * FROM erklaring WHERE pers = @pers AND date_id = @date_id"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@pers", persnr)
+        sql.Parameters.AddWithValue("@date_id", dato)
+        Dim reader As MySqlDataReader = sql.ExecuteReader
+        reader.Read()
+        For i As Integer = 3 To 62
             ret.Add(reader.Item(i).ToString())
         Next
         close_db()

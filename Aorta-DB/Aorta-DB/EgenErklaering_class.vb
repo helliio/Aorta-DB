@@ -22,8 +22,15 @@
         Return land(inn)
     End Function
     Public Sub setDate(str As String)
+        'Debug.Print(str)
         dato = str
     End Sub
+    Public Function get_ans_db()
+        'Debug.Print(dato)
+        Dim tmp = Split(dato, " ")
+        Dim id = CInt(get_appointment_id(tmp(0), tmp(1)))
+        Return return_erklaring(pers, id)
+    End Function
     Public Sub send()
         Dim tmp = Split(dato, " ")
         Dim id = CInt(get_appointment_id(tmp(0), tmp(1)))
