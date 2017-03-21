@@ -48,6 +48,7 @@ Partial Class EgenErklaering
         Me.CheckBox11 = New System.Windows.Forms.CheckBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnTilbake = New System.Windows.Forms.Button()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -309,11 +310,21 @@ Partial Class EgenErklaering
         Me.btnTilbake.Text = "Tilbake"
         Me.btnTilbake.UseVisualStyleBackColor = True
         '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(16, 12)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(45, 13)
+        Me.Label14.TabIndex = 63
+        Me.Label14.Text = "Label14"
+        '
         'EgenErklaering
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(491, 399)
+        Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.btnTilbake)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.CheckBox11)
@@ -373,4 +384,5 @@ Partial Class EgenErklaering
     Friend WithEvents CheckBox11 As CheckBox
     Friend WithEvents Button1 As Button
     Friend WithEvents btnTilbake As Button
+    Friend WithEvents Label14 As Label
 End Class

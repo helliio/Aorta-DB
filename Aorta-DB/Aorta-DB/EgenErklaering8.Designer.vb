@@ -35,6 +35,7 @@ Partial Class EgenErklaering8
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.CheckBox50 = New System.Windows.Forms.CheckBox()
         Me.CheckBox51 = New System.Windows.Forms.CheckBox()
         Me.CheckBox52 = New System.Windows.Forms.CheckBox()
         Me.CheckBox53 = New System.Windows.Forms.CheckBox()
@@ -44,7 +45,6 @@ Partial Class EgenErklaering8
         Me.CheckBox57 = New System.Windows.Forms.CheckBox()
         Me.CheckBox58 = New System.Windows.Forms.CheckBox()
         Me.CheckBox59 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox60 = New System.Windows.Forms.CheckBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.btnTilbake = New System.Windows.Forms.Button()
@@ -161,105 +161,105 @@ Partial Class EgenErklaering8
         Me.Button1.Text = "Fullfør"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'CheckBox50
+        '
+        Me.CheckBox50.AutoSize = True
+        Me.CheckBox50.Location = New System.Drawing.Point(272, 49)
+        Me.CheckBox50.Name = "CheckBox50"
+        Me.CheckBox50.Size = New System.Drawing.Size(37, 17)
+        Me.CheckBox50.TabIndex = 50
+        Me.CheckBox50.Text = "Ja"
+        Me.CheckBox50.UseVisualStyleBackColor = True
+        '
         'CheckBox51
         '
         Me.CheckBox51.AutoSize = True
-        Me.CheckBox51.Location = New System.Drawing.Point(272, 49)
+        Me.CheckBox51.Location = New System.Drawing.Point(260, 90)
         Me.CheckBox51.Name = "CheckBox51"
         Me.CheckBox51.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox51.TabIndex = 50
+        Me.CheckBox51.TabIndex = 51
         Me.CheckBox51.Text = "Ja"
         Me.CheckBox51.UseVisualStyleBackColor = True
         '
         'CheckBox52
         '
         Me.CheckBox52.AutoSize = True
-        Me.CheckBox52.Location = New System.Drawing.Point(260, 90)
+        Me.CheckBox52.Location = New System.Drawing.Point(267, 117)
         Me.CheckBox52.Name = "CheckBox52"
         Me.CheckBox52.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox52.TabIndex = 51
+        Me.CheckBox52.TabIndex = 52
         Me.CheckBox52.Text = "Ja"
         Me.CheckBox52.UseVisualStyleBackColor = True
         '
         'CheckBox53
         '
         Me.CheckBox53.AutoSize = True
-        Me.CheckBox53.Location = New System.Drawing.Point(267, 117)
+        Me.CheckBox53.Location = New System.Drawing.Point(360, 157)
         Me.CheckBox53.Name = "CheckBox53"
         Me.CheckBox53.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox53.TabIndex = 52
+        Me.CheckBox53.TabIndex = 53
         Me.CheckBox53.Text = "Ja"
         Me.CheckBox53.UseVisualStyleBackColor = True
         '
         'CheckBox54
         '
         Me.CheckBox54.AutoSize = True
-        Me.CheckBox54.Location = New System.Drawing.Point(360, 157)
+        Me.CheckBox54.Location = New System.Drawing.Point(274, 207)
         Me.CheckBox54.Name = "CheckBox54"
         Me.CheckBox54.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox54.TabIndex = 53
+        Me.CheckBox54.TabIndex = 54
         Me.CheckBox54.Text = "Ja"
         Me.CheckBox54.UseVisualStyleBackColor = True
         '
         'CheckBox55
         '
         Me.CheckBox55.AutoSize = True
-        Me.CheckBox55.Location = New System.Drawing.Point(274, 207)
+        Me.CheckBox55.Location = New System.Drawing.Point(250, 238)
         Me.CheckBox55.Name = "CheckBox55"
         Me.CheckBox55.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox55.TabIndex = 54
+        Me.CheckBox55.TabIndex = 55
         Me.CheckBox55.Text = "Ja"
         Me.CheckBox55.UseVisualStyleBackColor = True
         '
         'CheckBox56
         '
         Me.CheckBox56.AutoSize = True
-        Me.CheckBox56.Location = New System.Drawing.Point(250, 238)
+        Me.CheckBox56.Location = New System.Drawing.Point(244, 277)
         Me.CheckBox56.Name = "CheckBox56"
         Me.CheckBox56.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox56.TabIndex = 55
+        Me.CheckBox56.TabIndex = 56
         Me.CheckBox56.Text = "Ja"
         Me.CheckBox56.UseVisualStyleBackColor = True
         '
         'CheckBox57
         '
         Me.CheckBox57.AutoSize = True
-        Me.CheckBox57.Location = New System.Drawing.Point(244, 277)
+        Me.CheckBox57.Location = New System.Drawing.Point(295, 342)
         Me.CheckBox57.Name = "CheckBox57"
         Me.CheckBox57.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox57.TabIndex = 56
+        Me.CheckBox57.TabIndex = 57
         Me.CheckBox57.Text = "Ja"
         Me.CheckBox57.UseVisualStyleBackColor = True
         '
         'CheckBox58
         '
         Me.CheckBox58.AutoSize = True
-        Me.CheckBox58.Location = New System.Drawing.Point(295, 342)
+        Me.CheckBox58.Location = New System.Drawing.Point(250, 386)
         Me.CheckBox58.Name = "CheckBox58"
         Me.CheckBox58.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox58.TabIndex = 57
+        Me.CheckBox58.TabIndex = 58
         Me.CheckBox58.Text = "Ja"
         Me.CheckBox58.UseVisualStyleBackColor = True
         '
         'CheckBox59
         '
         Me.CheckBox59.AutoSize = True
-        Me.CheckBox59.Location = New System.Drawing.Point(250, 386)
+        Me.CheckBox59.Location = New System.Drawing.Point(383, 427)
         Me.CheckBox59.Name = "CheckBox59"
         Me.CheckBox59.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox59.TabIndex = 58
+        Me.CheckBox59.TabIndex = 59
         Me.CheckBox59.Text = "Ja"
         Me.CheckBox59.UseVisualStyleBackColor = True
-        '
-        'CheckBox60
-        '
-        Me.CheckBox60.AutoSize = True
-        Me.CheckBox60.Location = New System.Drawing.Point(383, 427)
-        Me.CheckBox60.Name = "CheckBox60"
-        Me.CheckBox60.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox60.TabIndex = 59
-        Me.CheckBox60.Text = "Ja"
-        Me.CheckBox60.UseVisualStyleBackColor = True
         '
         'Label12
         '
@@ -293,7 +293,6 @@ Partial Class EgenErklaering8
         Me.ClientSize = New System.Drawing.Size(565, 500)
         Me.Controls.Add(Me.btnTilbake)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.CheckBox60)
         Me.Controls.Add(Me.CheckBox59)
         Me.Controls.Add(Me.CheckBox58)
         Me.Controls.Add(Me.CheckBox57)
@@ -303,6 +302,7 @@ Partial Class EgenErklaering8
         Me.Controls.Add(Me.CheckBox53)
         Me.Controls.Add(Me.CheckBox52)
         Me.Controls.Add(Me.CheckBox51)
+        Me.Controls.Add(Me.CheckBox50)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
@@ -335,6 +335,7 @@ Partial Class EgenErklaering8
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents CheckBox50 As CheckBox
     Friend WithEvents CheckBox51 As CheckBox
     Friend WithEvents CheckBox52 As CheckBox
     Friend WithEvents CheckBox53 As CheckBox
@@ -344,7 +345,6 @@ Partial Class EgenErklaering8
     Friend WithEvents CheckBox57 As CheckBox
     Friend WithEvents CheckBox58 As CheckBox
     Friend WithEvents CheckBox59 As CheckBox
-    Friend WithEvents CheckBox60 As CheckBox
     Friend WithEvents Label12 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents btnTilbake As Button

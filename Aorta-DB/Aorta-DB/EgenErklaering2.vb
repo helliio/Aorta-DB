@@ -22,4 +22,16 @@ Public Class EgenErklaering2
         CheckBox17.Checked = False
         CheckBox18.Checked = False
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        erklaring.setAns(12, CheckBox12.Checked)
+        erklaring.setAns(13, CheckBox13.Checked)
+        erklaring.setAns(14, CheckBox14.Checked)
+        erklaring.setAns(15, CheckBox15.Checked)
+        erklaring.setAns(16, CheckBox16.Checked)
+        erklaring.setAns(17, CheckBox17.Checked)
+        erklaring.setAns(18, CheckBox18.Checked)
+        EgenErklaering3.Show()
+        Me.Hide()
+    End Sub
 End Class

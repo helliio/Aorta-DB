@@ -51,4 +51,9 @@
             cancel_appointment(bruker.getPersonnr, list(0), list(1))
         End If
     End Sub
+
+    Private Sub btnEgenerklæring_Click(sender As Object, e As EventArgs) Handles btnEgenerklæring.Click
+        EgenErklaering.Show()
+        Me.Hide()
+    End Sub
 End Class

@@ -25,7 +25,7 @@ Partial Class EgenErklaering7
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.CheckBox50 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox49 = New System.Windows.Forms.CheckBox()
         Me.btnTilbake = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -57,15 +57,15 @@ Partial Class EgenErklaering7
         Me.Button1.Text = "Neste vindu"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'CheckBox50
+        'CheckBox49
         '
-        Me.CheckBox50.AutoSize = True
-        Me.CheckBox50.Location = New System.Drawing.Point(266, 78)
-        Me.CheckBox50.Name = "CheckBox50"
-        Me.CheckBox50.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox50.TabIndex = 65
-        Me.CheckBox50.Text = "Ja"
-        Me.CheckBox50.UseVisualStyleBackColor = True
+        Me.CheckBox49.AutoSize = True
+        Me.CheckBox49.Location = New System.Drawing.Point(266, 78)
+        Me.CheckBox49.Name = "CheckBox49"
+        Me.CheckBox49.Size = New System.Drawing.Size(37, 17)
+        Me.CheckBox49.TabIndex = 65
+        Me.CheckBox49.Text = "Ja"
+        Me.CheckBox49.UseVisualStyleBackColor = True
         '
         'btnTilbake
         '
@@ -82,7 +82,7 @@ Partial Class EgenErklaering7
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(361, 324)
         Me.Controls.Add(Me.btnTilbake)
-        Me.Controls.Add(Me.CheckBox50)
+        Me.Controls.Add(Me.CheckBox49)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -96,6 +96,6 @@ Partial Class EgenErklaering7
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents CheckBox50 As CheckBox
+    Friend WithEvents CheckBox49 As CheckBox
     Friend WithEvents btnTilbake As Button
 End Class

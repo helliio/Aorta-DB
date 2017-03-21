@@ -85,6 +85,12 @@
     <Compile Include="BlodGivning.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="BlodGivning2.Designer.vb">
+      <DependentUpon>BlodGivning2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BlodGivning2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DB_module.vb" />
     <Compile Include="Ansatt.Designer.vb">
       <DependentUpon>Ansatt.vb</DependentUpon>
@@ -248,6 +254,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BlodGivning.resx">
       <DependentUpon>BlodGivning.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlodGivning2.resx">
+      <DependentUpon>BlodGivning2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Blodprodukter.resx">
       <DependentUpon>Blodprodukter.vb</DependentUpon>

@@ -73,4 +73,14 @@
         listboxEgenerklæring.Items.Add("- Jeg samtykker i at mitt plasma føres ut av Norge for legemiddelproduksjon.")
         listboxEgenerklæring.Items.Add("- I hvilke(t) land er du født og oppvokst?")
     End Sub
+
+    Private Sub btnNeste_Click(sender As Object, e As EventArgs) Handles btnNeste.Click
+        If ComboBox1.Text = "Nei" Then
+            Ansatt.Show()
+            Me.Hide()
+        Else
+            BlodGivning2.Show()
+            Me.Hide()
+        End If
+    End Sub
 End Class

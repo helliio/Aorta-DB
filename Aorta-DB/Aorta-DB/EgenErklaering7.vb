@@ -14,6 +14,12 @@ Public Class EgenErklaering7
 
     End Sub
     Public Sub clear()
-        CheckBox50.Checked = False
+        CheckBox49.Checked = False
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        erklaring.setAns(49, CheckBox49.Checked)
+        EgenErklaering8.Show()
+        Me.Hide()
     End Sub
 End Class

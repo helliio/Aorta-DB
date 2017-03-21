@@ -7,7 +7,7 @@ Public Class EgenerklaeringLoggInn
         If id <> 0 Then
             Global_val.bruker = New User(id)
             If bruker.getUserType = 0 Then
-                'Egenerklaering.Show()
+                EgenErklaering.Show()
                 Me.Hide()
             Else
                 MsgBox("Feil brukergruppe")

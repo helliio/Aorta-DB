@@ -15,12 +15,25 @@ Public Class EgenErklaering8
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+        erklaring.setAns(50, CheckBox50.Checked)
+        erklaring.setAns(51, CheckBox51.Checked)
+        erklaring.setAns(52, CheckBox52.Checked)
+        erklaring.setAns(53, CheckBox53.Checked)
+        erklaring.setAns(54, CheckBox54.Checked)
+        erklaring.setAns(55, CheckBox55.Checked)
+        erklaring.setAns(56, CheckBox56.Checked)
+        erklaring.setAns(57, CheckBox57.Checked)
+        erklaring.setAns(58, CheckBox58.Checked)
+        erklaring.setAns(59, CheckBox59.Checked)
+        For i As Integer = 0 To 58
+            Debug.Print(erklaring.getAns(i))
+        Next
     End Sub
     Private Sub send()
         EgenErklaering7.Close()
     End Sub
     Public Sub clear()
+        CheckBox50.Checked = False
         CheckBox51.Checked = False
         CheckBox52.Checked = False
         CheckBox53.Checked = False
@@ -30,7 +43,6 @@ Public Class EgenErklaering8
         CheckBox57.Checked = False
         CheckBox58.Checked = False
         CheckBox59.Checked = False
-        CheckBox60.Checked = False
         TextBox1.Text = ""
     End Sub
 End Class

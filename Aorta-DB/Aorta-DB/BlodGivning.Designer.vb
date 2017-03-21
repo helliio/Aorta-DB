@@ -26,6 +26,8 @@ Partial Class BlodGivning
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.btnOppdater = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnNeste = New System.Windows.Forms.Button()
+        Me.btnTilbake = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'listboxEgenerklæring
@@ -63,11 +65,31 @@ Partial Class BlodGivning
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Godkjent"
         '
+        'btnNeste
+        '
+        Me.btnNeste.Location = New System.Drawing.Point(704, 137)
+        Me.btnNeste.Name = "btnNeste"
+        Me.btnNeste.Size = New System.Drawing.Size(75, 23)
+        Me.btnNeste.TabIndex = 4
+        Me.btnNeste.Text = "Neste"
+        Me.btnNeste.UseVisualStyleBackColor = True
+        '
+        'btnTilbake
+        '
+        Me.btnTilbake.Location = New System.Drawing.Point(12, 3)
+        Me.btnTilbake.Name = "btnTilbake"
+        Me.btnTilbake.Size = New System.Drawing.Size(75, 23)
+        Me.btnTilbake.TabIndex = 5
+        Me.btnTilbake.Text = "Tilbake"
+        Me.btnTilbake.UseVisualStyleBackColor = True
+        '
         'BlodGivning
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(795, 261)
+        Me.Controls.Add(Me.btnTilbake)
+        Me.Controls.Add(Me.btnNeste)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnOppdater)
         Me.Controls.Add(Me.ComboBox1)
@@ -83,4 +105,6 @@ Partial Class BlodGivning
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents btnOppdater As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents btnNeste As Button
+    Friend WithEvents btnTilbake As Button
 End Class
