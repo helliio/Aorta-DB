@@ -44,6 +44,7 @@ Partial Class EgenErklaering3
         Me.CheckBox28 = New System.Windows.Forms.CheckBox()
         Me.CheckBox29 = New System.Windows.Forms.CheckBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnTilbake = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label14
@@ -257,11 +258,21 @@ Partial Class EgenErklaering3
         Me.Button1.Text = "Neste vindu"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'btnTilbake
+        '
+        Me.btnTilbake.Location = New System.Drawing.Point(528, 12)
+        Me.btnTilbake.Name = "btnTilbake"
+        Me.btnTilbake.Size = New System.Drawing.Size(58, 25)
+        Me.btnTilbake.TabIndex = 62
+        Me.btnTilbake.Text = "Tilbake"
+        Me.btnTilbake.UseVisualStyleBackColor = True
+        '
         'EgenErklaering3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(598, 452)
+        Me.Controls.Add(Me.btnTilbake)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.CheckBox29)
         Me.Controls.Add(Me.CheckBox28)
@@ -313,4 +324,5 @@ Partial Class EgenErklaering3
     Friend WithEvents CheckBox28 As CheckBox
     Friend WithEvents CheckBox29 As CheckBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents btnTilbake As Button
 End Class

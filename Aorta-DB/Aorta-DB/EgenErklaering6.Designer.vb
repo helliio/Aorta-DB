@@ -32,6 +32,7 @@ Partial Class EgenErklaering6
         Me.CheckBox47 = New System.Windows.Forms.CheckBox()
         Me.CheckBox48 = New System.Windows.Forms.CheckBox()
         Me.CheckBox49 = New System.Windows.Forms.CheckBox()
+        Me.btnTilbake = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -130,11 +131,21 @@ Partial Class EgenErklaering6
         Me.CheckBox49.Text = "Ja"
         Me.CheckBox49.UseVisualStyleBackColor = True
         '
+        'btnTilbake
+        '
+        Me.btnTilbake.Location = New System.Drawing.Point(370, 12)
+        Me.btnTilbake.Name = "btnTilbake"
+        Me.btnTilbake.Size = New System.Drawing.Size(58, 25)
+        Me.btnTilbake.TabIndex = 69
+        Me.btnTilbake.Text = "Tilbake"
+        Me.btnTilbake.UseVisualStyleBackColor = True
+        '
         'EgenErklaering6
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(440, 400)
+        Me.Controls.Add(Me.btnTilbake)
         Me.Controls.Add(Me.CheckBox49)
         Me.Controls.Add(Me.CheckBox48)
         Me.Controls.Add(Me.CheckBox47)
@@ -162,4 +173,5 @@ Partial Class EgenErklaering6
     Friend WithEvents CheckBox47 As CheckBox
     Friend WithEvents CheckBox48 As CheckBox
     Friend WithEvents CheckBox49 As CheckBox
+    Friend WithEvents btnTilbake As Button
 End Class

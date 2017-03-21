@@ -33,13 +33,13 @@ Partial Class BlodGivning
         Me.listboxEgenerklæring.FormattingEnabled = True
         Me.listboxEgenerklæring.Location = New System.Drawing.Point(12, 32)
         Me.listboxEgenerklæring.Name = "listboxEgenerklæring"
-        Me.listboxEgenerklæring.Size = New System.Drawing.Size(651, 212)
+        Me.listboxEgenerklæring.Size = New System.Drawing.Size(681, 212)
         Me.listboxEgenerklæring.TabIndex = 0
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(699, 36)
+        Me.ComboBox1.Location = New System.Drawing.Point(716, 32)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(67, 21)
         Me.ComboBox1.TabIndex = 1
@@ -47,7 +47,7 @@ Partial Class BlodGivning
         '
         'btnOppdater
         '
-        Me.btnOppdater.Location = New System.Drawing.Point(687, 221)
+        Me.btnOppdater.Location = New System.Drawing.Point(704, 217)
         Me.btnOppdater.Name = "btnOppdater"
         Me.btnOppdater.Size = New System.Drawing.Size(79, 23)
         Me.btnOppdater.TabIndex = 2
@@ -57,7 +57,7 @@ Partial Class BlodGivning
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(706, 20)
+        Me.Label1.Location = New System.Drawing.Point(723, 16)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(50, 13)
         Me.Label1.TabIndex = 3

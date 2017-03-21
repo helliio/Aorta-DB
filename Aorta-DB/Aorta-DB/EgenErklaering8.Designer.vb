@@ -45,6 +45,9 @@ Partial Class EgenErklaering8
         Me.CheckBox58 = New System.Windows.Forms.CheckBox()
         Me.CheckBox59 = New System.Windows.Forms.CheckBox()
         Me.CheckBox60 = New System.Windows.Forms.CheckBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.btnTilbake = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -151,7 +154,7 @@ Partial Class EgenErklaering8
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(433, 427)
+        Me.Button1.Location = New System.Drawing.Point(434, 443)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(119, 45)
         Me.Button1.TabIndex = 49
@@ -258,11 +261,38 @@ Partial Class EgenErklaering8
         Me.CheckBox60.Text = "Ja"
         Me.CheckBox60.UseVisualStyleBackColor = True
         '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Location = New System.Drawing.Point(20, 459)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(189, 13)
+        Me.Label12.TabIndex = 10
+        Me.Label12.Text = "I hvilke(t) land er du født og oppvokst?"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(215, 456)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.TabIndex = 60
+        '
+        'btnTilbake
+        '
+        Me.btnTilbake.Location = New System.Drawing.Point(495, 12)
+        Me.btnTilbake.Name = "btnTilbake"
+        Me.btnTilbake.Size = New System.Drawing.Size(58, 25)
+        Me.btnTilbake.TabIndex = 61
+        Me.btnTilbake.Text = "Tilbake"
+        Me.btnTilbake.UseVisualStyleBackColor = True
+        '
         'EgenErklaering8
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(564, 484)
+        Me.ClientSize = New System.Drawing.Size(565, 500)
+        Me.Controls.Add(Me.btnTilbake)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.CheckBox60)
         Me.Controls.Add(Me.CheckBox59)
         Me.Controls.Add(Me.CheckBox58)
@@ -274,6 +304,7 @@ Partial Class EgenErklaering8
         Me.Controls.Add(Me.CheckBox52)
         Me.Controls.Add(Me.CheckBox51)
         Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label8)
@@ -314,4 +345,7 @@ Partial Class EgenErklaering8
     Friend WithEvents CheckBox58 As CheckBox
     Friend WithEvents CheckBox59 As CheckBox
     Friend WithEvents CheckBox60 As CheckBox
+    Friend WithEvents Label12 As Label
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents btnTilbake As Button
 End Class
