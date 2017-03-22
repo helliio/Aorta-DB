@@ -4,6 +4,8 @@
         Me.Hide()
     End Sub
 
+    Dim timer As Integer = 0
+
     Private Sub BrukerHovedside_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim list As ArrayList = get_appointment_date(bruker.getPersonnr)
         Dim dt_list As New ArrayList
@@ -18,6 +20,7 @@
             Else
                 Dim i As String = item.ToString("HH.mm dd.MM.yyyy")
                 lblNesteTime.Text = i
+                timer += 1
             End If
         Next
 
@@ -38,22 +41,34 @@
     End Sub
 
     Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
-        TimeBestilling.Show()
-        Me.Hide()
+        If timer <> 1 Then
+            MsgBox("Du kan ikke ha mer enn en time")
+        Else
+            TimeBestilling.Show()
+            Me.Hide()
+        End If
     End Sub
 
     Private Sub btnAvbestill_Click(sender As Object, e As EventArgs) Handles btnAvbestill.Click
         Dim dato As String = lblNesteTime.Text
-        Dim result As Integer = MessageBox.Show("Er du sikker på at du vil avbestille timen ", "Avbestilling", MessageBoxButtons.YesNo)
-        If result = DialogResult.Yes Then
-            Dim list = Split(dato, " ")
+        If timer <> 1 Then
+            MsgBox("Du har ingen timer å avbestille")
+        Else
+            Dim result As Integer = MessageBox.Show("Er du sikker på at du vil avbestille timen ", "Avbestilling", MessageBoxButtons.YesNo)
+            If result = DialogResult.Yes Then
+                Dim list = Split(dato, " ")
 
-            cancel_appointment(bruker.getPersonnr, list(0), list(1))
+                cancel_appointment(bruker.getPersonnr, list(0), list(1))
+            End If
         End If
     End Sub
 
     Private Sub btnEgenerklæring_Click(sender As Object, e As EventArgs) Handles btnEgenerklæring.Click
-        EgenErklaering.Show()
-        Me.Hide()
+        If timer <> 1 Then
+            MsgBox("Du ha bestilt en time for å gjøre egenerklæringen")
+        Else
+            EgenErklaering.Show()
+            Me.Hide()
+        End If
     End Sub
 End Class
