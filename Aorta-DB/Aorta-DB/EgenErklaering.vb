@@ -42,32 +42,55 @@ Public Class EgenErklaering
         EgenErklaering8.clear()
     End Sub
     Public Sub clear()
-        CheckBox1.Checked = False
-        CheckBox2.Checked = False
-        CheckBox3.Checked = False
-        CheckBox4.Checked = False
-        CheckBox5.Checked = False
-        CheckBox6.Checked = False
-        CheckBox7.Checked = False
-        CheckBox8.Checked = False
-        CheckBox9.Checked = False
-        CheckBox10.Checked = False
-        CheckBox11.Checked = False
+        radbtnja1.Checked = False
+        radbtnja2.Checked = False
+        radbtnja3.Checked = False
+        radbtnja4.Checked = False
+        radbtnja5.Checked = False
+        radbtnja6.Checked = False
+        radbtnja7.Checked = False
+        radbtnja8.Checked = False
+        radbtnja9.Checked = False
+        radbtnja10.Checked = False
+        radbtnja11.Checked = False
+        radbtnnei1.Checked = True
+        radbtnnei2.Checked = True
+        radbtnnei3.Checked = True
+        radbtnnei4.Checked = True
+        radbtnnei5.Checked = True
+        radbtnnei6.Checked = True
+        radbtnnei7.Checked = True
+        radbtnnei8.Checked = True
+        radbtnnei9.Checked = True
+        radbtnnei10.Checked = True
+        radbtnnei11.Checked = True
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        erklaring.setAns(1, CheckBox1.Checked)
-        erklaring.setAns(2, CheckBox2.Checked)
-        erklaring.setAns(3, CheckBox3.Checked)
-        erklaring.setAns(4, CheckBox4.Checked)
-        erklaring.setAns(5, CheckBox5.Checked)
-        erklaring.setAns(6, CheckBox6.Checked)
-        erklaring.setAns(7, CheckBox7.Checked)
-        erklaring.setAns(8, CheckBox8.Checked)
-        erklaring.setAns(9, CheckBox9.Checked)
-        erklaring.setAns(10, CheckBox10.Checked)
-        erklaring.setAns(11, CheckBox11.Checked)
+        erklaring.setAns(1, radbtnja1.Checked)
+        erklaring.setAns(2, radbtnja2.Checked)
+        erklaring.setAns(3, radbtnja3.Checked)
+        erklaring.setAns(4, radbtnja4.Checked)
+        erklaring.setAns(5, radbtnja5.Checked)
+        erklaring.setAns(6, radbtnja6.Checked)
+        erklaring.setAns(7, radbtnja7.Checked)
+        erklaring.setAns(8, radbtnja8.Checked)
+        erklaring.setAns(9, radbtnja9.Checked)
+        erklaring.setAns(10, radbtnja10.Checked)
+        erklaring.setAns(11, radbtnja11.Checked)
         EgenErklaering2.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs) Handles GroupBox1.Enter
+
+    End Sub
+
+    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs)
+
     End Sub
 End Class
