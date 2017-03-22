@@ -50,6 +50,26 @@ Module DB_module
         close_db()
     End Sub
 
+    Public Sub create_erklaring(personnr As Decimal, date_id As Integer, inn As Array, land As String)
+        Dim sqlSporring = "INSERT INTO erklaring (pers, date_id"
+        For i As Integer = 1 To inn.Length
+            sqlSporring = sqlSporring & ", check" & i.ToString
+        Next
+        sqlSporring = sqlSporring & ", land) VALUES (@pers, @date_id"
+        For i As Integer = 1 To inn.Length
+            sqlSporring = sqlSporring & ", " & inn(i - 1).ToString
+        Next
+        sqlSporring = sqlSporring & ", @land)"
+        'Debug.Print(sqlSporring)
+        connect_db()
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@pers", personnr)
+        sql.Parameters.AddWithValue("@date_id", date_id)
+        sql.Parameters.AddWithValue("@land", land)
+        sql.ExecuteNonQuery()
+        close_db()
+    End Sub
+
     Public Sub create_appointment(user As Decimal, time As String, dates As String)
         connect_db()
         Dim sqlSporring = "INSERT INTO appointments (username, time, date) VALUES (@username, @time, @date)"
@@ -71,10 +91,10 @@ Module DB_module
             sql.Parameters.AddWithValue("@date", dates)
             sql.ExecuteNonQuery()
             close_db()
-            Debug.Print(user.ToString + time + dates)
+            'Debug.Print(user.ToString + time + dates)
         Catch
-            Debug.Print("oh no")
-            Debug.Print(user.ToString + time + dates)
+            'Debug.Print("oh no")
+            'Debug.Print(user.ToString + time + dates)
         End Try
     End Sub
 
@@ -82,6 +102,22 @@ Module DB_module
         Try
             connect_db()
             Dim sqlSporring = "SELECT username FROM appointments WHERE time = @time AND date = @date"
+            Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+            sql.Parameters.AddWithValue("@time", time)
+            sql.Parameters.AddWithValue("@date", dates)
+            Dim reader As MySqlDataReader = sql.ExecuteReader
+            reader.Read()
+            Return reader.Item(0)
+            close_db()
+        Catch
+            Return 0
+        End Try
+    End Function
+
+    Public Function get_appointment_id(time As String, dates As String)
+        Try
+            connect_db()
+            Dim sqlSporring = "SELECT id FROM appointments WHERE time = @time AND date = @date"
             Dim sql As New MySqlCommand(sqlSporring, tilkobling)
             sql.Parameters.AddWithValue("@time", time)
             sql.Parameters.AddWithValue("@date", dates)
@@ -125,6 +161,22 @@ Module DB_module
         Dim reader As MySqlDataReader = sql.ExecuteReader
         reader.Read()
         For i As Integer = 0 To 9
+            ret.Add(reader.Item(i).ToString())
+        Next
+        close_db()
+        Return ret
+    End Function
+
+    Public Function return_erklaring(persnr As Decimal, dato As Integer)
+        Dim ret As New ArrayList
+        connect_db()
+        Dim sqlSporring = "SELECT * FROM erklaring WHERE pers = @pers AND date_id = @date_id"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@pers", persnr)
+        sql.Parameters.AddWithValue("@date_id", dato)
+        Dim reader As MySqlDataReader = sql.ExecuteReader
+        reader.Read()
+        For i As Integer = 3 To 62
             ret.Add(reader.Item(i).ToString())
         Next
         close_db()
