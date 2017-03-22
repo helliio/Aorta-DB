@@ -7,4 +7,9 @@
         Me.type = type
         dato = erklaring.getDate()
     End Sub
+    Public Sub send()
+        Dim tmp = Split(dato, " ")
+        Dim id = CInt(get_appointment_id(tmp(0), tmp(1)))
+        'send code here
+    End Sub
 End Class
