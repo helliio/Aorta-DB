@@ -2,13 +2,15 @@
 
 Public Class EgenerklaeringLoggInn
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnLoggInn.Click
-        Debug.Print(login(TxtPersonnummer.Text, txtPassord.Text))
+        'Debug.Print(login(TxtPersonnummer.Text, txtPassord.Text))
         Dim id As Decimal = login(TxtPersonnummer.Text, txtPassord.Text)
         If id <> 0 Then
             Global_val.bruker = New User(id)
             If bruker.getUserType = 0 Then
                 EgenErklaering.Show()
                 Me.Hide()
+                TxtPersonnummer.Clear()
+                txtPassord.Clear()
             Else
                 MsgBox("Feil brukergruppe")
             End If

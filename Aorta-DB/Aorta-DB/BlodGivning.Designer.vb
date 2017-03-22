@@ -28,6 +28,7 @@ Partial Class BlodGivning
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnNeste = New System.Windows.Forms.Button()
         Me.btnTilbake = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'listboxEgenerklæring
@@ -35,13 +36,13 @@ Partial Class BlodGivning
         Me.listboxEgenerklæring.FormattingEnabled = True
         Me.listboxEgenerklæring.Location = New System.Drawing.Point(12, 32)
         Me.listboxEgenerklæring.Name = "listboxEgenerklæring"
-        Me.listboxEgenerklæring.Size = New System.Drawing.Size(681, 212)
+        Me.listboxEgenerklæring.Size = New System.Drawing.Size(790, 212)
         Me.listboxEgenerklæring.TabIndex = 0
         '
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(716, 32)
+        Me.ComboBox1.Location = New System.Drawing.Point(844, 36)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(67, 21)
         Me.ComboBox1.TabIndex = 1
@@ -49,7 +50,7 @@ Partial Class BlodGivning
         '
         'btnOppdater
         '
-        Me.btnOppdater.Location = New System.Drawing.Point(704, 217)
+        Me.btnOppdater.Location = New System.Drawing.Point(832, 221)
         Me.btnOppdater.Name = "btnOppdater"
         Me.btnOppdater.Size = New System.Drawing.Size(79, 23)
         Me.btnOppdater.TabIndex = 2
@@ -59,7 +60,7 @@ Partial Class BlodGivning
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(723, 16)
+        Me.Label1.Location = New System.Drawing.Point(851, 20)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(50, 13)
         Me.Label1.TabIndex = 3
@@ -67,7 +68,7 @@ Partial Class BlodGivning
         '
         'btnNeste
         '
-        Me.btnNeste.Location = New System.Drawing.Point(704, 137)
+        Me.btnNeste.Location = New System.Drawing.Point(832, 141)
         Me.btnNeste.Name = "btnNeste"
         Me.btnNeste.Size = New System.Drawing.Size(75, 23)
         Me.btnNeste.TabIndex = 4
@@ -83,11 +84,21 @@ Partial Class BlodGivning
         Me.btnTilbake.Text = "Tilbake"
         Me.btnTilbake.UseVisualStyleBackColor = True
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(104, 8)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "Label2"
+        '
         'BlodGivning
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(795, 261)
+        Me.ClientSize = New System.Drawing.Size(940, 261)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnTilbake)
         Me.Controls.Add(Me.btnNeste)
         Me.Controls.Add(Me.Label1)
@@ -107,4 +118,5 @@ Partial Class BlodGivning
     Friend WithEvents Label1 As Label
     Friend WithEvents btnNeste As Button
     Friend WithEvents btnTilbake As Button
+    Friend WithEvents Label2 As Label
 End Class

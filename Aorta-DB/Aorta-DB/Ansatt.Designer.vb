@@ -147,10 +147,11 @@ Partial Class Ansatt
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(27, 217)
+        Me.TextBox1.Location = New System.Drawing.Point(15, 217)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(114, 20)
         Me.TextBox1.TabIndex = 12
+        Me.TextBox1.Text = "11223344556"
         '
         'Ansatt
         '

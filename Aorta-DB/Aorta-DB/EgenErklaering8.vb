@@ -26,9 +26,7 @@ Public Class EgenErklaering8
         erklaring.setAns(58, CheckBox58.Checked)
         erklaring.setAns(59, CheckBox59.Checked)
         erklaring.setLand(TextBox1.Text)
-        For i As Integer = 0 To 58
-            Debug.Print(erklaring.getAns(i))
-        Next
+        erklaring.send()
     End Sub
     Private Sub send()
         EgenErklaering7.Close()
