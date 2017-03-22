@@ -28,7 +28,6 @@ Partial Class BrukerHovedside
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnBestill = New System.Windows.Forms.Button()
         Me.btnEgenerklæring = New System.Windows.Forms.Button()
-        Me.btnInfo = New System.Windows.Forms.Button()
         Me.btnLoggUt = New System.Windows.Forms.Button()
         Me.btnAvbestill = New System.Windows.Forms.Button()
         Me.lblNesteTime = New System.Windows.Forms.Label()
@@ -88,15 +87,6 @@ Partial Class BrukerHovedside
         Me.btnEgenerklæring.Text = "Egenerklæring"
         Me.btnEgenerklæring.UseVisualStyleBackColor = True
         '
-        'btnInfo
-        '
-        Me.btnInfo.Location = New System.Drawing.Point(300, 77)
-        Me.btnInfo.Name = "btnInfo"
-        Me.btnInfo.Size = New System.Drawing.Size(85, 44)
-        Me.btnInfo.TabIndex = 5
-        Me.btnInfo.Text = "btnInfo"
-        Me.btnInfo.UseVisualStyleBackColor = True
-        '
         'btnLoggUt
         '
         Me.btnLoggUt.Location = New System.Drawing.Point(324, 44)
@@ -131,7 +121,6 @@ Partial Class BrukerHovedside
         Me.Controls.Add(Me.lblNesteTime)
         Me.Controls.Add(Me.btnAvbestill)
         Me.Controls.Add(Me.btnLoggUt)
-        Me.Controls.Add(Me.btnInfo)
         Me.Controls.Add(Me.btnEgenerklæring)
         Me.Controls.Add(Me.btnBestill)
         Me.Controls.Add(Me.Label3)
@@ -151,7 +140,6 @@ Partial Class BrukerHovedside
     Friend WithEvents Label3 As Label
     Friend WithEvents btnBestill As Button
     Friend WithEvents btnEgenerklæring As Button
-    Friend WithEvents btnInfo As Button
     Friend WithEvents btnLoggUt As Button
     Friend WithEvents btnAvbestill As Button
     Friend WithEvents lblNesteTime As Label

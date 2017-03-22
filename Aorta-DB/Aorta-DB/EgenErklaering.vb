@@ -2,11 +2,13 @@
 
 Public Class EgenErklaering
     Private Sub EgenErklaering_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        End
+        BrukerHovedside.Show()
+        Me.Hide()
     End Sub
 
     Private Sub EgenErklaering_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Global_val.erklaring = New EgenErklaering_class(bruker.getPersonnr)
+        Dim timer = 0
         Dim list As ArrayList = get_appointment_date(bruker.getPersonnr)
         Dim dt_list As New ArrayList
         Dim d = DateTime.Now
@@ -18,8 +20,13 @@ Public Class EgenErklaering
                 Dim i As String = item.ToString("HH.mm dd.MM.yyyy")
                 Label14.Text = i
                 erklaring.setDate(i)
+                timer += 1
             End If
         Next
+        If timer <> 1 Then
+            MsgBox("Du har ingen time, bestill en time før du kan gjøre egenerklæringen")
+            Me.Close()
+        End If
     End Sub
 
     Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
