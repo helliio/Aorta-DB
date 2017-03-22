@@ -21,6 +21,9 @@
     Public Function getLand(inn As String)
         Return land(inn)
     End Function
+    Public Function getDate()
+        Return dato
+    End Function
     Public Sub setDate(str As String)
         'Debug.Print(str)
         dato = str

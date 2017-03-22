@@ -14,6 +14,8 @@
                 IktHovedside.Show()
                 Me.Hide()
             End If
+            TxtPersonnummer.Clear()
+            txtPassord.Clear()
         Else
             MsgBox("Ugyldig brukernavn eller passord")
         End If

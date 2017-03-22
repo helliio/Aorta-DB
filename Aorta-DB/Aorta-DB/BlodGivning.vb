@@ -130,9 +130,11 @@ Public Class BlodGivning
         If ComboBox1.Text = "Nei" Then
             Ansatt.Show()
             Me.Hide()
-        Else
+        ElseIf ComboBox1.Text = "Ja" Then
             BlodGivning2.Show()
             Me.Hide()
+        Else
+            MsgBox("Velg Godkjenning")
         End If
     End Sub
 
