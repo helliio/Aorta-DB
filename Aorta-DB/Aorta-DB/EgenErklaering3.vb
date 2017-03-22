@@ -15,29 +15,39 @@ Public Class EgenErklaering3
 
     End Sub
     Public Sub clear()
-        CheckBox19.Checked = False
-        CheckBox20.Checked = False
-        CheckBox21.Checked = False
-        CheckBox22.Checked = False
-        CheckBox23.Checked = False
-        CheckBox24.Checked = False
-        CheckBox25.Checked = False
-        CheckBox26.Checked = False
-        CheckBox27.Checked = False
-        CheckBox28.Checked = False
+        radbtnja19.Checked = False
+        radbtnja20.Checked = False
+        radbtnja21.Checked = False
+        radbtnja22.Checked = False
+        radbtnja23.Checked = False
+        radbtnja24.Checked = False
+        radbtnja25.Checked = False
+        radbtnja26.Checked = False
+        radbtnja27.Checked = False
+        radbtnja28.Checked = False
+        radbtnnei19.Checked = True
+        radbtnnei20.Checked = True
+        radbtnnei21.Checked = True
+        radbtnnei22.Checked = True
+        radbtnnei23.Checked = True
+        radbtnnei24.Checked = True
+        radbtnnei25.Checked = True
+        radbtnnei26.Checked = True
+        radbtnnei27.Checked = True
+        radbtnnei28.Checked = True
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        erklaring.setAns(19, CheckBox19.Checked)
-        erklaring.setAns(20, CheckBox20.Checked)
-        erklaring.setAns(21, CheckBox21.Checked)
-        erklaring.setAns(22, CheckBox22.Checked)
-        erklaring.setAns(23, CheckBox22.Checked)
-        erklaring.setAns(24, CheckBox23.Checked)
-        erklaring.setAns(25, CheckBox24.Checked)
-        erklaring.setAns(26, CheckBox25.Checked)
-        erklaring.setAns(27, CheckBox26.Checked)
-        erklaring.setAns(28, CheckBox27.Checked)
+        erklaring.setAns(19, radbtnja19.Checked)
+        erklaring.setAns(20, radbtnja20.Checked)
+        erklaring.setAns(21, radbtnja21.Checked)
+        erklaring.setAns(22, radbtnja22.Checked)
+        erklaring.setAns(23, radbtnja23.Checked)
+        erklaring.setAns(24, radbtnja24.Checked)
+        erklaring.setAns(25, radbtnja25.Checked)
+        erklaring.setAns(26, radbtnja26.Checked)
+        erklaring.setAns(27, radbtnja27.Checked)
+        erklaring.setAns(28, radbtnja28.Checked)
         EgenErklaering4.Show()
         Me.Hide()
     End Sub

@@ -15,16 +15,16 @@ Public Class EgenErklaering8
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        erklaring.setAns(50, CheckBox50.Checked)
-        erklaring.setAns(51, CheckBox51.Checked)
-        erklaring.setAns(52, CheckBox52.Checked)
-        erklaring.setAns(53, CheckBox53.Checked)
-        erklaring.setAns(54, CheckBox54.Checked)
-        erklaring.setAns(55, CheckBox55.Checked)
-        erklaring.setAns(56, CheckBox56.Checked)
-        erklaring.setAns(57, CheckBox57.Checked)
-        erklaring.setAns(58, CheckBox58.Checked)
-        erklaring.setAns(59, CheckBox59.Checked)
+        erklaring.setAns(50, radbtnja50.Checked)
+        erklaring.setAns(51, radbtnja51.Checked)
+        erklaring.setAns(52, radbtnja52.Checked)
+        erklaring.setAns(53, radbtnja53.Checked)
+        erklaring.setAns(54, radbtnja54.Checked)
+        erklaring.setAns(55, radbtnja55.Checked)
+        erklaring.setAns(56, radbtnja56.Checked)
+        erklaring.setAns(57, radbtnja57.Checked)
+        erklaring.setAns(58, radbtnja58.Checked)
+        erklaring.setAns(59, radbtnja59.Checked)
         erklaring.setLand(TextBox1.Text)
         erklaring.send()
     End Sub
@@ -32,16 +32,26 @@ Public Class EgenErklaering8
         EgenErklaering7.Close()
     End Sub
     Public Sub clear()
-        CheckBox50.Checked = False
-        CheckBox51.Checked = False
-        CheckBox52.Checked = False
-        CheckBox53.Checked = False
-        CheckBox54.Checked = False
-        CheckBox55.Checked = False
-        CheckBox56.Checked = False
-        CheckBox57.Checked = False
-        CheckBox58.Checked = False
-        CheckBox59.Checked = False
+        radbtnja50.Checked = False
+        radbtnja51.Checked = False
+        radbtnja52.Checked = False
+        radbtnja53.Checked = False
+        radbtnja54.Checked = False
+        radbtnja55.Checked = False
+        radbtnja56.Checked = False
+        radbtnja57.Checked = False
+        radbtnja58.Checked = False
+        radbtnja59.Checked = False
+        radbtnnei50.Checked = True
+        radbtnnei51.Checked = True
+        radbtnnei52.Checked = True
+        radbtnnei53.Checked = True
+        radbtnnei54.Checked = True
+        radbtnnei55.Checked = True
+        radbtnnei56.Checked = True
+        radbtnnei57.Checked = True
+        radbtnnei58.Checked = True
+        radbtnnei59.Checked = True
         TextBox1.Text = ""
     End Sub
 End Class
