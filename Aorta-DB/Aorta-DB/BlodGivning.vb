@@ -1,4 +1,6 @@
-﻿Public Class BlodGivning
+﻿Imports System.ComponentModel
+
+Public Class BlodGivning
     Dim liste As New ArrayList
     Private Sub BlodGivning_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox1.Items.Add("Ja")
@@ -99,24 +101,29 @@
         liste.Add("- Har du deltatt i medikamentforsøk de siste 12 måneder?") '65'58
         liste.Add("- Jeg samtykker i at mitt plasma føres ut av Norge for legemiddelproduksjon.") '66'59
         liste.Add("- I hvilke(t) land er du født og oppvokst?") '67'60
-        Dim svar = erklaring.get_ans_db()
-        Dim counter As Integer = 0
-        For i As Integer = 0 To liste.Count - 1
-            If i <> 0 And i <> 7 And i <> 13 And i <> 31 And i <> 33 And i <> 49 And i <> 54 And i <> 56 Then
-                'Debug.Print(svar(counter))
-                If counter = 59 Then
-                    liste(i) = liste(i) & " : " & svar(counter)
-                ElseIf svar(counter) Then
-                    liste(i) = liste(i) & " : ja"
-                Else
-                    liste(i) = liste(i) & " : nei"
+        Try
+            Dim svar = erklaring.get_ans_db()
+            Dim counter As Integer = 0
+            For i As Integer = 0 To liste.Count - 1
+                If i <> 0 And i <> 7 And i <> 13 And i <> 31 And i <> 33 And i <> 49 And i <> 54 And i <> 56 Then
+                    'Debug.Print(svar(counter))
+                    If counter = 59 Then
+                        liste(i) = liste(i) & " : " & svar(counter)
+                    ElseIf svar(counter) Then
+                        liste(i) = liste(i) & " : ja"
+                    Else
+                        liste(i) = liste(i) & " : nei"
+                    End If
+                    counter += 1
                 End If
-                counter += 1
-            End If
-        Next
-        For Each item As String In liste
-            listboxEgenerklæring.Items.Add(item)
-        Next
+            Next
+            For Each item As String In liste
+                listboxEgenerklæring.Items.Add(item)
+            Next
+        Catch ex As Exception
+            listboxEgenerklæring.Items.Clear()
+            listboxEgenerklæring.Items.Add("Egen Erklaering finnes ikke")
+        End Try
     End Sub
 
     Private Sub btnNeste_Click(sender As Object, e As EventArgs) Handles btnNeste.Click
@@ -131,5 +138,14 @@
 
     Private Sub btnOppdater_Click(sender As Object, e As EventArgs) Handles btnOppdater.Click
         get_erklaring()
+    End Sub
+
+    Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
+        Close()
+    End Sub
+
+    Private Sub BlodGivning_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        Ansatt.Show()
+        listboxEgenerklæring.Items.Clear()
     End Sub
 End Class
