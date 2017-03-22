@@ -35,19 +35,49 @@ Partial Class EgenErklaering8
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.CheckBox50 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox51 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox52 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox53 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox54 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox55 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox56 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox57 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox58 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox59 = New System.Windows.Forms.CheckBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.btnTilbake = New System.Windows.Forms.Button()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei50 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja50 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei51 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja51 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei52 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja52 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei53 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja53 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei54 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja54 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei55 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja55 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei56 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja56 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei57 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja57 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei58 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja58 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox10 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei59 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja59 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox4.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
+        Me.GroupBox6.SuspendLayout()
+        Me.GroupBox7.SuspendLayout()
+        Me.GroupBox8.SuspendLayout()
+        Me.GroupBox9.SuspendLayout()
+        Me.GroupBox10.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -161,106 +191,6 @@ Partial Class EgenErklaering8
         Me.Button1.Text = "Fullfør"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'CheckBox50
-        '
-        Me.CheckBox50.AutoSize = True
-        Me.CheckBox50.Location = New System.Drawing.Point(272, 49)
-        Me.CheckBox50.Name = "CheckBox50"
-        Me.CheckBox50.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox50.TabIndex = 50
-        Me.CheckBox50.Text = "Ja"
-        Me.CheckBox50.UseVisualStyleBackColor = True
-        '
-        'CheckBox51
-        '
-        Me.CheckBox51.AutoSize = True
-        Me.CheckBox51.Location = New System.Drawing.Point(260, 90)
-        Me.CheckBox51.Name = "CheckBox51"
-        Me.CheckBox51.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox51.TabIndex = 51
-        Me.CheckBox51.Text = "Ja"
-        Me.CheckBox51.UseVisualStyleBackColor = True
-        '
-        'CheckBox52
-        '
-        Me.CheckBox52.AutoSize = True
-        Me.CheckBox52.Location = New System.Drawing.Point(267, 117)
-        Me.CheckBox52.Name = "CheckBox52"
-        Me.CheckBox52.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox52.TabIndex = 52
-        Me.CheckBox52.Text = "Ja"
-        Me.CheckBox52.UseVisualStyleBackColor = True
-        '
-        'CheckBox53
-        '
-        Me.CheckBox53.AutoSize = True
-        Me.CheckBox53.Location = New System.Drawing.Point(360, 157)
-        Me.CheckBox53.Name = "CheckBox53"
-        Me.CheckBox53.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox53.TabIndex = 53
-        Me.CheckBox53.Text = "Ja"
-        Me.CheckBox53.UseVisualStyleBackColor = True
-        '
-        'CheckBox54
-        '
-        Me.CheckBox54.AutoSize = True
-        Me.CheckBox54.Location = New System.Drawing.Point(274, 207)
-        Me.CheckBox54.Name = "CheckBox54"
-        Me.CheckBox54.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox54.TabIndex = 54
-        Me.CheckBox54.Text = "Ja"
-        Me.CheckBox54.UseVisualStyleBackColor = True
-        '
-        'CheckBox55
-        '
-        Me.CheckBox55.AutoSize = True
-        Me.CheckBox55.Location = New System.Drawing.Point(250, 238)
-        Me.CheckBox55.Name = "CheckBox55"
-        Me.CheckBox55.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox55.TabIndex = 55
-        Me.CheckBox55.Text = "Ja"
-        Me.CheckBox55.UseVisualStyleBackColor = True
-        '
-        'CheckBox56
-        '
-        Me.CheckBox56.AutoSize = True
-        Me.CheckBox56.Location = New System.Drawing.Point(244, 277)
-        Me.CheckBox56.Name = "CheckBox56"
-        Me.CheckBox56.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox56.TabIndex = 56
-        Me.CheckBox56.Text = "Ja"
-        Me.CheckBox56.UseVisualStyleBackColor = True
-        '
-        'CheckBox57
-        '
-        Me.CheckBox57.AutoSize = True
-        Me.CheckBox57.Location = New System.Drawing.Point(295, 342)
-        Me.CheckBox57.Name = "CheckBox57"
-        Me.CheckBox57.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox57.TabIndex = 57
-        Me.CheckBox57.Text = "Ja"
-        Me.CheckBox57.UseVisualStyleBackColor = True
-        '
-        'CheckBox58
-        '
-        Me.CheckBox58.AutoSize = True
-        Me.CheckBox58.Location = New System.Drawing.Point(250, 386)
-        Me.CheckBox58.Name = "CheckBox58"
-        Me.CheckBox58.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox58.TabIndex = 58
-        Me.CheckBox58.Text = "Ja"
-        Me.CheckBox58.UseVisualStyleBackColor = True
-        '
-        'CheckBox59
-        '
-        Me.CheckBox59.AutoSize = True
-        Me.CheckBox59.Location = New System.Drawing.Point(383, 427)
-        Me.CheckBox59.Name = "CheckBox59"
-        Me.CheckBox59.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox59.TabIndex = 59
-        Me.CheckBox59.Text = "Ja"
-        Me.CheckBox59.UseVisualStyleBackColor = True
-        '
         'Label12
         '
         Me.Label12.AutoSize = True
@@ -286,23 +216,403 @@ Partial Class EgenErklaering8
         Me.btnTilbake.Text = "Tilbake"
         Me.btnTilbake.UseVisualStyleBackColor = True
         '
+        'GroupBox4
+        '
+        Me.GroupBox4.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox4.Controls.Add(Me.radbtnnei50)
+        Me.GroupBox4.Controls.Add(Me.radbtnja50)
+        Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox4.Location = New System.Drawing.Point(281, 41)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox4.Size = New System.Drawing.Size(143, 26)
+        Me.GroupBox4.TabIndex = 76
+        Me.GroupBox4.TabStop = False
+        '
+        'radbtnnei50
+        '
+        Me.radbtnnei50.AutoSize = True
+        Me.radbtnnei50.Checked = True
+        Me.radbtnnei50.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnnei50.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei50.Name = "radbtnnei50"
+        Me.radbtnnei50.Size = New System.Drawing.Size(40, 17)
+        Me.radbtnnei50.TabIndex = 66
+        Me.radbtnnei50.TabStop = True
+        Me.radbtnnei50.Text = "Nei"
+        Me.radbtnnei50.UseVisualStyleBackColor = True
+        '
+        'radbtnja50
+        '
+        Me.radbtnja50.AutoSize = True
+        Me.radbtnja50.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnja50.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja50.Name = "radbtnja50"
+        Me.radbtnja50.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja50.TabIndex = 65
+        Me.radbtnja50.Text = "Ja"
+        Me.radbtnja50.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.radbtnnei51)
+        Me.GroupBox1.Controls.Add(Me.radbtnja51)
+        Me.GroupBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(266, 81)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox1.Size = New System.Drawing.Size(143, 26)
+        Me.GroupBox1.TabIndex = 77
+        Me.GroupBox1.TabStop = False
+        '
+        'radbtnnei51
+        '
+        Me.radbtnnei51.AutoSize = True
+        Me.radbtnnei51.Checked = True
+        Me.radbtnnei51.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnnei51.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei51.Name = "radbtnnei51"
+        Me.radbtnnei51.Size = New System.Drawing.Size(40, 17)
+        Me.radbtnnei51.TabIndex = 66
+        Me.radbtnnei51.TabStop = True
+        Me.radbtnnei51.Text = "Nei"
+        Me.radbtnnei51.UseVisualStyleBackColor = True
+        '
+        'radbtnja51
+        '
+        Me.radbtnja51.AutoSize = True
+        Me.radbtnja51.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnja51.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja51.Name = "radbtnja51"
+        Me.radbtnja51.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja51.TabIndex = 65
+        Me.radbtnja51.Text = "Ja"
+        Me.radbtnja51.UseVisualStyleBackColor = True
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox2.Controls.Add(Me.radbtnnei52)
+        Me.GroupBox2.Controls.Add(Me.radbtnja52)
+        Me.GroupBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox2.Location = New System.Drawing.Point(270, 117)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox2.Size = New System.Drawing.Size(143, 26)
+        Me.GroupBox2.TabIndex = 78
+        Me.GroupBox2.TabStop = False
+        '
+        'radbtnnei52
+        '
+        Me.radbtnnei52.AutoSize = True
+        Me.radbtnnei52.Checked = True
+        Me.radbtnnei52.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnnei52.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei52.Name = "radbtnnei52"
+        Me.radbtnnei52.Size = New System.Drawing.Size(40, 17)
+        Me.radbtnnei52.TabIndex = 66
+        Me.radbtnnei52.TabStop = True
+        Me.radbtnnei52.Text = "Nei"
+        Me.radbtnnei52.UseVisualStyleBackColor = True
+        '
+        'radbtnja52
+        '
+        Me.radbtnja52.AutoSize = True
+        Me.radbtnja52.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnja52.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja52.Name = "radbtnja52"
+        Me.radbtnja52.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja52.TabIndex = 65
+        Me.radbtnja52.Text = "Ja"
+        Me.radbtnja52.UseVisualStyleBackColor = True
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox3.Controls.Add(Me.radbtnnei53)
+        Me.GroupBox3.Controls.Add(Me.radbtnja53)
+        Me.GroupBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox3.Location = New System.Drawing.Point(358, 157)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox3.Size = New System.Drawing.Size(143, 26)
+        Me.GroupBox3.TabIndex = 79
+        Me.GroupBox3.TabStop = False
+        '
+        'radbtnnei53
+        '
+        Me.radbtnnei53.AutoSize = True
+        Me.radbtnnei53.Checked = True
+        Me.radbtnnei53.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnnei53.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei53.Name = "radbtnnei53"
+        Me.radbtnnei53.Size = New System.Drawing.Size(40, 17)
+        Me.radbtnnei53.TabIndex = 66
+        Me.radbtnnei53.TabStop = True
+        Me.radbtnnei53.Text = "Nei"
+        Me.radbtnnei53.UseVisualStyleBackColor = True
+        '
+        'radbtnja53
+        '
+        Me.radbtnja53.AutoSize = True
+        Me.radbtnja53.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnja53.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja53.Name = "radbtnja53"
+        Me.radbtnja53.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja53.TabIndex = 65
+        Me.radbtnja53.Text = "Ja"
+        Me.radbtnja53.UseVisualStyleBackColor = True
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox5.Controls.Add(Me.radbtnnei54)
+        Me.GroupBox5.Controls.Add(Me.radbtnja54)
+        Me.GroupBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox5.Location = New System.Drawing.Point(285, 198)
+        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox5.Size = New System.Drawing.Size(143, 26)
+        Me.GroupBox5.TabIndex = 80
+        Me.GroupBox5.TabStop = False
+        '
+        'radbtnnei54
+        '
+        Me.radbtnnei54.AutoSize = True
+        Me.radbtnnei54.Checked = True
+        Me.radbtnnei54.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnnei54.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei54.Name = "radbtnnei54"
+        Me.radbtnnei54.Size = New System.Drawing.Size(40, 17)
+        Me.radbtnnei54.TabIndex = 66
+        Me.radbtnnei54.TabStop = True
+        Me.radbtnnei54.Text = "Nei"
+        Me.radbtnnei54.UseVisualStyleBackColor = True
+        '
+        'radbtnja54
+        '
+        Me.radbtnja54.AutoSize = True
+        Me.radbtnja54.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnja54.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja54.Name = "radbtnja54"
+        Me.radbtnja54.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja54.TabIndex = 65
+        Me.radbtnja54.Text = "Ja"
+        Me.radbtnja54.UseVisualStyleBackColor = True
+        '
+        'GroupBox6
+        '
+        Me.GroupBox6.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox6.Controls.Add(Me.radbtnnei55)
+        Me.GroupBox6.Controls.Add(Me.radbtnja55)
+        Me.GroupBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox6.Location = New System.Drawing.Point(255, 238)
+        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox6.Size = New System.Drawing.Size(143, 26)
+        Me.GroupBox6.TabIndex = 81
+        Me.GroupBox6.TabStop = False
+        '
+        'radbtnnei55
+        '
+        Me.radbtnnei55.AutoSize = True
+        Me.radbtnnei55.Checked = True
+        Me.radbtnnei55.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnnei55.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei55.Name = "radbtnnei55"
+        Me.radbtnnei55.Size = New System.Drawing.Size(40, 17)
+        Me.radbtnnei55.TabIndex = 66
+        Me.radbtnnei55.TabStop = True
+        Me.radbtnnei55.Text = "Nei"
+        Me.radbtnnei55.UseVisualStyleBackColor = True
+        '
+        'radbtnja55
+        '
+        Me.radbtnja55.AutoSize = True
+        Me.radbtnja55.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnja55.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja55.Name = "radbtnja55"
+        Me.radbtnja55.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja55.TabIndex = 65
+        Me.radbtnja55.Text = "Ja"
+        Me.radbtnja55.UseVisualStyleBackColor = True
+        '
+        'GroupBox7
+        '
+        Me.GroupBox7.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox7.Controls.Add(Me.radbtnnei56)
+        Me.GroupBox7.Controls.Add(Me.radbtnja56)
+        Me.GroupBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox7.Location = New System.Drawing.Point(255, 278)
+        Me.GroupBox7.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox7.Name = "GroupBox7"
+        Me.GroupBox7.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox7.Size = New System.Drawing.Size(143, 26)
+        Me.GroupBox7.TabIndex = 82
+        Me.GroupBox7.TabStop = False
+        '
+        'radbtnnei56
+        '
+        Me.radbtnnei56.AutoSize = True
+        Me.radbtnnei56.Checked = True
+        Me.radbtnnei56.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnnei56.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei56.Name = "radbtnnei56"
+        Me.radbtnnei56.Size = New System.Drawing.Size(40, 17)
+        Me.radbtnnei56.TabIndex = 66
+        Me.radbtnnei56.TabStop = True
+        Me.radbtnnei56.Text = "Nei"
+        Me.radbtnnei56.UseVisualStyleBackColor = True
+        '
+        'radbtnja56
+        '
+        Me.radbtnja56.AutoSize = True
+        Me.radbtnja56.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnja56.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja56.Name = "radbtnja56"
+        Me.radbtnja56.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja56.TabIndex = 65
+        Me.radbtnja56.Text = "Ja"
+        Me.radbtnja56.UseVisualStyleBackColor = True
+        '
+        'GroupBox8
+        '
+        Me.GroupBox8.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox8.Controls.Add(Me.radbtnnei57)
+        Me.GroupBox8.Controls.Add(Me.radbtnja57)
+        Me.GroupBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox8.Location = New System.Drawing.Point(334, 335)
+        Me.GroupBox8.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox8.Name = "GroupBox8"
+        Me.GroupBox8.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox8.Size = New System.Drawing.Size(143, 26)
+        Me.GroupBox8.TabIndex = 83
+        Me.GroupBox8.TabStop = False
+        '
+        'radbtnnei57
+        '
+        Me.radbtnnei57.AutoSize = True
+        Me.radbtnnei57.Checked = True
+        Me.radbtnnei57.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnnei57.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei57.Name = "radbtnnei57"
+        Me.radbtnnei57.Size = New System.Drawing.Size(40, 17)
+        Me.radbtnnei57.TabIndex = 66
+        Me.radbtnnei57.TabStop = True
+        Me.radbtnnei57.Text = "Nei"
+        Me.radbtnnei57.UseVisualStyleBackColor = True
+        '
+        'radbtnja57
+        '
+        Me.radbtnja57.AutoSize = True
+        Me.radbtnja57.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnja57.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja57.Name = "radbtnja57"
+        Me.radbtnja57.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja57.TabIndex = 65
+        Me.radbtnja57.Text = "Ja"
+        Me.radbtnja57.UseVisualStyleBackColor = True
+        '
+        'GroupBox9
+        '
+        Me.GroupBox9.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox9.Controls.Add(Me.radbtnnei58)
+        Me.GroupBox9.Controls.Add(Me.radbtnja58)
+        Me.GroupBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox9.Location = New System.Drawing.Point(274, 386)
+        Me.GroupBox9.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox9.Name = "GroupBox9"
+        Me.GroupBox9.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox9.Size = New System.Drawing.Size(143, 26)
+        Me.GroupBox9.TabIndex = 84
+        Me.GroupBox9.TabStop = False
+        '
+        'radbtnnei58
+        '
+        Me.radbtnnei58.AutoSize = True
+        Me.radbtnnei58.Checked = True
+        Me.radbtnnei58.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnnei58.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei58.Name = "radbtnnei58"
+        Me.radbtnnei58.Size = New System.Drawing.Size(40, 17)
+        Me.radbtnnei58.TabIndex = 66
+        Me.radbtnnei58.TabStop = True
+        Me.radbtnnei58.Text = "Nei"
+        Me.radbtnnei58.UseVisualStyleBackColor = True
+        '
+        'radbtnja58
+        '
+        Me.radbtnja58.AutoSize = True
+        Me.radbtnja58.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnja58.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja58.Name = "radbtnja58"
+        Me.radbtnja58.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja58.TabIndex = 65
+        Me.radbtnja58.Text = "Ja"
+        Me.radbtnja58.UseVisualStyleBackColor = True
+        '
+        'GroupBox10
+        '
+        Me.GroupBox10.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox10.Controls.Add(Me.radbtnnei59)
+        Me.GroupBox10.Controls.Add(Me.radbtnja59)
+        Me.GroupBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox10.Location = New System.Drawing.Point(399, 414)
+        Me.GroupBox10.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox10.Name = "GroupBox10"
+        Me.GroupBox10.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox10.Size = New System.Drawing.Size(143, 26)
+        Me.GroupBox10.TabIndex = 76
+        Me.GroupBox10.TabStop = False
+        '
+        'radbtnnei59
+        '
+        Me.radbtnnei59.AutoSize = True
+        Me.radbtnnei59.Checked = True
+        Me.radbtnnei59.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnnei59.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei59.Name = "radbtnnei59"
+        Me.radbtnnei59.Size = New System.Drawing.Size(40, 17)
+        Me.radbtnnei59.TabIndex = 66
+        Me.radbtnnei59.TabStop = True
+        Me.radbtnnei59.Text = "Nei"
+        Me.radbtnnei59.UseVisualStyleBackColor = True
+        '
+        'radbtnja59
+        '
+        Me.radbtnja59.AutoSize = True
+        Me.radbtnja59.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.25!)
+        Me.radbtnja59.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja59.Name = "radbtnja59"
+        Me.radbtnja59.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja59.TabIndex = 65
+        Me.radbtnja59.Text = "Ja"
+        Me.radbtnja59.UseVisualStyleBackColor = True
+        '
         'EgenErklaering8
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(565, 500)
+        Me.Controls.Add(Me.GroupBox10)
+        Me.Controls.Add(Me.GroupBox9)
+        Me.Controls.Add(Me.GroupBox8)
+        Me.Controls.Add(Me.GroupBox7)
+        Me.Controls.Add(Me.GroupBox6)
+        Me.Controls.Add(Me.GroupBox5)
+        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.btnTilbake)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.CheckBox59)
-        Me.Controls.Add(Me.CheckBox58)
-        Me.Controls.Add(Me.CheckBox57)
-        Me.Controls.Add(Me.CheckBox56)
-        Me.Controls.Add(Me.CheckBox55)
-        Me.Controls.Add(Me.CheckBox54)
-        Me.Controls.Add(Me.CheckBox53)
-        Me.Controls.Add(Me.CheckBox52)
-        Me.Controls.Add(Me.CheckBox51)
-        Me.Controls.Add(Me.CheckBox50)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
@@ -318,6 +628,26 @@ Partial Class EgenErklaering8
         Me.Controls.Add(Me.Label1)
         Me.Name = "EgenErklaering8"
         Me.Text = "EgenErklaering8"
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
+        Me.GroupBox6.ResumeLayout(False)
+        Me.GroupBox6.PerformLayout()
+        Me.GroupBox7.ResumeLayout(False)
+        Me.GroupBox7.PerformLayout()
+        Me.GroupBox8.ResumeLayout(False)
+        Me.GroupBox8.PerformLayout()
+        Me.GroupBox9.ResumeLayout(False)
+        Me.GroupBox9.PerformLayout()
+        Me.GroupBox10.ResumeLayout(False)
+        Me.GroupBox10.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -335,17 +665,37 @@ Partial Class EgenErklaering8
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents CheckBox50 As CheckBox
-    Friend WithEvents CheckBox51 As CheckBox
-    Friend WithEvents CheckBox52 As CheckBox
-    Friend WithEvents CheckBox53 As CheckBox
-    Friend WithEvents CheckBox54 As CheckBox
-    Friend WithEvents CheckBox55 As CheckBox
-    Friend WithEvents CheckBox56 As CheckBox
-    Friend WithEvents CheckBox57 As CheckBox
-    Friend WithEvents CheckBox58 As CheckBox
-    Friend WithEvents CheckBox59 As CheckBox
     Friend WithEvents Label12 As Label
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents btnTilbake As Button
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents radbtnnei50 As RadioButton
+    Friend WithEvents radbtnja50 As RadioButton
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents radbtnnei51 As RadioButton
+    Friend WithEvents radbtnja51 As RadioButton
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents radbtnnei52 As RadioButton
+    Friend WithEvents radbtnja52 As RadioButton
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents radbtnnei53 As RadioButton
+    Friend WithEvents radbtnja53 As RadioButton
+    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents radbtnnei54 As RadioButton
+    Friend WithEvents radbtnja54 As RadioButton
+    Friend WithEvents GroupBox6 As GroupBox
+    Friend WithEvents radbtnnei55 As RadioButton
+    Friend WithEvents radbtnja55 As RadioButton
+    Friend WithEvents GroupBox7 As GroupBox
+    Friend WithEvents radbtnnei56 As RadioButton
+    Friend WithEvents radbtnja56 As RadioButton
+    Friend WithEvents GroupBox8 As GroupBox
+    Friend WithEvents radbtnnei57 As RadioButton
+    Friend WithEvents radbtnja57 As RadioButton
+    Friend WithEvents GroupBox9 As GroupBox
+    Friend WithEvents radbtnnei58 As RadioButton
+    Friend WithEvents radbtnja58 As RadioButton
+    Friend WithEvents GroupBox10 As GroupBox
+    Friend WithEvents radbtnnei59 As RadioButton
+    Friend WithEvents radbtnja59 As RadioButton
 End Class

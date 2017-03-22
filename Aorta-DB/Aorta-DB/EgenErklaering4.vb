@@ -14,11 +14,12 @@ Public Class EgenErklaering4
 
     End Sub
     Public Sub clear()
-        CheckBox29.Checked = False
+        radbtnja29.Checked = False
+        radbtnnei29.Checked = True
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        erklaring.setAns(29, CheckBox29.Checked)
+        erklaring.setAns(29, radbtnja29.Checked)
         EgenErklaering5.Show()
         Me.Hide()
     End Sub
