@@ -79,6 +79,7 @@
     <Compile Include="AnsattBrukerOversikt.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Blod_pakke.vb" />
     <Compile Include="BlodGivning.Designer.vb">
       <DependentUpon>BlodGivning.vb</DependentUpon>
     </Compile>
