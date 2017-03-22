@@ -60,7 +60,7 @@ Partial Class BlodGivning2
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Send"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'BlodGivning2

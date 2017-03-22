@@ -1,4 +1,8 @@
 ﻿Public Class BlodGivning2
+    Private Sub BlodGivning2_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        Ansatt.Show()
+    End Sub
+
     Private Sub BlodGivning2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox1.Items.Add("O+")
         ComboBox1.Items.Add("O-")
@@ -14,7 +18,8 @@
         If ComboBox1.Text = "Blodtype" Then
             MsgBox("velg type")
         Else
-
+            blod = New Blod_pakke(giver_id, ComboBox1.Text, TextBox1.Text)
+            Close()
         End If
     End Sub
 End Class
