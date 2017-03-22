@@ -9,6 +9,8 @@ Public Class EgenerklaeringLoggInn
             If bruker.getUserType = 0 Then
                 EgenErklaering.Show()
                 Me.Hide()
+                TxtPersonnummer.Clear()
+                txtPassord.Clear()
             Else
                 MsgBox("Feil brukergruppe")
             End If
