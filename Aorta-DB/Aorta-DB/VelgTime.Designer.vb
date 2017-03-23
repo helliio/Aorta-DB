@@ -22,6 +22,7 @@ Partial Class VelgTime
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(VelgTime))
         Me.listboxTimer = New System.Windows.Forms.ListBox()
         Me.btnTilbake = New System.Windows.Forms.Button()
         Me.btnVelgTime = New System.Windows.Forms.Button()
@@ -61,6 +62,7 @@ Partial Class VelgTime
         Me.Controls.Add(Me.btnVelgTime)
         Me.Controls.Add(Me.btnTilbake)
         Me.Controls.Add(Me.listboxTimer)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "VelgTime"
         Me.Text = "VelgTime"
         Me.ResumeLayout(False)

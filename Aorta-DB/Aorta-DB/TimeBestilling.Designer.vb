@@ -22,6 +22,7 @@ Partial Class TimeBestilling
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TimeBestilling))
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.btnBestill = New System.Windows.Forms.Button()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
@@ -113,6 +114,7 @@ Partial Class TimeBestilling
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.btnBestill)
         Me.Controls.Add(Me.DateTimePicker1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "TimeBestilling"
         Me.Text = "TimeBestilling"
         Me.ResumeLayout(False)

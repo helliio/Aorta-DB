@@ -22,6 +22,7 @@ Partial Class AnsattBrukerOversikt
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AnsattBrukerOversikt))
         Me.lblBruker = New System.Windows.Forms.Label()
         Me.lblNesteTime = New System.Windows.Forms.Label()
         Me.lblNesteGivning = New System.Windows.Forms.Label()
@@ -170,6 +171,7 @@ Partial Class AnsattBrukerOversikt
         Me.Controls.Add(Me.listboxGivinger)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblBruker)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "AnsattBrukerOversikt"
         Me.Text = "AnsattBrukerOversikt"
         Me.ResumeLayout(False)

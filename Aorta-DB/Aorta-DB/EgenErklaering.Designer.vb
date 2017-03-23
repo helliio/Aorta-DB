@@ -209,7 +209,7 @@ Partial Class EgenErklaering
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.25!)
-        Me.Label13.Location = New System.Drawing.Point(12, 27)
+        Me.Label13.Location = New System.Drawing.Point(11, 22)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(138, 20)
         Me.Label13.TabIndex = 12

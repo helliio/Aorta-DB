@@ -22,6 +22,7 @@ Partial Class IktHovedside
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(IktHovedside))
         Me.btnNyAnsatt = New System.Windows.Forms.Button()
         Me.btnStatestikk = New System.Windows.Forms.Button()
         Me.btnLoggUt = New System.Windows.Forms.Button()
@@ -62,6 +63,7 @@ Partial Class IktHovedside
         Me.Controls.Add(Me.btnLoggUt)
         Me.Controls.Add(Me.btnStatestikk)
         Me.Controls.Add(Me.btnNyAnsatt)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "IktHovedside"
         Me.Text = "IktHovedside"
         Me.ResumeLayout(False)
