@@ -33,6 +33,8 @@ Partial Class AnsattBrukerOversikt
         Me.btnBestill = New System.Windows.Forms.Button()
         Me.btnTilbake = New System.Windows.Forms.Button()
         Me.btnInfo = New System.Windows.Forms.Button()
+        Me.btnNyGivning = New System.Windows.Forms.Button()
+        Me.btnFørstegangsInfo = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblBruker
@@ -125,18 +127,38 @@ Partial Class AnsattBrukerOversikt
         '
         'btnInfo
         '
-        Me.btnInfo.Location = New System.Drawing.Point(303, 156)
+        Me.btnInfo.Location = New System.Drawing.Point(303, 102)
         Me.btnInfo.Name = "btnInfo"
         Me.btnInfo.Size = New System.Drawing.Size(85, 44)
         Me.btnInfo.TabIndex = 17
         Me.btnInfo.Text = "Time info"
         Me.btnInfo.UseVisualStyleBackColor = True
         '
+        'btnNyGivning
+        '
+        Me.btnNyGivning.Location = New System.Drawing.Point(303, 156)
+        Me.btnNyGivning.Name = "btnNyGivning"
+        Me.btnNyGivning.Size = New System.Drawing.Size(85, 44)
+        Me.btnNyGivning.TabIndex = 18
+        Me.btnNyGivning.Text = "Ny givning"
+        Me.btnNyGivning.UseVisualStyleBackColor = True
+        '
+        'btnFørstegangsInfo
+        '
+        Me.btnFørstegangsInfo.Location = New System.Drawing.Point(303, 53)
+        Me.btnFørstegangsInfo.Name = "btnFørstegangsInfo"
+        Me.btnFørstegangsInfo.Size = New System.Drawing.Size(85, 43)
+        Me.btnFørstegangsInfo.TabIndex = 19
+        Me.btnFørstegangsInfo.Text = "Ny info"
+        Me.btnFørstegangsInfo.UseVisualStyleBackColor = True
+        '
         'AnsattBrukerOversikt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(400, 348)
+        Me.Controls.Add(Me.btnFørstegangsInfo)
+        Me.Controls.Add(Me.btnNyGivning)
         Me.Controls.Add(Me.btnTilbake)
         Me.Controls.Add(Me.btnInfo)
         Me.Controls.Add(Me.btnAvbestill)
@@ -166,4 +188,6 @@ Partial Class AnsattBrukerOversikt
     Friend WithEvents btnBestill As Button
     Friend WithEvents btnTilbake As Button
     Friend WithEvents btnInfo As Button
+    Friend WithEvents btnNyGivning As Button
+    Friend WithEvents btnFørstegangsInfo As Button
 End Class

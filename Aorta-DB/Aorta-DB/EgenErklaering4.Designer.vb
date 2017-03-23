@@ -25,8 +25,11 @@ Partial Class EgenErklaering4
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.CheckBox29 = New System.Windows.Forms.CheckBox()
         Me.btnTilbake = New System.Windows.Forms.Button()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei29 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja29 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -58,16 +61,6 @@ Partial Class EgenErklaering4
         Me.Button1.Text = "Neste vindu"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'CheckBox29
-        '
-        Me.CheckBox29.AutoSize = True
-        Me.CheckBox29.Location = New System.Drawing.Point(312, 58)
-        Me.CheckBox29.Name = "CheckBox29"
-        Me.CheckBox29.Size = New System.Drawing.Size(48, 28)
-        Me.CheckBox29.TabIndex = 50
-        Me.CheckBox29.Text = "Ja"
-        Me.CheckBox29.UseVisualStyleBackColor = True
-        '
         'btnTilbake
         '
         Me.btnTilbake.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!)
@@ -78,13 +71,49 @@ Partial Class EgenErklaering4
         Me.btnTilbake.Text = "Tilbake"
         Me.btnTilbake.UseVisualStyleBackColor = True
         '
+        'GroupBox4
+        '
+        Me.GroupBox4.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox4.Controls.Add(Me.radbtnnei29)
+        Me.GroupBox4.Controls.Add(Me.radbtnja29)
+        Me.GroupBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox4.Location = New System.Drawing.Point(311, 58)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox4.Size = New System.Drawing.Size(143, 26)
+        Me.GroupBox4.TabIndex = 72
+        Me.GroupBox4.TabStop = False
+        '
+        'radbtnnei29
+        '
+        Me.radbtnnei29.AutoSize = True
+        Me.radbtnnei29.Checked = True
+        Me.radbtnnei29.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei29.Name = "radbtnnei29"
+        Me.radbtnnei29.Size = New System.Drawing.Size(47, 20)
+        Me.radbtnnei29.TabIndex = 66
+        Me.radbtnnei29.TabStop = True
+        Me.radbtnnei29.Text = "Nei"
+        Me.radbtnnei29.UseVisualStyleBackColor = True
+        '
+        'radbtnja29
+        '
+        Me.radbtnja29.AutoSize = True
+        Me.radbtnja29.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja29.Name = "radbtnja29"
+        Me.radbtnja29.Size = New System.Drawing.Size(41, 20)
+        Me.radbtnja29.TabIndex = 65
+        Me.radbtnja29.Text = "Ja"
+        Me.radbtnja29.UseVisualStyleBackColor = True
+        '
         'EgenErklaering4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(499, 359)
+        Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.btnTilbake)
-        Me.Controls.Add(Me.CheckBox29)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -92,6 +121,8 @@ Partial Class EgenErklaering4
         Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "EgenErklaering4"
         Me.Text = "EgenErklaering4"
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -100,6 +131,8 @@ Partial Class EgenErklaering4
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents CheckBox29 As CheckBox
     Friend WithEvents btnTilbake As Button
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents radbtnnei29 As RadioButton
+    Friend WithEvents radbtnja29 As RadioButton
 End Class

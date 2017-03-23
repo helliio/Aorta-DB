@@ -8,7 +8,7 @@ Public Class EgenerklaeringLoggInn
             Global_val.bruker = New User(id)
             If bruker.getUserType = 0 Then
                 EgenErklaering.Show()
-                Me.Hide()
+                Me.Close()
                 TxtPersonnummer.Clear()
                 txtPassord.Clear()
             Else
@@ -20,7 +20,6 @@ Public Class EgenerklaeringLoggInn
     End Sub
 
     Private Sub EgenerklaeringLoggInn_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        Main.Show()
         Me.Hide()
     End Sub
 
@@ -30,5 +29,6 @@ Public Class EgenerklaeringLoggInn
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Me.Close()
+        Main.Show()
     End Sub
 End Class

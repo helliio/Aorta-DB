@@ -30,6 +30,7 @@ Partial Class Logginn
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnNyBruker = New System.Windows.Forms.Button()
+        Me.btnTilbake = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -101,11 +102,21 @@ Partial Class Logginn
         Me.btnNyBruker.Text = "Ny bruker"
         Me.btnNyBruker.UseVisualStyleBackColor = True
         '
+        'btnTilbake
+        '
+        Me.btnTilbake.Location = New System.Drawing.Point(13, 13)
+        Me.btnTilbake.Name = "btnTilbake"
+        Me.btnTilbake.Size = New System.Drawing.Size(65, 22)
+        Me.btnTilbake.TabIndex = 5
+        Me.btnTilbake.Text = "TIlbake"
+        Me.btnTilbake.UseVisualStyleBackColor = True
+        '
         'Logginn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.Controls.Add(Me.btnTilbake)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button2)
@@ -129,4 +140,5 @@ Partial Class Logginn
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents btnNyBruker As Button
+    Friend WithEvents btnTilbake As Button
 End Class

@@ -20,4 +20,15 @@ Public Class Ansatt
         Me.Hide()
     End Sub
 
+    Private Sub btnSok_Click(sender As Object, e As EventArgs) Handles btnSok.Click
+        Dim id As Decimal = login2(txtSok.Text)
+        If id <> 0 Then
+            Global_val.bruker = New User(id)
+            If bruker.getUserType = 0 Then
+                AnsattBrukerOversikt.Show()
+                Me.Hide()
+            End If
+        End If
+
+    End Sub
 End Class
