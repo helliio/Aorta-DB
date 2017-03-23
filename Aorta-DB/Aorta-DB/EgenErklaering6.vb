@@ -1,12 +1,11 @@
-﻿Public Class EgenErklaering6
+﻿Imports System.ComponentModel
+
+Public Class EgenErklaering6
     Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
         Close()
     End Sub
 
-    Private Sub EgenErklaering6_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        EgenErklaering5.Show()
-        Me.Hide()
-    End Sub
+
     Public Sub clear()
         radbtnja45.Checked = False
         radbtnja46.Checked = False
@@ -24,6 +23,11 @@
         erklaring.setAns(47, radbtnja47.Checked)
         erklaring.setAns(48, radbtnja48.Checked)
         EgenErklaering7.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub EgenErklaering6_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        EgenErklaering5.Show()
         Me.Hide()
     End Sub
 End Class
