@@ -138,7 +138,7 @@ Partial Class Ansatt
         '
         'btnLoggUt
         '
-        Me.btnLoggUt.Location = New System.Drawing.Point(535, 303)
+        Me.btnLoggUt.Location = New System.Drawing.Point(502, 426)
         Me.btnLoggUt.Name = "btnLoggUt"
         Me.btnLoggUt.Size = New System.Drawing.Size(75, 23)
         Me.btnLoggUt.TabIndex = 11
@@ -157,7 +157,7 @@ Partial Class Ansatt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(622, 338)
+        Me.ClientSize = New System.Drawing.Size(584, 461)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.btnLoggUt)
         Me.Controls.Add(Me.Button1)
