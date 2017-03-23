@@ -349,6 +349,9 @@
     <EmbeddedResource Include="TimeInfoAnsatt.resx">
       <DependentUpon>TimeInfoAnsatt.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TimeInfoDonør.resx">
+      <DependentUpon>TimeInfoDonør.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VelgTime.resx">
       <DependentUpon>VelgTime.vb</DependentUpon>
     </EmbeddedResource>
