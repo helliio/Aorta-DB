@@ -168,7 +168,6 @@ Module DB_module
         Return ret
     End Function
 
-
     Public Function return_user(persnr As Decimal)
         Dim ret As New ArrayList
         connect_db()
