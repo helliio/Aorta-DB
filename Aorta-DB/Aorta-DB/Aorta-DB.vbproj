@@ -73,6 +73,31 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnsattBrukerOversikt.Designer.vb">
+      <DependentUpon>AnsattBrukerOversikt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnsattBrukerOversikt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blodbank.Designer.vb">
+      <DependentUpon>blodbank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="blodbank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Blod_pakke.vb" />
+    <Compile Include="BlodGivning.Designer.vb">
+      <DependentUpon>BlodGivning.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BlodGivning.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlodGivning2.Designer.vb">
+      <DependentUpon>BlodGivning2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BlodGivning2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DB_module.vb" />
     <Compile Include="Ansatt.Designer.vb">
       <DependentUpon>Ansatt.vb</DependentUpon>
@@ -140,6 +165,13 @@
     <Compile Include="EgenErklaering8.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="EgenerklaeringLoggInn.Designer.vb">
+      <DependentUpon>EgenerklaeringLoggInn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EgenerklaeringLoggInn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EgenErklaering_class.vb" />
     <Compile Include="Global_val.vb" />
     <Compile Include="IktHovedside.Designer.vb">
       <DependentUpon>IktHovedside.vb</DependentUpon>
@@ -154,6 +186,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Hash_module.vb" />
+    <Compile Include="InfoDonor.Designer.vb">
+      <DependentUpon>InfoDonor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InfoDonor.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Logginn.Designer.vb">
       <DependentUpon>Logginn.vb</DependentUpon>
     </Compile>
@@ -194,11 +232,53 @@
     <Compile Include="NyBruker.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TimeBestilling.Designer.vb">
+      <DependentUpon>TimeBestilling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TimeBestilling.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimebestillingAnsatt.Designer.vb">
+      <DependentUpon>TimebestillingAnsatt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TimebestillingAnsatt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeInfoAnsatt.Designer.vb">
+      <DependentUpon>TimeInfoAnsatt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TimeInfoAnsatt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeInfoDonør.Designer.vb">
+      <DependentUpon>TimeInfoDonør.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TimeInfoDonør.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="User.vb" />
+    <Compile Include="VelgTime.Designer.vb">
+      <DependentUpon>VelgTime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="VelgTime.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Ansatt.resx">
       <DependentUpon>Ansatt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnsattBrukerOversikt.resx">
+      <DependentUpon>AnsattBrukerOversikt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="blodbank.resx">
+      <DependentUpon>blodbank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlodGivning.resx">
+      <DependentUpon>BlodGivning.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlodGivning2.resx">
+      <DependentUpon>BlodGivning2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Blodprodukter.resx">
       <DependentUpon>Blodprodukter.vb</DependentUpon>
@@ -230,11 +310,17 @@
     <EmbeddedResource Include="EgenErklaering8.resx">
       <DependentUpon>EgenErklaering8.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EgenerklaeringLoggInn.resx">
+      <DependentUpon>EgenerklaeringLoggInn.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IktHovedside.resx">
       <DependentUpon>IktHovedside.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InfoBruker.resx">
       <DependentUpon>InfoBruker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoDonor.resx">
+      <DependentUpon>InfoDonor.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Logginn.resx">
       <DependentUpon>Logginn.vb</DependentUpon>
@@ -254,6 +340,18 @@
     <EmbeddedResource Include="NyBruker.resx">
       <DependentUpon>NyBruker.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TimeBestilling.resx">
+      <DependentUpon>TimeBestilling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimebestillingAnsatt.resx">
+      <DependentUpon>TimebestillingAnsatt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeInfoAnsatt.resx">
+      <DependentUpon>TimeInfoAnsatt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VelgTime.resx">
+      <DependentUpon>VelgTime.vb</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <None Include="My Project\Application.myapp">
@@ -268,7 +366,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
