@@ -111,7 +111,7 @@ Partial Class EgenErklaering4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 24.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(499, 359)
+        Me.ClientSize = New System.Drawing.Size(584, 461)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.btnTilbake)
         Me.Controls.Add(Me.Button1)

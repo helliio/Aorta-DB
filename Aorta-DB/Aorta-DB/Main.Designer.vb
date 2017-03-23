@@ -28,7 +28,7 @@ Partial Class Main
         '
         'btnLoggInn
         '
-        Me.btnLoggInn.Location = New System.Drawing.Point(28, 90)
+        Me.btnLoggInn.Location = New System.Drawing.Point(109, 204)
         Me.btnLoggInn.Name = "btnLoggInn"
         Me.btnLoggInn.Size = New System.Drawing.Size(101, 39)
         Me.btnLoggInn.TabIndex = 0
@@ -37,7 +37,7 @@ Partial Class Main
         '
         'btnEgenerklæring
         '
-        Me.btnEgenerklæring.Location = New System.Drawing.Point(147, 90)
+        Me.btnEgenerklæring.Location = New System.Drawing.Point(364, 204)
         Me.btnEgenerklæring.Name = "btnEgenerklæring"
         Me.btnEgenerklæring.Size = New System.Drawing.Size(104, 39)
         Me.btnEgenerklæring.TabIndex = 0
@@ -48,7 +48,7 @@ Partial Class Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.ClientSize = New System.Drawing.Size(584, 461)
         Me.Controls.Add(Me.btnEgenerklæring)
         Me.Controls.Add(Me.btnLoggInn)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
