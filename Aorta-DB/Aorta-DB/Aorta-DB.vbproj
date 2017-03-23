@@ -350,6 +350,9 @@
     <EmbeddedResource Include="TimeInfoAnsatt.resx">
       <DependentUpon>TimeInfoAnsatt.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TimeInfoDonør.resx">
+      <DependentUpon>TimeInfoDonør.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VelgTime.resx">
       <DependentUpon>VelgTime.vb</DependentUpon>
     </EmbeddedResource>
@@ -365,6 +368,10 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Logomakr_4iqSlj.png" />
+    <None Include="Resources\Logomakr_4iqSlj.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

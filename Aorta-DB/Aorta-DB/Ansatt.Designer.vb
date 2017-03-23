@@ -22,6 +22,7 @@ Partial Class Ansatt
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Ansatt))
         Me.lblAnsatt = New System.Windows.Forms.Label()
         Me.lblInfo = New System.Windows.Forms.Label()
         Me.lblting = New System.Windows.Forms.Label()
@@ -138,7 +139,7 @@ Partial Class Ansatt
         '
         'btnLoggUt
         '
-        Me.btnLoggUt.Location = New System.Drawing.Point(535, 303)
+        Me.btnLoggUt.Location = New System.Drawing.Point(502, 426)
         Me.btnLoggUt.Name = "btnLoggUt"
         Me.btnLoggUt.Size = New System.Drawing.Size(75, 23)
         Me.btnLoggUt.TabIndex = 11
@@ -157,7 +158,7 @@ Partial Class Ansatt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(622, 338)
+        Me.ClientSize = New System.Drawing.Size(584, 461)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.btnLoggUt)
         Me.Controls.Add(Me.Button1)
@@ -171,6 +172,7 @@ Partial Class Ansatt
         Me.Controls.Add(Me.lblting)
         Me.Controls.Add(Me.lblInfo)
         Me.Controls.Add(Me.lblAnsatt)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Ansatt"
         Me.Text = "Ansatt"
         Me.ResumeLayout(False)

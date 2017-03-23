@@ -22,6 +22,7 @@ Partial Class NyBruker
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NyBruker))
         Me.txtBekreftpass = New System.Windows.Forms.TextBox()
         Me.txtPassord = New System.Windows.Forms.TextBox()
         Me.txtMail = New System.Windows.Forms.TextBox()
@@ -265,6 +266,7 @@ Partial Class NyBruker
         Me.Controls.Add(Me.lblMail)
         Me.Controls.Add(Me.lblPersonnummer)
         Me.Controls.Add(Me.lblNybruker)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "NyBruker"
         Me.ResumeLayout(False)
         Me.PerformLayout()

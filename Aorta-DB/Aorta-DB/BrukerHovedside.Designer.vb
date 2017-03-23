@@ -22,6 +22,7 @@ Partial Class BrukerHovedside
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BrukerHovedside))
         Me.lblBruker = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.listboxGivinger = New System.Windows.Forms.ListBox()
@@ -127,6 +128,7 @@ Partial Class BrukerHovedside
         Me.Controls.Add(Me.listboxGivinger)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblBruker)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "BrukerHovedside"
         Me.Text = "BrukerHovedside"
         Me.ResumeLayout(False)
