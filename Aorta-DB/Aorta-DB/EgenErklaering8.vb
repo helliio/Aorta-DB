@@ -15,18 +15,24 @@ Public Class EgenErklaering8
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        erklaring.setAns(50, radbtnja50.Checked)
-        erklaring.setAns(51, radbtnja51.Checked)
-        erklaring.setAns(52, radbtnja52.Checked)
-        erklaring.setAns(53, radbtnja53.Checked)
-        erklaring.setAns(54, radbtnja54.Checked)
-        erklaring.setAns(55, radbtnja55.Checked)
-        erklaring.setAns(56, radbtnja56.Checked)
-        erklaring.setAns(57, radbtnja57.Checked)
-        erklaring.setAns(58, radbtnja58.Checked)
-        erklaring.setAns(59, radbtnja59.Checked)
-        erklaring.setLand(TextBox1.Text)
-        erklaring.send()
+        If TextBox1.Text <> "" Then
+            erklaring.setAns(50, radbtnja50.Checked)
+            erklaring.setAns(51, radbtnja51.Checked)
+            erklaring.setAns(52, radbtnja52.Checked)
+            erklaring.setAns(53, radbtnja53.Checked)
+            erklaring.setAns(54, radbtnja54.Checked)
+            erklaring.setAns(55, radbtnja55.Checked)
+            erklaring.setAns(56, radbtnja56.Checked)
+            erklaring.setAns(57, radbtnja57.Checked)
+            erklaring.setAns(58, radbtnja58.Checked)
+            erklaring.setAns(59, radbtnja59.Checked)
+            erklaring.setLand(TextBox1.Text)
+            erklaring.send()
+            BrukerHovedside.Show()
+            Me.Hide()
+        Else
+            MsgBox("Du må skrive inn et land i tekstboksen")
+        End If
     End Sub
     Private Sub send()
         EgenErklaering7.Close()

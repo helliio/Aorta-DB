@@ -147,7 +147,7 @@ Public Class BlodGivning
     End Sub
 
     Private Sub BlodGivning_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        Ansatt.Show()
+        AnsattBrukerOversikt.Show()
         listboxEgenerklæring.Items.Clear()
     End Sub
 End Class
