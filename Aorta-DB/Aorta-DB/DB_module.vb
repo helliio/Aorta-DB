@@ -199,4 +199,31 @@ Module DB_module
         close_db()
         Return ret
     End Function
+
+    Public Sub update_bank_db(type As String, rode As Integer, plasma As Integer, plater As Integer)
+        connect_db()
+        Dim sqlSporring = "UPDATE blodprod SET rode_blodlegemer = @rode, plasma = @plasma, blodplater  = @plater WHERE  type  = @type;"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@rode", rode)
+        sql.Parameters.AddWithValue("@plasma", plasma)
+        sql.Parameters.AddWithValue("@plater", plater)
+        sql.Parameters.AddWithValue("@type", type)
+        sql.ExecuteNonQuery()
+        close_db()
+    End Sub
+
+    Public Function get_bank_db(type As String)
+        Dim ret As New ArrayList
+        connect_db()
+        Dim sqlSporring = "SELECT rode_blodlegemer, plasma, blodplater FROM blodprod WHERE type = @type"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@type", type)
+        Dim reader As MySqlDataReader = sql.ExecuteReader
+        reader.Read()
+        For i As Integer = 0 To 2
+            ret.Add(reader.Item(i))
+        Next
+        close_db()
+        Return ret
+    End Function
 End Module
