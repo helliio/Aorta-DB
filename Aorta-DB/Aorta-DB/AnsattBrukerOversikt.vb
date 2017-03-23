@@ -1,5 +1,75 @@
-﻿Public Class AnsattBrukerOversikt
-    Private Sub btnInfo_Click(sender As Object, e As EventArgs) Handles btnInfo.Click
+﻿Imports System.ComponentModel
 
+Public Class AnsattBrukerOversikt
+    Dim timer As Integer = 0
+    Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
+        Me.Close()
+        Ansatt.Show()
+    End Sub
+
+    Private Sub AnsattBrukerOversikt_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim list As ArrayList = get_appointment_date(bruker.getPersonnr)
+        Dim dt_list As New ArrayList
+        Dim d = DateTime.Now
+        For Each item In list
+            dt_list.Add(CDate(item))
+        Next
+        For Each item As Date In dt_list
+            If item < d Then
+                Dim i As String = item.ToString("HH.mm dd.MM.yyyy")
+                listboxGivinger.Items.Add(i)
+            Else
+                Dim i As String = item.ToString("HH.mm dd.MM.yyyy")
+                lblNesteTime.Text = i
+                timer += 1
+            End If
+        Next
+
+
+        lblBruker.Text = "Donør: " & bruker.getFornavn() & " " & bruker.getEtternavn()
+    End Sub
+
+    Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
+        If timer = 1 Then
+            MsgBox("Du kan ikke ha mer enn en time")
+        Else
+            TimebestillingAnsatt.Show()
+            Me.Close()
+        End If
+    End Sub
+
+    Private Sub btnAvbestill_Click(sender As Object, e As EventArgs) Handles btnAvbestill.Click
+        Dim dato As String = lblNesteTime.Text
+        If timer <> 1 Then
+            MsgBox("Du har ingen timer å avbestille")
+        Else
+            Dim result As Integer = MessageBox.Show("Er du sikker på at du vil avbestille timen ", "Avbestilling", MessageBoxButtons.YesNo)
+            If result = DialogResult.Yes Then
+                Dim list = Split(dato, " ")
+                lblNesteTime.Text = ""
+                cancel_appointment(bruker.getPersonnr, list(0), list(1))
+                timer = 0
+            End If
+        End If
+    End Sub
+
+    Private Sub AnsattBrukerOversikt_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        Me.Hide()
+    End Sub
+
+    Private Sub btnNyGivning_Click(sender As Object, e As EventArgs) Handles btnNyGivning.Click
+        Global_val.giver_id = CDec(bruker.getPersonnr)
+        BlodGivning.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnInfo_Click(sender As Object, e As EventArgs) Handles btnInfo.Click
+        Me.Close()
+        TimeInfoAnsatt.Show()
+    End Sub
+
+    Private Sub btnFørstegangsInfo_Click(sender As Object, e As EventArgs) Handles btnFørstegangsInfo.Click
+        Me.Close()
+        InfoDonor.Show()
     End Sub
 End Class

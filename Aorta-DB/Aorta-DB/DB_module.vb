@@ -29,6 +29,23 @@ Module DB_module
             Return 0
         End If
     End Function
+    Public Function login2(user As Decimal)
+        connect_db()
+        Dim username As String = user.ToString
+        Dim sqlSporring = "select * from users where username=@username "
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+
+        sql.Parameters.AddWithValue("@username", username)
+
+        Dim leser = sql.ExecuteReader()
+        If leser.HasRows Then
+            close_db()
+            Return user
+        Else
+            close_db()
+            Return 0
+        End If
+    End Function
     Public Sub create_user(user As Decimal, pass As String, first_name As String, last_name As String, bruker_type As Integer, tlf As Decimal, mail As String, adress As String, post_code As Integer, city As String)
         connect_db()
         Dim password = Hash512(pass)
