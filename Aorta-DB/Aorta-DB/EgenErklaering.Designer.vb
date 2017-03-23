@@ -35,18 +35,53 @@ Partial Class EgenErklaering
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox6 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox7 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox8 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox9 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox10 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox11 = New System.Windows.Forms.CheckBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnTilbake = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.radbtnja1 = New System.Windows.Forms.RadioButton()
+        Me.radbtnnei1 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei2 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja2 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei3 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja3 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei4 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja4 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei5 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja5 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox6 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei6 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja6 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox7 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei7 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja7 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox8 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei8 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja8 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei9 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja9 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox10 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei10 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja10 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox11 = New System.Windows.Forms.GroupBox()
+        Me.radbtnnei11 = New System.Windows.Forms.RadioButton()
+        Me.radbtnja11 = New System.Windows.Forms.RadioButton()
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.GroupBox5.SuspendLayout()
+        Me.GroupBox6.SuspendLayout()
+        Me.GroupBox7.SuspendLayout()
+        Me.GroupBox8.SuspendLayout()
+        Me.GroupBox9.SuspendLayout()
+        Me.GroupBox10.SuspendLayout()
+        Me.GroupBox11.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -65,9 +100,9 @@ Partial Class EgenErklaering
         Me.Label2.Location = New System.Drawing.Point(12, 79)
         Me.Label2.MaximumSize = New System.Drawing.Size(300, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(91, 13)
+        Me.Label2.Size = New System.Drawing.Size(94, 13)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Følerdu deg frisk?"
+        Me.Label2.Text = "Føler du deg frisk?"
         '
         'Label3
         '
@@ -83,7 +118,7 @@ Partial Class EgenErklaering
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(12, 181)
+        Me.Label4.Location = New System.Drawing.Point(12, 184)
         Me.Label4.MaximumSize = New System.Drawing.Size(300, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(134, 13)
@@ -93,7 +128,7 @@ Partial Class EgenErklaering
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(12, 157)
+        Me.Label5.Location = New System.Drawing.Point(12, 159)
         Me.Label5.MaximumSize = New System.Drawing.Size(300, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(205, 13)
@@ -103,7 +138,7 @@ Partial Class EgenErklaering
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(12, 134)
+        Me.Label6.Location = New System.Drawing.Point(12, 136)
         Me.Label6.MaximumSize = New System.Drawing.Size(300, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(124, 13)
@@ -113,7 +148,7 @@ Partial Class EgenErklaering
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(12, 322)
+        Me.Label7.Location = New System.Drawing.Point(13, 355)
         Me.Label7.MaximumSize = New System.Drawing.Size(300, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(165, 13)
@@ -123,7 +158,7 @@ Partial Class EgenErklaering
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(12, 298)
+        Me.Label8.Location = New System.Drawing.Point(13, 331)
         Me.Label8.MaximumSize = New System.Drawing.Size(300, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(65, 13)
@@ -133,7 +168,7 @@ Partial Class EgenErklaering
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(12, 275)
+        Me.Label9.Location = New System.Drawing.Point(13, 306)
         Me.Label9.MaximumSize = New System.Drawing.Size(300, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(84, 13)
@@ -143,7 +178,7 @@ Partial Class EgenErklaering
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(12, 253)
+        Me.Label10.Location = New System.Drawing.Point(13, 282)
         Me.Label10.MaximumSize = New System.Drawing.Size(300, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(119, 13)
@@ -153,18 +188,18 @@ Partial Class EgenErklaering
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(12, 229)
+        Me.Label11.Location = New System.Drawing.Point(13, 257)
         Me.Label11.MaximumSize = New System.Drawing.Size(300, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(78, 13)
+        Me.Label11.Size = New System.Drawing.Size(79, 13)
         Me.Label11.TabIndex = 7
-        Me.Label11.Text = "brukt medisiner"
+        Me.Label11.Text = "Brukt medisiner"
         '
         'Label12
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.25!)
-        Me.Label12.Location = New System.Drawing.Point(11, 195)
+        Me.Label12.Location = New System.Drawing.Point(12, 221)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(264, 20)
         Me.Label12.TabIndex = 6
@@ -180,142 +215,437 @@ Partial Class EgenErklaering
         Me.Label13.TabIndex = 12
         Me.Label13.Text = "Vennligst besvar:"
         '
-        'CheckBox1
-        '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(176, 56)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox1.TabIndex = 13
-        Me.CheckBox1.Text = "Ja"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        '
-        'CheckBox2
-        '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(109, 79)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox2.TabIndex = 14
-        Me.CheckBox2.Text = "Ja"
-        Me.CheckBox2.UseVisualStyleBackColor = True
-        '
-        'CheckBox3
-        '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(308, 103)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox3.TabIndex = 15
-        Me.CheckBox3.Text = "Ja"
-        Me.CheckBox3.UseVisualStyleBackColor = True
-        '
-        'CheckBox4
-        '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(142, 132)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox4.TabIndex = 16
-        Me.CheckBox4.Text = "Ja"
-        Me.CheckBox4.UseVisualStyleBackColor = True
-        '
-        'CheckBox5
-        '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(223, 157)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox5.TabIndex = 17
-        Me.CheckBox5.Text = "Ja"
-        Me.CheckBox5.UseVisualStyleBackColor = True
-        '
-        'CheckBox6
-        '
-        Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Location = New System.Drawing.Point(152, 180)
-        Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox6.TabIndex = 18
-        Me.CheckBox6.Text = "Ja"
-        Me.CheckBox6.UseVisualStyleBackColor = True
-        '
-        'CheckBox7
-        '
-        Me.CheckBox7.AutoSize = True
-        Me.CheckBox7.Location = New System.Drawing.Point(96, 229)
-        Me.CheckBox7.Name = "CheckBox7"
-        Me.CheckBox7.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox7.TabIndex = 19
-        Me.CheckBox7.Text = "Ja"
-        Me.CheckBox7.UseVisualStyleBackColor = True
-        '
-        'CheckBox8
-        '
-        Me.CheckBox8.AutoSize = True
-        Me.CheckBox8.Location = New System.Drawing.Point(137, 249)
-        Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox8.TabIndex = 20
-        Me.CheckBox8.Text = "Ja"
-        Me.CheckBox8.UseVisualStyleBackColor = True
-        '
-        'CheckBox9
-        '
-        Me.CheckBox9.AutoSize = True
-        Me.CheckBox9.Location = New System.Drawing.Point(102, 275)
-        Me.CheckBox9.Name = "CheckBox9"
-        Me.CheckBox9.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox9.TabIndex = 21
-        Me.CheckBox9.Text = "Ja"
-        Me.CheckBox9.UseVisualStyleBackColor = True
-        '
-        'CheckBox10
-        '
-        Me.CheckBox10.AutoSize = True
-        Me.CheckBox10.Location = New System.Drawing.Point(83, 298)
-        Me.CheckBox10.Name = "CheckBox10"
-        Me.CheckBox10.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox10.TabIndex = 22
-        Me.CheckBox10.Text = "Ja"
-        Me.CheckBox10.UseVisualStyleBackColor = True
-        '
-        'CheckBox11
-        '
-        Me.CheckBox11.AutoSize = True
-        Me.CheckBox11.Location = New System.Drawing.Point(183, 322)
-        Me.CheckBox11.Name = "CheckBox11"
-        Me.CheckBox11.Size = New System.Drawing.Size(37, 17)
-        Me.CheckBox11.TabIndex = 23
-        Me.CheckBox11.Text = "Ja"
-        Me.CheckBox11.UseVisualStyleBackColor = True
-        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(319, 342)
+        Me.Button1.Location = New System.Drawing.Point(458, 354)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(160, 45)
         Me.Button1.TabIndex = 24
         Me.Button1.Text = "Neste vindu"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'btnTilbake
+        '
+        Me.btnTilbake.Location = New System.Drawing.Point(560, 22)
+        Me.btnTilbake.Name = "btnTilbake"
+        Me.btnTilbake.Size = New System.Drawing.Size(58, 25)
+        Me.btnTilbake.TabIndex = 62
+        Me.btnTilbake.Text = "Tilbake"
+        Me.btnTilbake.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.Controls.Add(Me.radbtnnei1)
+        Me.GroupBox1.Controls.Add(Me.radbtnja1)
+        Me.GroupBox1.Location = New System.Drawing.Point(187, 47)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox1.Size = New System.Drawing.Size(143, 26)
+        Me.GroupBox1.TabIndex = 66
+        Me.GroupBox1.TabStop = False
+        '
+        'radbtnja1
+        '
+        Me.radbtnja1.AutoSize = True
+        Me.radbtnja1.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja1.Name = "radbtnja1"
+        Me.radbtnja1.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja1.TabIndex = 65
+        Me.radbtnja1.Text = "Ja"
+        Me.radbtnja1.UseVisualStyleBackColor = True
+        '
+        'radbtnnei1
+        '
+        Me.radbtnnei1.AutoSize = True
+        Me.radbtnnei1.Checked = True
+        Me.radbtnnei1.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei1.Name = "radbtnnei1"
+        Me.radbtnnei1.Size = New System.Drawing.Size(41, 17)
+        Me.radbtnnei1.TabIndex = 66
+        Me.radbtnnei1.TabStop = True
+        Me.radbtnnei1.Text = "Nei"
+        Me.radbtnnei1.UseVisualStyleBackColor = True
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox2.Controls.Add(Me.radbtnnei2)
+        Me.GroupBox2.Controls.Add(Me.radbtnja2)
+        Me.GroupBox2.Location = New System.Drawing.Point(187, 71)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox2.Size = New System.Drawing.Size(143, 21)
+        Me.GroupBox2.TabIndex = 67
+        Me.GroupBox2.TabStop = False
+        '
+        'radbtnnei2
+        '
+        Me.radbtnnei2.AutoSize = True
+        Me.radbtnnei2.Checked = True
+        Me.radbtnnei2.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei2.Name = "radbtnnei2"
+        Me.radbtnnei2.Size = New System.Drawing.Size(41, 17)
+        Me.radbtnnei2.TabIndex = 66
+        Me.radbtnnei2.TabStop = True
+        Me.radbtnnei2.Text = "Nei"
+        Me.radbtnnei2.UseVisualStyleBackColor = True
+        '
+        'radbtnja2
+        '
+        Me.radbtnja2.AutoSize = True
+        Me.radbtnja2.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja2.Name = "radbtnja2"
+        Me.radbtnja2.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja2.TabIndex = 65
+        Me.radbtnja2.Text = "Ja"
+        Me.radbtnja2.UseVisualStyleBackColor = True
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox3.Controls.Add(Me.radbtnnei3)
+        Me.GroupBox3.Controls.Add(Me.radbtnja3)
+        Me.GroupBox3.Location = New System.Drawing.Point(305, 97)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox3.Size = New System.Drawing.Size(143, 21)
+        Me.GroupBox3.TabIndex = 68
+        Me.GroupBox3.TabStop = False
+        '
+        'radbtnnei3
+        '
+        Me.radbtnnei3.AutoSize = True
+        Me.radbtnnei3.Checked = True
+        Me.radbtnnei3.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei3.Name = "radbtnnei3"
+        Me.radbtnnei3.Size = New System.Drawing.Size(41, 17)
+        Me.radbtnnei3.TabIndex = 66
+        Me.radbtnnei3.TabStop = True
+        Me.radbtnnei3.Text = "Nei"
+        Me.radbtnnei3.UseVisualStyleBackColor = True
+        '
+        'radbtnja3
+        '
+        Me.radbtnja3.AutoSize = True
+        Me.radbtnja3.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja3.Name = "radbtnja3"
+        Me.radbtnja3.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja3.TabIndex = 65
+        Me.radbtnja3.Text = "Ja"
+        Me.radbtnja3.UseVisualStyleBackColor = True
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox4.Controls.Add(Me.radbtnnei4)
+        Me.GroupBox4.Controls.Add(Me.radbtnja4)
+        Me.GroupBox4.Location = New System.Drawing.Point(173, 129)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox4.Size = New System.Drawing.Size(143, 21)
+        Me.GroupBox4.TabIndex = 69
+        Me.GroupBox4.TabStop = False
+        '
+        'radbtnnei4
+        '
+        Me.radbtnnei4.AutoSize = True
+        Me.radbtnnei4.Checked = True
+        Me.radbtnnei4.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei4.Name = "radbtnnei4"
+        Me.radbtnnei4.Size = New System.Drawing.Size(41, 17)
+        Me.radbtnnei4.TabIndex = 66
+        Me.radbtnnei4.TabStop = True
+        Me.radbtnnei4.Text = "Nei"
+        Me.radbtnnei4.UseVisualStyleBackColor = True
+        '
+        'radbtnja4
+        '
+        Me.radbtnja4.AutoSize = True
+        Me.radbtnja4.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja4.Name = "radbtnja4"
+        Me.radbtnja4.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja4.TabIndex = 65
+        Me.radbtnja4.Text = "Ja"
+        Me.radbtnja4.UseVisualStyleBackColor = True
+        '
+        'GroupBox5
+        '
+        Me.GroupBox5.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox5.Controls.Add(Me.radbtnnei5)
+        Me.GroupBox5.Controls.Add(Me.radbtnja5)
+        Me.GroupBox5.Location = New System.Drawing.Point(220, 154)
+        Me.GroupBox5.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox5.Size = New System.Drawing.Size(143, 21)
+        Me.GroupBox5.TabIndex = 70
+        Me.GroupBox5.TabStop = False
+        '
+        'radbtnnei5
+        '
+        Me.radbtnnei5.AutoSize = True
+        Me.radbtnnei5.Checked = True
+        Me.radbtnnei5.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei5.Name = "radbtnnei5"
+        Me.radbtnnei5.Size = New System.Drawing.Size(41, 17)
+        Me.radbtnnei5.TabIndex = 66
+        Me.radbtnnei5.TabStop = True
+        Me.radbtnnei5.Text = "Nei"
+        Me.radbtnnei5.UseVisualStyleBackColor = True
+        '
+        'radbtnja5
+        '
+        Me.radbtnja5.AutoSize = True
+        Me.radbtnja5.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja5.Name = "radbtnja5"
+        Me.radbtnja5.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja5.TabIndex = 65
+        Me.radbtnja5.Text = "Ja"
+        Me.radbtnja5.UseVisualStyleBackColor = True
+        '
+        'GroupBox6
+        '
+        Me.GroupBox6.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox6.Controls.Add(Me.radbtnnei6)
+        Me.GroupBox6.Controls.Add(Me.radbtnja6)
+        Me.GroupBox6.Location = New System.Drawing.Point(159, 179)
+        Me.GroupBox6.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox6.Name = "GroupBox6"
+        Me.GroupBox6.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox6.Size = New System.Drawing.Size(143, 21)
+        Me.GroupBox6.TabIndex = 71
+        Me.GroupBox6.TabStop = False
+        '
+        'radbtnnei6
+        '
+        Me.radbtnnei6.AutoSize = True
+        Me.radbtnnei6.Checked = True
+        Me.radbtnnei6.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei6.Name = "radbtnnei6"
+        Me.radbtnnei6.Size = New System.Drawing.Size(41, 17)
+        Me.radbtnnei6.TabIndex = 66
+        Me.radbtnnei6.TabStop = True
+        Me.radbtnnei6.Text = "Nei"
+        Me.radbtnnei6.UseVisualStyleBackColor = True
+        '
+        'radbtnja6
+        '
+        Me.radbtnja6.AutoSize = True
+        Me.radbtnja6.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja6.Name = "radbtnja6"
+        Me.radbtnja6.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja6.TabIndex = 65
+        Me.radbtnja6.Text = "Ja"
+        Me.radbtnja6.UseVisualStyleBackColor = True
+        '
+        'GroupBox7
+        '
+        Me.GroupBox7.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox7.Controls.Add(Me.radbtnnei7)
+        Me.GroupBox7.Controls.Add(Me.radbtnja7)
+        Me.GroupBox7.Location = New System.Drawing.Point(133, 252)
+        Me.GroupBox7.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox7.Name = "GroupBox7"
+        Me.GroupBox7.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox7.Size = New System.Drawing.Size(143, 21)
+        Me.GroupBox7.TabIndex = 72
+        Me.GroupBox7.TabStop = False
+        '
+        'radbtnnei7
+        '
+        Me.radbtnnei7.AutoSize = True
+        Me.radbtnnei7.Checked = True
+        Me.radbtnnei7.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei7.Name = "radbtnnei7"
+        Me.radbtnnei7.Size = New System.Drawing.Size(41, 17)
+        Me.radbtnnei7.TabIndex = 66
+        Me.radbtnnei7.TabStop = True
+        Me.radbtnnei7.Text = "Nei"
+        Me.radbtnnei7.UseVisualStyleBackColor = True
+        '
+        'radbtnja7
+        '
+        Me.radbtnja7.AutoSize = True
+        Me.radbtnja7.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja7.Name = "radbtnja7"
+        Me.radbtnja7.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja7.TabIndex = 65
+        Me.radbtnja7.Text = "Ja"
+        Me.radbtnja7.UseVisualStyleBackColor = True
+        '
+        'GroupBox8
+        '
+        Me.GroupBox8.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox8.Controls.Add(Me.radbtnnei8)
+        Me.GroupBox8.Controls.Add(Me.radbtnja8)
+        Me.GroupBox8.Location = New System.Drawing.Point(141, 275)
+        Me.GroupBox8.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox8.Name = "GroupBox8"
+        Me.GroupBox8.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox8.Size = New System.Drawing.Size(143, 21)
+        Me.GroupBox8.TabIndex = 73
+        Me.GroupBox8.TabStop = False
+        '
+        'radbtnnei8
+        '
+        Me.radbtnnei8.AutoSize = True
+        Me.radbtnnei8.Checked = True
+        Me.radbtnnei8.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei8.Name = "radbtnnei8"
+        Me.radbtnnei8.Size = New System.Drawing.Size(41, 17)
+        Me.radbtnnei8.TabIndex = 66
+        Me.radbtnnei8.TabStop = True
+        Me.radbtnnei8.Text = "Nei"
+        Me.radbtnnei8.UseVisualStyleBackColor = True
+        '
+        'radbtnja8
+        '
+        Me.radbtnja8.AutoSize = True
+        Me.radbtnja8.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja8.Name = "radbtnja8"
+        Me.radbtnja8.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja8.TabIndex = 65
+        Me.radbtnja8.Text = "Ja"
+        Me.radbtnja8.UseVisualStyleBackColor = True
+        '
+        'GroupBox9
+        '
+        Me.GroupBox9.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox9.Controls.Add(Me.radbtnnei9)
+        Me.GroupBox9.Controls.Add(Me.radbtnja9)
+        Me.GroupBox9.Location = New System.Drawing.Point(121, 301)
+        Me.GroupBox9.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox9.Name = "GroupBox9"
+        Me.GroupBox9.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox9.Size = New System.Drawing.Size(143, 21)
+        Me.GroupBox9.TabIndex = 74
+        Me.GroupBox9.TabStop = False
+        '
+        'radbtnnei9
+        '
+        Me.radbtnnei9.AutoSize = True
+        Me.radbtnnei9.Checked = True
+        Me.radbtnnei9.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei9.Name = "radbtnnei9"
+        Me.radbtnnei9.Size = New System.Drawing.Size(41, 17)
+        Me.radbtnnei9.TabIndex = 66
+        Me.radbtnnei9.TabStop = True
+        Me.radbtnnei9.Text = "Nei"
+        Me.radbtnnei9.UseVisualStyleBackColor = True
+        '
+        'radbtnja9
+        '
+        Me.radbtnja9.AutoSize = True
+        Me.radbtnja9.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja9.Name = "radbtnja9"
+        Me.radbtnja9.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja9.TabIndex = 65
+        Me.radbtnja9.Text = "Ja"
+        Me.radbtnja9.UseVisualStyleBackColor = True
+        '
+        'GroupBox10
+        '
+        Me.GroupBox10.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox10.Controls.Add(Me.radbtnnei10)
+        Me.GroupBox10.Controls.Add(Me.radbtnja10)
+        Me.GroupBox10.Location = New System.Drawing.Point(107, 325)
+        Me.GroupBox10.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox10.Name = "GroupBox10"
+        Me.GroupBox10.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox10.Size = New System.Drawing.Size(143, 21)
+        Me.GroupBox10.TabIndex = 75
+        Me.GroupBox10.TabStop = False
+        '
+        'radbtnnei10
+        '
+        Me.radbtnnei10.AutoSize = True
+        Me.radbtnnei10.Checked = True
+        Me.radbtnnei10.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei10.Name = "radbtnnei10"
+        Me.radbtnnei10.Size = New System.Drawing.Size(41, 17)
+        Me.radbtnnei10.TabIndex = 66
+        Me.radbtnnei10.TabStop = True
+        Me.radbtnnei10.Text = "Nei"
+        Me.radbtnnei10.UseVisualStyleBackColor = True
+        '
+        'radbtnja10
+        '
+        Me.radbtnja10.AutoSize = True
+        Me.radbtnja10.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja10.Name = "radbtnja10"
+        Me.radbtnja10.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja10.TabIndex = 65
+        Me.radbtnja10.Text = "Ja"
+        Me.radbtnja10.UseVisualStyleBackColor = True
+        '
+        'GroupBox11
+        '
+        Me.GroupBox11.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox11.Controls.Add(Me.radbtnnei11)
+        Me.GroupBox11.Controls.Add(Me.radbtnja11)
+        Me.GroupBox11.Location = New System.Drawing.Point(181, 348)
+        Me.GroupBox11.Margin = New System.Windows.Forms.Padding(0)
+        Me.GroupBox11.Name = "GroupBox11"
+        Me.GroupBox11.Padding = New System.Windows.Forms.Padding(0)
+        Me.GroupBox11.Size = New System.Drawing.Size(143, 21)
+        Me.GroupBox11.TabIndex = 76
+        Me.GroupBox11.TabStop = False
+        '
+        'radbtnnei11
+        '
+        Me.radbtnnei11.AutoSize = True
+        Me.radbtnnei11.Checked = True
+        Me.radbtnnei11.Location = New System.Drawing.Point(88, 5)
+        Me.radbtnnei11.Name = "radbtnnei11"
+        Me.radbtnnei11.Size = New System.Drawing.Size(41, 17)
+        Me.radbtnnei11.TabIndex = 66
+        Me.radbtnnei11.TabStop = True
+        Me.radbtnnei11.Text = "Nei"
+        Me.radbtnnei11.UseVisualStyleBackColor = True
+        '
+        'radbtnja11
+        '
+        Me.radbtnja11.AutoSize = True
+        Me.radbtnja11.Location = New System.Drawing.Point(4, 5)
+        Me.radbtnja11.Name = "radbtnja11"
+        Me.radbtnja11.Size = New System.Drawing.Size(36, 17)
+        Me.radbtnja11.TabIndex = 65
+        Me.radbtnja11.Text = "Ja"
+        Me.radbtnja11.UseVisualStyleBackColor = True
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(13, 9)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(45, 13)
+        Me.Label14.TabIndex = 77
+        Me.Label14.Text = "Label14"
+        '
         'EgenErklaering
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(491, 399)
+        Me.ClientSize = New System.Drawing.Size(649, 423)
+        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.GroupBox11)
+        Me.Controls.Add(Me.GroupBox10)
+        Me.Controls.Add(Me.GroupBox9)
+        Me.Controls.Add(Me.GroupBox8)
+        Me.Controls.Add(Me.GroupBox7)
+        Me.Controls.Add(Me.GroupBox6)
+        Me.Controls.Add(Me.GroupBox5)
+        Me.Controls.Add(Me.GroupBox4)
+        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.btnTilbake)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.CheckBox11)
-        Me.Controls.Add(Me.CheckBox10)
-        Me.Controls.Add(Me.CheckBox9)
-        Me.Controls.Add(Me.CheckBox8)
-        Me.Controls.Add(Me.CheckBox7)
-        Me.Controls.Add(Me.CheckBox6)
-        Me.Controls.Add(Me.CheckBox5)
-        Me.Controls.Add(Me.CheckBox4)
-        Me.Controls.Add(Me.CheckBox3)
-        Me.Controls.Add(Me.CheckBox2)
-        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label8)
@@ -331,6 +661,28 @@ Partial Class EgenErklaering
         Me.Controls.Add(Me.Label1)
         Me.Name = "EgenErklaering"
         Me.Text = "EgenErklaering"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
+        Me.GroupBox5.ResumeLayout(False)
+        Me.GroupBox5.PerformLayout()
+        Me.GroupBox6.ResumeLayout(False)
+        Me.GroupBox6.PerformLayout()
+        Me.GroupBox7.ResumeLayout(False)
+        Me.GroupBox7.PerformLayout()
+        Me.GroupBox8.ResumeLayout(False)
+        Me.GroupBox8.PerformLayout()
+        Me.GroupBox9.ResumeLayout(False)
+        Me.GroupBox9.PerformLayout()
+        Me.GroupBox10.ResumeLayout(False)
+        Me.GroupBox10.PerformLayout()
+        Me.GroupBox11.ResumeLayout(False)
+        Me.GroupBox11.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -349,16 +701,40 @@ Partial Class EgenErklaering
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents CheckBox5 As CheckBox
-    Friend WithEvents CheckBox6 As CheckBox
-    Friend WithEvents CheckBox7 As CheckBox
-    Friend WithEvents CheckBox8 As CheckBox
-    Friend WithEvents CheckBox9 As CheckBox
-    Friend WithEvents CheckBox10 As CheckBox
-    Friend WithEvents CheckBox11 As CheckBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents btnTilbake As Button
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents radbtnnei1 As RadioButton
+    Friend WithEvents radbtnja1 As RadioButton
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents radbtnnei2 As RadioButton
+    Friend WithEvents radbtnja2 As RadioButton
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents radbtnnei3 As RadioButton
+    Friend WithEvents radbtnja3 As RadioButton
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents radbtnnei4 As RadioButton
+    Friend WithEvents radbtnja4 As RadioButton
+    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents radbtnnei5 As RadioButton
+    Friend WithEvents radbtnja5 As RadioButton
+    Friend WithEvents GroupBox6 As GroupBox
+    Friend WithEvents radbtnnei6 As RadioButton
+    Friend WithEvents radbtnja6 As RadioButton
+    Friend WithEvents GroupBox7 As GroupBox
+    Friend WithEvents radbtnnei7 As RadioButton
+    Friend WithEvents radbtnja7 As RadioButton
+    Friend WithEvents GroupBox8 As GroupBox
+    Friend WithEvents radbtnnei8 As RadioButton
+    Friend WithEvents radbtnja8 As RadioButton
+    Friend WithEvents GroupBox9 As GroupBox
+    Friend WithEvents radbtnnei9 As RadioButton
+    Friend WithEvents radbtnja9 As RadioButton
+    Friend WithEvents GroupBox10 As GroupBox
+    Friend WithEvents radbtnnei10 As RadioButton
+    Friend WithEvents radbtnja10 As RadioButton
+    Friend WithEvents GroupBox11 As GroupBox
+    Friend WithEvents radbtnnei11 As RadioButton
+    Friend WithEvents radbtnja11 As RadioButton
+    Friend WithEvents Label14 As Label
 End Class

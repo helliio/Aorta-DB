@@ -24,7 +24,6 @@ Partial Class Main
     Private Sub InitializeComponent()
         Me.btnLoggInn = New System.Windows.Forms.Button()
         Me.btnEgenerklæring = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnLoggInn
@@ -45,24 +44,17 @@ Partial Class Main
         Me.btnEgenerklæring.Text = "Egenerklæring"
         Me.btnEgenerklæring.UseVisualStyleBackColor = True
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(110, 28)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 261)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnEgenerklæring)
         Me.Controls.Add(Me.btnLoggInn)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "Main"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Main"
         Me.ResumeLayout(False)
 
@@ -70,5 +62,4 @@ Partial Class Main
 
     Friend WithEvents btnLoggInn As Button
     Friend WithEvents btnEgenerklæring As Button
-    Friend WithEvents Button1 As Button
 End Class

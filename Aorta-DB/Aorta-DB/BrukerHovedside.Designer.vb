@@ -24,14 +24,13 @@ Partial Class BrukerHovedside
     Private Sub InitializeComponent()
         Me.lblBruker = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.listboxInfo = New System.Windows.Forms.ListBox()
         Me.listboxGivinger = New System.Windows.Forms.ListBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnBestill = New System.Windows.Forms.Button()
         Me.btnEgenerklæring = New System.Windows.Forms.Button()
-        Me.btnInfo = New System.Windows.Forms.Button()
         Me.btnLoggUt = New System.Windows.Forms.Button()
         Me.btnAvbestill = New System.Windows.Forms.Button()
+        Me.lblNesteTime = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'lblBruker
@@ -53,14 +52,6 @@ Partial Class BrukerHovedside
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Siste givninger:"
         '
-        'listboxInfo
-        '
-        Me.listboxInfo.FormattingEnabled = True
-        Me.listboxInfo.Location = New System.Drawing.Point(12, 104)
-        Me.listboxInfo.Name = "listboxInfo"
-        Me.listboxInfo.Size = New System.Drawing.Size(120, 17)
-        Me.listboxInfo.TabIndex = 2
-        '
         'listboxGivinger
         '
         Me.listboxGivinger.FormattingEnabled = True
@@ -72,11 +63,11 @@ Partial Class BrukerHovedside
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(12, 77)
+        Me.Label3.Location = New System.Drawing.Point(12, 127)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(28, 13)
+        Me.Label3.Size = New System.Drawing.Size(60, 13)
         Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Info:"
+        Me.Label3.Text = "Neste time:"
         '
         'btnBestill
         '
@@ -96,15 +87,6 @@ Partial Class BrukerHovedside
         Me.btnEgenerklæring.Text = "Egenerklæring"
         Me.btnEgenerklæring.UseVisualStyleBackColor = True
         '
-        'btnInfo
-        '
-        Me.btnInfo.Location = New System.Drawing.Point(300, 77)
-        Me.btnInfo.Name = "btnInfo"
-        Me.btnInfo.Size = New System.Drawing.Size(85, 44)
-        Me.btnInfo.TabIndex = 5
-        Me.btnInfo.Text = "btnInfo"
-        Me.btnInfo.UseVisualStyleBackColor = True
-        '
         'btnLoggUt
         '
         Me.btnLoggUt.Location = New System.Drawing.Point(324, 44)
@@ -123,19 +105,26 @@ Partial Class BrukerHovedside
         Me.btnAvbestill.Text = "Avbestill givningstime"
         Me.btnAvbestill.UseVisualStyleBackColor = True
         '
+        'lblNesteTime
+        '
+        Me.lblNesteTime.AutoSize = True
+        Me.lblNesteTime.Location = New System.Drawing.Point(12, 143)
+        Me.lblNesteTime.Name = "lblNesteTime"
+        Me.lblNesteTime.Size = New System.Drawing.Size(0, 13)
+        Me.lblNesteTime.TabIndex = 7
+        '
         'BrukerHovedside
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(397, 309)
+        Me.Controls.Add(Me.lblNesteTime)
         Me.Controls.Add(Me.btnAvbestill)
         Me.Controls.Add(Me.btnLoggUt)
-        Me.Controls.Add(Me.btnInfo)
         Me.Controls.Add(Me.btnEgenerklæring)
         Me.Controls.Add(Me.btnBestill)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.listboxGivinger)
-        Me.Controls.Add(Me.listboxInfo)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblBruker)
         Me.Name = "BrukerHovedside"
@@ -147,12 +136,11 @@ Partial Class BrukerHovedside
 
     Friend WithEvents lblBruker As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents listboxInfo As ListBox
     Friend WithEvents listboxGivinger As ListBox
     Friend WithEvents Label3 As Label
     Friend WithEvents btnBestill As Button
     Friend WithEvents btnEgenerklæring As Button
-    Friend WithEvents btnInfo As Button
     Friend WithEvents btnLoggUt As Button
     Friend WithEvents btnAvbestill As Button
+    Friend WithEvents lblNesteTime As Label
 End Class

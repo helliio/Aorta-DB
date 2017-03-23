@@ -13,4 +13,22 @@ Public Class Ansatt
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
         Me.Close()
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Global_val.giver_id = CDec(TextBox1.Text)
+        BlodGivning.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnSok_Click(sender As Object, e As EventArgs) Handles btnSok.Click
+        Dim id As Decimal = login2(txtSok.Text)
+        If id <> 0 Then
+            Global_val.bruker = New User(id)
+            If bruker.getUserType = 0 Then
+                AnsattBrukerOversikt.Show()
+                Me.Hide()
+            End If
+        End If
+
+    End Sub
 End Class
