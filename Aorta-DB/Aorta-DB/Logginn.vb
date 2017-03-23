@@ -30,4 +30,9 @@
         Ansatt.Show()
         Me.Hide()
     End Sub
+
+    Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
+        Me.Close()
+        Main.Show()
+    End Sub
 End Class

@@ -51,7 +51,10 @@ Partial Class Main
         Me.ClientSize = New System.Drawing.Size(584, 461)
         Me.Controls.Add(Me.btnEgenerklæring)
         Me.Controls.Add(Me.btnLoggInn)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "Main"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Main"
         Me.ResumeLayout(False)
 
