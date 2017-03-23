@@ -200,7 +200,7 @@ Module DB_module
         Return ret
     End Function
 
-    Public Sub update_bank(type As String, rode As Integer, plasma As Integer, plater As Integer)
+    Public Sub update_bank_db(type As String, rode As Integer, plasma As Integer, plater As Integer)
         connect_db()
         Dim sqlSporring = "UPDATE blodprod SET rode_blodlegemer = @rode, plasma = @plasma, blodplater  = @plater WHERE  type  = @type;"
         Dim sql As New MySqlCommand(sqlSporring, tilkobling)
@@ -212,7 +212,7 @@ Module DB_module
         close_db()
     End Sub
 
-    Public Function get_bank(type As String)
+    Public Function get_bank_db(type As String)
         Dim ret As New ArrayList
         connect_db()
         Dim sqlSporring = "SELECT rode_blodlegemer, plasma, blodplater FROM blodprod WHERE type = @type"
