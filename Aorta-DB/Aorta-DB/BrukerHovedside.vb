@@ -1,6 +1,5 @@
 ﻿Public Class BrukerHovedside
     Private Sub BrukerHovedside_Closing(sender As Object, e As EventArgs) Handles Me.Closing
-        Logginn.Show()
         Me.Hide()
     End Sub
 
@@ -38,6 +37,7 @@
     End Sub
 
     Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
+        Logginn.Show()
         Me.Close()
     End Sub
 
