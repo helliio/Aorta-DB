@@ -23,6 +23,20 @@ Partial Class NyBruker
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NyBruker))
+        Me.lblNybruker = New System.Windows.Forms.Label()
+        Me.btnTilbake = New System.Windows.Forms.Button()
+        Me.txtTelefon = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtPostnummer = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.txtPoststed = New System.Windows.Forms.TextBox()
+        Me.txtAdresse = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.txtEtternavn = New System.Windows.Forms.TextBox()
+        Me.txtFornavn = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.txtBekreftpass = New System.Windows.Forms.TextBox()
         Me.txtPassord = New System.Windows.Forms.TextBox()
         Me.txtMail = New System.Windows.Forms.TextBox()
@@ -32,217 +46,226 @@ Partial Class NyBruker
         Me.lblPassord = New System.Windows.Forms.Label()
         Me.lblMail = New System.Windows.Forms.Label()
         Me.lblPersonnummer = New System.Windows.Forms.Label()
-        Me.lblNybruker = New System.Windows.Forms.Label()
-        Me.txtEtternavn = New System.Windows.Forms.TextBox()
-        Me.txtFornavn = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.btnTilbake = New System.Windows.Forms.Button()
-        Me.txtPoststed = New System.Windows.Forms.TextBox()
-        Me.txtAdresse = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.txtPostnummer = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.txtTelefon = New System.Windows.Forms.TextBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
-        '
-        'txtBekreftpass
-        '
-        Me.txtBekreftpass.Location = New System.Drawing.Point(222, 254)
-        Me.txtBekreftpass.Name = "txtBekreftpass"
-        Me.txtBekreftpass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtBekreftpass.Size = New System.Drawing.Size(100, 20)
-        Me.txtBekreftpass.TabIndex = 31
-        '
-        'txtPassord
-        '
-        Me.txtPassord.Location = New System.Drawing.Point(222, 215)
-        Me.txtPassord.Name = "txtPassord"
-        Me.txtPassord.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassord.Size = New System.Drawing.Size(100, 20)
-        Me.txtPassord.TabIndex = 30
-        '
-        'txtMail
-        '
-        Me.txtMail.Location = New System.Drawing.Point(48, 254)
-        Me.txtMail.Name = "txtMail"
-        Me.txtMail.Size = New System.Drawing.Size(100, 20)
-        Me.txtMail.TabIndex = 26
-        '
-        'txtPersonnummer
-        '
-        Me.txtPersonnummer.Location = New System.Drawing.Point(48, 175)
-        Me.txtPersonnummer.Name = "txtPersonnummer"
-        Me.txtPersonnummer.Size = New System.Drawing.Size(100, 20)
-        Me.txtPersonnummer.TabIndex = 24
-        '
-        'btnNybruker
-        '
-        Me.btnNybruker.Location = New System.Drawing.Point(122, 290)
-        Me.btnNybruker.Name = "btnNybruker"
-        Me.btnNybruker.Size = New System.Drawing.Size(132, 49)
-        Me.btnNybruker.TabIndex = 40
-        Me.btnNybruker.Text = "Lag ny bruker"
-        Me.btnNybruker.UseVisualStyleBackColor = True
-        '
-        'lblBekreftpass
-        '
-        Me.lblBekreftpass.AutoSize = True
-        Me.lblBekreftpass.Location = New System.Drawing.Point(219, 238)
-        Me.lblBekreftpass.Name = "lblBekreftpass"
-        Me.lblBekreftpass.Size = New System.Drawing.Size(81, 13)
-        Me.lblBekreftpass.TabIndex = 14
-        Me.lblBekreftpass.Text = "Bekreft passord"
-        '
-        'lblPassord
-        '
-        Me.lblPassord.AutoSize = True
-        Me.lblPassord.Location = New System.Drawing.Point(220, 199)
-        Me.lblPassord.Name = "lblPassord"
-        Me.lblPassord.Size = New System.Drawing.Size(45, 13)
-        Me.lblPassord.TabIndex = 13
-        Me.lblPassord.Text = "Passord"
-        '
-        'lblMail
-        '
-        Me.lblMail.AutoSize = True
-        Me.lblMail.Location = New System.Drawing.Point(45, 238)
-        Me.lblMail.Name = "lblMail"
-        Me.lblMail.Size = New System.Drawing.Size(26, 13)
-        Me.lblMail.TabIndex = 12
-        Me.lblMail.Text = "Mail"
-        '
-        'lblPersonnummer
-        '
-        Me.lblPersonnummer.AutoSize = True
-        Me.lblPersonnummer.Location = New System.Drawing.Point(45, 159)
-        Me.lblPersonnummer.Name = "lblPersonnummer"
-        Me.lblPersonnummer.Size = New System.Drawing.Size(77, 13)
-        Me.lblPersonnummer.TabIndex = 11
-        Me.lblPersonnummer.Text = "Personnummer"
         '
         'lblNybruker
         '
         Me.lblNybruker.AutoSize = True
-        Me.lblNybruker.Font = New System.Drawing.Font("Calibri", 15.25!, System.Drawing.FontStyle.Bold)
-        Me.lblNybruker.Location = New System.Drawing.Point(44, 47)
+        Me.lblNybruker.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNybruker.Location = New System.Drawing.Point(80, 39)
         Me.lblNybruker.Name = "lblNybruker"
-        Me.lblNybruker.Size = New System.Drawing.Size(97, 26)
+        Me.lblNybruker.Size = New System.Drawing.Size(340, 32)
         Me.lblNybruker.TabIndex = 10
-        Me.lblNybruker.Text = "Ny bruker"
-        '
-        'txtEtternavn
-        '
-        Me.txtEtternavn.Location = New System.Drawing.Point(48, 136)
-        Me.txtEtternavn.Name = "txtEtternavn"
-        Me.txtEtternavn.Size = New System.Drawing.Size(100, 20)
-        Me.txtEtternavn.TabIndex = 23
-        '
-        'txtFornavn
-        '
-        Me.txtFornavn.Location = New System.Drawing.Point(48, 97)
-        Me.txtFornavn.Name = "txtFornavn"
-        Me.txtFornavn.Size = New System.Drawing.Size(100, 20)
-        Me.txtFornavn.TabIndex = 22
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(45, 120)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(53, 13)
-        Me.Label1.TabIndex = 21
-        Me.Label1.Text = "Etternavn"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(45, 81)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(46, 13)
-        Me.Label2.TabIndex = 20
-        Me.Label2.Text = "Fornavn"
+        Me.lblNybruker.Text = "Registrer deg som blodgiver"
         '
         'btnTilbake
         '
-        Me.btnTilbake.Location = New System.Drawing.Point(12, 12)
+        Me.btnTilbake.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTilbake.Location = New System.Drawing.Point(542, 12)
         Me.btnTilbake.Name = "btnTilbake"
-        Me.btnTilbake.Size = New System.Drawing.Size(75, 23)
-        Me.btnTilbake.TabIndex = 41
+        Me.btnTilbake.Size = New System.Drawing.Size(80, 33)
+        Me.btnTilbake.TabIndex = 108
         Me.btnTilbake.Text = "Tilbake"
         Me.btnTilbake.UseVisualStyleBackColor = True
         '
+        'txtTelefon
+        '
+        Me.txtTelefon.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtTelefon.Location = New System.Drawing.Point(86, 254)
+        Me.txtTelefon.Name = "txtTelefon"
+        Me.txtTelefon.Size = New System.Drawing.Size(100, 23)
+        Me.txtTelefon.TabIndex = 97
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(83, 238)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(46, 15)
+        Me.Label3.TabIndex = 108
+        Me.Label3.Text = "Telefon"
+        '
+        'txtPostnummer
+        '
+        Me.txtPostnummer.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPostnummer.Location = New System.Drawing.Point(379, 166)
+        Me.txtPostnummer.Name = "txtPostnummer"
+        Me.txtPostnummer.Size = New System.Drawing.Size(100, 23)
+        Me.txtPostnummer.TabIndex = 100
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(376, 150)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(76, 15)
+        Me.Label6.TabIndex = 106
+        Me.Label6.Text = "Postnummer"
+        '
         'txtPoststed
         '
-        Me.txtPoststed.Location = New System.Drawing.Point(222, 175)
+        Me.txtPoststed.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPoststed.Location = New System.Drawing.Point(379, 210)
         Me.txtPoststed.Name = "txtPoststed"
-        Me.txtPoststed.Size = New System.Drawing.Size(100, 20)
-        Me.txtPoststed.TabIndex = 29
+        Me.txtPoststed.Size = New System.Drawing.Size(100, 23)
+        Me.txtPoststed.TabIndex = 102
         '
         'txtAdresse
         '
-        Me.txtAdresse.Location = New System.Drawing.Point(222, 97)
+        Me.txtAdresse.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtAdresse.Location = New System.Drawing.Point(379, 123)
         Me.txtAdresse.Name = "txtAdresse"
-        Me.txtAdresse.Size = New System.Drawing.Size(100, 20)
-        Me.txtAdresse.TabIndex = 27
+        Me.txtAdresse.Size = New System.Drawing.Size(100, 23)
+        Me.txtAdresse.TabIndex = 99
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(219, 159)
+        Me.Label4.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(376, 194)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(48, 13)
-        Me.Label4.TabIndex = 30
+        Me.Label4.Size = New System.Drawing.Size(54, 15)
+        Me.Label4.TabIndex = 104
         Me.Label4.Text = "Poststed"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(219, 81)
+        Me.Label5.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(376, 105)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(45, 13)
-        Me.Label5.TabIndex = 29
+        Me.Label5.Size = New System.Drawing.Size(50, 15)
+        Me.Label5.TabIndex = 101
         Me.Label5.Text = "Adresse"
         '
-        'txtPostnummer
+        'txtEtternavn
         '
-        Me.txtPostnummer.Location = New System.Drawing.Point(222, 136)
-        Me.txtPostnummer.Name = "txtPostnummer"
-        Me.txtPostnummer.Size = New System.Drawing.Size(100, 20)
-        Me.txtPostnummer.TabIndex = 28
+        Me.txtEtternavn.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtEtternavn.Location = New System.Drawing.Point(86, 166)
+        Me.txtEtternavn.Name = "txtEtternavn"
+        Me.txtEtternavn.Size = New System.Drawing.Size(100, 23)
+        Me.txtEtternavn.TabIndex = 95
         '
-        'Label6
+        'txtFornavn
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(219, 120)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(65, 13)
-        Me.Label6.TabIndex = 33
-        Me.Label6.Text = "Postnummer"
+        Me.txtFornavn.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtFornavn.Location = New System.Drawing.Point(86, 121)
+        Me.txtFornavn.Name = "txtFornavn"
+        Me.txtFornavn.Size = New System.Drawing.Size(100, 23)
+        Me.txtFornavn.TabIndex = 94
         '
-        'txtTelefon
+        'Label1
         '
-        Me.txtTelefon.Location = New System.Drawing.Point(48, 215)
-        Me.txtTelefon.Name = "txtTelefon"
-        Me.txtTelefon.Size = New System.Drawing.Size(100, 20)
-        Me.txtTelefon.TabIndex = 25
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(83, 150)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(59, 15)
+        Me.Label1.TabIndex = 93
+        Me.Label1.Text = "Etternavn"
         '
-        'Label3
+        'Label2
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(45, 199)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(43, 13)
-        Me.Label3.TabIndex = 42
-        Me.Label3.Text = "Telefon"
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(83, 105)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(52, 15)
+        Me.Label2.TabIndex = 92
+        Me.Label2.Text = "Fornavn"
+        '
+        'txtBekreftpass
+        '
+        Me.txtBekreftpass.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtBekreftpass.Location = New System.Drawing.Point(379, 300)
+        Me.txtBekreftpass.Name = "txtBekreftpass"
+        Me.txtBekreftpass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtBekreftpass.Size = New System.Drawing.Size(100, 23)
+        Me.txtBekreftpass.TabIndex = 105
+        '
+        'txtPassord
+        '
+        Me.txtPassord.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassord.Location = New System.Drawing.Point(379, 254)
+        Me.txtPassord.Name = "txtPassord"
+        Me.txtPassord.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPassord.Size = New System.Drawing.Size(100, 23)
+        Me.txtPassord.TabIndex = 103
+        '
+        'txtMail
+        '
+        Me.txtMail.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtMail.Location = New System.Drawing.Point(86, 298)
+        Me.txtMail.Name = "txtMail"
+        Me.txtMail.Size = New System.Drawing.Size(100, 23)
+        Me.txtMail.TabIndex = 98
+        '
+        'txtPersonnummer
+        '
+        Me.txtPersonnummer.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPersonnummer.Location = New System.Drawing.Point(86, 210)
+        Me.txtPersonnummer.Name = "txtPersonnummer"
+        Me.txtPersonnummer.Size = New System.Drawing.Size(100, 23)
+        Me.txtPersonnummer.TabIndex = 96
+        '
+        'btnNybruker
+        '
+        Me.btnNybruker.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNybruker.Location = New System.Drawing.Point(213, 358)
+        Me.btnNybruker.Name = "btnNybruker"
+        Me.btnNybruker.Size = New System.Drawing.Size(132, 49)
+        Me.btnNybruker.TabIndex = 107
+        Me.btnNybruker.Text = "Registrer"
+        Me.btnNybruker.UseVisualStyleBackColor = True
+        '
+        'lblBekreftpass
+        '
+        Me.lblBekreftpass.AutoSize = True
+        Me.lblBekreftpass.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBekreftpass.Location = New System.Drawing.Point(376, 282)
+        Me.lblBekreftpass.Name = "lblBekreftpass"
+        Me.lblBekreftpass.Size = New System.Drawing.Size(93, 15)
+        Me.lblBekreftpass.TabIndex = 91
+        Me.lblBekreftpass.Text = "Bekreft passord"
+        '
+        'lblPassord
+        '
+        Me.lblPassord.AutoSize = True
+        Me.lblPassord.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPassord.Location = New System.Drawing.Point(376, 238)
+        Me.lblPassord.Name = "lblPassord"
+        Me.lblPassord.Size = New System.Drawing.Size(52, 15)
+        Me.lblPassord.TabIndex = 90
+        Me.lblPassord.Text = "Passord"
+        '
+        'lblMail
+        '
+        Me.lblMail.AutoSize = True
+        Me.lblMail.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMail.Location = New System.Drawing.Point(83, 282)
+        Me.lblMail.Name = "lblMail"
+        Me.lblMail.Size = New System.Drawing.Size(33, 15)
+        Me.lblMail.TabIndex = 89
+        Me.lblMail.Text = "Mail"
+        '
+        'lblPersonnummer
+        '
+        Me.lblPersonnummer.AutoSize = True
+        Me.lblPersonnummer.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPersonnummer.Location = New System.Drawing.Point(83, 194)
+        Me.lblPersonnummer.Name = "lblPersonnummer"
+        Me.lblPersonnummer.Size = New System.Drawing.Size(90, 15)
+        Me.lblPersonnummer.TabIndex = 88
+        Me.lblPersonnummer.Text = "Personnummer"
         '
         'NyBruker
         '
+        Me.AcceptButton = Me.btnNybruker
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(374, 341)
+        Me.ClientSize = New System.Drawing.Size(634, 511)
         Me.Controls.Add(Me.txtTelefon)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.txtPostnummer)
@@ -251,7 +274,6 @@ Partial Class NyBruker
         Me.Controls.Add(Me.txtAdresse)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.btnTilbake)
         Me.Controls.Add(Me.txtEtternavn)
         Me.Controls.Add(Me.txtFornavn)
         Me.Controls.Add(Me.Label1)
@@ -265,14 +287,31 @@ Partial Class NyBruker
         Me.Controls.Add(Me.lblPassord)
         Me.Controls.Add(Me.lblMail)
         Me.Controls.Add(Me.lblPersonnummer)
+        Me.Controls.Add(Me.btnTilbake)
         Me.Controls.Add(Me.lblNybruker)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "NyBruker"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
+    Friend WithEvents lblNybruker As Label
+    Friend WithEvents btnTilbake As Button
+    Friend WithEvents txtTelefon As TextBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents txtPostnummer As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents txtPoststed As TextBox
+    Friend WithEvents txtAdresse As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents txtEtternavn As TextBox
+    Friend WithEvents txtFornavn As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
     Friend WithEvents txtBekreftpass As TextBox
     Friend WithEvents txtPassord As TextBox
     Friend WithEvents txtMail As TextBox
@@ -282,18 +321,4 @@ Partial Class NyBruker
     Friend WithEvents lblPassord As Label
     Friend WithEvents lblMail As Label
     Friend WithEvents lblPersonnummer As Label
-    Friend WithEvents lblNybruker As Label
-    Friend WithEvents txtEtternavn As TextBox
-    Friend WithEvents txtFornavn As TextBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents btnTilbake As Button
-    Friend WithEvents txtPoststed As TextBox
-    Friend WithEvents txtAdresse As TextBox
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents txtPostnummer As TextBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents txtTelefon As TextBox
-    Friend WithEvents Label3 As Label
 End Class
