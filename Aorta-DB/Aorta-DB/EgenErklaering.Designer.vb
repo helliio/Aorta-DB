@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class EgenErklaering
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class EgenErklaering
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -230,10 +230,10 @@ Partial Class EgenErklaering
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(185, -14)
+        Me.Button1.Location = New System.Drawing.Point(492, 466)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(213, 66)
+        Me.Button1.Size = New System.Drawing.Size(106, 37)
         Me.Button1.TabIndex = 24
         Me.Button1.Text = "Neste vindu"
         Me.Button1.UseVisualStyleBackColor = True
@@ -623,7 +623,6 @@ Partial Class EgenErklaering
         Me.GroupBox11.BackColor = System.Drawing.Color.Transparent
         Me.GroupBox11.Controls.Add(Me.radbtnnei11)
         Me.GroupBox11.Controls.Add(Me.radbtnja11)
-        Me.GroupBox11.Controls.Add(Me.Button1)
         Me.GroupBox11.Location = New System.Drawing.Point(407, 428)
         Me.GroupBox11.Margin = New System.Windows.Forms.Padding(0)
         Me.GroupBox11.Name = "GroupBox11"
@@ -673,6 +672,7 @@ Partial Class EgenErklaering
         Me.ClientSize = New System.Drawing.Size(634, 512)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.GroupBox11)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.GroupBox8)
         Me.Controls.Add(Me.GroupBox10)
         Me.Controls.Add(Me.GroupBox9)

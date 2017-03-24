@@ -93,6 +93,4 @@ Public Class EgenErklaering
     Private Sub GroupBox2_Enter(sender As Object, e As EventArgs)
 
     End Sub
-
-
 End Class
