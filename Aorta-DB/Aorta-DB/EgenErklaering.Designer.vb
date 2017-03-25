@@ -669,7 +669,7 @@ Partial Class EgenErklaering
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(634, 512)
+        Me.ClientSize = New System.Drawing.Size(634, 511)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.GroupBox11)
         Me.Controls.Add(Me.Button1)
@@ -698,8 +698,10 @@ Partial Class EgenErklaering
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "EgenErklaering"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "EgenErklaering"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
