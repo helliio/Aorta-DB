@@ -41,16 +41,17 @@ Partial Class AnsattBrukerOversikt
         'lblBruker
         '
         Me.lblBruker.AutoSize = True
-        Me.lblBruker.Location = New System.Drawing.Point(32, 22)
+        Me.lblBruker.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBruker.Location = New System.Drawing.Point(12, 21)
         Me.lblBruker.Name = "lblBruker"
-        Me.lblBruker.Size = New System.Drawing.Size(73, 13)
+        Me.lblBruker.Size = New System.Drawing.Size(179, 32)
         Me.lblBruker.TabIndex = 0
         Me.lblBruker.Text = "Donør: Bruker"
         '
         'lblNesteTime
         '
         Me.lblNesteTime.AutoSize = True
-        Me.lblNesteTime.Location = New System.Drawing.Point(9, 69)
+        Me.lblNesteTime.Location = New System.Drawing.Point(90, 93)
         Me.lblNesteTime.Name = "lblNesteTime"
         Me.lblNesteTime.Size = New System.Drawing.Size(0, 13)
         Me.lblNesteTime.TabIndex = 11
@@ -58,67 +59,77 @@ Partial Class AnsattBrukerOversikt
         'lblNesteGivning
         '
         Me.lblNesteGivning.AutoSize = True
-        Me.lblNesteGivning.Location = New System.Drawing.Point(9, 53)
+        Me.lblNesteGivning.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblNesteGivning.Location = New System.Drawing.Point(15, 93)
         Me.lblNesteGivning.Name = "lblNesteGivning"
-        Me.lblNesteGivning.Size = New System.Drawing.Size(60, 13)
+        Me.lblNesteGivning.Size = New System.Drawing.Size(66, 15)
         Me.lblNesteGivning.TabIndex = 10
         Me.lblNesteGivning.Text = "Neste time:"
         '
         'listboxGivinger
         '
+        Me.listboxGivinger.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listboxGivinger.FormattingEnabled = True
-        Me.listboxGivinger.Location = New System.Drawing.Point(12, 123)
+        Me.listboxGivinger.ItemHeight = 14
+        Me.listboxGivinger.Location = New System.Drawing.Point(18, 242)
         Me.listboxGivinger.Name = "listboxGivinger"
-        Me.listboxGivinger.Size = New System.Drawing.Size(120, 95)
+        Me.listboxGivinger.Size = New System.Drawing.Size(120, 88)
         Me.listboxGivinger.TabIndex = 9
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(9, 102)
+        Me.Label2.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(15, 225)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(79, 13)
+        Me.Label2.Size = New System.Drawing.Size(114, 15)
         Me.Label2.TabIndex = 8
-        Me.Label2.Text = "Siste givninger:"
+        Me.Label2.Text = "Siste blodtappinger"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(13, 225)
+        Me.Label1.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(15, 347)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(66, 13)
+        Me.Label1.Size = New System.Drawing.Size(104, 15)
         Me.Label1.TabIndex = 12
-        Me.Label1.Text = "Generell info"
+        Me.Label1.Text = "Info om blodgiver"
         '
         'listboxInfo
         '
+        Me.listboxInfo.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listboxInfo.FormattingEnabled = True
-        Me.listboxInfo.Location = New System.Drawing.Point(12, 241)
+        Me.listboxInfo.ItemHeight = 14
+        Me.listboxInfo.Location = New System.Drawing.Point(15, 363)
         Me.listboxInfo.Name = "listboxInfo"
-        Me.listboxInfo.Size = New System.Drawing.Size(120, 95)
+        Me.listboxInfo.Size = New System.Drawing.Size(120, 88)
         Me.listboxInfo.TabIndex = 13
         '
         'btnAvbestill
         '
-        Me.btnAvbestill.Location = New System.Drawing.Point(257, 274)
+        Me.btnAvbestill.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAvbestill.Location = New System.Drawing.Point(167, 134)
         Me.btnAvbestill.Name = "btnAvbestill"
         Me.btnAvbestill.Size = New System.Drawing.Size(131, 62)
         Me.btnAvbestill.TabIndex = 15
-        Me.btnAvbestill.Text = "Avbestill givningstime"
+        Me.btnAvbestill.Text = "Avbestill time"
         Me.btnAvbestill.UseVisualStyleBackColor = True
         '
         'btnBestill
         '
-        Me.btnBestill.Location = New System.Drawing.Point(257, 206)
+        Me.btnBestill.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBestill.Location = New System.Drawing.Point(18, 134)
         Me.btnBestill.Name = "btnBestill"
         Me.btnBestill.Size = New System.Drawing.Size(131, 62)
         Me.btnBestill.TabIndex = 14
-        Me.btnBestill.Text = "Bestill givningstime"
+        Me.btnBestill.Text = "Bestill time"
         Me.btnBestill.UseVisualStyleBackColor = True
         '
         'btnTilbake
         '
-        Me.btnTilbake.Location = New System.Drawing.Point(327, 8)
+        Me.btnTilbake.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTilbake.Location = New System.Drawing.Point(534, 21)
         Me.btnTilbake.Name = "btnTilbake"
         Me.btnTilbake.RightToLeft = System.Windows.Forms.RightToLeft.Yes
         Me.btnTilbake.Size = New System.Drawing.Size(61, 27)
@@ -128,36 +139,39 @@ Partial Class AnsattBrukerOversikt
         '
         'btnInfo
         '
-        Me.btnInfo.Location = New System.Drawing.Point(303, 102)
+        Me.btnInfo.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnInfo.Location = New System.Drawing.Point(167, 242)
         Me.btnInfo.Name = "btnInfo"
-        Me.btnInfo.Size = New System.Drawing.Size(85, 44)
+        Me.btnInfo.Size = New System.Drawing.Size(131, 88)
         Me.btnInfo.TabIndex = 17
         Me.btnInfo.Text = "Time info"
         Me.btnInfo.UseVisualStyleBackColor = True
         '
         'btnNyGivning
         '
-        Me.btnNyGivning.Location = New System.Drawing.Point(303, 156)
+        Me.btnNyGivning.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNyGivning.Location = New System.Drawing.Point(317, 242)
         Me.btnNyGivning.Name = "btnNyGivning"
-        Me.btnNyGivning.Size = New System.Drawing.Size(85, 44)
+        Me.btnNyGivning.Size = New System.Drawing.Size(131, 88)
         Me.btnNyGivning.TabIndex = 18
-        Me.btnNyGivning.Text = "Ny givning"
+        Me.btnNyGivning.Text = "Registrer ny blodtapping"
         Me.btnNyGivning.UseVisualStyleBackColor = True
         '
         'btnFørstegangsInfo
         '
-        Me.btnFørstegangsInfo.Location = New System.Drawing.Point(303, 53)
+        Me.btnFørstegangsInfo.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFørstegangsInfo.Location = New System.Drawing.Point(167, 363)
         Me.btnFørstegangsInfo.Name = "btnFørstegangsInfo"
-        Me.btnFørstegangsInfo.Size = New System.Drawing.Size(85, 43)
+        Me.btnFørstegangsInfo.Size = New System.Drawing.Size(131, 88)
         Me.btnFørstegangsInfo.TabIndex = 19
-        Me.btnFørstegangsInfo.Text = "Ny info"
+        Me.btnFørstegangsInfo.Text = "Registrer ny info om blodgiver"
         Me.btnFørstegangsInfo.UseVisualStyleBackColor = True
         '
         'AnsattBrukerOversikt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(400, 348)
+        Me.ClientSize = New System.Drawing.Size(634, 511)
         Me.Controls.Add(Me.btnFørstegangsInfo)
         Me.Controls.Add(Me.btnNyGivning)
         Me.Controls.Add(Me.btnTilbake)
