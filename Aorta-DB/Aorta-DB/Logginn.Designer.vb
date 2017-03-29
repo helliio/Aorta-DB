@@ -37,41 +37,44 @@ Partial Class Logginn
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(110, 32)
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(259, 57)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(49, 13)
+        Me.Label1.Size = New System.Drawing.Size(86, 25)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Logg Inn"
         '
         'TxtPersonnummer
         '
-        Me.TxtPersonnummer.Location = New System.Drawing.Point(94, 70)
+        Me.TxtPersonnummer.Location = New System.Drawing.Point(243, 125)
         Me.TxtPersonnummer.Name = "TxtPersonnummer"
-        Me.TxtPersonnummer.Size = New System.Drawing.Size(100, 20)
+        Me.TxtPersonnummer.Size = New System.Drawing.Size(122, 20)
         Me.TxtPersonnummer.TabIndex = 1
         '
         'txtPassord
         '
-        Me.txtPassord.Location = New System.Drawing.Point(94, 113)
+        Me.txtPassord.Location = New System.Drawing.Point(243, 163)
         Me.txtPassord.Name = "txtPassord"
         Me.txtPassord.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassord.Size = New System.Drawing.Size(100, 20)
+        Me.txtPassord.Size = New System.Drawing.Size(122, 20)
         Me.txtPassord.TabIndex = 2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(96, 170)
+        Me.Button1.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(237, 353)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(98, 21)
+        Me.Button1.Size = New System.Drawing.Size(128, 39)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Glemt passord?"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(83, 197)
+        Me.Button2.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(220, 224)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(123, 52)
+        Me.Button2.Size = New System.Drawing.Size(158, 52)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Logg inn"
         Me.Button2.UseVisualStyleBackColor = True
@@ -79,44 +82,48 @@ Partial Class Logginn
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(40, 116)
+        Me.Label2.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(159, 165)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(48, 13)
+        Me.Label2.Size = New System.Drawing.Size(55, 15)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Passord:"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(8, 73)
+        Me.Label3.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(124, 127)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(80, 13)
+        Me.Label3.Size = New System.Drawing.Size(93, 15)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Personnummer:"
         '
         'btnNyBruker
         '
-        Me.btnNyBruker.Location = New System.Drawing.Point(94, 143)
+        Me.btnNyBruker.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNyBruker.Location = New System.Drawing.Point(237, 299)
         Me.btnNyBruker.Name = "btnNyBruker"
-        Me.btnNyBruker.Size = New System.Drawing.Size(98, 21)
+        Me.btnNyBruker.Size = New System.Drawing.Size(128, 39)
         Me.btnNyBruker.TabIndex = 3
         Me.btnNyBruker.Text = "Ny bruker"
         Me.btnNyBruker.UseVisualStyleBackColor = True
         '
         'btnTilbake
         '
-        Me.btnTilbake.Location = New System.Drawing.Point(13, 13)
+        Me.btnTilbake.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTilbake.Location = New System.Drawing.Point(530, 12)
         Me.btnTilbake.Name = "btnTilbake"
-        Me.btnTilbake.Size = New System.Drawing.Size(65, 22)
+        Me.btnTilbake.Size = New System.Drawing.Size(80, 33)
         Me.btnTilbake.TabIndex = 5
-        Me.btnTilbake.Text = "TIlbake"
+        Me.btnTilbake.Text = "Tilbake"
         Me.btnTilbake.UseVisualStyleBackColor = True
         '
         'Logginn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.ClientSize = New System.Drawing.Size(634, 511)
         Me.Controls.Add(Me.btnTilbake)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -126,8 +133,11 @@ Partial Class Logginn
         Me.Controls.Add(Me.txtPassord)
         Me.Controls.Add(Me.TxtPersonnummer)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "Logginn"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Logg inn"
         Me.ResumeLayout(False)
         Me.PerformLayout()
