@@ -98,6 +98,21 @@ Module DB_module
         close_db()
     End Sub
 
+    Public Sub create_blodpack(user As Decimal, dato As Integer, type As String, hemoglobin As Decimal, hiv As Boolean, hepatitt As Boolean, kommentar As String)
+        connect_db()
+        Dim sqlSporring = "INSERT INTO blodpakke (pernr, dato, type, hemoglobin, hiv, hepatitt, kommentar) VALUES (@pernr, @dato, @type, @hemoglobin, @hiv, @hepatitt, @kommentar)"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@pernr", user)
+        sql.Parameters.AddWithValue("@dato", dato)
+        sql.Parameters.AddWithValue("@type", type)
+        sql.Parameters.AddWithValue("@hemoglobin", hemoglobin)
+        sql.Parameters.AddWithValue("@hiv", hiv)
+        sql.Parameters.AddWithValue("@hepatitt", hepatitt)
+        sql.Parameters.AddWithValue("@kommentar", kommentar)
+        sql.ExecuteNonQuery()
+        close_db()
+    End Sub
+
     Public Sub cancel_appointment(user As Decimal, time As String, dates As String)
         Try
             connect_db()

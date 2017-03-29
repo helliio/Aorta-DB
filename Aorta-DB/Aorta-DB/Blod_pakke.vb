@@ -17,8 +17,8 @@
     End Sub
     Public Sub send()
         Dim tmp = Split(dato, " ")
-        Dim id = CInt(get_appointment_id(tmp(0), tmp(1)))
+        Dim dato_id = CInt(get_appointment_id(tmp(0), tmp(1)))
         erklaring.sendGodkjennErklaring()
-        'send code here
+        create_blodpack(persnr, dato_id, type, hemoglobin, hiv, hepatitt, kommentar)
     End Sub
 End Class
