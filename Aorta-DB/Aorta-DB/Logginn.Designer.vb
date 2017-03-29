@@ -30,7 +30,6 @@ Partial Class Logginn
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.btnNyBruker = New System.Windows.Forms.Button()
         Me.btnTilbake = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -99,16 +98,6 @@ Partial Class Logginn
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Personnummer/id:"
         '
-        'btnNyBruker
-        '
-        Me.btnNyBruker.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNyBruker.Location = New System.Drawing.Point(237, 299)
-        Me.btnNyBruker.Name = "btnNyBruker"
-        Me.btnNyBruker.Size = New System.Drawing.Size(128, 39)
-        Me.btnNyBruker.TabIndex = 3
-        Me.btnNyBruker.Text = "Ny bruker"
-        Me.btnNyBruker.UseVisualStyleBackColor = True
-        '
         'btnTilbake
         '
         Me.btnTilbake.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -128,7 +117,6 @@ Partial Class Logginn
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.btnNyBruker)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txtPassord)
         Me.Controls.Add(Me.TxtPersonnummer)
@@ -151,6 +139,5 @@ Partial Class Logginn
     Friend WithEvents Button2 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents btnNyBruker As Button
     Friend WithEvents btnTilbake As Button
 End Class
