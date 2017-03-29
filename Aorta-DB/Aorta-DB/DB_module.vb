@@ -196,9 +196,21 @@ Module DB_module
         For i As Integer = 3 To 62
             ret.Add(reader.Item(i).ToString())
         Next
+        reader.Close()
         close_db()
         Return ret
     End Function
+
+    Public Sub update_erklaring_godkjenning(persnr As Decimal, dato As Integer, godkjen As Boolean)
+        connect_db()
+        Dim sqlSporring = "UPDATE erklaring SET godkjent = @godkjen WHERE pers = @persnr AND date_id = @date_id;"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@persnr", persnr)
+        sql.Parameters.AddWithValue("@date_id", dato)
+        sql.Parameters.AddWithValue("@godkjen", godkjen)
+        sql.ExecuteNonQuery()
+        close_db()
+    End Sub
 
     Public Sub update_bank_db(type As String, rode As Integer, plasma As Integer, plater As Integer)
         connect_db()

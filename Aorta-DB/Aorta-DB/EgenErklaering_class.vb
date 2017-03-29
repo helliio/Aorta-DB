@@ -3,6 +3,7 @@
     Private pers As Decimal
     Private land As String
     Private dato As String
+    Private godkjent As Boolean = False
     Public Sub New(ByVal personnummer As Decimal)
         pers = personnummer
         For index As Integer = 0 To 58
@@ -28,6 +29,9 @@
         'Debug.Print(str)
         dato = str
     End Sub
+    Public Sub setGodkjenneing()
+        godkjent = True
+    End Sub
     Public Function get_ans_db()
         'Debug.Print(dato)
         Dim tmp = Split(dato, " ")
@@ -38,5 +42,10 @@
         Dim tmp = Split(dato, " ")
         Dim id = CInt(get_appointment_id(tmp(0), tmp(1)))
         create_erklaring(pers, id, answer, land)
+    End Sub
+    Public Sub sendGodkjennErklaring()
+        Dim tmp = Split(dato, " ")
+        Dim id = CInt(get_appointment_id(tmp(0), tmp(1)))
+        update_erklaring_godkjenning(pers, id, godkjent)
     End Sub
 End Class
