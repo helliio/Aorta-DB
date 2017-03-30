@@ -13,7 +13,9 @@
         Me.Hide()
     End Sub
 
-    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
 
+    Private Sub btnNyBruker_Click(sender As Object, e As EventArgs) Handles btnNyBruker.Click
+        NyBruker.Show()
+        Me.Hide()
     End Sub
 End Class
