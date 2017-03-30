@@ -118,7 +118,7 @@ Partial Class BrukerHovedside
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(397, 309)
+        Me.ClientSize = New System.Drawing.Size(634, 511)
         Me.Controls.Add(Me.lblNesteTime)
         Me.Controls.Add(Me.btnAvbestill)
         Me.Controls.Add(Me.btnLoggUt)
@@ -128,8 +128,11 @@ Partial Class BrukerHovedside
         Me.Controls.Add(Me.listboxGivinger)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lblBruker)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MinimizeBox = False
         Me.Name = "BrukerHovedside"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "BrukerHovedside"
         Me.ResumeLayout(False)
         Me.PerformLayout()

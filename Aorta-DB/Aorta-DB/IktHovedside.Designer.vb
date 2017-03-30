@@ -59,12 +59,15 @@ Partial Class IktHovedside
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.ClientSize = New System.Drawing.Size(634, 511)
         Me.Controls.Add(Me.btnLoggUt)
         Me.Controls.Add(Me.btnStatestikk)
         Me.Controls.Add(Me.btnNyAnsatt)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "IktHovedside"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "IktHovedside"
         Me.ResumeLayout(False)
 
