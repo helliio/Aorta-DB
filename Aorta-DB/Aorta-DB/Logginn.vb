@@ -1,5 +1,5 @@
 ﻿Public Class Logginn
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnLogginn.Click
         'Debug.Print(login(TxtPersonnummer.Text, txtPassord.Text))
         Dim id As Decimal = login(TxtPersonnummer.Text, txtPassord.Text)
         If id <> 0 Then
@@ -21,7 +21,12 @@
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnNyBruker_Click(sender As Object, e As EventArgs) 
+        NyBruker.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnGlemtpassord.Click
         Ansatt.Show()
         Me.Hide()
     End Sub
