@@ -29,35 +29,35 @@ Partial Class Main
         Me.Label5 = New System.Windows.Forms.Label()
         Me.btnNyBruker = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel12 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel12.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnLoggInn
@@ -66,7 +66,7 @@ Partial Class Main
         Me.btnLoggInn.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnLoggInn.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnLoggInn.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLoggInn.Location = New System.Drawing.Point(-4, 116)
+        Me.btnLoggInn.Location = New System.Drawing.Point(0, 116)
         Me.btnLoggInn.Name = "btnLoggInn"
         Me.btnLoggInn.Size = New System.Drawing.Size(189, 54)
         Me.btnLoggInn.TabIndex = 0
@@ -130,18 +130,6 @@ Partial Class Main
         Me.Panel3.Size = New System.Drawing.Size(172, 561)
         Me.Panel3.TabIndex = 10
         '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.White
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(-4, 356)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(189, 54)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Kontakt oss"
-        Me.Button1.UseVisualStyleBackColor = False
-        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
@@ -193,27 +181,6 @@ Partial Class Main
         Me.Panel6.Size = New System.Drawing.Size(519, 112)
         Me.Panel6.TabIndex = 15
         '
-        'Label7
-        '
-        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.Gray
-        Me.Label7.Location = New System.Drawing.Point(17, 32)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(486, 76)
-        Me.Label7.TabIndex = 23
-        Me.Label7.Text = resources.GetString("Label7.Text")
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(16, 10)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(284, 20)
-        Me.Label6.TabIndex = 22
-        Me.Label6.Text = "29.03.2017 - Ustabiliteter med systemet"
-        '
         'Label4
         '
         Me.Label4.AutoSize = True
@@ -234,17 +201,6 @@ Partial Class Main
         Me.Panel12.Size = New System.Drawing.Size(158, 146)
         Me.Panel12.TabIndex = 19
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.DimGray
-        Me.PictureBox1.Image = Global.Aorta_DB.My.Resources.Resources._303839_blod_sq_None
-        Me.PictureBox1.Location = New System.Drawing.Point(5, 5)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(149, 134)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.White
@@ -254,6 +210,27 @@ Partial Class Main
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(519, 112)
         Me.Panel4.TabIndex = 16
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.Black
+        Me.Label6.Location = New System.Drawing.Point(16, 10)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(284, 20)
+        Me.Label6.TabIndex = 22
+        Me.Label6.Text = "29.03.2017 - Ustabiliteter med systemet"
+        '
+        'Label7
+        '
+        Me.Label7.Font = New System.Drawing.Font("Century Gothic", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.Gray
+        Me.Label7.Location = New System.Drawing.Point(17, 32)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(486, 76)
+        Me.Label7.TabIndex = 23
+        Me.Label7.Text = resources.GetString("Label7.Text")
         '
         'Label8
         '
@@ -285,17 +262,6 @@ Partial Class Main
         Me.Panel5.Size = New System.Drawing.Size(158, 146)
         Me.Panel5.TabIndex = 20
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.DimGray
-        Me.PictureBox2.Image = Global.Aorta_DB.My.Resources.Resources.pexels_photo_220723
-        Me.PictureBox2.Location = New System.Drawing.Point(5, 5)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(149, 134)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 0
-        Me.PictureBox2.TabStop = False
-        '
         'Panel7
         '
         Me.Panel7.BackColor = System.Drawing.Color.White
@@ -315,6 +281,40 @@ Partial Class Main
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox3.TabIndex = 0
         Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.DimGray
+        Me.PictureBox2.Image = Global.Aorta_DB.My.Resources.Resources.pexels_photo_220723
+        Me.PictureBox2.Location = New System.Drawing.Point(5, 5)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(149, 134)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.DimGray
+        Me.PictureBox1.Image = Global.Aorta_DB.My.Resources.Resources._303839_blod_sq_None
+        Me.PictureBox1.Location = New System.Drawing.Point(5, 5)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(149, 134)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.White
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(-4, 356)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(189, 54)
+        Me.Button1.TabIndex = 8
+        Me.Button1.Text = "Kontakt oss"
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'Main
         '
@@ -347,13 +347,13 @@ Partial Class Main
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         Me.Panel12.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.Panel5.ResumeLayout(False)
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

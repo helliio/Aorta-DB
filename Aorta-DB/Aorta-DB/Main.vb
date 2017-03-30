@@ -15,8 +15,4 @@
     Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
 
     End Sub
-
-    Private Sub btnNyBruker_Click(sender As Object, e As EventArgs) Handles btnNyBruker.Click
-
-    End Sub
 End Class
