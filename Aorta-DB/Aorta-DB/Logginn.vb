@@ -21,11 +21,6 @@
         End If
     End Sub
 
-    Private Sub btnNyBruker_Click(sender As Object, e As EventArgs) 
-        NyBruker.Show()
-        Me.Hide()
-    End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Ansatt.Show()
         Me.Hide()
