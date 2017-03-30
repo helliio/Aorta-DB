@@ -31,6 +31,7 @@ Partial Class Main
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.btnKontakt = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
@@ -38,56 +39,56 @@ Partial Class Main
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Panel3.SuspendLayout()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel12.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel7.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnLoggInn
         '
-        Me.btnLoggInn.BackColor = System.Drawing.Color.White
+        Me.btnLoggInn.BackColor = System.Drawing.Color.Transparent
         Me.btnLoggInn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnLoggInn.FlatAppearance.BorderColor = System.Drawing.Color.White
-        Me.btnLoggInn.FlatAppearance.BorderSize = 0
-        Me.btnLoggInn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.btnLoggInn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnLoggInn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.btnLoggInn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLoggInn.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLoggInn.Location = New System.Drawing.Point(0, 122)
+        Me.btnLoggInn.ForeColor = System.Drawing.Color.White
+        Me.btnLoggInn.Location = New System.Drawing.Point(-13, 122)
         Me.btnLoggInn.Name = "btnLoggInn"
-        Me.btnLoggInn.Size = New System.Drawing.Size(172, 54)
+        Me.btnLoggInn.Size = New System.Drawing.Size(195, 54)
         Me.btnLoggInn.TabIndex = 0
         Me.btnLoggInn.Text = "Logg inn"
         Me.btnLoggInn.UseVisualStyleBackColor = False
         '
         'btnEgenerklæring
         '
-        Me.btnEgenerklæring.BackColor = System.Drawing.Color.White
+        Me.btnEgenerklæring.BackColor = System.Drawing.Color.Transparent
         Me.btnEgenerklæring.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnEgenerklæring.FlatAppearance.BorderSize = 0
-        Me.btnEgenerklæring.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.btnEgenerklæring.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnEgenerklæring.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.btnEgenerklæring.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnEgenerklæring.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEgenerklæring.Location = New System.Drawing.Point(0, 288)
+        Me.btnEgenerklæring.ForeColor = System.Drawing.Color.White
+        Me.btnEgenerklæring.Location = New System.Drawing.Point(-13, 289)
         Me.btnEgenerklæring.Name = "btnEgenerklæring"
-        Me.btnEgenerklæring.Size = New System.Drawing.Size(172, 54)
+        Me.btnEgenerklæring.Size = New System.Drawing.Size(195, 54)
         Me.btnEgenerklæring.TabIndex = 0
         Me.btnEgenerklæring.Text = "Egenerklæring"
         Me.btnEgenerklæring.UseVisualStyleBackColor = False
@@ -114,22 +115,23 @@ Partial Class Main
         '
         'btnNyBruker
         '
-        Me.btnNyBruker.BackColor = System.Drawing.Color.White
+        Me.btnNyBruker.BackColor = System.Drawing.Color.Transparent
         Me.btnNyBruker.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnNyBruker.FlatAppearance.BorderSize = 0
-        Me.btnNyBruker.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.btnNyBruker.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnNyBruker.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.btnNyBruker.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnNyBruker.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnNyBruker.Location = New System.Drawing.Point(0, 206)
+        Me.btnNyBruker.ForeColor = System.Drawing.Color.White
+        Me.btnNyBruker.Location = New System.Drawing.Point(-13, 207)
         Me.btnNyBruker.Name = "btnNyBruker"
-        Me.btnNyBruker.Size = New System.Drawing.Size(172, 54)
+        Me.btnNyBruker.Size = New System.Drawing.Size(195, 54)
         Me.btnNyBruker.TabIndex = 7
         Me.btnNyBruker.Text = "Registrer deg"
         Me.btnNyBruker.UseVisualStyleBackColor = False
         '
         'Panel3
         '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(173, Byte), Integer))
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
         Me.Panel3.Controls.Add(Me.btnKontakt)
         Me.Panel3.Controls.Add(Me.btnLoggInn)
         Me.Panel3.Controls.Add(Me.btnNyBruker)
@@ -142,15 +144,16 @@ Partial Class Main
         '
         'btnKontakt
         '
-        Me.btnKontakt.BackColor = System.Drawing.Color.White
+        Me.btnKontakt.BackColor = System.Drawing.Color.Transparent
         Me.btnKontakt.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnKontakt.FlatAppearance.BorderSize = 0
-        Me.btnKontakt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.btnKontakt.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnKontakt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.btnKontakt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnKontakt.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnKontakt.Location = New System.Drawing.Point(0, 375)
+        Me.btnKontakt.ForeColor = System.Drawing.Color.White
+        Me.btnKontakt.Location = New System.Drawing.Point(-13, 375)
         Me.btnKontakt.Name = "btnKontakt"
-        Me.btnKontakt.Size = New System.Drawing.Size(172, 54)
+        Me.btnKontakt.Size = New System.Drawing.Size(195, 54)
         Me.btnKontakt.TabIndex = 8
         Me.btnKontakt.Text = "Kontakt oss"
         Me.btnKontakt.UseVisualStyleBackColor = False
@@ -163,6 +166,16 @@ Partial Class Main
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(172, 75)
         Me.Panel1.TabIndex = 11
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.Aorta_DB.My.Resources.Resources.Logomakr_2plwp5
+        Me.PictureBox4.Location = New System.Drawing.Point(43, 24)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(79, 26)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 0
+        Me.PictureBox4.TabStop = False
         '
         'Panel2
         '
@@ -236,6 +249,17 @@ Partial Class Main
         Me.Panel12.Size = New System.Drawing.Size(158, 146)
         Me.Panel12.TabIndex = 19
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.DimGray
+        Me.PictureBox1.Image = Global.Aorta_DB.My.Resources.Resources._303839_blod_sq_None
+        Me.PictureBox1.Location = New System.Drawing.Point(5, 5)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(149, 134)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
+        '
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.White
@@ -276,6 +300,17 @@ Partial Class Main
         Me.Panel5.Size = New System.Drawing.Size(158, 146)
         Me.Panel5.TabIndex = 20
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.DimGray
+        Me.PictureBox2.Image = Global.Aorta_DB.My.Resources.Resources.pexels_photo_220723
+        Me.PictureBox2.Location = New System.Drawing.Point(5, 5)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(149, 134)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabStop = False
+        '
         'Panel7
         '
         Me.Panel7.BackColor = System.Drawing.Color.White
@@ -296,43 +331,11 @@ Partial Class Main
         Me.PictureBox3.TabIndex = 0
         Me.PictureBox3.TabStop = False
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.DimGray
-        Me.PictureBox2.Image = Global.Aorta_DB.My.Resources.Resources.pexels_photo_220723
-        Me.PictureBox2.Location = New System.Drawing.Point(5, 5)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(149, 134)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 0
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.DimGray
-        Me.PictureBox1.Image = Global.Aorta_DB.My.Resources.Resources._303839_blod_sq_None
-        Me.PictureBox1.Location = New System.Drawing.Point(5, 5)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(149, 134)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.Aorta_DB.My.Resources.Resources.Logomakr_2plwp5
-        Me.PictureBox4.Location = New System.Drawing.Point(41, 23)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(79, 26)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 0
-        Me.PictureBox4.TabStop = False
-        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(243, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(232, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(233, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(784, 561)
         Me.Controls.Add(Me.Panel7)
         Me.Controls.Add(Me.Panel5)
@@ -353,19 +356,19 @@ Partial Class Main
         Me.Text = "Hjem"
         Me.Panel3.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         Me.Panel12.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         Me.Panel5.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel7.ResumeLayout(False)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
