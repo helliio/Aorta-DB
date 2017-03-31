@@ -131,6 +131,7 @@ Public Class BlodGivning
             Ansatt.Show()
             Me.Hide()
         ElseIf ComboBox1.Text = "Ja" Then
+            erklaring.setGodkjenneing()
             BlodGivning2.Show()
             Me.Hide()
         Else

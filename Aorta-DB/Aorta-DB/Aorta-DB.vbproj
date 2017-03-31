@@ -79,6 +79,7 @@
     <Compile Include="AnsattBrukerOversikt.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Bank_module.vb" />
     <Compile Include="blodbank.Designer.vb">
       <DependentUpon>blodbank.vb</DependentUpon>
     </Compile>
@@ -369,7 +370,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Logomakr_4iqSlj.png" />
+    <None Include="Resources\logo.png" />
     <None Include="Resources\Logomakr_4iqSlj.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
