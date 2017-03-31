@@ -931,7 +931,7 @@ Partial Class EgenErklaering5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(634, 700)
+        Me.ClientSize = New System.Drawing.Size(634, 711)
         Me.Controls.Add(Me.GroupBox17)
         Me.Controls.Add(Me.GroupBox16)
         Me.Controls.Add(Me.GroupBox12)

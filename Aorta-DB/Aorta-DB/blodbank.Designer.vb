@@ -47,7 +47,7 @@ Partial Class blodbank
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(535, 33)
+        Me.ListBox1.Location = New System.Drawing.Point(458, 33)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(149, 134)
         Me.ListBox1.TabIndex = 0
@@ -129,7 +129,7 @@ Partial Class blodbank
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(620, 282)
+        Me.Button3.Location = New System.Drawing.Point(458, 263)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 16
@@ -185,7 +185,7 @@ Partial Class blodbank
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(535, 177)
+        Me.Button4.Location = New System.Drawing.Point(458, 190)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 22
@@ -196,7 +196,7 @@ Partial Class blodbank
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(743, 327)
+        Me.ClientSize = New System.Drawing.Size(634, 511)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.NumericPlater)
         Me.Controls.Add(Me.NumericPlasma)
@@ -213,8 +213,10 @@ Partial Class blodbank
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ListBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "blodbank"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "blodbank"
         CType(Me.NumericRode, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericPlasma, System.ComponentModel.ISupportInitialize).EndInit()

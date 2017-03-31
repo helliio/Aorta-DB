@@ -95,7 +95,7 @@ Partial Class EgenerklaeringLoggInn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.ClientSize = New System.Drawing.Size(634, 511)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -103,7 +103,10 @@ Partial Class EgenerklaeringLoggInn
         Me.Controls.Add(Me.txtPassord)
         Me.Controls.Add(Me.TxtPersonnummer)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
         Me.Name = "EgenerklaeringLoggInn"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "EgenerklaeringLoggInn"
         Me.ResumeLayout(False)
         Me.PerformLayout()

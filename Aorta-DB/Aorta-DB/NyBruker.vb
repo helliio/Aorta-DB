@@ -65,7 +65,7 @@ Public Class NyBruker
     End Sub
 
     Private Sub NyBruker_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        Logginn.Show()
+        Main.Show()
         Me.Hide()
     End Sub
 
