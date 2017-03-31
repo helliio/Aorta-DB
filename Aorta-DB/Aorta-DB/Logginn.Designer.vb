@@ -248,7 +248,6 @@ Partial Class Logginn
         '
         'Logginn
         '
-        Me.AcceptButton = Me.Button2
         Me.AcceptButton = Me.btnLogginn
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
