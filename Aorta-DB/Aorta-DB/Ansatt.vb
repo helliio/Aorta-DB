@@ -31,4 +31,8 @@ Public Class Ansatt
         End If
 
     End Sub
+
+    Private Sub btnGivninger_Click(sender As Object, e As EventArgs) Handles btnGivninger.Click
+
+    End Sub
 End Class

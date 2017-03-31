@@ -164,7 +164,7 @@ Partial Class AnsattBrukerOversikt
         Me.btnFørstegangsInfo.Name = "btnFørstegangsInfo"
         Me.btnFørstegangsInfo.Size = New System.Drawing.Size(131, 88)
         Me.btnFørstegangsInfo.TabIndex = 19
-        Me.btnFørstegangsInfo.Text = "Registrer ny info om blodgiver"
+        Me.btnFørstegangsInfo.Text = "Helsesjekk"
         Me.btnFørstegangsInfo.UseVisualStyleBackColor = True
         '
         'AnsattBrukerOversikt
