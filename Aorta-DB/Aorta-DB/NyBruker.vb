@@ -14,7 +14,7 @@ Public Class NyBruker
             Return False
         End If
     End Function
-    Private Sub btnNybruker_Click(sender As Object, e As EventArgs) Handles btnNybruker.Click
+    Private Sub btnNybruker_Click(sender As Object, e As EventArgs)
         Dim persnr As Decimal
         Dim tlf As Decimal
         Dim postnr As Integer
@@ -65,7 +65,11 @@ Public Class NyBruker
     End Sub
 
     Private Sub NyBruker_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        Logginn.Show()
+        Main.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub btnNybruker_Click_1(sender As Object, e As EventArgs) Handles btnNybruker.Click
+
     End Sub
 End Class

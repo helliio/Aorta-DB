@@ -22,6 +22,7 @@ Partial Class blodbank
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(blodbank))
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -32,38 +33,39 @@ Partial Class blodbank
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.NumericUpDown3 = New System.Windows.Forms.NumericUpDown()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.RadioButtonPlus = New System.Windows.Forms.RadioButton()
+        Me.RadioButtonMinus = New System.Windows.Forms.RadioButton()
+        Me.NumericRode = New System.Windows.Forms.NumericUpDown()
+        Me.NumericPlasma = New System.Windows.Forms.NumericUpDown()
+        Me.NumericPlater = New System.Windows.Forms.NumericUpDown()
+        Me.Button4 = New System.Windows.Forms.Button()
+        CType(Me.NumericRode, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericPlasma, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericPlater, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(525, 113)
+        Me.ListBox1.Location = New System.Drawing.Point(458, 33)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(149, 134)
         Me.ListBox1.TabIndex = 0
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(137, 225)
+        Me.Button1.Location = New System.Drawing.Point(117, 226)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(153, 23)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "send"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(219, 225)
+        Me.Button2.Location = New System.Drawing.Point(276, 226)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(144, 23)
         Me.Button2.TabIndex = 6
         Me.Button2.Text = "bestille"
         Me.Button2.UseVisualStyleBackColor = True
@@ -84,12 +86,12 @@ Partial Class blodbank
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox1.TabIndex = 8
-        Me.ComboBox1.Text = "velg blodtype"
+        Me.ComboBox1.Text = "Velg blodtype"
         '
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(284, 177)
+        Me.CheckBox1.Location = New System.Drawing.Point(117, 177)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(107, 17)
         Me.CheckBox1.TabIndex = 9
@@ -99,7 +101,7 @@ Partial Class blodbank
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(195, 177)
+        Me.CheckBox2.Location = New System.Drawing.Point(232, 177)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(59, 17)
         Me.CheckBox2.TabIndex = 10
@@ -109,7 +111,7 @@ Partial Class blodbank
         'CheckBox3
         '
         Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(117, 177)
+        Me.CheckBox3.Location = New System.Drawing.Point(328, 177)
         Me.CheckBox3.Name = "CheckBox3"
         Me.CheckBox3.Size = New System.Drawing.Size(72, 17)
         Me.CheckBox3.TabIndex = 11
@@ -127,70 +129,80 @@ Partial Class blodbank
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(620, 282)
+        Me.Button3.Location = New System.Drawing.Point(458, 263)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 16
         Me.Button3.Text = "min side"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'RadioButton1
+        'RadioButtonPlus
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(137, 60)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(47, 17)
-        Me.RadioButton1.TabIndex = 17
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "RH+"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.RadioButtonPlus.AutoSize = True
+        Me.RadioButtonPlus.Location = New System.Drawing.Point(137, 60)
+        Me.RadioButtonPlus.Name = "RadioButtonPlus"
+        Me.RadioButtonPlus.Size = New System.Drawing.Size(47, 17)
+        Me.RadioButtonPlus.TabIndex = 17
+        Me.RadioButtonPlus.TabStop = True
+        Me.RadioButtonPlus.Text = "RH+"
+        Me.RadioButtonPlus.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'RadioButtonMinus
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Checked = True
-        Me.RadioButton2.Location = New System.Drawing.Point(137, 83)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(44, 17)
-        Me.RadioButton2.TabIndex = 18
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "RH-"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.RadioButtonMinus.AutoSize = True
+        Me.RadioButtonMinus.Checked = True
+        Me.RadioButtonMinus.Location = New System.Drawing.Point(137, 83)
+        Me.RadioButtonMinus.Name = "RadioButtonMinus"
+        Me.RadioButtonMinus.Size = New System.Drawing.Size(44, 17)
+        Me.RadioButtonMinus.TabIndex = 18
+        Me.RadioButtonMinus.TabStop = True
+        Me.RadioButtonMinus.Text = "RH-"
+        Me.RadioButtonMinus.UseVisualStyleBackColor = True
         '
-        'NumericUpDown1
+        'NumericRode
         '
-        Me.NumericUpDown1.Enabled = False
-        Me.NumericUpDown1.Location = New System.Drawing.Point(117, 200)
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(72, 20)
-        Me.NumericUpDown1.TabIndex = 19
+        Me.NumericRode.Enabled = False
+        Me.NumericRode.Location = New System.Drawing.Point(117, 200)
+        Me.NumericRode.Name = "NumericRode"
+        Me.NumericRode.Size = New System.Drawing.Size(107, 20)
+        Me.NumericRode.TabIndex = 19
         '
-        'NumericUpDown2
+        'NumericPlasma
         '
-        Me.NumericUpDown2.Enabled = False
-        Me.NumericUpDown2.Location = New System.Drawing.Point(195, 200)
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(75, 20)
-        Me.NumericUpDown2.TabIndex = 20
+        Me.NumericPlasma.Enabled = False
+        Me.NumericPlasma.Location = New System.Drawing.Point(232, 200)
+        Me.NumericPlasma.Name = "NumericPlasma"
+        Me.NumericPlasma.Size = New System.Drawing.Size(90, 20)
+        Me.NumericPlasma.TabIndex = 20
         '
-        'NumericUpDown3
+        'NumericPlater
         '
-        Me.NumericUpDown3.Enabled = False
-        Me.NumericUpDown3.Location = New System.Drawing.Point(276, 200)
-        Me.NumericUpDown3.Name = "NumericUpDown3"
-        Me.NumericUpDown3.Size = New System.Drawing.Size(120, 20)
-        Me.NumericUpDown3.TabIndex = 21
+        Me.NumericPlater.Enabled = False
+        Me.NumericPlater.Location = New System.Drawing.Point(328, 200)
+        Me.NumericPlater.Name = "NumericPlater"
+        Me.NumericPlater.Size = New System.Drawing.Size(92, 20)
+        Me.NumericPlater.TabIndex = 21
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(458, 190)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 22
+        Me.Button4.Text = "refresh"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'blodbank
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(743, 327)
-        Me.Controls.Add(Me.NumericUpDown3)
-        Me.Controls.Add(Me.NumericUpDown2)
-        Me.Controls.Add(Me.NumericUpDown1)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
+        Me.ClientSize = New System.Drawing.Size(634, 511)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.NumericPlater)
+        Me.Controls.Add(Me.NumericPlasma)
+        Me.Controls.Add(Me.NumericRode)
+        Me.Controls.Add(Me.RadioButtonMinus)
+        Me.Controls.Add(Me.RadioButtonPlus)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.CheckBox3)
@@ -201,11 +213,14 @@ Partial Class blodbank
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ListBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "blodbank"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "blodbank"
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericRode, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericPlasma, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericPlater, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -221,9 +236,10 @@ Partial Class blodbank
     Friend WithEvents CheckBox3 As CheckBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Button3 As Button
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents NumericUpDown1 As NumericUpDown
-    Friend WithEvents NumericUpDown2 As NumericUpDown
-    Friend WithEvents NumericUpDown3 As NumericUpDown
+    Friend WithEvents RadioButtonPlus As RadioButton
+    Friend WithEvents RadioButtonMinus As RadioButton
+    Friend WithEvents NumericRode As NumericUpDown
+    Friend WithEvents NumericPlasma As NumericUpDown
+    Friend WithEvents NumericPlater As NumericUpDown
+    Friend WithEvents Button4 As Button
 End Class

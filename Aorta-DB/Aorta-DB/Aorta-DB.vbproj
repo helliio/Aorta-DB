@@ -47,11 +47,15 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Bunifu Technologies\Bunifu Framework Manager\bin\updates\Bunifu_UI_1.5\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
     <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -79,6 +83,7 @@
     <Compile Include="AnsattBrukerOversikt.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Bank_module.vb" />
     <Compile Include="blodbank.Designer.vb">
       <DependentUpon>blodbank.vb</DependentUpon>
     </Compile>
@@ -349,6 +354,9 @@
     <EmbeddedResource Include="TimeInfoAnsatt.resx">
       <DependentUpon>TimeInfoAnsatt.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TimeInfoDonør.resx">
+      <DependentUpon>TimeInfoDonør.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VelgTime.resx">
       <DependentUpon>VelgTime.vb</DependentUpon>
     </EmbeddedResource>
@@ -366,8 +374,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Logomakr_4iqSlj.png" />
+    <None Include="Resources\logo.png" />
     <None Include="Resources\Logomakr_4iqSlj.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\303839_blod_sq_None.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pexels-photo-220723.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logomakr_2plwp5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

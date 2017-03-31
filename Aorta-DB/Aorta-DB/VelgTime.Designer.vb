@@ -22,6 +22,7 @@ Partial Class VelgTime
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(VelgTime))
         Me.listboxTimer = New System.Windows.Forms.ListBox()
         Me.btnTilbake = New System.Windows.Forms.Button()
         Me.btnVelgTime = New System.Windows.Forms.Button()
@@ -57,11 +58,15 @@ Partial Class VelgTime
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.ClientSize = New System.Drawing.Size(634, 511)
         Me.Controls.Add(Me.btnVelgTime)
         Me.Controls.Add(Me.btnTilbake)
         Me.Controls.Add(Me.listboxTimer)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "VelgTime"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "VelgTime"
         Me.ResumeLayout(False)
 

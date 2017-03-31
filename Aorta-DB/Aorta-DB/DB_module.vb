@@ -98,6 +98,21 @@ Module DB_module
         close_db()
     End Sub
 
+    Public Sub create_blodpack(user As Decimal, dato As Integer, type As String, hemoglobin As Decimal, hiv As Boolean, hepatitt As Boolean, kommentar As String)
+        connect_db()
+        Dim sqlSporring = "INSERT INTO blodpakke (pernr, dato, type, hemoglobin, hiv, hepatitt, kommentar) VALUES (@pernr, @dato, @type, @hemoglobin, @hiv, @hepatitt, @kommentar)"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@pernr", user)
+        sql.Parameters.AddWithValue("@dato", dato)
+        sql.Parameters.AddWithValue("@type", type)
+        sql.Parameters.AddWithValue("@hemoglobin", hemoglobin)
+        sql.Parameters.AddWithValue("@hiv", hiv)
+        sql.Parameters.AddWithValue("@hepatitt", hepatitt)
+        sql.Parameters.AddWithValue("@kommentar", kommentar)
+        sql.ExecuteNonQuery()
+        close_db()
+    End Sub
+
     Public Sub cancel_appointment(user As Decimal, time As String, dates As String)
         Try
             connect_db()
@@ -194,6 +209,45 @@ Module DB_module
         reader.Read()
         For i As Integer = 3 To 62
             ret.Add(reader.Item(i).ToString())
+        Next
+        reader.Close()
+        close_db()
+        Return ret
+    End Function
+
+    Public Sub update_erklaring_godkjenning(persnr As Decimal, dato As Integer, godkjen As Boolean)
+        connect_db()
+        Dim sqlSporring = "UPDATE erklaring SET godkjent = @godkjen WHERE pers = @persnr AND date_id = @date_id;"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@persnr", persnr)
+        sql.Parameters.AddWithValue("@date_id", dato)
+        sql.Parameters.AddWithValue("@godkjen", godkjen)
+        sql.ExecuteNonQuery()
+        close_db()
+    End Sub
+
+    Public Sub update_bank_db(type As String, rode As Integer, plasma As Integer, plater As Integer)
+        connect_db()
+        Dim sqlSporring = "UPDATE blodprod SET rode_blodlegemer = @rode, plasma = @plasma, blodplater  = @plater WHERE  type  = @type;"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@rode", rode)
+        sql.Parameters.AddWithValue("@plasma", plasma)
+        sql.Parameters.AddWithValue("@plater", plater)
+        sql.Parameters.AddWithValue("@type", type)
+        sql.ExecuteNonQuery()
+        close_db()
+    End Sub
+
+    Public Function get_bank_db(type As String)
+        Dim ret As New ArrayList
+        connect_db()
+        Dim sqlSporring = "SELECT rode_blodlegemer, plasma, blodplater FROM blodprod WHERE type = @type"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@type", type)
+        Dim reader As MySqlDataReader = sql.ExecuteReader
+        reader.Read()
+        For i As Integer = 0 To 2
+            ret.Add(reader.Item(i))
         Next
         close_db()
         Return ret

@@ -22,6 +22,7 @@ Partial Class InfoBruker
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InfoBruker))
         Me.btnTilbake = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.listboxInfo = New System.Windows.Forms.ListBox()
@@ -58,11 +59,15 @@ Partial Class InfoBruker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.ClientSize = New System.Drawing.Size(634, 511)
         Me.Controls.Add(Me.listboxInfo)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnTilbake)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "InfoBruker"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "InfoBruker"
         Me.ResumeLayout(False)
         Me.PerformLayout()
