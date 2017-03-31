@@ -77,14 +77,17 @@ Partial Class Blodprodukter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(328, 261)
+        Me.ClientSize = New System.Drawing.Size(634, 511)
         Me.Controls.Add(Me.listboxBlodSendt)
         Me.Controls.Add(Me.listboxBlodGitt)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "Blodprodukter"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Blodprodukter"
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -164,7 +164,7 @@ Partial Class EgenErklaering2
         'Button1
         '
         Me.Button1.Location = New System.Drawing.Point(407, 433)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(213, 66)
         Me.Button1.TabIndex = 34
@@ -174,7 +174,7 @@ Partial Class EgenErklaering2
         'btnTilbake
         '
         Me.btnTilbake.Location = New System.Drawing.Point(13, 462)
-        Me.btnTilbake.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnTilbake.Margin = New System.Windows.Forms.Padding(4)
         Me.btnTilbake.Name = "btnTilbake"
         Me.btnTilbake.Size = New System.Drawing.Size(77, 37)
         Me.btnTilbake.TabIndex = 62
@@ -200,9 +200,9 @@ Partial Class EgenErklaering2
         Me.radbtnnei12.AutoSize = True
         Me.radbtnnei12.Checked = True
         Me.radbtnnei12.Location = New System.Drawing.Point(117, 7)
-        Me.radbtnnei12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.radbtnnei12.Margin = New System.Windows.Forms.Padding(4)
         Me.radbtnnei12.Name = "radbtnnei12"
-        Me.radbtnnei12.Size = New System.Drawing.Size(65, 34)
+        Me.radbtnnei12.Size = New System.Drawing.Size(49, 23)
         Me.radbtnnei12.TabIndex = 66
         Me.radbtnnei12.TabStop = True
         Me.radbtnnei12.Text = "Nei"
@@ -212,9 +212,9 @@ Partial Class EgenErklaering2
         '
         Me.radbtnja12.AutoSize = True
         Me.radbtnja12.Location = New System.Drawing.Point(5, 7)
-        Me.radbtnja12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.radbtnja12.Margin = New System.Windows.Forms.Padding(4)
         Me.radbtnja12.Name = "radbtnja12"
-        Me.radbtnja12.Size = New System.Drawing.Size(53, 34)
+        Me.radbtnja12.Size = New System.Drawing.Size(40, 23)
         Me.radbtnja12.TabIndex = 65
         Me.radbtnja12.Text = "Ja"
         Me.radbtnja12.UseVisualStyleBackColor = True
@@ -238,9 +238,9 @@ Partial Class EgenErklaering2
         Me.radbtnnei13.AutoSize = True
         Me.radbtnnei13.Checked = True
         Me.radbtnnei13.Location = New System.Drawing.Point(117, 7)
-        Me.radbtnnei13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.radbtnnei13.Margin = New System.Windows.Forms.Padding(4)
         Me.radbtnnei13.Name = "radbtnnei13"
-        Me.radbtnnei13.Size = New System.Drawing.Size(65, 34)
+        Me.radbtnnei13.Size = New System.Drawing.Size(49, 23)
         Me.radbtnnei13.TabIndex = 66
         Me.radbtnnei13.TabStop = True
         Me.radbtnnei13.Text = "Nei"
@@ -250,9 +250,9 @@ Partial Class EgenErklaering2
         '
         Me.radbtnja13.AutoSize = True
         Me.radbtnja13.Location = New System.Drawing.Point(5, 7)
-        Me.radbtnja13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.radbtnja13.Margin = New System.Windows.Forms.Padding(4)
         Me.radbtnja13.Name = "radbtnja13"
-        Me.radbtnja13.Size = New System.Drawing.Size(53, 34)
+        Me.radbtnja13.Size = New System.Drawing.Size(40, 23)
         Me.radbtnja13.TabIndex = 65
         Me.radbtnja13.Text = "Ja"
         Me.radbtnja13.UseVisualStyleBackColor = True
@@ -276,9 +276,9 @@ Partial Class EgenErklaering2
         Me.radbtnnei14.AutoSize = True
         Me.radbtnnei14.Checked = True
         Me.radbtnnei14.Location = New System.Drawing.Point(117, 7)
-        Me.radbtnnei14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.radbtnnei14.Margin = New System.Windows.Forms.Padding(4)
         Me.radbtnnei14.Name = "radbtnnei14"
-        Me.radbtnnei14.Size = New System.Drawing.Size(65, 34)
+        Me.radbtnnei14.Size = New System.Drawing.Size(49, 23)
         Me.radbtnnei14.TabIndex = 66
         Me.radbtnnei14.TabStop = True
         Me.radbtnnei14.Text = "Nei"
@@ -288,9 +288,9 @@ Partial Class EgenErklaering2
         '
         Me.radbtnja14.AutoSize = True
         Me.radbtnja14.Location = New System.Drawing.Point(5, 7)
-        Me.radbtnja14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.radbtnja14.Margin = New System.Windows.Forms.Padding(4)
         Me.radbtnja14.Name = "radbtnja14"
-        Me.radbtnja14.Size = New System.Drawing.Size(53, 34)
+        Me.radbtnja14.Size = New System.Drawing.Size(40, 23)
         Me.radbtnja14.TabIndex = 65
         Me.radbtnja14.Text = "Ja"
         Me.radbtnja14.UseVisualStyleBackColor = True
@@ -314,9 +314,9 @@ Partial Class EgenErklaering2
         Me.radbtnnei15.AutoSize = True
         Me.radbtnnei15.Checked = True
         Me.radbtnnei15.Location = New System.Drawing.Point(117, 7)
-        Me.radbtnnei15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.radbtnnei15.Margin = New System.Windows.Forms.Padding(4)
         Me.radbtnnei15.Name = "radbtnnei15"
-        Me.radbtnnei15.Size = New System.Drawing.Size(65, 34)
+        Me.radbtnnei15.Size = New System.Drawing.Size(49, 23)
         Me.radbtnnei15.TabIndex = 66
         Me.radbtnnei15.TabStop = True
         Me.radbtnnei15.Text = "Nei"
@@ -326,9 +326,9 @@ Partial Class EgenErklaering2
         '
         Me.radbtnja15.AutoSize = True
         Me.radbtnja15.Location = New System.Drawing.Point(5, 7)
-        Me.radbtnja15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.radbtnja15.Margin = New System.Windows.Forms.Padding(4)
         Me.radbtnja15.Name = "radbtnja15"
-        Me.radbtnja15.Size = New System.Drawing.Size(53, 34)
+        Me.radbtnja15.Size = New System.Drawing.Size(40, 23)
         Me.radbtnja15.TabIndex = 65
         Me.radbtnja15.Text = "Ja"
         Me.radbtnja15.UseVisualStyleBackColor = True
@@ -352,9 +352,9 @@ Partial Class EgenErklaering2
         Me.radbtnnei16.AutoSize = True
         Me.radbtnnei16.Checked = True
         Me.radbtnnei16.Location = New System.Drawing.Point(117, 7)
-        Me.radbtnnei16.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.radbtnnei16.Margin = New System.Windows.Forms.Padding(4)
         Me.radbtnnei16.Name = "radbtnnei16"
-        Me.radbtnnei16.Size = New System.Drawing.Size(65, 34)
+        Me.radbtnnei16.Size = New System.Drawing.Size(49, 23)
         Me.radbtnnei16.TabIndex = 66
         Me.radbtnnei16.TabStop = True
         Me.radbtnnei16.Text = "Nei"
@@ -364,9 +364,9 @@ Partial Class EgenErklaering2
         '
         Me.radbtnja16.AutoSize = True
         Me.radbtnja16.Location = New System.Drawing.Point(5, 7)
-        Me.radbtnja16.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.radbtnja16.Margin = New System.Windows.Forms.Padding(4)
         Me.radbtnja16.Name = "radbtnja16"
-        Me.radbtnja16.Size = New System.Drawing.Size(53, 34)
+        Me.radbtnja16.Size = New System.Drawing.Size(40, 23)
         Me.radbtnja16.TabIndex = 65
         Me.radbtnja16.Text = "Ja"
         Me.radbtnja16.UseVisualStyleBackColor = True
@@ -390,9 +390,9 @@ Partial Class EgenErklaering2
         Me.radbtnnei17.AutoSize = True
         Me.radbtnnei17.Checked = True
         Me.radbtnnei17.Location = New System.Drawing.Point(117, 7)
-        Me.radbtnnei17.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.radbtnnei17.Margin = New System.Windows.Forms.Padding(4)
         Me.radbtnnei17.Name = "radbtnnei17"
-        Me.radbtnnei17.Size = New System.Drawing.Size(65, 34)
+        Me.radbtnnei17.Size = New System.Drawing.Size(49, 23)
         Me.radbtnnei17.TabIndex = 66
         Me.radbtnnei17.TabStop = True
         Me.radbtnnei17.Text = "Nei"
@@ -402,9 +402,9 @@ Partial Class EgenErklaering2
         '
         Me.radbtnja17.AutoSize = True
         Me.radbtnja17.Location = New System.Drawing.Point(5, 7)
-        Me.radbtnja17.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.radbtnja17.Margin = New System.Windows.Forms.Padding(4)
         Me.radbtnja17.Name = "radbtnja17"
-        Me.radbtnja17.Size = New System.Drawing.Size(53, 34)
+        Me.radbtnja17.Size = New System.Drawing.Size(40, 23)
         Me.radbtnja17.TabIndex = 65
         Me.radbtnja17.Text = "Ja"
         Me.radbtnja17.UseVisualStyleBackColor = True
@@ -428,9 +428,9 @@ Partial Class EgenErklaering2
         Me.radbtnnei18.AutoSize = True
         Me.radbtnnei18.Checked = True
         Me.radbtnnei18.Location = New System.Drawing.Point(117, 7)
-        Me.radbtnnei18.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.radbtnnei18.Margin = New System.Windows.Forms.Padding(4)
         Me.radbtnnei18.Name = "radbtnnei18"
-        Me.radbtnnei18.Size = New System.Drawing.Size(65, 34)
+        Me.radbtnnei18.Size = New System.Drawing.Size(49, 23)
         Me.radbtnnei18.TabIndex = 66
         Me.radbtnnei18.TabStop = True
         Me.radbtnnei18.Text = "Nei"
@@ -440,9 +440,9 @@ Partial Class EgenErklaering2
         '
         Me.radbtnja18.AutoSize = True
         Me.radbtnja18.Location = New System.Drawing.Point(4, 9)
-        Me.radbtnja18.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.radbtnja18.Margin = New System.Windows.Forms.Padding(4)
         Me.radbtnja18.Name = "radbtnja18"
-        Me.radbtnja18.Size = New System.Drawing.Size(53, 34)
+        Me.radbtnja18.Size = New System.Drawing.Size(40, 23)
         Me.radbtnja18.TabIndex = 65
         Me.radbtnja18.Text = "Ja"
         Me.radbtnja18.UseVisualStyleBackColor = True
@@ -451,7 +451,7 @@ Partial Class EgenErklaering2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(634, 512)
+        Me.ClientSize = New System.Drawing.Size(634, 511)
         Me.Controls.Add(Me.GroupBox7)
         Me.Controls.Add(Me.GroupBox6)
         Me.Controls.Add(Me.GroupBox5)
@@ -472,7 +472,7 @@ Partial Class EgenErklaering2
         Me.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "EgenErklaering2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

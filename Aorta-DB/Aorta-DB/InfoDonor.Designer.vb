@@ -89,7 +89,7 @@ Partial Class InfoDonor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.ClientSize = New System.Drawing.Size(634, 511)
         Me.Controls.Add(Me.btnLagreInfo)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox5)
@@ -97,8 +97,11 @@ Partial Class InfoDonor
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.btnTilbake)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MaximizeBox = False
         Me.Name = "InfoDonor"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "InfoDonor"
         Me.ResumeLayout(False)
         Me.PerformLayout()
