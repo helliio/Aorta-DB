@@ -26,8 +26,15 @@ Partial Class InfoDonor
         Me.btnTilbake = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.btnLagreInfo = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnTilbake
@@ -42,7 +49,7 @@ Partial Class InfoDonor
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(223, 134)
+        Me.Label1.Location = New System.Drawing.Point(196, 131)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(51, 13)
         Me.Label1.TabIndex = 4
@@ -51,35 +58,98 @@ Partial Class InfoDonor
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(280, 131)
+        Me.ComboBox1.Location = New System.Drawing.Point(253, 128)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox1.TabIndex = 5
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(254, 183)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(113, 17)
+        Me.CheckBox1.TabIndex = 7
+        Me.CheckBox1.Text = "Har brukeren syflis"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(184, 159)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(66, 13)
+        Me.Label3.TabIndex = 8
+        Me.Label3.Text = "Hemoglobin:"
+        '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.Location = New System.Drawing.Point(254, 157)
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(120, 20)
+        Me.NumericUpDown1.TabIndex = 9
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.Location = New System.Drawing.Point(254, 206)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(109, 17)
+        Me.CheckBox2.TabIndex = 7
+        Me.CheckBox2.Text = "Har brukeren HIV"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'CheckBox3
+        '
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.Location = New System.Drawing.Point(254, 229)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(136, 17)
+        Me.CheckBox3.TabIndex = 7
+        Me.CheckBox3.Text = "Har brukeren hepatitt B"
+        Me.CheckBox3.UseVisualStyleBackColor = True
+        '
+        'CheckBox4
+        '
+        Me.CheckBox4.AutoSize = True
+        Me.CheckBox4.Location = New System.Drawing.Point(254, 252)
+        Me.CheckBox4.Name = "CheckBox4"
+        Me.CheckBox4.Size = New System.Drawing.Size(136, 17)
+        Me.CheckBox4.TabIndex = 7
+        Me.CheckBox4.Text = "Har brukeren hepatitt C"
+        Me.CheckBox4.UseVisualStyleBackColor = True
+        '
+        'btnLagreInfo
+        '
+        Me.btnLagreInfo.Location = New System.Drawing.Point(268, 337)
+        Me.btnLagreInfo.Name = "btnLagreInfo"
+        Me.btnLagreInfo.Size = New System.Drawing.Size(75, 23)
+        Me.btnLagreInfo.TabIndex = 10
+        Me.btnLagreInfo.Text = "Lagre info"
+        Me.btnLagreInfo.UseVisualStyleBackColor = True
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(183, 166)
+        Me.Label2.Location = New System.Drawing.Point(211, 22)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(91, 13)
-        Me.Label2.TabIndex = 6
-        Me.Label2.Text = "Har brukern syflis "
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(280, 163)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox2.TabIndex = 7
+        Me.Label2.Size = New System.Drawing.Size(39, 13)
+        Me.Label2.TabIndex = 11
+        Me.Label2.Text = "Label2"
         '
         'InfoDonor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(634, 511)
-        Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.btnLagreInfo)
+        Me.Controls.Add(Me.NumericUpDown1)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.CheckBox4)
+        Me.Controls.Add(Me.CheckBox3)
+        Me.Controls.Add(Me.CheckBox2)
+        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnTilbake)
@@ -89,6 +159,7 @@ Partial Class InfoDonor
         Me.Name = "InfoDonor"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "InfoDonor"
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -97,6 +168,12 @@ Partial Class InfoDonor
     Friend WithEvents btnTilbake As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents NumericUpDown1 As NumericUpDown
+    Friend WithEvents CheckBox2 As CheckBox
+    Friend WithEvents CheckBox3 As CheckBox
+    Friend WithEvents CheckBox4 As CheckBox
+    Friend WithEvents btnLagreInfo As Button
     Friend WithEvents Label2 As Label
-    Friend WithEvents ComboBox2 As ComboBox
 End Class

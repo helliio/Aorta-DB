@@ -16,9 +16,7 @@ Public Class InfoDonor
         ComboBox1.Items.Add("O+")
         ComboBox1.Text = "A-"
 
-        ComboBox2.Text = "Ja"
-        ComboBox2.Items.Add("Ja")
-        ComboBox2.Items.Add("Nei")
+        Label2.Text = "Helsesjekk for donør: " & bruker.getFornavn() & " " & bruker.getEtternavn()
     End Sub
 
     Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
