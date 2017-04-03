@@ -16,9 +16,4 @@
         NyBruker.Show()
         Me.Hide()
     End Sub
-
-    Private Sub btnNyBruker_Click(sender As Object, e As EventArgs) Handles btnNyBruker.Click
-        NyBruker.Show()
-        Me.Hide()
-    End Sub
 End Class

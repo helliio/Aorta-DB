@@ -7,7 +7,15 @@ Public Class Ansatt
     End Sub
 
     Private Sub Ansatt_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim dag = Format(Date.Now(), "dd.MM.yyyy")
         lblAnsatt.Text = "Velkommen " & bruker.getFornavn() & " " & bruker.getEtternavn()
+        Dim dagensTimer As ArrayList
+        dagensTimer = get_appointments_ansatt(dag)
+        For Each row In dagensTimer
+            For Each item In row
+                Debug.Print(item)
+            Next
+        Next
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
