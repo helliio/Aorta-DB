@@ -26,15 +26,15 @@ Partial Class InfoDonor
         Me.btnTilbake = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.checkSyflis = New System.Windows.Forms.CheckBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
+        Me.numHemoglobin = New System.Windows.Forms.NumericUpDown()
+        Me.checkHiv = New System.Windows.Forms.CheckBox()
+        Me.checkHepatittB = New System.Windows.Forms.CheckBox()
+        Me.checkHepatittC = New System.Windows.Forms.CheckBox()
         Me.btnLagreInfo = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.numHemoglobin, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnTilbake
@@ -63,15 +63,15 @@ Partial Class InfoDonor
         Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
         Me.ComboBox1.TabIndex = 5
         '
-        'CheckBox1
+        'checkSyflis
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(254, 183)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(113, 17)
-        Me.CheckBox1.TabIndex = 7
-        Me.CheckBox1.Text = "Har brukeren syflis"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.checkSyflis.AutoSize = True
+        Me.checkSyflis.Location = New System.Drawing.Point(254, 183)
+        Me.checkSyflis.Name = "checkSyflis"
+        Me.checkSyflis.Size = New System.Drawing.Size(113, 17)
+        Me.checkSyflis.TabIndex = 7
+        Me.checkSyflis.Text = "Har brukeren syflis"
+        Me.checkSyflis.UseVisualStyleBackColor = True
         '
         'Label3
         '
@@ -82,42 +82,42 @@ Partial Class InfoDonor
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "Hemoglobin:"
         '
-        'NumericUpDown1
+        'numHemoglobin
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(254, 157)
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(120, 20)
-        Me.NumericUpDown1.TabIndex = 9
+        Me.numHemoglobin.Location = New System.Drawing.Point(254, 157)
+        Me.numHemoglobin.Name = "numHemoglobin"
+        Me.numHemoglobin.Size = New System.Drawing.Size(120, 20)
+        Me.numHemoglobin.TabIndex = 9
         '
-        'CheckBox2
+        'checkHiv
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(254, 206)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(109, 17)
-        Me.CheckBox2.TabIndex = 7
-        Me.CheckBox2.Text = "Har brukeren HIV"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.checkHiv.AutoSize = True
+        Me.checkHiv.Location = New System.Drawing.Point(254, 206)
+        Me.checkHiv.Name = "checkHiv"
+        Me.checkHiv.Size = New System.Drawing.Size(109, 17)
+        Me.checkHiv.TabIndex = 7
+        Me.checkHiv.Text = "Har brukeren HIV"
+        Me.checkHiv.UseVisualStyleBackColor = True
         '
-        'CheckBox3
+        'checkHepatittB
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(254, 229)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(136, 17)
-        Me.CheckBox3.TabIndex = 7
-        Me.CheckBox3.Text = "Har brukeren hepatitt B"
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.checkHepatittB.AutoSize = True
+        Me.checkHepatittB.Location = New System.Drawing.Point(254, 229)
+        Me.checkHepatittB.Name = "checkHepatittB"
+        Me.checkHepatittB.Size = New System.Drawing.Size(136, 17)
+        Me.checkHepatittB.TabIndex = 7
+        Me.checkHepatittB.Text = "Har brukeren hepatitt B"
+        Me.checkHepatittB.UseVisualStyleBackColor = True
         '
-        'CheckBox4
+        'checkHepatittC
         '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(254, 252)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(136, 17)
-        Me.CheckBox4.TabIndex = 7
-        Me.CheckBox4.Text = "Har brukeren hepatitt C"
-        Me.CheckBox4.UseVisualStyleBackColor = True
+        Me.checkHepatittC.AutoSize = True
+        Me.checkHepatittC.Location = New System.Drawing.Point(254, 252)
+        Me.checkHepatittC.Name = "checkHepatittC"
+        Me.checkHepatittC.Size = New System.Drawing.Size(136, 17)
+        Me.checkHepatittC.TabIndex = 7
+        Me.checkHepatittC.Text = "Har brukeren hepatitt C"
+        Me.checkHepatittC.UseVisualStyleBackColor = True
         '
         'btnLagreInfo
         '
@@ -144,12 +144,12 @@ Partial Class InfoDonor
         Me.ClientSize = New System.Drawing.Size(634, 511)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.btnLagreInfo)
-        Me.Controls.Add(Me.NumericUpDown1)
+        Me.Controls.Add(Me.numHemoglobin)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.CheckBox4)
-        Me.Controls.Add(Me.CheckBox3)
-        Me.Controls.Add(Me.CheckBox2)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.checkHepatittC)
+        Me.Controls.Add(Me.checkHepatittB)
+        Me.Controls.Add(Me.checkHiv)
+        Me.Controls.Add(Me.checkSyflis)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnTilbake)
@@ -159,7 +159,7 @@ Partial Class InfoDonor
         Me.Name = "InfoDonor"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "InfoDonor"
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.numHemoglobin, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -168,12 +168,12 @@ Partial Class InfoDonor
     Friend WithEvents btnTilbake As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents checkSyflis As CheckBox
     Friend WithEvents Label3 As Label
-    Friend WithEvents NumericUpDown1 As NumericUpDown
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox4 As CheckBox
+    Friend WithEvents numHemoglobin As NumericUpDown
+    Friend WithEvents checkHiv As CheckBox
+    Friend WithEvents checkHepatittB As CheckBox
+    Friend WithEvents checkHepatittC As CheckBox
     Friend WithEvents btnLagreInfo As Button
     Friend WithEvents Label2 As Label
 End Class

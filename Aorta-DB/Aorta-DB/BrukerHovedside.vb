@@ -99,4 +99,8 @@
     Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
         Me.Show()
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        InfoBruker.Show()
+    End Sub
 End Class
