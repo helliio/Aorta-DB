@@ -340,4 +340,20 @@ Module DB_module
             Return False
         End If
     End Function
+    Public Function find_helsesjekk(user As Decimal)
+        connect_db()
+        Dim ret As New ArrayList
+        Dim username As String = user.ToString
+        Dim sqlSporring = "select type, hemoglobin, syfilis, hiv, hepatittB, hepatittC  from helsesjekk where user = @username"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+
+        sql.Parameters.AddWithValue("@username", username)
+        Dim reader As MySqlDataReader = sql.ExecuteReader
+        reader.Read()
+        For i As Integer = 0 To 5
+            ret.Add(reader.Item(i))
+        Next
+        close_db()
+        Return ret
+    End Function
 End Module

@@ -45,6 +45,7 @@ Partial Class BrukerHovedside
         Me.btnEgenerklaring = New System.Windows.Forms.Button()
         Me.btnBestill = New System.Windows.Forms.Button()
         Me.headerpanel = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel6.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.sidepanel.SuspendLayout()
@@ -325,12 +326,22 @@ Partial Class BrukerHovedside
         Me.headerpanel.Size = New System.Drawing.Size(612, 75)
         Me.headerpanel.TabIndex = 20
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(642, 480)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 21
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'BrukerHovedside
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(238, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.headerpanel)
         Me.Controls.Add(Me.sidepanel)
         Me.Controls.Add(Me.Panel7)
@@ -383,4 +394,5 @@ Partial Class BrukerHovedside
     Friend WithEvents btnBestill As Button
     Friend WithEvents headerpanel As Panel
     Friend WithEvents btnAvbestill2 As Button
+    Friend WithEvents Button1 As Button
 End Class

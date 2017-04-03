@@ -50,7 +50,7 @@ Partial Class InfoBruker
         'listboxInfo
         '
         Me.listboxInfo.FormattingEnabled = True
-        Me.listboxInfo.Location = New System.Drawing.Point(12, 83)
+        Me.listboxInfo.Location = New System.Drawing.Point(12, 143)
         Me.listboxInfo.Name = "listboxInfo"
         Me.listboxInfo.Size = New System.Drawing.Size(260, 160)
         Me.listboxInfo.TabIndex = 2
