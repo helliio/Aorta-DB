@@ -18,7 +18,7 @@
         If ComboBox1.Text = "Blodtype" Then
             MsgBox("velg type")
         Else
-            blod = New Blod_pakke(giver_id, ComboBox1.Text, NumericUpDown1.Value, CheckHiv.Checked, CheckHepatitt.Checked, TextBox1.Text)
+            blod = New Blod_pakke(giver_id, ComboBox1.Text, NumericUpDown1.Value, CheckHiv.Checked, CheckHepatittB.Checked, CheckHepatittC.Checked, TextBox1.Text)
             blod.send()
             Close()
         End If

@@ -98,20 +98,38 @@ Module DB_module
         close_db()
     End Sub
 
-    Public Sub create_blodpack(user As Decimal, dato As Integer, type As String, hemoglobin As Decimal, hiv As Boolean, hepatitt As Boolean, kommentar As String)
+    Public Sub create_blodpack(user As Decimal, dato As Integer, type As String, hemoglobin As Decimal, hiv As Boolean, hepatittB As Boolean, hepatittC As Boolean, kommentar As String)
         connect_db()
-        Dim sqlSporring = "INSERT INTO blodpakke (pernr, dato, type, hemoglobin, hiv, hepatitt, kommentar) VALUES (@pernr, @dato, @type, @hemoglobin, @hiv, @hepatitt, @kommentar)"
+        Dim sqlSporring = "INSERT INTO blodpakke (pernr, dato, type, hemoglobin, hiv, hepatittB, hepatittC, kommentar) VALUES (@pernr, @dato, @type, @hemoglobin, @hiv, @hepatittB, @hepatittC, @kommentar)"
         Dim sql As New MySqlCommand(sqlSporring, tilkobling)
         sql.Parameters.AddWithValue("@pernr", user)
         sql.Parameters.AddWithValue("@dato", dato)
         sql.Parameters.AddWithValue("@type", type)
         sql.Parameters.AddWithValue("@hemoglobin", hemoglobin)
         sql.Parameters.AddWithValue("@hiv", hiv)
-        sql.Parameters.AddWithValue("@hepatitt", hepatitt)
+        sql.Parameters.AddWithValue("@hepatittB", hepatittB)
+        sql.Parameters.AddWithValue("@hepatittC", hepatittC)
         sql.Parameters.AddWithValue("@kommentar", kommentar)
         sql.ExecuteNonQuery()
         close_db()
     End Sub
+
+    Public Function get_blodpack(persnr As Decimal, dato As Integer)
+        Dim ret As New ArrayList
+        connect_db()
+        Dim sqlSporring = "SELECT * FROM blodpakke WHERE pernr = @pernr AND dato = @dato"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@pernr", persnr)
+        sql.Parameters.AddWithValue("@dato", dato)
+        Dim reader As MySqlDataReader = sql.ExecuteReader
+        reader.Read()
+        For i As Integer = 0 To 6
+            ret.Add(reader.Item(i).ToString())
+        Next
+        reader.Close()
+        close_db()
+        Return ret
+    End Function
 
     Public Sub cancel_appointment(user As Decimal, time As String, dates As String)
         Try
