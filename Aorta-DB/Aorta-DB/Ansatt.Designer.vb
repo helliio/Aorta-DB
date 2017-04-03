@@ -100,15 +100,15 @@ Partial Class Ansatt
         'listGivninger
         '
         Me.listGivninger.FormattingEnabled = True
-        Me.listGivninger.Location = New System.Drawing.Point(444, 238)
+        Me.listGivninger.Location = New System.Drawing.Point(404, 238)
         Me.listGivninger.Name = "listGivninger"
-        Me.listGivninger.Size = New System.Drawing.Size(164, 95)
+        Me.listGivninger.Size = New System.Drawing.Size(204, 95)
         Me.listGivninger.TabIndex = 7
         '
         'btnGivninger
         '
         Me.btnGivninger.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnGivninger.Location = New System.Drawing.Point(444, 339)
+        Me.btnGivninger.Location = New System.Drawing.Point(423, 339)
         Me.btnGivninger.Name = "btnGivninger"
         Me.btnGivninger.Size = New System.Drawing.Size(164, 65)
         Me.btnGivninger.TabIndex = 9
@@ -138,7 +138,7 @@ Partial Class Ansatt
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(235, 339)
+        Me.Button2.Location = New System.Drawing.Point(221, 339)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(165, 65)
         Me.Button2.TabIndex = 13

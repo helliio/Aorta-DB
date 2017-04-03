@@ -53,7 +53,7 @@ Public Class TimeBestilling
                     MsgBox("Denne timen er allerede tatt")
                 End If
             Else
-                MsgBox("Denne timer er ikke 90 dager etter din siste time")
+                MsgBox("Denne timen er ikke 90 dager etter din siste time")
             End If
         Else
             If get_appointment_user(time, DateTimePicker1.Text) = 0 Then
