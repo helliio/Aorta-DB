@@ -295,4 +295,19 @@ Module DB_module
         Next
         Return timer
     End Function
+    Public Sub set_helseskjekk(user As Decimal, type As String, hemoglobin As Decimal, syfilis As Boolean, hiv As Boolean, hepatittB As Boolean, hepatittC As Boolean)
+        connect_db()
+        Dim sqlSporring = "INSERT INTO helsesjekk (user, type, hemoglobin, syfilis, hiv, hepatittB, hepatittC) VALUES (@user, @type, @hemoglobin, @syfilis, @hiv, @hepatittB, @hepatittC)"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@user", user)
+        sql.Parameters.AddWithValue("@type", type)
+        sql.Parameters.AddWithValue("@hemoglobin", hemoglobin)
+        sql.Parameters.AddWithValue("@syfilis", syfilis)
+        sql.Parameters.AddWithValue("@hiv", hiv)
+        sql.Parameters.AddWithValue("@hepatittB", hepatittB)
+        sql.Parameters.AddWithValue("@hepatittC", hepatittC)
+        sql.ExecuteNonQuery()
+        close_db()
+    End Sub
+
 End Module
