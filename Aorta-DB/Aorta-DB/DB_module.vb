@@ -201,7 +201,6 @@ Module DB_module
         Return ret
     End Function
 
-
     Public Function return_user(persnr As Decimal)
         Dim ret As New ArrayList
         connect_db()
@@ -270,5 +269,30 @@ Module DB_module
         Next
         close_db()
         Return ret
+    End Function
+    Public Function get_appointments_ansatt(dates As String)
+        Dim timer As New ArrayList
+        connect_db()
+        Dim sqlSporring = "SELECT time, first_name, last_name FROM appointments a, users u WHERE a.username = u.username AND date = @date ORDER BY time"
+        Dim da As New MySqlDataAdapter
+        Dim interntabell As New DataTable
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@date", dates)
+        da.SelectCommand = sql
+        da.Fill(interntabell)
+        close_db()
+        Dim rad As DataRow
+        Dim time, first_name, last_name As String
+        For Each rad In interntabell.Rows
+            Dim timer_rad As New ArrayList
+            time = rad("time")
+            first_name = rad("first_name")
+            last_name = rad("last_name")
+            timer_rad.Add(time)
+            timer_rad.Add(first_name)
+            timer_rad.Add(last_name)
+            timer.Add(timer_rad)
+        Next
+        Return timer
     End Function
 End Module
