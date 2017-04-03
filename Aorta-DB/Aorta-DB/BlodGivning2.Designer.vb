@@ -31,7 +31,8 @@ Partial Class BlodGivning2
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.CheckHiv = New System.Windows.Forms.CheckBox()
-        Me.CheckHepatitt = New System.Windows.Forms.CheckBox()
+        Me.CheckHepatittB = New System.Windows.Forms.CheckBox()
+        Me.CheckHepatittC = New System.Windows.Forms.CheckBox()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -46,7 +47,7 @@ Partial Class BlodGivning2
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(72, 163)
+        Me.TextBox1.Location = New System.Drawing.Point(72, 180)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(162, 78)
@@ -55,7 +56,7 @@ Partial Class BlodGivning2
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(126, 147)
+        Me.Label1.Location = New System.Drawing.Point(126, 164)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(60, 13)
         Me.Label1.TabIndex = 2
@@ -63,7 +64,7 @@ Partial Class BlodGivning2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(120, 247)
+        Me.Button1.Location = New System.Drawing.Point(120, 264)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 3
@@ -105,22 +106,33 @@ Partial Class BlodGivning2
         Me.CheckHiv.Text = "HIV"
         Me.CheckHiv.UseVisualStyleBackColor = True
         '
-        'CheckHepatitt
+        'CheckHepatittB
         '
-        Me.CheckHepatitt.AutoSize = True
-        Me.CheckHepatitt.Location = New System.Drawing.Point(78, 124)
-        Me.CheckHepatitt.Name = "CheckHepatitt"
-        Me.CheckHepatitt.Size = New System.Drawing.Size(86, 17)
-        Me.CheckHepatitt.TabIndex = 8
-        Me.CheckHepatitt.Text = "Hepatitt B, C"
-        Me.CheckHepatitt.UseVisualStyleBackColor = True
+        Me.CheckHepatittB.AutoSize = True
+        Me.CheckHepatittB.Location = New System.Drawing.Point(78, 124)
+        Me.CheckHepatittB.Name = "CheckHepatittB"
+        Me.CheckHepatittB.Size = New System.Drawing.Size(73, 17)
+        Me.CheckHepatittB.TabIndex = 8
+        Me.CheckHepatittB.Text = "Hepatitt B"
+        Me.CheckHepatittB.UseVisualStyleBackColor = True
+        '
+        'CheckHepatittC
+        '
+        Me.CheckHepatittC.AutoSize = True
+        Me.CheckHepatittC.Location = New System.Drawing.Point(78, 147)
+        Me.CheckHepatittC.Name = "CheckHepatittC"
+        Me.CheckHepatittC.Size = New System.Drawing.Size(73, 17)
+        Me.CheckHepatittC.TabIndex = 9
+        Me.CheckHepatittC.Text = "Hepatitt C"
+        Me.CheckHepatittC.UseVisualStyleBackColor = True
         '
         'BlodGivning2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(634, 511)
-        Me.Controls.Add(Me.CheckHepatitt)
+        Me.Controls.Add(Me.CheckHepatittC)
+        Me.Controls.Add(Me.CheckHepatittB)
         Me.Controls.Add(Me.CheckHiv)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -149,5 +161,6 @@ Partial Class BlodGivning2
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents CheckHiv As CheckBox
-    Friend WithEvents CheckHepatitt As CheckBox
+    Friend WithEvents CheckHepatittB As CheckBox
+    Friend WithEvents CheckHepatittC As CheckBox
 End Class

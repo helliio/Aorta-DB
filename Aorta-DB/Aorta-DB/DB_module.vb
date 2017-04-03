@@ -98,20 +98,38 @@ Module DB_module
         close_db()
     End Sub
 
-    Public Sub create_blodpack(user As Decimal, dato As Integer, type As String, hemoglobin As Decimal, hiv As Boolean, hepatitt As Boolean, kommentar As String)
+    Public Sub create_blodpack(user As Decimal, dato As Integer, type As String, hemoglobin As Decimal, hiv As Boolean, hepatittB As Boolean, hepatittC As Boolean, kommentar As String)
         connect_db()
-        Dim sqlSporring = "INSERT INTO blodpakke (pernr, dato, type, hemoglobin, hiv, hepatitt, kommentar) VALUES (@pernr, @dato, @type, @hemoglobin, @hiv, @hepatitt, @kommentar)"
+        Dim sqlSporring = "INSERT INTO blodpakke (pernr, dato, type, hemoglobin, hiv, hepatittB, hepatittC, kommentar) VALUES (@pernr, @dato, @type, @hemoglobin, @hiv, @hepatittB, @hepatittC, @kommentar)"
         Dim sql As New MySqlCommand(sqlSporring, tilkobling)
         sql.Parameters.AddWithValue("@pernr", user)
         sql.Parameters.AddWithValue("@dato", dato)
         sql.Parameters.AddWithValue("@type", type)
         sql.Parameters.AddWithValue("@hemoglobin", hemoglobin)
         sql.Parameters.AddWithValue("@hiv", hiv)
-        sql.Parameters.AddWithValue("@hepatitt", hepatitt)
+        sql.Parameters.AddWithValue("@hepatittB", hepatittB)
+        sql.Parameters.AddWithValue("@hepatittC", hepatittC)
         sql.Parameters.AddWithValue("@kommentar", kommentar)
         sql.ExecuteNonQuery()
         close_db()
     End Sub
+
+    Public Function get_blodpack(persnr As Decimal, dato As Integer)
+        Dim ret As New ArrayList
+        connect_db()
+        Dim sqlSporring = "SELECT * FROM blodpakke WHERE pernr = @pernr AND dato = @dato"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@pernr", persnr)
+        sql.Parameters.AddWithValue("@dato", dato)
+        Dim reader As MySqlDataReader = sql.ExecuteReader
+        reader.Read()
+        For i As Integer = 0 To 6
+            ret.Add(reader.Item(i).ToString())
+        Next
+        reader.Close()
+        close_db()
+        Return ret
+    End Function
 
     Public Sub cancel_appointment(user As Decimal, time As String, dates As String)
         Try
@@ -183,7 +201,6 @@ Module DB_module
         Return ret
     End Function
 
-
     Public Function return_user(persnr As Decimal)
         Dim ret As New ArrayList
         connect_db()
@@ -252,5 +269,75 @@ Module DB_module
         Next
         close_db()
         Return ret
+    End Function
+    Public Function get_appointments_ansatt(dates As String)
+        Dim timer As New ArrayList
+        connect_db()
+        Dim sqlSporring = "SELECT time, first_name, last_name FROM appointments a, users u WHERE a.username = u.username AND date = @date ORDER BY time"
+        Dim da As New MySqlDataAdapter
+        Dim interntabell As New DataTable
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@date", dates)
+        da.SelectCommand = sql
+        da.Fill(interntabell)
+        close_db()
+        Dim rad As DataRow
+        Dim time, first_name, last_name As String
+        For Each rad In interntabell.Rows
+            Dim timer_rad As New ArrayList
+            time = rad("time")
+            first_name = rad("first_name")
+            last_name = rad("last_name")
+            timer_rad.Add(time)
+            timer_rad.Add(first_name)
+            timer_rad.Add(last_name)
+            timer.Add(timer_rad)
+        Next
+        Return timer
+    End Function
+    Public Sub set_helsesjekk(user As Decimal, type As String, hemoglobin As Decimal, syfilis As Boolean, hiv As Boolean, hepatittB As Boolean, hepatittC As Boolean)
+        connect_db()
+        Dim sqlSporring = "INSERT INTO helsesjekk (user, type, hemoglobin, syfilis, hiv, hepatittB, hepatittC) VALUES (@user, @type, @hemoglobin, @syfilis, @hiv, @hepatittB, @hepatittC)"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@user", user)
+        sql.Parameters.AddWithValue("@type", type)
+        sql.Parameters.AddWithValue("@hemoglobin", hemoglobin)
+        sql.Parameters.AddWithValue("@syfilis", syfilis)
+        sql.Parameters.AddWithValue("@hiv", hiv)
+        sql.Parameters.AddWithValue("@hepatittB", hepatittB)
+        sql.Parameters.AddWithValue("@hepatittC", hepatittC)
+        sql.ExecuteNonQuery()
+        close_db()
+    End Sub
+    Public Sub update_helsesjekk(user As Decimal, type As String, hemoglobin As Decimal, syfilis As Boolean, hiv As Boolean, hepatittB As Boolean, hepatittC As Boolean)
+        connect_db()
+        Dim sqlSporring = "UPDATE helsesjekk SET type= @type, hemoglobin = @hemoglobin, syfilis = @syfilis, hiv = @hiv, hepatittB = @hepatittB, hepatittC = @hepatittC WHERE user = @user"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@user", user)
+        sql.Parameters.AddWithValue("@type", type)
+        sql.Parameters.AddWithValue("@hemoglobin", hemoglobin)
+        sql.Parameters.AddWithValue("@syfilis", syfilis)
+        sql.Parameters.AddWithValue("@hiv", hiv)
+        sql.Parameters.AddWithValue("@hepatittB", hepatittB)
+        sql.Parameters.AddWithValue("@hepatittC", hepatittC)
+        sql.ExecuteNonQuery()
+        close_db()
+    End Sub
+    Public Function check_helsesjekk(user As Decimal)
+        connect_db()
+        Dim username As String = user.ToString
+        Dim sqlSporring = "select * from helsesjekk where user = @username "
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+
+        sql.Parameters.AddWithValue("@username", username)
+
+        Dim leser = sql.ExecuteReader()
+        If leser.HasRows Then
+            close_db()
+            Return True
+        Else
+            close_db()
+            Return False
+        End If
     End Function
 End Module

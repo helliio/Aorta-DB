@@ -6,7 +6,19 @@ Public Class InfoDonor
     End Sub
 
     Private Sub InfoDonor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ComboBox1.Items.Add("A-")
+        ComboBox1.Items.Add("A+")
+        ComboBox1.Items.Add("B-")
+        ComboBox1.Items.Add("B+")
+        ComboBox1.Items.Add("AB-")
+        ComboBox1.Items.Add("AB+")
+        ComboBox1.Items.Add("O-")
+        ComboBox1.Items.Add("O+")
+        ComboBox1.Text = "A-"
 
+        ComboBox2.Text = "Ja"
+        ComboBox2.Items.Add("Ja")
+        ComboBox2.Items.Add("Nei")
     End Sub
 
     Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
