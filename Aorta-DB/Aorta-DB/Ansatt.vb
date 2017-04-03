@@ -11,10 +11,11 @@ Public Class Ansatt
         lblAnsatt.Text = "Velkommen " & bruker.getFornavn() & " " & bruker.getEtternavn()
         Dim dagensTimer As ArrayList
         dagensTimer = get_appointments_ansatt(dag)
-        For Each row In dagensTimer
-            For Each item In row
-                Debug.Print(item)
-            Next
+        For Each item In dagensTimer
+            Dim out As String
+            out = item(0) & " " & item(1) & " " & item(2)
+            listGivninger.Items.Add(out)
+            'Debug.Print(out)
         Next
     End Sub
 
