@@ -35,4 +35,8 @@
         Me.Close()
         Main.Show()
     End Sub
+
+    Private Sub Logginn_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

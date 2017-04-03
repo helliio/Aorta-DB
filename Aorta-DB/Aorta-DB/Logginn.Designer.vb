@@ -31,12 +31,12 @@ Partial Class Logginn
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnTilbake = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.btnKontakt = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.btnNyBruker = New System.Windows.Forms.Button()
         Me.btnEgenerklæring = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel3.SuspendLayout()
@@ -120,7 +120,7 @@ Partial Class Logginn
         'btnTilbake
         '
         Me.btnTilbake.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTilbake.Location = New System.Drawing.Point(172, 528)
+        Me.btnTilbake.Location = New System.Drawing.Point(241, 528)
         Me.btnTilbake.Name = "btnTilbake"
         Me.btnTilbake.Size = New System.Drawing.Size(80, 33)
         Me.btnTilbake.TabIndex = 5
@@ -140,6 +140,26 @@ Partial Class Logginn
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(172, 561)
         Me.Panel3.TabIndex = 14
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.PictureBox4)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(172, 75)
+        Me.Panel1.TabIndex = 15
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.Aorta_DB.My.Resources.Resources.Logomakr_2plwp5
+        Me.PictureBox4.Location = New System.Drawing.Point(43, 24)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(79, 26)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 0
+        Me.PictureBox4.TabStop = False
         '
         'btnKontakt
         '
@@ -204,26 +224,6 @@ Partial Class Logginn
         Me.btnEgenerklæring.TabIndex = 0
         Me.btnEgenerklæring.Text = "Egenerklæring"
         Me.btnEgenerklæring.UseVisualStyleBackColor = False
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.PictureBox4)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(172, 75)
-        Me.Panel1.TabIndex = 15
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.Aorta_DB.My.Resources.Resources.Logomakr_2plwp5
-        Me.PictureBox4.Location = New System.Drawing.Point(43, 24)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(79, 26)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 0
-        Me.PictureBox4.TabStop = False
         '
         'Panel2
         '
