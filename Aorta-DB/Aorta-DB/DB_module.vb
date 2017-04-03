@@ -295,7 +295,7 @@ Module DB_module
         Next
         Return timer
     End Function
-    Public Sub set_helseskjekk(user As Decimal, type As String, hemoglobin As Decimal, syfilis As Boolean, hiv As Boolean, hepatittB As Boolean, hepatittC As Boolean)
+    Public Sub set_helsesjekk(user As Decimal, type As String, hemoglobin As Decimal, syfilis As Boolean, hiv As Boolean, hepatittB As Boolean, hepatittC As Boolean)
         connect_db()
         Dim sqlSporring = "INSERT INTO helsesjekk (user, type, hemoglobin, syfilis, hiv, hepatittB, hepatittC) VALUES (@user, @type, @hemoglobin, @syfilis, @hiv, @hepatittB, @hepatittC)"
         Dim sql As New MySqlCommand(sqlSporring, tilkobling)
@@ -309,7 +309,7 @@ Module DB_module
         sql.ExecuteNonQuery()
         close_db()
     End Sub
-    Public Sub update_helseskjekk(user As Decimal, type As String, hemoglobin As Decimal, syfilis As Boolean, hiv As Boolean, hepatittB As Boolean, hepatittC As Boolean)
+    Public Sub update_helsesjekk(user As Decimal, type As String, hemoglobin As Decimal, syfilis As Boolean, hiv As Boolean, hepatittB As Boolean, hepatittC As Boolean)
         connect_db()
         Dim sqlSporring = "UPDATE helsesjekk SET type= @type, hemoglobin = @hemoglobin, syfilis = @syfilis, hiv = @hiv, hepatittB = @hepatittB, hepatittC = @hepatittC WHERE user = @user"
         Dim sql As New MySqlCommand(sqlSporring, tilkobling)
@@ -323,4 +323,21 @@ Module DB_module
         sql.ExecuteNonQuery()
         close_db()
     End Sub
+    Public Function check_helsesjekk(user As Decimal)
+        connect_db()
+        Dim username As String = user.ToString
+        Dim sqlSporring = "select * from helsesjekk where user = @username "
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+
+        sql.Parameters.AddWithValue("@username", username)
+
+        Dim leser = sql.ExecuteReader()
+        If leser.HasRows Then
+            close_db()
+            Return True
+        Else
+            close_db()
+            Return False
+        End If
+    End Function
 End Module
