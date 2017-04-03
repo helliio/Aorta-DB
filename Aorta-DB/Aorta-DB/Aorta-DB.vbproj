@@ -80,6 +80,12 @@
     <Compile Include="AnsattBrukerOversikt.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AnsattKalender.Designer.vb">
+      <DependentUpon>AnsattKalender.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AnsattKalender.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Bank_module.vb" />
     <Compile Include="blodbank.Designer.vb">
       <DependentUpon>blodbank.vb</DependentUpon>
@@ -272,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AnsattBrukerOversikt.resx">
       <DependentUpon>AnsattBrukerOversikt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnsattKalender.resx">
+      <DependentUpon>AnsattKalender.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="blodbank.resx">
       <DependentUpon>blodbank.vb</DependentUpon>

@@ -16,13 +16,21 @@ Public Class InfoDonor
         ComboBox1.Items.Add("O+")
         ComboBox1.Text = "A-"
 
-        ComboBox2.Text = "Ja"
-        ComboBox2.Items.Add("Ja")
-        ComboBox2.Items.Add("Nei")
+        Label2.Text = "Helsesjekk for donør: " & bruker.getFornavn() & " " & bruker.getEtternavn()
     End Sub
 
     Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
         AnsattBrukerOversikt.Show()
         Me.Close()
+    End Sub
+
+    Private Sub btnLagreInfo_Click(sender As Object, e As EventArgs) Handles btnLagreInfo.Click
+        If check_helsesjekk(bruker.getPersonnr) = True Then
+            update_helsesjekk(bruker.getPersonnr, ComboBox1.Text, numHemoglobin.Value, checkSyflis.Checked, checkHiv.Checked, checkHepatittB.Checked, checkHepatittC.Checked)
+        Else
+            set_helsesjekk(bruker.getPersonnr, ComboBox1.Text, numHemoglobin.Value, checkSyflis.Checked, checkHiv.Checked, checkHepatittB.Checked, checkHepatittC.Checked)
+        End If
+        AnsattBrukerOversikt.Show()
+        Me.Hide()
     End Sub
 End Class
