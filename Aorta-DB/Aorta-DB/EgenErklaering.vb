@@ -82,17 +82,7 @@ Public Class EgenErklaering
         Me.Hide()
     End Sub
 
-    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs)
+    Private Sub Panel3_Paint(sender As Object, e As PaintEventArgs) Handles Panel3.Paint
 
     End Sub
-
-    Private Sub GroupBox1_Enter(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub GroupBox2_Enter(sender As Object, e As EventArgs)
-
-    End Sub
-
-
 End Class

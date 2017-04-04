@@ -1,7 +1,7 @@
 ﻿Imports System.ComponentModel
 
 Public Class EgenErklaering4
-    Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
+    Private Sub btnTilbake_Click(sender As Object, e As EventArgs)
         Close()
     End Sub
 
@@ -18,7 +18,7 @@ Public Class EgenErklaering4
         radbtnnei29.Checked = True
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         erklaring.setAns(29, radbtnja29.Checked)
         EgenErklaering5.Show()
         Me.Hide()

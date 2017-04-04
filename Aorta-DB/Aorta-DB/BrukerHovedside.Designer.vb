@@ -56,11 +56,11 @@ Partial Class BrukerHovedside
         'lblBruker
         '
         Me.lblBruker.AutoSize = True
-        Me.lblBruker.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblBruker.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBruker.ForeColor = System.Drawing.Color.White
         Me.lblBruker.Location = New System.Drawing.Point(26, 20)
         Me.lblBruker.Name = "lblBruker"
-        Me.lblBruker.Size = New System.Drawing.Size(236, 28)
+        Me.lblBruker.Size = New System.Drawing.Size(239, 30)
         Me.lblBruker.TabIndex = 0
         Me.lblBruker.Text = "Velkommen bruker"
         '
@@ -208,7 +208,7 @@ Partial Class BrukerHovedside
         Me.btnAvbestill2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.btnAvbestill2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.btnAvbestill2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAvbestill2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAvbestill2.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAvbestill2.ForeColor = System.Drawing.Color.White
         Me.btnAvbestill2.Location = New System.Drawing.Point(-13, 370)
         Me.btnAvbestill2.Name = "btnAvbestill2"
@@ -247,7 +247,7 @@ Partial Class BrukerHovedside
         Me.btnKontakt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.btnKontakt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.btnKontakt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnKontakt.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnKontakt.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnKontakt.ForeColor = System.Drawing.Color.White
         Me.btnKontakt.Location = New System.Drawing.Point(-13, 449)
         Me.btnKontakt.Name = "btnKontakt"
@@ -266,7 +266,7 @@ Partial Class BrukerHovedside
         Me.btnMinSide.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.btnMinSide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.btnMinSide.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMinSide.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMinSide.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnMinSide.ForeColor = System.Drawing.Color.White
         Me.btnMinSide.Location = New System.Drawing.Point(-13, 122)
         Me.btnMinSide.Name = "btnMinSide"
@@ -285,7 +285,7 @@ Partial Class BrukerHovedside
         Me.btnEgenerklaring.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.btnEgenerklaring.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.btnEgenerklaring.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEgenerklaring.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEgenerklaring.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEgenerklaring.ForeColor = System.Drawing.Color.White
         Me.btnEgenerklaring.Location = New System.Drawing.Point(-13, 207)
         Me.btnEgenerklaring.Name = "btnEgenerklaring"
@@ -304,7 +304,7 @@ Partial Class BrukerHovedside
         Me.btnBestill.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.btnBestill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.btnBestill.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBestill.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBestill.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBestill.ForeColor = System.Drawing.Color.White
         Me.btnBestill.Location = New System.Drawing.Point(-13, 289)
         Me.btnBestill.Name = "btnBestill"

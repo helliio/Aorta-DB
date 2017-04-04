@@ -2,7 +2,7 @@
 
 Public Class EgenErklaering3
 
-    Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
+    Private Sub btnTilbake_Click(sender As Object, e As EventArgs)
         Close()
     End Sub
 
@@ -11,9 +11,6 @@ Public Class EgenErklaering3
         Me.Hide()
     End Sub
 
-    Private Sub EgenErklaering3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
     Public Sub clear()
         radbtnja19.Checked = False
         radbtnja20.Checked = False
@@ -37,7 +34,7 @@ Public Class EgenErklaering3
         radbtnnei28.Checked = True
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         erklaring.setAns(19, radbtnja19.Checked)
         erklaring.setAns(20, radbtnja20.Checked)
         erklaring.setAns(21, radbtnja21.Checked)

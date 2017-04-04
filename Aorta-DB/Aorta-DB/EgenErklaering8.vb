@@ -1,7 +1,7 @@
 ﻿Imports System.ComponentModel
 
 Public Class EgenErklaering8
-    Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
+    Private Sub btnTilbake_Click(sender As Object, e As EventArgs)
         Close()
     End Sub
 
@@ -14,7 +14,7 @@ Public Class EgenErklaering8
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         If TextBox1.Text <> "" Then
             erklaring.setAns(50, radbtnja50.Checked)
             erklaring.setAns(51, radbtnja51.Checked)
@@ -60,6 +60,5 @@ Public Class EgenErklaering8
         radbtnnei59.Checked = True
         TextBox1.Text = ""
     End Sub
-
 
 End Class
