@@ -54,6 +54,7 @@ Partial Class EgenErklaering
         Me.radbtnnei10 = New System.Windows.Forms.RadioButton()
         Me.radbtnja10 = New System.Windows.Forms.RadioButton()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -78,6 +79,7 @@ Partial Class EgenErklaering
         Me.btnBestill = New System.Windows.Forms.Button()
         Me.lblNesteTime = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
@@ -295,7 +297,7 @@ Partial Class EgenErklaering
         '
         Me.radbtnnei1.AutoSize = True
         Me.radbtnnei1.Checked = True
-        Me.radbtnnei1.Location = New System.Drawing.Point(514, 11)
+        Me.radbtnnei1.Location = New System.Drawing.Point(126, 12)
         Me.radbtnnei1.Margin = New System.Windows.Forms.Padding(4)
         Me.radbtnnei1.Name = "radbtnnei1"
         Me.radbtnnei1.Size = New System.Drawing.Size(47, 21)
@@ -307,7 +309,7 @@ Partial Class EgenErklaering
         'radbtnja1
         '
         Me.radbtnja1.AutoSize = True
-        Me.radbtnja1.Location = New System.Drawing.Point(396, 9)
+        Me.radbtnja1.Location = New System.Drawing.Point(7, 9)
         Me.radbtnja1.Margin = New System.Windows.Forms.Padding(4)
         Me.radbtnja1.Name = "radbtnja1"
         Me.radbtnja1.Size = New System.Drawing.Size(41, 21)
@@ -504,15 +506,26 @@ Partial Class EgenErklaering
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.Control
-        Me.Panel1.Controls.Add(Me.radbtnnei1)
+        Me.Panel1.Controls.Add(Me.GroupBox1)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.radbtnja1)
         Me.Panel1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.Panel1.Location = New System.Drawing.Point(170, 110)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(614, 44)
         Me.Panel1.TabIndex = 78
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.Color.Transparent
+        Me.GroupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.GroupBox1.Controls.Add(Me.radbtnnei1)
+        Me.GroupBox1.Controls.Add(Me.radbtnja1)
+        Me.GroupBox1.Location = New System.Drawing.Point(388, 5)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(191, 36)
+        Me.GroupBox1.TabIndex = 67
+        Me.GroupBox1.TabStop = False
         '
         'Panel2
         '
@@ -882,6 +895,8 @@ Partial Class EgenErklaering
         Me.Text = "EgenErklaering"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.Panel3.ResumeLayout(False)
@@ -955,4 +970,5 @@ Partial Class EgenErklaering
     Friend WithEvents btnEgenerklaring As Button
     Friend WithEvents btnBestill As Button
     Friend WithEvents lblNesteTime As Label
+    Friend WithEvents GroupBox1 As GroupBox
 End Class
