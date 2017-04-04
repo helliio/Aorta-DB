@@ -15,7 +15,6 @@ Public Class Ansatt
             Dim out As String
             out = item(0) & " " & item(1) & " " & item(2)
             listGivninger.Items.Add(out)
-            'Debug.Print(out)
         Next
     End Sub
 
@@ -42,6 +41,7 @@ Public Class Ansatt
     End Sub
 
     Private Sub btnGivninger_Click(sender As Object, e As EventArgs) Handles btnGivninger.Click
-
+        AnsattKalender.Show()
+        Me.Hide()
     End Sub
 End Class
