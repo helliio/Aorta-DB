@@ -24,6 +24,8 @@ Public Class TimebestillingAnsatt
         ComboBox2.Items.Add("30")
         ComboBox2.Items.Add("40")
         ComboBox2.Items.Add("50")
+
+        DateTimePicker1.MinDate = DateTime.Now.AddDays(1)
     End Sub
     Public Function check_date(date_pick As String)
         Dim siste_time As Date = CDate(date_pick)
