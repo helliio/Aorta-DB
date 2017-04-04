@@ -200,6 +200,41 @@ Module DB_module
         Next
         Return ret
     End Function
+    Public Function get_appointment_date_only(user As Decimal)
+        Dim ret As New ArrayList
+        connect_db()
+        Dim sqlSporring = "SELECT date FROM appointments WHERE username = @persnr ORDER BY date DESC"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@persnr", user)
+        Dim da As New MySqlDataAdapter
+        Dim interntabell As New DataTable
+        da.SelectCommand = sql
+        da.Fill(interntabell)
+        close_db()
+        Dim rad As DataRow
+        Dim dato As String
+        For Each rad In interntabell.Rows
+            dato = rad("date")
+            ret.Add(dato)
+        Next
+        Return ret
+    End Function
+
+    Public Function get_appointment_info(user As Decimal, dato As String)
+        Dim ret As New ArrayList
+        connect_db()
+        Dim sqlSporring = "SELECT type, hemoglobin, hiv, hepatittB, hepatittC, kommentar from blodpakke b, appointments a where b.dato = a.id AND b.pernr = @personnr AND a.date = @date"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@personnr", user)
+        sql.Parameters.AddWithValue("@date", dato)
+        Dim reader As MySqlDataReader = sql.ExecuteReader
+        reader.Read()
+        For i As Integer = 0 To 5
+            ret.Add(reader.Item(i))
+        Next
+        close_db()
+        Return ret
+    End Function
 
     Public Function return_user(persnr As Decimal)
         Dim ret As New ArrayList
