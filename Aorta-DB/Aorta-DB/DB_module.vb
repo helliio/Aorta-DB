@@ -68,23 +68,27 @@ Module DB_module
     End Sub
 
     Public Sub create_erklaring(personnr As Decimal, date_id As Integer, inn As Array, land As String)
-        Dim sqlSporring = "INSERT INTO erklaring (pers, date_id"
-        For i As Integer = 1 To inn.Length
-            sqlSporring = sqlSporring & ", check" & i.ToString
-        Next
-        sqlSporring = sqlSporring & ", land) VALUES (@pers, @date_id"
-        For i As Integer = 1 To inn.Length
-            sqlSporring = sqlSporring & ", " & inn(i - 1).ToString
-        Next
-        sqlSporring = sqlSporring & ", @land)"
-        'Debug.Print(sqlSporring)
-        connect_db()
-        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
-        sql.Parameters.AddWithValue("@pers", personnr)
-        sql.Parameters.AddWithValue("@date_id", date_id)
-        sql.Parameters.AddWithValue("@land", land)
-        sql.ExecuteNonQuery()
-        close_db()
+        Try
+            Dim sqlSporring = "INSERT INTO erklaring (pers, date_id"
+            For i As Integer = 1 To inn.Length
+                sqlSporring = sqlSporring & ", check" & i.ToString
+            Next
+            sqlSporring = sqlSporring & ", land) VALUES (@pers, @date_id"
+            For i As Integer = 1 To inn.Length
+                sqlSporring = sqlSporring & ", " & inn(i - 1).ToString
+            Next
+            sqlSporring = sqlSporring & ", @land)"
+            'Debug.Print(sqlSporring)
+            connect_db()
+            Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+            sql.Parameters.AddWithValue("@pers", personnr)
+            sql.Parameters.AddWithValue("@date_id", date_id)
+            sql.Parameters.AddWithValue("@land", land)
+            sql.ExecuteNonQuery()
+            close_db()
+        Catch ex As Exception
+            MsgBox("Du har alledrede gjort egenerklæringen for denne timen")
+        End Try
     End Sub
 
     Public Sub create_appointment(user As Decimal, time As String, dates As String)
@@ -376,19 +380,23 @@ Module DB_module
         End If
     End Function
     Public Function find_helsesjekk(user As Decimal)
-        connect_db()
-        Dim ret As New ArrayList
-        Dim username As String = user.ToString
-        Dim sqlSporring = "select type, hemoglobin, syfilis, hiv, hepatittB, hepatittC  from helsesjekk where user = @username"
-        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        Try
+            connect_db()
+            Dim ret As New ArrayList
+            Dim username As String = user.ToString
+            Dim sqlSporring = "select type, hemoglobin, syfilis, hiv, hepatittB, hepatittC  from helsesjekk where user = @username"
+            Dim sql As New MySqlCommand(sqlSporring, tilkobling)
 
-        sql.Parameters.AddWithValue("@username", username)
-        Dim reader As MySqlDataReader = sql.ExecuteReader
-        reader.Read()
-        For i As Integer = 0 To 5
-            ret.Add(reader.Item(i))
-        Next
-        close_db()
-        Return ret
+            sql.Parameters.AddWithValue("@username", username)
+            Dim reader As MySqlDataReader = sql.ExecuteReader
+            reader.Read()
+            For i As Integer = 0 To 5
+                ret.Add(reader.Item(i))
+            Next
+            close_db()
+            Return ret
+        Catch ex As Exception
+            Return 0
+        End Try
     End Function
 End Module
