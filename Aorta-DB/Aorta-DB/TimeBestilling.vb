@@ -88,5 +88,6 @@ Public Class TimeBestilling
         For Each item In Timer
             ListBox1.Items.Add(item(0))
         Next
+        Label3.Text = "Disse timene er tatt " & DateTimePicker1.Text
     End Sub
 End Class
