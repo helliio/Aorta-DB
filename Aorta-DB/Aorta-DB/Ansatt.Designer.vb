@@ -28,7 +28,6 @@ Partial Class Ansatt
         Me.txtSok = New System.Windows.Forms.TextBox()
         Me.btnSok = New System.Windows.Forms.Button()
         Me.listGivninger = New System.Windows.Forms.ListBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.headerpanel = New System.Windows.Forms.Panel()
@@ -120,22 +119,6 @@ Partial Class Ansatt
         Me.listGivninger.Name = "listGivninger"
         Me.listGivninger.Size = New System.Drawing.Size(369, 174)
         Me.listGivninger.TabIndex = 7
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.White
-        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
-        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(188, 484)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(165, 65)
-        Me.Button1.TabIndex = 10
-        Me.Button1.Text = "Registrer ny blodtapping"
-        Me.Button1.UseVisualStyleBackColor = False
         '
         'Label2
         '
@@ -450,7 +433,7 @@ Partial Class Ansatt
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(387, 484)
+        Me.Button2.Location = New System.Drawing.Point(192, 484)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(165, 65)
         Me.Button2.TabIndex = 11
@@ -487,7 +470,6 @@ Partial Class Ansatt
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnSok)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.listGivninger)
         Me.Controls.Add(Me.lblSok)
         Me.Controls.Add(Me.lblInfo)
@@ -517,7 +499,6 @@ Partial Class Ansatt
     Friend WithEvents txtSok As TextBox
     Friend WithEvents btnSok As Button
     Friend WithEvents listGivninger As ListBox
-    Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents headerpanel As Panel
