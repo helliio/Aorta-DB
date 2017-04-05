@@ -28,7 +28,6 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnGlemtpassord.Click
         GlemtPassord.Show()
-        Me.Hide()
     End Sub
 
 

@@ -106,6 +106,12 @@
     <Compile Include="BlodGivning2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ChangePass.Designer.vb">
+      <DependentUpon>ChangePass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePass.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DB_module.vb" />
     <Compile Include="Ansatt.Designer.vb">
       <DependentUpon>Ansatt.vb</DependentUpon>
@@ -294,6 +300,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BrukerHovedside.resx">
       <DependentUpon>BrukerHovedside.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePass.resx">
+      <DependentUpon>ChangePass.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EgenErklaering.resx">
       <DependentUpon>EgenErklaering.vb</DependentUpon>

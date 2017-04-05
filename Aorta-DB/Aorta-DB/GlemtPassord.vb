@@ -12,10 +12,6 @@ Public Class GlemtPassord
             Exit Sub
         End If
         send_new_password(persnr)
-    End Sub
-
-    Private Sub GlemtPassord_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        Main.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 End Class
