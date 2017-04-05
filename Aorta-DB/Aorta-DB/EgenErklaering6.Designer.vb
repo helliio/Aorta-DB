@@ -102,7 +102,7 @@ Partial Class EgenErklaering6
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.SystemColors.Control
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(190, 179)
@@ -115,10 +115,10 @@ Partial Class EgenErklaering6
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.SystemColors.Control
+        Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Label4.Location = New System.Drawing.Point(7, 17)
+        Me.Label4.Location = New System.Drawing.Point(18, 17)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(338, 51)
@@ -131,7 +131,7 @@ Partial Class EgenErklaering6
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Label5.Location = New System.Drawing.Point(7, 21)
+        Me.Label5.Location = New System.Drawing.Point(18, 23)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(327, 34)
@@ -167,7 +167,7 @@ Partial Class EgenErklaering6
         'radbtnnei46
         '
         Me.radbtnnei46.AutoSize = True
-        Me.radbtnnei46.BackColor = System.Drawing.SystemColors.Control
+        Me.radbtnnei46.BackColor = System.Drawing.Color.Transparent
         Me.radbtnnei46.Checked = True
         Me.radbtnnei46.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.radbtnnei46.Location = New System.Drawing.Point(671, 179)
@@ -182,7 +182,7 @@ Partial Class EgenErklaering6
         'radbtnja46
         '
         Me.radbtnja46.AutoSize = True
-        Me.radbtnja46.BackColor = System.Drawing.SystemColors.Control
+        Me.radbtnja46.BackColor = System.Drawing.Color.Transparent
         Me.radbtnja46.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.radbtnja46.Location = New System.Drawing.Point(559, 179)
         Me.radbtnja46.Margin = New System.Windows.Forms.Padding(4)
@@ -207,7 +207,7 @@ Partial Class EgenErklaering6
         'radbtnja48
         '
         Me.radbtnja48.AutoSize = True
-        Me.radbtnja48.BackColor = System.Drawing.SystemColors.Control
+        Me.radbtnja48.BackColor = System.Drawing.Color.Transparent
         Me.radbtnja48.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.radbtnja48.Location = New System.Drawing.Point(382, 27)
         Me.radbtnja48.Margin = New System.Windows.Forms.Padding(4)
@@ -234,7 +234,7 @@ Partial Class EgenErklaering6
         'radbtnnei48
         '
         Me.radbtnnei48.AutoSize = True
-        Me.radbtnnei48.BackColor = System.Drawing.SystemColors.Control
+        Me.radbtnnei48.BackColor = System.Drawing.Color.Transparent
         Me.radbtnnei48.Checked = True
         Me.radbtnnei48.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.radbtnnei48.Location = New System.Drawing.Point(494, 27)
@@ -616,7 +616,7 @@ Partial Class EgenErklaering6
         Me.MaximizeBox = False
         Me.Name = "EgenErklaering6"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "EgenErklaering6"
+        Me.Text = "Egenerklæring"
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
         Me.GroupBox4.ResumeLayout(False)

@@ -93,6 +93,7 @@ Partial Class EgenErklaering
         Me.btnMinSide = New System.Windows.Forms.Button()
         Me.btnEgenerklaring = New System.Windows.Forms.Button()
         Me.btnBestill = New System.Windows.Forms.Button()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
@@ -131,6 +132,7 @@ Partial Class EgenErklaering
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 10.0!)
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.Label3.Location = New System.Drawing.Point(4, 9)
@@ -223,7 +225,7 @@ Partial Class EgenErklaering
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.BackColor = System.Drawing.SystemColors.Control
+        Me.Label10.BackColor = System.Drawing.Color.Transparent
         Me.Label10.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.Label10.Location = New System.Drawing.Point(5, 16)
@@ -667,12 +669,12 @@ Partial Class EgenErklaering
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Century Gothic", 12.0!)
         Me.Label14.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Label14.Location = New System.Drawing.Point(558, 79)
+        Me.Label14.Location = New System.Drawing.Point(657, 79)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(54, 21)
+        Me.Label14.Size = New System.Drawing.Size(50, 21)
         Me.Label14.TabIndex = 85
-        Me.Label14.Text = "Dato:"
+        Me.Label14.Text = "Dato"
         '
         'lblNesteTime
         '
@@ -1044,12 +1046,25 @@ Partial Class EgenErklaering
         Me.btnBestill.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnBestill.UseVisualStyleBackColor = False
         '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Century Gothic", 12.0!)
+        Me.Label15.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Label15.Location = New System.Drawing.Point(595, 79)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(54, 21)
+        Me.Label15.TabIndex = 116
+        Me.Label15.Text = "Dato:"
+        '
         'EgenErklaering
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 19.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.headerpanel)
         Me.Controls.Add(Me.sidepanel)
         Me.Controls.Add(Me.Label12)
@@ -1074,7 +1089,7 @@ Partial Class EgenErklaering
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "EgenErklaering"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "hdhhddh"
+        Me.Text = "Egenerklæring"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox3.ResumeLayout(False)
@@ -1181,4 +1196,5 @@ Partial Class EgenErklaering
     Friend WithEvents btnMinSide As Button
     Friend WithEvents btnEgenerklaring As Button
     Friend WithEvents btnBestill As Button
+    Friend WithEvents Label15 As Label
 End Class

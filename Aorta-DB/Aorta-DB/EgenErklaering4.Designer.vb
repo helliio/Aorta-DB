@@ -447,7 +447,7 @@ Partial Class EgenErklaering4
         Me.MaximizeBox = False
         Me.Name = "EgenErklaering4"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "EgenErklaering4"
+        Me.Text = "Egenerklæring"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.headerpanel.ResumeLayout(False)

@@ -1319,7 +1319,7 @@ Partial Class EgenErklaering5
         Me.MaximizeBox = False
         Me.Name = "EgenErklaering5"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "EgenErklaering5"
+        Me.Text = "Egenerklæring"
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
