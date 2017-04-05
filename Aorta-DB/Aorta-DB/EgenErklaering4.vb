@@ -18,11 +18,9 @@ Public Class EgenErklaering4
         radbtnnei29.Checked = True
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         erklaring.setAns(29, radbtnja29.Checked)
         EgenErklaering5.Show()
         Me.Hide()
     End Sub
-
-
 End Class
