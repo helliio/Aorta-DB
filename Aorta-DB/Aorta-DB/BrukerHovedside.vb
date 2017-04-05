@@ -40,6 +40,7 @@
         Main.Show()
         Me.Close()
     End Sub
+    
     Private Sub btnAvbestill_Click(sender As Object, e As EventArgs) Handles btnAvbestill.Click
         Dim dato As String = lblNesteTime.Text
         If timer <> 1 Then
@@ -48,7 +49,7 @@
             Dim result As Integer = MessageBox.Show("Er du sikker på at du vil avbestille timen ", "Avbestilling", MessageBoxButtons.YesNo)
             If result = DialogResult.Yes Then
                 Dim list = Split(dato, " ")
-                lblNesteTime.Text = ""
+                lbl.Text = ""
                 cancel_appointment(bruker.getPersonnr, list(0), list(1))
                 timer = 0
             End If
@@ -88,5 +89,9 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         InfoBruker.Show()
+    End Sub
+
+    Private Sub Panel5_Paint(sender As Object, e As PaintEventArgs) Handles Panel5.Paint
+
     End Sub
 End Class
