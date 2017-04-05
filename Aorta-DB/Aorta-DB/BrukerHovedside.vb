@@ -49,7 +49,7 @@
             Dim result As Integer = MessageBox.Show("Er du sikker på at du vil avbestille timen ", "Avbestilling", MessageBoxButtons.YesNo)
             If result = DialogResult.Yes Then
                 Dim list = Split(dato, " ")
-                lbl.Text = ""
+                lblNesteTime.Text = ""
                 cancel_appointment(bruker.getPersonnr, list(0), list(1))
                 timer = 0
             End If
