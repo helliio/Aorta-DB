@@ -23,6 +23,4 @@ Public Class EgenErklaering4
         EgenErklaering5.Show()
         Me.Hide()
     End Sub
-
-
 End Class
