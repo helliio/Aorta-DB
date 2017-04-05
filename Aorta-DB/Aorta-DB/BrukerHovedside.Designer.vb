@@ -55,6 +55,7 @@ Partial Class BrukerHovedside
         Me.btnMinSide = New System.Windows.Forms.Button()
         Me.btnEgenerklaring = New System.Windows.Forms.Button()
         Me.btnBestill = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel6.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.headerpanel.SuspendLayout()
@@ -450,12 +451,22 @@ Partial Class BrukerHovedside
         Me.btnBestill.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnBestill.UseVisualStyleBackColor = False
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(642, 509)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 114
+        Me.Button2.Text = "Ny passord"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'BrukerHovedside
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(238, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.headerpanel)
         Me.Controls.Add(Me.sidepanel)
         Me.Controls.Add(Me.Button1)
@@ -523,4 +534,5 @@ Partial Class BrukerHovedside
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Button2 As Button
 End Class

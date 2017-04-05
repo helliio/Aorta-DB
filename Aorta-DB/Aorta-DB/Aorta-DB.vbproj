@@ -106,17 +106,17 @@
     <Compile Include="BlodGivning2.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ChangePass.Designer.vb">
+      <DependentUpon>ChangePass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePass.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DB_module.vb" />
     <Compile Include="Ansatt.Designer.vb">
       <DependentUpon>Ansatt.vb</DependentUpon>
     </Compile>
     <Compile Include="Ansatt.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Blodprodukter.Designer.vb">
-      <DependentUpon>Blodprodukter.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Blodprodukter.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BrukerHovedside.Designer.vb">
@@ -180,6 +180,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EgenErklaering_class.vb" />
+    <Compile Include="GlemtPassord.Designer.vb">
+      <DependentUpon>GlemtPassord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GlemtPassord.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Global_val.vb" />
     <Compile Include="IktHovedside.Designer.vb">
       <DependentUpon>IktHovedside.vb</DependentUpon>
@@ -240,6 +246,7 @@
     <Compile Include="NyBruker.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SMS_module.vb" />
     <Compile Include="TimeBestilling.Designer.vb">
       <DependentUpon>TimeBestilling.vb</DependentUpon>
     </Compile>
@@ -291,11 +298,11 @@
     <EmbeddedResource Include="BlodGivning2.resx">
       <DependentUpon>BlodGivning2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Blodprodukter.resx">
-      <DependentUpon>Blodprodukter.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="BrukerHovedside.resx">
       <DependentUpon>BrukerHovedside.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePass.resx">
+      <DependentUpon>ChangePass.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EgenErklaering.resx">
       <DependentUpon>EgenErklaering.vb</DependentUpon>
@@ -323,6 +330,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EgenerklaeringLoggInn.resx">
       <DependentUpon>EgenerklaeringLoggInn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlemtPassord.resx">
+      <DependentUpon>GlemtPassord.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IktHovedside.resx">
       <DependentUpon>IktHovedside.vb</DependentUpon>
