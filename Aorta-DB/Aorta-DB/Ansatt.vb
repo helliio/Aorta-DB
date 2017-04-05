@@ -18,7 +18,7 @@ Public Class Ansatt
         Next
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 
@@ -40,8 +40,10 @@ Public Class Ansatt
 
     End Sub
 
-    Private Sub btnGivninger_Click(sender As Object, e As EventArgs) Handles btnGivninger.Click
+    Private Sub btnGivninger_Click(sender As Object, e As EventArgs)
         AnsattKalender.Show()
         Me.Hide()
     End Sub
+
+
 End Class

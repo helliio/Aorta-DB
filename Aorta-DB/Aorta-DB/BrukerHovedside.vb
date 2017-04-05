@@ -6,22 +6,22 @@
     Dim timer As Integer = 0
 
     Private Sub BrukerHovedside_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim list As ArrayList = get_appointment_date(bruker.getPersonnr)
-        Dim dt_list As New ArrayList
-        Dim d = DateTime.Now
-        For Each item In list
-            dt_list.Add(CDate(item))
-        Next
-        For Each item As Date In dt_list
-            If item < d Then
-                Dim i As String = item.ToString("HH.mm dd.MM.yyyy")
-                listboxGivinger.Items.Add(i)
-            Else
-                Dim i As String = item.ToString("HH.mm dd.MM.yyyy")
-                lblNesteTime.Text = i
-                timer += 1
-            End If
-        Next
+        'Dim list As ArrayList = get_appointment_date(bruker.getPersonnr)
+        'Dim dt_list As New ArrayList
+        'Dim d = DateTime.Now
+        'For Each item In list
+        '    dt_list.Add(CDate(item))
+        'Next
+        'For Each item As Date In dt_list
+        '    If item < d Then
+        '        Dim i As String = item.ToString("HH.mm dd.MM.yyyy")
+        '        listboxGivinger.Items.Add(i)
+        '    Else
+        '        Dim i As String = item.ToString("HH.mm dd.MM.yyyy")
+        '        lblNesteTime.Text = i
+        '        timer += 1
+        '    End If
+        'Next
 
 
         lblBruker.Text = "Velkommen, " & bruker.getFornavn() & " " & bruker.getEtternavn()
@@ -36,7 +36,7 @@
         Me.Hide()
     End Sub
 
-    Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
+    Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) 
         Main.Show()
         Me.Close()
     End Sub
@@ -63,7 +63,7 @@
             Me.Hide()
         End If
     End Sub
-    Private Sub btnNyBruker_Click(sender As Object, e As EventArgs) Handles btnEgenerklaring.Click
+    Private Sub btnNyBruker_Click(sender As Object, e As EventArgs) 
         If timer <> 1 Then
             MsgBox("Du må ha bestilt en time for å gjøre egenerklæringen")
         Else
@@ -72,7 +72,7 @@
         End If
     End Sub
 
-    Private Sub btnBestill_click(sender As Object, e As EventArgs) Handles btnBestill.Click
+    Private Sub btnBestill_click(sender As Object, e As EventArgs) 
         If timer = 1 Then
             MsgBox("Du kan ikke ha mer enn en time")
         Else
@@ -81,7 +81,7 @@
         End If
     End Sub
 
-    Private Sub btnAvbestill2_Click(sender As Object, e As EventArgs) Handles btnAvbestill2.Click
+    Private Sub btnAvbestill2_Click(sender As Object, e As EventArgs) 
         Dim dato As String = lblNesteTime.Text
         If timer <> 1 Then
             MsgBox("Du har ingen timer å avbestille")
@@ -96,11 +96,13 @@
         End If
     End Sub
 
-    Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
+    Private Sub btnMinSide_Click(sender As Object, e As EventArgs) 
         Me.Show()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         InfoBruker.Show()
     End Sub
+
+
 End Class
