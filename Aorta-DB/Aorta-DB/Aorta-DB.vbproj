@@ -113,12 +113,6 @@
     <Compile Include="Ansatt.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Blodprodukter.Designer.vb">
-      <DependentUpon>Blodprodukter.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Blodprodukter.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="BrukerHovedside.Designer.vb">
       <DependentUpon>BrukerHovedside.vb</DependentUpon>
     </Compile>
@@ -180,6 +174,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EgenErklaering_class.vb" />
+    <Compile Include="GlemtPassord.Designer.vb">
+      <DependentUpon>GlemtPassord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GlemtPassord.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Global_val.vb" />
     <Compile Include="IktHovedside.Designer.vb">
       <DependentUpon>IktHovedside.vb</DependentUpon>
@@ -240,6 +240,7 @@
     <Compile Include="NyBruker.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SMS_module.vb" />
     <Compile Include="TimeBestilling.Designer.vb">
       <DependentUpon>TimeBestilling.vb</DependentUpon>
     </Compile>
@@ -291,9 +292,6 @@
     <EmbeddedResource Include="BlodGivning2.resx">
       <DependentUpon>BlodGivning2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Blodprodukter.resx">
-      <DependentUpon>Blodprodukter.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="BrukerHovedside.resx">
       <DependentUpon>BrukerHovedside.vb</DependentUpon>
     </EmbeddedResource>
@@ -323,6 +321,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EgenerklaeringLoggInn.resx">
       <DependentUpon>EgenerklaeringLoggInn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlemtPassord.resx">
+      <DependentUpon>GlemtPassord.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IktHovedside.resx">
       <DependentUpon>IktHovedside.vb</DependentUpon>
