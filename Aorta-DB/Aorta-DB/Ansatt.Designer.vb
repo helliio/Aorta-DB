@@ -52,7 +52,7 @@ Partial Class Ansatt
         Me.btnEgenerklaring = New System.Windows.Forms.Button()
         Me.btnBestill = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnGivninger = New System.Windows.Forms.Button()
         Me.headerpanel.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.sidepanel.SuspendLayout()
@@ -440,21 +440,21 @@ Partial Class Ansatt
         Me.Button2.Text = "Bestill Blod"
         Me.Button2.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnGivninger
         '
-        Me.Button3.BackColor = System.Drawing.Color.White
-        Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(586, 484)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(165, 65)
-        Me.Button3.TabIndex = 120
-        Me.Button3.Text = "Kalender"
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnGivninger.BackColor = System.Drawing.Color.White
+        Me.btnGivninger.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
+        Me.btnGivninger.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.btnGivninger.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver
+        Me.btnGivninger.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.btnGivninger.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnGivninger.ForeColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
+        Me.btnGivninger.Location = New System.Drawing.Point(586, 484)
+        Me.btnGivninger.Name = "btnGivninger"
+        Me.btnGivninger.Size = New System.Drawing.Size(165, 65)
+        Me.btnGivninger.TabIndex = 120
+        Me.btnGivninger.Text = "Kalender"
+        Me.btnGivninger.UseVisualStyleBackColor = False
         '
         'Ansatt
         '
@@ -462,7 +462,7 @@ Partial Class Ansatt
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(784, 561)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnGivninger)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.headerpanel)
         Me.Controls.Add(Me.sidepanel)
@@ -522,6 +522,6 @@ Partial Class Ansatt
     Friend WithEvents btnBestill As Button
     Friend WithEvents btnLoggUt As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnGivninger As Button
     Friend WithEvents PictureBox6 As PictureBox
 End Class

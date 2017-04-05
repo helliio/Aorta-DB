@@ -18,10 +18,6 @@ Public Class Ansatt
         Next
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
-        Me.Close()
-    End Sub
-
     Private Sub btnSok_Click(sender As Object, e As EventArgs) Handles btnSok.Click
         Dim id As Decimal = login2(txtSok.Text)
         If id <> 0 Then
@@ -34,10 +30,12 @@ Public Class Ansatt
 
     End Sub
 
-    Private Sub btnGivninger_Click(sender As Object, e As EventArgs)
+    Private Sub btnGivninger_Click(sender As Object, e As EventArgs) Handles btnGivninger.Click
         AnsattKalender.Show()
         Me.Hide()
     End Sub
 
-
+    Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
+        Me.Close()
+    End Sub
 End Class

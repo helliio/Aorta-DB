@@ -47,7 +47,7 @@ Partial Class BrukerHovedside
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnAvbestill2 = New System.Windows.Forms.Button()
+        Me.btnAvbestill = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.sidetoppanel = New System.Windows.Forms.Panel()
         Me.logo = New System.Windows.Forms.PictureBox()
@@ -231,7 +231,7 @@ Partial Class BrukerHovedside
         Me.sidepanel.Controls.Add(Me.Panel2)
         Me.sidepanel.Controls.Add(Me.PictureBox3)
         Me.sidepanel.Controls.Add(Me.PictureBox1)
-        Me.sidepanel.Controls.Add(Me.btnAvbestill2)
+        Me.sidepanel.Controls.Add(Me.btnAvbestill)
         Me.sidepanel.Controls.Add(Me.PictureBox2)
         Me.sidepanel.Controls.Add(Me.sidetoppanel)
         Me.sidepanel.Controls.Add(Me.btnKontakt)
@@ -318,25 +318,25 @@ Partial Class BrukerHovedside
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'btnAvbestill2
+        'btnAvbestill
         '
-        Me.btnAvbestill2.BackColor = System.Drawing.Color.Transparent
-        Me.btnAvbestill2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnAvbestill2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnAvbestill2.FlatAppearance.BorderSize = 0
-        Me.btnAvbestill2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnAvbestill2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnAvbestill2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAvbestill2.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnAvbestill2.ForeColor = System.Drawing.Color.White
-        Me.btnAvbestill2.Location = New System.Drawing.Point(0, 347)
-        Me.btnAvbestill2.Name = "btnAvbestill2"
-        Me.btnAvbestill2.Size = New System.Drawing.Size(172, 54)
-        Me.btnAvbestill2.TabIndex = 18
-        Me.btnAvbestill2.TabStop = False
-        Me.btnAvbestill2.Text = "Avbestill time"
-        Me.btnAvbestill2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnAvbestill2.UseVisualStyleBackColor = False
+        Me.btnAvbestill.BackColor = System.Drawing.Color.Transparent
+        Me.btnAvbestill.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnAvbestill.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnAvbestill.FlatAppearance.BorderSize = 0
+        Me.btnAvbestill.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnAvbestill.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnAvbestill.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAvbestill.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAvbestill.ForeColor = System.Drawing.Color.White
+        Me.btnAvbestill.Location = New System.Drawing.Point(0, 347)
+        Me.btnAvbestill.Name = "btnAvbestill"
+        Me.btnAvbestill.Size = New System.Drawing.Size(172, 54)
+        Me.btnAvbestill.TabIndex = 18
+        Me.btnAvbestill.TabStop = False
+        Me.btnAvbestill.Text = "Avbestill time"
+        Me.btnAvbestill.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAvbestill.UseVisualStyleBackColor = False
         '
         'PictureBox2
         '
@@ -512,7 +512,7 @@ Partial Class BrukerHovedside
     Friend WithEvents Panel9 As Panel
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents btnAvbestill2 As Button
+    Friend WithEvents btnAvbestill As Button
     Friend WithEvents sidetoppanel As Panel
     Friend WithEvents logo As PictureBox
     Friend WithEvents btnKontakt As Button

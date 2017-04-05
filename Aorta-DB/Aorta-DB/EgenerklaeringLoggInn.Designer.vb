@@ -65,7 +65,7 @@ Partial Class EgenerklaeringLoggInn
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(187, 157)
+        Me.Label3.Location = New System.Drawing.Point(350, 217)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(129, 21)
         Me.Label3.TabIndex = 11
@@ -75,7 +75,7 @@ Partial Class EgenerklaeringLoggInn
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(187, 203)
+        Me.Label2.Location = New System.Drawing.Point(350, 263)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(72, 21)
         Me.Label2.TabIndex = 12
@@ -84,7 +84,7 @@ Partial Class EgenerklaeringLoggInn
         'btnLoggInn
         '
         Me.btnLoggInn.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLoggInn.Location = New System.Drawing.Point(322, 280)
+        Me.btnLoggInn.Location = New System.Drawing.Point(417, 333)
         Me.btnLoggInn.Name = "btnLoggInn"
         Me.btnLoggInn.Size = New System.Drawing.Size(123, 52)
         Me.btnLoggInn.TabIndex = 8
@@ -94,18 +94,18 @@ Partial Class EgenerklaeringLoggInn
         'txtPassord
         '
         Me.txtPassord.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassord.Location = New System.Drawing.Point(322, 197)
+        Me.txtPassord.Location = New System.Drawing.Point(485, 257)
         Me.txtPassord.Name = "txtPassord"
         Me.txtPassord.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassord.Size = New System.Drawing.Size(100, 27)
+        Me.txtPassord.Size = New System.Drawing.Size(128, 27)
         Me.txtPassord.TabIndex = 7
         '
         'TxtPersonnummer
         '
         Me.TxtPersonnummer.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtPersonnummer.Location = New System.Drawing.Point(322, 154)
+        Me.TxtPersonnummer.Location = New System.Drawing.Point(485, 214)
         Me.TxtPersonnummer.Name = "TxtPersonnummer"
-        Me.TxtPersonnummer.Size = New System.Drawing.Size(100, 27)
+        Me.TxtPersonnummer.Size = New System.Drawing.Size(128, 27)
         Me.TxtPersonnummer.TabIndex = 6
         '
         'Label1
@@ -120,7 +120,7 @@ Partial Class EgenerklaeringLoggInn
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(494, 446)
+        Me.Button1.Location = New System.Drawing.Point(643, 502)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(128, 47)
         Me.Button1.TabIndex = 13
@@ -135,7 +135,7 @@ Partial Class EgenerklaeringLoggInn
         Me.headerpanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.headerpanel.Location = New System.Drawing.Point(172, 0)
         Me.headerpanel.Name = "headerpanel"
-        Me.headerpanel.Size = New System.Drawing.Size(462, 75)
+        Me.headerpanel.Size = New System.Drawing.Size(612, 75)
         Me.headerpanel.TabIndex = 115
         '
         'lblBruker
@@ -189,7 +189,7 @@ Partial Class EgenerklaeringLoggInn
         Me.sidepanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.sidepanel.Location = New System.Drawing.Point(0, 0)
         Me.sidepanel.Name = "sidepanel"
-        Me.sidepanel.Size = New System.Drawing.Size(172, 511)
+        Me.sidepanel.Size = New System.Drawing.Size(172, 561)
         Me.sidepanel.TabIndex = 114
         '
         'PictureBox5
@@ -402,7 +402,7 @@ Partial Class EgenerklaeringLoggInn
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(634, 511)
+        Me.ClientSize = New System.Drawing.Size(784, 561)
         Me.Controls.Add(Me.headerpanel)
         Me.Controls.Add(Me.sidepanel)
         Me.Controls.Add(Me.Button1)
@@ -416,7 +416,7 @@ Partial Class EgenerklaeringLoggInn
         Me.MaximizeBox = False
         Me.Name = "EgenerklaeringLoggInn"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "EgenerklaeringLoggInn"
+        Me.Text = "Egenerklaering"
         Me.headerpanel.ResumeLayout(False)
         Me.headerpanel.PerformLayout()
         Me.sidepanel.ResumeLayout(False)
