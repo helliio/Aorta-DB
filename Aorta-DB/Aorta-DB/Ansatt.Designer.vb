@@ -31,7 +31,6 @@ Partial Class Ansatt
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.headerpanel = New System.Windows.Forms.Panel()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.btnLoggUt = New System.Windows.Forms.Button()
@@ -131,7 +130,7 @@ Partial Class Ansatt
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(178, 484)
+        Me.Button1.Location = New System.Drawing.Point(188, 484)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(165, 65)
         Me.Button1.TabIndex = 10
@@ -158,14 +157,6 @@ Partial Class Ansatt
         Me.Label1.Size = New System.Drawing.Size(255, 25)
         Me.Label1.TabIndex = 15
         Me.Label1.Text = "Blotappingstimer i dag"
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(182, 413)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(95, 20)
-        Me.TextBox1.TabIndex = 12
-        Me.TextBox1.Text = "fjern denne"
         '
         'headerpanel
         '
@@ -459,7 +450,7 @@ Partial Class Ansatt
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.Button2.Location = New System.Drawing.Point(373, 484)
+        Me.Button2.Location = New System.Drawing.Point(387, 484)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(165, 65)
         Me.Button2.TabIndex = 11
@@ -475,7 +466,7 @@ Partial Class Ansatt
         Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(577, 484)
+        Me.Button3.Location = New System.Drawing.Point(586, 484)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(165, 65)
         Me.Button3.TabIndex = 120
@@ -496,7 +487,6 @@ Partial Class Ansatt
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnSok)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.listGivninger)
         Me.Controls.Add(Me.lblSok)
@@ -530,7 +520,6 @@ Partial Class Ansatt
     Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents headerpanel As Panel
     Friend WithEvents lblAnsatt As Label
     Friend WithEvents sidepanel As Panel
