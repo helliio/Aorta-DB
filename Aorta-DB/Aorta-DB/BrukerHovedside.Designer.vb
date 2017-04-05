@@ -24,12 +24,12 @@ Partial Class BrukerHovedside
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BrukerHovedside))
         Me.lblBruker = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.listboxGivinger = New System.Windows.Forms.ListBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnLoggUt = New System.Windows.Forms.Button()
-        Me.lblNesteTime = New System.Windows.Forms.Label()
+        Me.lbl = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.lblNesteTime = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -64,15 +64,6 @@ Partial Class BrukerHovedside
         Me.lblBruker.Size = New System.Drawing.Size(236, 28)
         Me.lblBruker.TabIndex = 0
         Me.lblBruker.Text = "Velkommen bruker"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(638, 329)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(79, 13)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Siste givninger:"
         '
         'listboxGivinger
         '
@@ -110,22 +101,32 @@ Partial Class BrukerHovedside
         Me.btnLoggUt.Text = "Logg ut"
         Me.btnLoggUt.UseVisualStyleBackColor = True
         '
-        'lblNesteTime
+        'lbl
         '
-        Me.lblNesteTime.AutoSize = True
-        Me.lblNesteTime.Location = New System.Drawing.Point(12, 143)
-        Me.lblNesteTime.Name = "lblNesteTime"
-        Me.lblNesteTime.Size = New System.Drawing.Size(0, 13)
-        Me.lblNesteTime.TabIndex = 7
+        Me.lbl.AutoSize = True
+        Me.lbl.Location = New System.Drawing.Point(12, 143)
+        Me.lbl.Name = "lbl"
+        Me.lbl.Size = New System.Drawing.Size(31, 13)
+        Me.lbl.TabIndex = 7
+        Me.lbl.Text = "Hello"
         '
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.White
+        Me.Panel6.Controls.Add(Me.lblNesteTime)
         Me.Panel6.Controls.Add(Me.Label3)
-        Me.Panel6.Location = New System.Drawing.Point(202, 126)
+        Me.Panel6.Location = New System.Drawing.Point(203, 126)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(179, 145)
         Me.Panel6.TabIndex = 16
+        '
+        'lblNesteTime
+        '
+        Me.lblNesteTime.AutoSize = True
+        Me.lblNesteTime.Location = New System.Drawing.Point(12, 39)
+        Me.lblNesteTime.Name = "lblNesteTime"
+        Me.lblNesteTime.Size = New System.Drawing.Size(0, 13)
+        Me.lblNesteTime.TabIndex = 4
         '
         'Label1
         '
@@ -328,7 +329,7 @@ Partial Class BrukerHovedside
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(642, 480)
+        Me.Button1.Location = New System.Drawing.Point(662, 480)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 21
@@ -350,8 +351,7 @@ Partial Class BrukerHovedside
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel6)
-        Me.Controls.Add(Me.lblNesteTime)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lbl)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimizeBox = False
@@ -373,11 +373,10 @@ Partial Class BrukerHovedside
     End Sub
 
     Friend WithEvents lblBruker As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents listboxGivinger As ListBox
     Friend WithEvents Label3 As Label
     Friend WithEvents btnLoggUt As Button
-    Friend WithEvents lblNesteTime As Label
+    Friend WithEvents lbl As Label
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents Panel4 As Panel
@@ -395,4 +394,5 @@ Partial Class BrukerHovedside
     Friend WithEvents headerpanel As Panel
     Friend WithEvents btnAvbestill2 As Button
     Friend WithEvents Button1 As Button
+    Friend WithEvents lblNesteTime As Label
 End Class
