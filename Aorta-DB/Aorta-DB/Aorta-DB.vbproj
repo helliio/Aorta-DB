@@ -113,12 +113,6 @@
     <Compile Include="Ansatt.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Blodprodukter.Designer.vb">
-      <DependentUpon>Blodprodukter.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Blodprodukter.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="BrukerHovedside.Designer.vb">
       <DependentUpon>BrukerHovedside.vb</DependentUpon>
     </Compile>
@@ -198,6 +192,12 @@
       <DependentUpon>InfoDonor.vb</DependentUpon>
     </Compile>
     <Compile Include="InfoDonor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InnkallingBaserPaaBehov.Designer.vb">
+      <DependentUpon>InnkallingBaserPaaBehov.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InnkallingBaserPaaBehov.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Logginn.Designer.vb">
@@ -291,9 +291,6 @@
     <EmbeddedResource Include="BlodGivning2.resx">
       <DependentUpon>BlodGivning2.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Blodprodukter.resx">
-      <DependentUpon>Blodprodukter.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="BrukerHovedside.resx">
       <DependentUpon>BrukerHovedside.vb</DependentUpon>
     </EmbeddedResource>
@@ -332,6 +329,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InfoDonor.resx">
       <DependentUpon>InfoDonor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InnkallingBaserPaaBehov.resx">
+      <DependentUpon>InnkallingBaserPaaBehov.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Logginn.resx">
       <DependentUpon>Logginn.vb</DependentUpon>

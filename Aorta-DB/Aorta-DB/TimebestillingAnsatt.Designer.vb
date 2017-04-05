@@ -31,11 +31,12 @@ Partial Class TimebestillingAnsatt
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.btnBestill = New System.Windows.Forms.Button()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(184, 168)
+        Me.Button2.Location = New System.Drawing.Point(421, 226)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 14
@@ -101,11 +102,20 @@ Partial Class TimebestillingAnsatt
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePicker1.TabIndex = 7
         '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(396, 42)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(120, 95)
+        Me.ListBox1.TabIndex = 16
+        '
         'TimebestillingAnsatt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(634, 511)
+        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
@@ -133,4 +143,5 @@ Partial Class TimebestillingAnsatt
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents btnBestill As Button
     Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents ListBox1 As ListBox
 End Class
