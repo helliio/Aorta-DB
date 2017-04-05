@@ -4,7 +4,7 @@
     End Sub
 
     Private Sub BlodGivning2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim blodtype As String = find_blodtype("11223344556")
+        Dim blodtype As String = find_blodtype(bruker.getPersonnr)
         ComboBox1.Items.Add("O+")
         ComboBox1.Items.Add("O-")
         ComboBox1.Items.Add("A+")
