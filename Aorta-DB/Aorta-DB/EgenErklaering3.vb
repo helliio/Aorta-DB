@@ -2,7 +2,7 @@
 
 Public Class EgenErklaering3
 
-    Private Sub btnTilbake_Click(sender As Object, e As EventArgs)
+    Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
         Close()
     End Sub
 

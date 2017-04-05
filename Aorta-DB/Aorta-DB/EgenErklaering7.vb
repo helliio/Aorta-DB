@@ -1,7 +1,7 @@
 ﻿Imports System.ComponentModel
 
 Public Class EgenErklaering7
-    Private Sub btnTilbake_Click(sender As Object, e As EventArgs)
+    Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
         Close()
     End Sub
 
