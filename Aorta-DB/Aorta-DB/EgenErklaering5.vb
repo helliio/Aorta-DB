@@ -64,10 +64,4 @@ Public Class EgenErklaering5
         EgenErklaering6.Show()
         Me.Hide()
     End Sub
-
-    Private Sub radbtnnei30_CheckedChanged(sender As Object, e As EventArgs) Handles radbtnnei30.CheckedChanged
-
-    End Sub
-
-
 End Class

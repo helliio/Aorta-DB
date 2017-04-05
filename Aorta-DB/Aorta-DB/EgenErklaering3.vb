@@ -11,9 +11,6 @@ Public Class EgenErklaering3
         Me.Hide()
     End Sub
 
-    Private Sub EgenErklaering3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
     Public Sub clear()
         radbtnja19.Checked = False
         radbtnja20.Checked = False
@@ -51,6 +48,4 @@ Public Class EgenErklaering3
         EgenErklaering4.Show()
         Me.Hide()
     End Sub
-
-
 End Class
