@@ -85,4 +85,8 @@
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         refresh_list()
     End Sub
+
+    Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
+
+    End Sub
 End Class

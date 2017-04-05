@@ -65,7 +65,8 @@ Partial Class EgenerklaeringLoggInn
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(350, 217)
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(200, 152)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(129, 21)
         Me.Label3.TabIndex = 11
@@ -75,7 +76,8 @@ Partial Class EgenerklaeringLoggInn
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(350, 263)
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(200, 198)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(72, 21)
         Me.Label2.TabIndex = 12
@@ -83,10 +85,12 @@ Partial Class EgenerklaeringLoggInn
         '
         'btnLoggInn
         '
+        Me.btnLoggInn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLoggInn.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLoggInn.Location = New System.Drawing.Point(417, 333)
+        Me.btnLoggInn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnLoggInn.Location = New System.Drawing.Point(406, 252)
         Me.btnLoggInn.Name = "btnLoggInn"
-        Me.btnLoggInn.Size = New System.Drawing.Size(123, 52)
+        Me.btnLoggInn.Size = New System.Drawing.Size(115, 48)
         Me.btnLoggInn.TabIndex = 8
         Me.btnLoggInn.Text = "Logg inn"
         Me.btnLoggInn.UseVisualStyleBackColor = True
@@ -94,24 +98,25 @@ Partial Class EgenerklaeringLoggInn
         'txtPassord
         '
         Me.txtPassord.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPassord.Location = New System.Drawing.Point(485, 257)
+        Me.txtPassord.Location = New System.Drawing.Point(335, 192)
         Me.txtPassord.Name = "txtPassord"
         Me.txtPassord.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassord.Size = New System.Drawing.Size(128, 27)
+        Me.txtPassord.Size = New System.Drawing.Size(186, 27)
         Me.txtPassord.TabIndex = 7
         '
         'TxtPersonnummer
         '
         Me.TxtPersonnummer.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtPersonnummer.Location = New System.Drawing.Point(485, 214)
+        Me.TxtPersonnummer.Location = New System.Drawing.Point(335, 149)
         Me.TxtPersonnummer.Name = "TxtPersonnummer"
-        Me.TxtPersonnummer.Size = New System.Drawing.Size(128, 27)
+        Me.TxtPersonnummer.Size = New System.Drawing.Size(186, 27)
         Me.TxtPersonnummer.TabIndex = 6
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(181, 99)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(115, 30)
@@ -120,9 +125,11 @@ Partial Class EgenerklaeringLoggInn
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(643, 502)
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Button1.Location = New System.Drawing.Point(672, 519)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(128, 47)
+        Me.Button1.Size = New System.Drawing.Size(99, 30)
         Me.Button1.TabIndex = 13
         Me.Button1.Text = "Tilbake"
         Me.Button1.UseVisualStyleBackColor = True

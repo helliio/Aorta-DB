@@ -38,4 +38,6 @@ Public Class Ansatt
     Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
         Me.Close()
     End Sub
+
+
 End Class
