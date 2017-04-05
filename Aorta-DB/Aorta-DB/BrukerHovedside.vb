@@ -40,7 +40,8 @@
         Main.Show()
         Me.Close()
     End Sub
-    Private Sub btnAvbestill_Click(sender As Object, e As EventArgs)
+    
+    Private Sub btnAvbestill_Click(sender As Object, e As EventArgs) Handles btnAvbestill.Click
         Dim dato As String = lblNesteTime.Text
         If timer <> 1 Then
             MsgBox("Du har ingen timer å avbestille")
@@ -48,14 +49,14 @@
             Dim result As Integer = MessageBox.Show("Er du sikker på at du vil avbestille timen ", "Avbestilling", MessageBoxButtons.YesNo)
             If result = DialogResult.Yes Then
                 Dim list = Split(dato, " ")
-                lblNesteTime.Text = ""
+                lbl.Text = ""
                 cancel_appointment(bruker.getPersonnr, list(0), list(1))
                 timer = 0
             End If
         End If
     End Sub
 
-    Private Sub btnEgenerklæring_Click(sender As Object, e As EventArgs)
+    Private Sub btnEgenerklaring_Click(sender As Object, e As EventArgs) Handles btnEgenerklaring.Click
         If timer <> 1 Then
             MsgBox("Du må ha bestilt en time for å gjøre egenerklæringen")
         Else
@@ -63,7 +64,8 @@
             Me.Hide()
         End If
     End Sub
-    Private Sub btnNyBruker_Click(sender As Object, e As EventArgs) Handles btnEgenerklaring.Click
+
+    Private Sub btnNyBruker_Click(sender As Object, e As EventArgs) 
         If timer <> 1 Then
             MsgBox("Du må ha bestilt en time for å gjøre egenerklæringen")
         Else
@@ -81,26 +83,15 @@
         End If
     End Sub
 
-    Private Sub btnAvbestill2_Click(sender As Object, e As EventArgs) Handles btnAvbestill2.Click
-        Dim dato As String = lblNesteTime.Text
-        If timer <> 1 Then
-            MsgBox("Du har ingen timer å avbestille")
-        Else
-            Dim result As Integer = MessageBox.Show("Er du sikker på at du vil avbestille timen ", "Avbestilling", MessageBoxButtons.YesNo)
-            If result = DialogResult.Yes Then
-                Dim list = Split(dato, " ")
-                lblNesteTime.Text = ""
-                cancel_appointment(bruker.getPersonnr, list(0), list(1))
-                timer = 0
-            End If
-        End If
-    End Sub
-
     Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
         Me.Show()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         InfoBruker.Show()
+    End Sub
+
+    Private Sub Panel5_Paint(sender As Object, e As PaintEventArgs) Handles Panel5.Paint
+
     End Sub
 End Class

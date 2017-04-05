@@ -25,7 +25,10 @@ Partial Class InfoBruker
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InfoBruker))
         Me.btnTilbake = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.listboxInfo = New System.Windows.Forms.ListBox()
+        Me.listboxHelsesjekk = New System.Windows.Forms.ListBox()
+        Me.listboxTimer = New System.Windows.Forms.ListBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.listboxGivningsInfo = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'btnTilbake
@@ -47,20 +50,48 @@ Partial Class InfoBruker
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Info om brukeren"
         '
-        'listboxInfo
+        'listboxHelsesjekk
         '
-        Me.listboxInfo.FormattingEnabled = True
-        Me.listboxInfo.Location = New System.Drawing.Point(12, 143)
-        Me.listboxInfo.Name = "listboxInfo"
-        Me.listboxInfo.Size = New System.Drawing.Size(260, 160)
-        Me.listboxInfo.TabIndex = 2
+        Me.listboxHelsesjekk.FormattingEnabled = True
+        Me.listboxHelsesjekk.Location = New System.Drawing.Point(12, 199)
+        Me.listboxHelsesjekk.Name = "listboxHelsesjekk"
+        Me.listboxHelsesjekk.Size = New System.Drawing.Size(178, 160)
+        Me.listboxHelsesjekk.TabIndex = 2
+        '
+        'listboxTimer
+        '
+        Me.listboxTimer.FormattingEnabled = True
+        Me.listboxTimer.Location = New System.Drawing.Point(478, 30)
+        Me.listboxTimer.Name = "listboxTimer"
+        Me.listboxTimer.Size = New System.Drawing.Size(120, 95)
+        Me.listboxTimer.TabIndex = 3
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(373, 56)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 4
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'listboxGivningsInfo
+        '
+        Me.listboxGivningsInfo.FormattingEnabled = True
+        Me.listboxGivningsInfo.Location = New System.Drawing.Point(373, 199)
+        Me.listboxGivningsInfo.Name = "listboxGivningsInfo"
+        Me.listboxGivningsInfo.Size = New System.Drawing.Size(231, 160)
+        Me.listboxGivningsInfo.TabIndex = 5
         '
         'InfoBruker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(634, 511)
-        Me.Controls.Add(Me.listboxInfo)
+        Me.Controls.Add(Me.listboxGivningsInfo)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.listboxTimer)
+        Me.Controls.Add(Me.listboxHelsesjekk)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnTilbake)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
@@ -76,5 +107,8 @@ Partial Class InfoBruker
 
     Friend WithEvents btnTilbake As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents listboxInfo As ListBox
+    Friend WithEvents listboxHelsesjekk As ListBox
+    Friend WithEvents listboxTimer As ListBox
+    Friend WithEvents Button1 As Button
+    Friend WithEvents listboxGivningsInfo As ListBox
 End Class
