@@ -29,6 +29,7 @@ Partial Class BrukerHovedside
         Me.btnLoggUt = New System.Windows.Forms.Button()
         Me.lbl = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.lblNesteTime = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -45,7 +46,6 @@ Partial Class BrukerHovedside
         Me.btnBestill = New System.Windows.Forms.Button()
         Me.headerpanel = New System.Windows.Forms.Panel()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.lblNesteTime = New System.Windows.Forms.Label()
         Me.Panel6.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.sidepanel.SuspendLayout()
@@ -119,6 +119,14 @@ Partial Class BrukerHovedside
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(179, 145)
         Me.Panel6.TabIndex = 16
+        '
+        'lblNesteTime
+        '
+        Me.lblNesteTime.AutoSize = True
+        Me.lblNesteTime.Location = New System.Drawing.Point(12, 39)
+        Me.lblNesteTime.Name = "lblNesteTime"
+        Me.lblNesteTime.Size = New System.Drawing.Size(0, 13)
+        Me.lblNesteTime.TabIndex = 4
         '
         'Label1
         '
@@ -321,20 +329,12 @@ Partial Class BrukerHovedside
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(642, 480)
+        Me.Button1.Location = New System.Drawing.Point(662, 480)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 21
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
-        '
-        'lblNesteTime
-        '
-        Me.lblNesteTime.AutoSize = True
-        Me.lblNesteTime.Location = New System.Drawing.Point(12, 39)
-        Me.lblNesteTime.Name = "lblNesteTime"
-        Me.lblNesteTime.Size = New System.Drawing.Size(0, 13)
-        Me.lblNesteTime.TabIndex = 4
         '
         'BrukerHovedside
         '
