@@ -44,4 +44,8 @@ Public Class Ansatt
         AnsattKalender.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
+
+    End Sub
 End Class

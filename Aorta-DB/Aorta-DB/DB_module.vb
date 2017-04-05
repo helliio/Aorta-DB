@@ -399,4 +399,34 @@ Module DB_module
             Return 0
         End Try
     End Function
+    Public Function check_egenerklaering(user As Decimal)
+        connect_db()
+        Dim username As String = user.ToString
+        Dim sqlSporring = "select * from erklaring where pers = @username "
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+
+        sql.Parameters.AddWithValue("@username", username)
+
+        Dim leser = sql.ExecuteReader()
+        If leser.HasRows Then
+            close_db()
+            Return True
+        Else
+            close_db()
+            Return False
+        End If
+    End Function
+    Public Function find_blodtype(user As String)
+        Dim ret As String
+        connect_db()
+        Dim sqlSporring = "SELECT type FROM helsesjekk WHERE user = @user"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@user", user)
+        Dim reader As MySqlDataReader = sql.ExecuteReader
+        reader.Read()
+
+        ret = reader.Item(0)
+        close_db()
+        Return ret
+    End Function
 End Module

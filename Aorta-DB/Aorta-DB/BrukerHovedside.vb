@@ -82,14 +82,14 @@
     End Sub
 
     Private Sub btnAvbestill2_Click(sender As Object, e As EventArgs) Handles btnAvbestill2.Click
-        Dim dato As String = lbl.Text
+        Dim dato As String = lblNesteTime.Text
         If timer <> 1 Then
             MsgBox("Du har ingen timer å avbestille")
         Else
             Dim result As Integer = MessageBox.Show("Er du sikker på at du vil avbestille timen ", "Avbestilling", MessageBoxButtons.YesNo)
             If result = DialogResult.Yes Then
                 Dim list = Split(dato, " ")
-                lbl.Text = ""
+                lblNesteTime.Text = ""
                 cancel_appointment(bruker.getPersonnr, list(0), list(1))
                 timer = 0
             End If

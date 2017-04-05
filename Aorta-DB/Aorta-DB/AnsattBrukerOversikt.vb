@@ -58,9 +58,17 @@ Public Class AnsattBrukerOversikt
     End Sub
 
     Private Sub btnNyGivning_Click(sender As Object, e As EventArgs) Handles btnNyGivning.Click
-        Global_val.giver_id = CDec(bruker.getPersonnr)
-        BlodGivning.Show()
-        Me.Hide()
+        If check_helsesjekk(bruker.getPersonnr) = True Then
+            If check_egenerklaering(bruker.getPersonnr) = True Then
+                Global_val.giver_id = CDec(bruker.getPersonnr)
+                BlodGivning.Show()
+                Me.Hide()
+            Else
+                MsgBox("Denne brukeren må gjøre egenerklæringen før han/hun kan gi blod")
+            End If
+        Else
+            MsgBox("Denne bruker må gjøre en helsesjekk før han/hun kan gi blod")
+        End If
     End Sub
 
     Private Sub btnInfo_Click(sender As Object, e As EventArgs) Handles btnInfo.Click
