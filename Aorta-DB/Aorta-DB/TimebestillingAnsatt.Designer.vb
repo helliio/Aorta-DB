@@ -32,6 +32,8 @@ Partial Class TimebestillingAnsatt
         Me.btnBestill = New System.Windows.Forms.Button()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button2
@@ -105,16 +107,35 @@ Partial Class TimebestillingAnsatt
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(396, 42)
+        Me.ListBox1.Location = New System.Drawing.Point(396, 93)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(120, 95)
+        Me.ListBox1.Size = New System.Drawing.Size(120, 108)
         Me.ListBox1.TabIndex = 16
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(376, 74)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(0, 13)
+        Me.Label3.TabIndex = 17
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(350, 42)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(218, 13)
+        Me.Label4.TabIndex = 18
+        Me.Label4.Text = "Velg en dato og sjekk hvilke timer som er tatt"
         '
         'TimebestillingAnsatt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(634, 511)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -144,4 +165,6 @@ Partial Class TimebestillingAnsatt
     Friend WithEvents btnBestill As Button
     Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
 End Class
