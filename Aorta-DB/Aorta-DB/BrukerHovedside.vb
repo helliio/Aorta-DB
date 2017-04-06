@@ -25,9 +25,9 @@
 
 
         lblBruker.Text = "Velkommen, " & bruker.getFornavn() & " " & bruker.getEtternavn()
-        'listboxInfo.Items.Add("Blodtype: ")
-        'listboxInfo.Items.Add("Antall givninger: " & list.Count)
-        'listboxInfo.Items.Add("Neste givning: "
+        listboxInfo.Items.Add("Blodtype: ")
+        listboxInfo.Items.Add("Antall givninger: " & list.Count)
+        listboxInfo.Items.Add("Neste givning: "
 
     End Sub
 
@@ -36,12 +36,12 @@
         Me.Hide()
     End Sub
 
-    Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
+    Private Sub btnLoggUt_Click(sender As Object, e As EventArgs)
         Main.Show()
         Me.Close()
     End Sub
-    
-    Private Sub btnAvbestill_Click(sender As Object, e As EventArgs) Handles btnAvbestill.Click
+
+    Private Sub btnAvbestill_Click(sender As Object, e As EventArgs)
         Dim dato As String = lblNesteTime.Text
         If timer <> 1 Then
             MsgBox("Du har ingen timer å avbestille")
@@ -56,7 +56,7 @@
         End If
     End Sub
 
-    Private Sub btnEgenerklaring_Click(sender As Object, e As EventArgs) Handles btnEgenerklaring.Click
+    Private Sub btnEgenerklaring_Click(sender As Object, e As EventArgs)
         If timer <> 1 Then
             MsgBox("Du må ha bestilt en time for å gjøre egenerklæringen")
         Else
@@ -65,7 +65,7 @@
         End If
     End Sub
 
-    Private Sub btnNyBruker_Click(sender As Object, e As EventArgs) 
+    Private Sub btnNyBruker_Click(sender As Object, e As EventArgs)
         If timer <> 1 Then
             MsgBox("Du må ha bestilt en time for å gjøre egenerklæringen")
         Else
@@ -74,7 +74,7 @@
         End If
     End Sub
 
-    Private Sub btnBestill_click(sender As Object, e As EventArgs) Handles btnBestill.Click
+    Private Sub btnBestill_click(sender As Object, e As EventArgs)
         If timer = 1 Then
             MsgBox("Du kan ikke ha mer enn en time")
         Else
@@ -83,7 +83,7 @@
         End If
     End Sub
 
-    Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
+    Private Sub btnMinSide_Click(sender As Object, e As EventArgs)
         Me.Show()
     End Sub
 
@@ -91,7 +91,6 @@
         InfoBruker.Show()
     End Sub
 
-    Private Sub Panel5_Paint(sender As Object, e As PaintEventArgs) Handles Panel5.Paint
 
     End Sub
 

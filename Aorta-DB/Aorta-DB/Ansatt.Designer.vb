@@ -81,7 +81,7 @@ Partial Class Ansatt
         Me.lblSok.AutoSize = True
         Me.lblSok.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblSok.ForeColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.lblSok.Location = New System.Drawing.Point(525, 93)
+        Me.lblSok.Location = New System.Drawing.Point(439, 92)
         Me.lblSok.Name = "lblSok"
         Me.lblSok.Size = New System.Drawing.Size(164, 21)
         Me.lblSok.TabIndex = 3
@@ -90,9 +90,9 @@ Partial Class Ansatt
         'txtSok
         '
         Me.txtSok.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtSok.Location = New System.Drawing.Point(529, 117)
+        Me.txtSok.Location = New System.Drawing.Point(452, 117)
         Me.txtSok.Name = "txtSok"
-        Me.txtSok.Size = New System.Drawing.Size(134, 21)
+        Me.txtSok.Size = New System.Drawing.Size(211, 21)
         Me.txtSok.TabIndex = 4
         Me.txtSok.Text = "Skriv inn personnummer"
         '
@@ -115,9 +115,9 @@ Partial Class Ansatt
         Me.listGivninger.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listGivninger.FormattingEnabled = True
         Me.listGivninger.ItemHeight = 17
-        Me.listGivninger.Location = New System.Drawing.Point(373, 292)
+        Me.listGivninger.Location = New System.Drawing.Point(452, 297)
         Me.listGivninger.Name = "listGivninger"
-        Me.listGivninger.Size = New System.Drawing.Size(369, 174)
+        Me.listGivninger.Size = New System.Drawing.Size(298, 174)
         Me.listGivninger.TabIndex = 7
         '
         'Label2
@@ -125,7 +125,7 @@ Partial Class Ansatt
         Me.Label2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(189, 115)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(322, 82)
+        Me.Label2.Size = New System.Drawing.Size(252, 82)
         Me.Label2.TabIndex = 14
         Me.Label2.Text = "Årlig slutter mellom 15.000 og 17.000 å gi blod pga. høy alder, flytting eller an" &
     "net. Disse må erstattes og det er her du kommer inn."
@@ -135,11 +135,11 @@ Partial Class Ansatt
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Century Gothic", 16.0!)
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(369, 256)
+        Me.Label1.Location = New System.Drawing.Point(447, 269)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(255, 25)
+        Me.Label1.Size = New System.Drawing.Size(270, 25)
         Me.Label1.TabIndex = 15
-        Me.Label1.Text = "Blotappingstimer i dag"
+        Me.Label1.Text = "Blodtappingstimer i dag"
         '
         'headerpanel
         '
@@ -157,7 +157,7 @@ Partial Class Ansatt
         '
         Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(6, 19)
+        Me.PictureBox6.Location = New System.Drawing.Point(6, 24)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(40, 40)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -188,7 +188,7 @@ Partial Class Ansatt
         Me.lblAnsatt.AutoSize = True
         Me.lblAnsatt.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblAnsatt.ForeColor = System.Drawing.Color.White
-        Me.lblAnsatt.Location = New System.Drawing.Point(52, 26)
+        Me.lblAnsatt.Location = New System.Drawing.Point(52, 31)
         Me.lblAnsatt.Name = "lblAnsatt"
         Me.lblAnsatt.Size = New System.Drawing.Size(98, 33)
         Me.lblAnsatt.TabIndex = 0
@@ -249,7 +249,7 @@ Partial Class Ansatt
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(146, 280)
+        Me.PictureBox4.Location = New System.Drawing.Point(146, 365)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(20, 20)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -285,7 +285,7 @@ Partial Class Ansatt
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(146, 365)
+        Me.PictureBox1.Location = New System.Drawing.Point(146, 278)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(20, 20)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
