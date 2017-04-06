@@ -451,4 +451,25 @@ Module DB_module
         close_db()
         Return ret
     End Function
+    Public Function get_appointments_user(dates As String)
+        Dim timer As New ArrayList
+        connect_db()
+        Dim sqlSporring = "SELECT time FROM appointments WHERE date = @date ORDER BY time"
+        Dim da As New MySqlDataAdapter
+        Dim interntabell As New DataTable
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@date", dates)
+        da.SelectCommand = sql
+        da.Fill(interntabell)
+        close_db()
+        Dim rad As DataRow
+        Dim time As String
+        For Each rad In interntabell.Rows
+            Dim timer_rad As New ArrayList
+            time = rad("time")
+            timer_rad.Add(time)
+            timer.Add(timer_rad)
+        Next
+        Return timer
+    End Function
 End Module

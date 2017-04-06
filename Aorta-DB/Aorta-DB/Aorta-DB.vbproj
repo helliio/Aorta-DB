@@ -206,6 +206,12 @@
     <Compile Include="InfoDonor.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="InnkallingBaserPaaBehov.Designer.vb">
+      <DependentUpon>InnkallingBaserPaaBehov.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InnkallingBaserPaaBehov.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Logginn.Designer.vb">
       <DependentUpon>Logginn.vb</DependentUpon>
     </Compile>
@@ -342,6 +348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="InfoDonor.resx">
       <DependentUpon>InfoDonor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InnkallingBaserPaaBehov.resx">
+      <DependentUpon>InnkallingBaserPaaBehov.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Logginn.resx">
       <DependentUpon>Logginn.vb</DependentUpon>
