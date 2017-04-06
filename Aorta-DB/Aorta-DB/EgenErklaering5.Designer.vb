@@ -90,8 +90,9 @@ Partial Class EgenErklaering5
         Me.btnTilbake = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.headerpanel = New System.Windows.Forms.Panel()
-        Me.lblBruker = New System.Windows.Forms.Label()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.btnLoggUt = New System.Windows.Forms.Button()
+        Me.lblAnsatt = New System.Windows.Forms.Label()
         Me.sidepanel = New System.Windows.Forms.Panel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
@@ -126,6 +127,7 @@ Partial Class EgenErklaering5
         Me.GroupBox16.SuspendLayout()
         Me.GroupBox17.SuspendLayout()
         Me.headerpanel.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.sidepanel.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -1019,24 +1021,25 @@ Partial Class EgenErklaering5
         'headerpanel
         '
         Me.headerpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.headerpanel.Controls.Add(Me.lblBruker)
+        Me.headerpanel.Controls.Add(Me.PictureBox6)
         Me.headerpanel.Controls.Add(Me.btnLoggUt)
+        Me.headerpanel.Controls.Add(Me.lblAnsatt)
         Me.headerpanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.headerpanel.Location = New System.Drawing.Point(172, 0)
         Me.headerpanel.Name = "headerpanel"
         Me.headerpanel.Size = New System.Drawing.Size(612, 75)
-        Me.headerpanel.TabIndex = 115
+        Me.headerpanel.TabIndex = 121
         '
-        'lblBruker
+        'PictureBox6
         '
-        Me.lblBruker.AutoSize = True
-        Me.lblBruker.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblBruker.ForeColor = System.Drawing.Color.White
-        Me.lblBruker.Location = New System.Drawing.Point(26, 20)
-        Me.lblBruker.Name = "lblBruker"
-        Me.lblBruker.Size = New System.Drawing.Size(206, 33)
-        Me.lblBruker.TabIndex = 0
-        Me.lblBruker.Text = "Egenerklæring"
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(6, 24)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 119
+        Me.PictureBox6.TabStop = False
         '
         'btnLoggUt
         '
@@ -1049,13 +1052,24 @@ Partial Class EgenErklaering5
         Me.btnLoggUt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLoggUt.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLoggUt.ForeColor = System.Drawing.Color.White
-        Me.btnLoggUt.Location = New System.Drawing.Point(501, 24)
+        Me.btnLoggUt.Location = New System.Drawing.Point(501, 19)
         Me.btnLoggUt.Name = "btnLoggUt"
         Me.btnLoggUt.Size = New System.Drawing.Size(99, 31)
-        Me.btnLoggUt.TabIndex = 5
+        Me.btnLoggUt.TabIndex = 6
         Me.btnLoggUt.TabStop = False
         Me.btnLoggUt.Text = "Logg ut"
         Me.btnLoggUt.UseVisualStyleBackColor = False
+        '
+        'lblAnsatt
+        '
+        Me.lblAnsatt.AutoSize = True
+        Me.lblAnsatt.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAnsatt.ForeColor = System.Drawing.Color.White
+        Me.lblAnsatt.Location = New System.Drawing.Point(52, 31)
+        Me.lblAnsatt.Name = "lblAnsatt"
+        Me.lblAnsatt.Size = New System.Drawing.Size(206, 33)
+        Me.lblAnsatt.TabIndex = 0
+        Me.lblAnsatt.Text = "Egenerklæring"
         '
         'sidepanel
         '
@@ -1079,7 +1093,7 @@ Partial Class EgenErklaering5
         Me.sidepanel.Location = New System.Drawing.Point(0, 0)
         Me.sidepanel.Name = "sidepanel"
         Me.sidepanel.Size = New System.Drawing.Size(172, 761)
-        Me.sidepanel.TabIndex = 114
+        Me.sidepanel.TabIndex = 120
         '
         'PictureBox5
         '
@@ -1112,7 +1126,7 @@ Partial Class EgenErklaering5
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(146, 280)
+        Me.PictureBox4.Location = New System.Drawing.Point(146, 365)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(20, 20)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1148,7 +1162,7 @@ Partial Class EgenErklaering5
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(146, 365)
+        Me.PictureBox1.Location = New System.Drawing.Point(146, 278)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(20, 20)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -1354,6 +1368,7 @@ Partial Class EgenErklaering5
         Me.GroupBox17.PerformLayout()
         Me.headerpanel.ResumeLayout(False)
         Me.headerpanel.PerformLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.sidepanel.ResumeLayout(False)
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -1434,8 +1449,9 @@ Partial Class EgenErklaering5
     Friend WithEvents btnTilbake As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents headerpanel As Panel
-    Friend WithEvents lblBruker As Label
+    Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents btnLoggUt As Button
+    Friend WithEvents lblAnsatt As Label
     Friend WithEvents sidepanel As Panel
     Friend WithEvents PictureBox5 As PictureBox
     Friend WithEvents GroupBox9 As GroupBox

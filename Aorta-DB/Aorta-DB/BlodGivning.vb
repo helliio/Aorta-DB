@@ -151,4 +151,6 @@ Public Class BlodGivning
         AnsattBrukerOversikt.Show()
         listboxEgenerklæring.Items.Clear()
     End Sub
+
+
 End Class
