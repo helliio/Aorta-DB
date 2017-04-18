@@ -268,7 +268,7 @@ Partial Class BlodGivning2
         Me.btnStatestikk.Size = New System.Drawing.Size(172, 54)
         Me.btnStatestikk.TabIndex = 18
         Me.btnStatestikk.TabStop = False
-        Me.btnStatestikk.Text = "Statestikk"
+        Me.btnStatestikk.Text = "Statistikk"
         Me.btnStatestikk.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnStatestikk.UseVisualStyleBackColor = False
         '
@@ -503,7 +503,7 @@ Partial Class BlodGivning2
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.ComboBox1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "BlodGivning2"

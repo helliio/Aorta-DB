@@ -387,7 +387,7 @@ Partial Class InfoBruker
         Me.Controls.Add(Me.listboxHelsesjekk)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnTilbake)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "InfoBruker"

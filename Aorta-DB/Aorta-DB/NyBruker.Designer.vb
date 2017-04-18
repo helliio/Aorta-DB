@@ -549,7 +549,7 @@ Partial Class NyBruker
         Me.Controls.Add(Me.lblMail)
         Me.Controls.Add(Me.lblPersonnummer)
         Me.Controls.Add(Me.lblNybruker)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "NyBruker"

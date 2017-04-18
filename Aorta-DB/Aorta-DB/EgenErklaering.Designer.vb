@@ -1064,7 +1064,7 @@ Partial Class EgenErklaering
         Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.GroupBox7)
         Me.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "EgenErklaering"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

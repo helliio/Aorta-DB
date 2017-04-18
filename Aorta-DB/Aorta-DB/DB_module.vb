@@ -2,49 +2,63 @@
 Module DB_module
     Private tilkobling As MySqlConnection
     Private Sub connect_db()
-        tilkobling = New MySqlConnection("Server=mysql.stud.iie.ntnu.no;" & "Database=liangzh;" & "Uid=liangzh;" & "Pwd=vdAZFdty;")
-        tilkobling.Open()
+        Try
+            tilkobling = New MySqlConnection("Server=mysql.stud.iie.ntnu.no;" & "Database=liangzh;" & "Uid=liangzh;" & "Pwd=vdAZFdty;")
+            tilkobling.Open()
+        Catch ex As Exception
+            MsgBox("Du er ikke kobla til internett eller databasen er nede")
+        End Try
     End Sub
     Private Sub close_db()
         tilkobling.Close()
         tilkobling.Dispose()
     End Sub
     Public Function login(user As Decimal, pass As String)
-        connect_db()
-        Dim username As String = user.ToString
-        Dim password As String = Hash512(pass)
-        Dim sqlSporring = "select * from users where username=@username " &
-                          "and password=@password"
-        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        Try
+            connect_db()
+            Dim username As String = user.ToString
+            Dim password As String = hash512(pass)
+            Dim sqlSporring = "select * from users where username=@username " &
+                              "and password=@password"
+            Dim sql As New MySqlCommand(sqlSporring, tilkobling)
 
-        sql.Parameters.AddWithValue("@username", username)
-        sql.Parameters.AddWithValue("@password", password)
+            sql.Parameters.AddWithValue("@username", username)
+            sql.Parameters.AddWithValue("@password", password)
 
-        Dim leser = sql.ExecuteReader()
-        If leser.HasRows Then
-            close_db()
-            Return user
-        Else
-            close_db()
+            Dim leser = sql.ExecuteReader()
+            If leser.HasRows Then
+                close_db()
+                Return user
+            Else
+                close_db()
+                Return 0
+            End If
+        Catch ex As Exception
+            MsgBox("Feil brukernavn eller passord")
             Return 0
-        End If
+        End Try
     End Function
     Public Function login2(user As Decimal)
-        connect_db()
-        Dim username As String = user.ToString
-        Dim sqlSporring = "select * from users where username=@username "
-        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        Try
+            connect_db()
+            Dim username As String = user.ToString
+            Dim sqlSporring = "select * from users where username=@username "
+            Dim sql As New MySqlCommand(sqlSporring, tilkobling)
 
-        sql.Parameters.AddWithValue("@username", username)
+            sql.Parameters.AddWithValue("@username", username)
 
-        Dim leser = sql.ExecuteReader()
-        If leser.HasRows Then
-            close_db()
-            Return user
-        Else
-            close_db()
+            Dim leser = sql.ExecuteReader()
+            If leser.HasRows Then
+                close_db()
+                Return user
+            Else
+                close_db()
+                Return 0
+            End If
+        Catch ex As Exception
+            MsgBox("Ingen brukere har dette personnummeret")
             Return 0
-        End If
+        End Try
     End Function
     Public Sub create_user(user As Decimal, pass As String, first_name As String, last_name As String, bruker_type As Integer, tlf As Decimal, mail As String, adress As String, post_code As Integer, city As String)
         connect_db()

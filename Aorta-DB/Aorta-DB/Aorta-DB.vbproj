@@ -193,6 +193,12 @@
     <Compile Include="IktHovedside.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="IktStatestikk.Designer.vb">
+      <DependentUpon>IktStatestikk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IktStatestikk.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="InfoBruker.Designer.vb">
       <DependentUpon>InfoBruker.vb</DependentUpon>
     </Compile>
@@ -253,10 +259,10 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SMS_module.vb" />
-    <Compile Include="Statestikk.Designer.vb">
-      <DependentUpon>Statestikk.vb</DependentUpon>
+    <Compile Include="statestikk.Designer.vb">
+      <DependentUpon>statestikk.vb</DependentUpon>
     </Compile>
-    <Compile Include="Statestikk.vb">
+    <Compile Include="statestikk.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="TimeBestilling.Designer.vb">
@@ -337,6 +343,9 @@
     <EmbeddedResource Include="IktHovedside.resx">
       <DependentUpon>IktHovedside.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IktStatestikk.resx">
+      <DependentUpon>IktStatestikk.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InfoBruker.resx">
       <DependentUpon>InfoBruker.vb</DependentUpon>
     </EmbeddedResource>
@@ -364,8 +373,8 @@
     <EmbeddedResource Include="NyBruker.resx">
       <DependentUpon>NyBruker.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Statestikk.resx">
-      <DependentUpon>Statestikk.vb</DependentUpon>
+    <EmbeddedResource Include="statestikk.resx">
+      <DependentUpon>statestikk.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TimeBestilling.resx">
       <DependentUpon>TimeBestilling.vb</DependentUpon>

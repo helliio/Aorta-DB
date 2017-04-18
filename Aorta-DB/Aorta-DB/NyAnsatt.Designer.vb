@@ -24,7 +24,6 @@ Partial Class NyAnsatt
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(NyAnsatt))
         Me.btnTilbake = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.btnNybruker = New System.Windows.Forms.Button()
         Me.lblNybruker = New System.Windows.Forms.Label()
         Me.txtTelefon = New System.Windows.Forms.TextBox()
@@ -47,28 +46,26 @@ Partial Class NyAnsatt
         Me.lblPassord = New System.Windows.Forms.Label()
         Me.lblMail = New System.Windows.Forms.Label()
         Me.lblPersonnummer = New System.Windows.Forms.Label()
-        Me.headerpanel = New System.Windows.Forms.Panel()
         Me.sidepanel = New System.Windows.Forms.Panel()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.GroupBox9 = New System.Windows.Forms.GroupBox()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.sidetoppanel = New System.Windows.Forms.Panel()
         Me.logo = New System.Windows.Forms.PictureBox()
-        Me.btnKontakt = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.btnEgenerklæring = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnStatistikk = New System.Windows.Forms.Button()
+        Me.btnNyAnsatt = New System.Windows.Forms.Button()
+        Me.btnMinSide = New System.Windows.Forms.Button()
+        Me.headerpanel = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.headerpanel.SuspendLayout()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.sidepanel.SuspendLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.sidetoppanel.SuspendLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.headerpanel.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -81,22 +78,11 @@ Partial Class NyAnsatt
         Me.btnTilbake.Text = "Tilbake"
         Me.btnTilbake.UseVisualStyleBackColor = True
         '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(761, 81)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(80, 33)
-        Me.Button1.TabIndex = 86
-        Me.Button1.Text = "Tilbake"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'btnNybruker
         '
         Me.btnNybruker.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnNybruker.ForeColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.btnNybruker.Location = New System.Drawing.Point(648, 492)
+        Me.btnNybruker.Location = New System.Drawing.Point(578, 531)
         Me.btnNybruker.Name = "btnNybruker"
         Me.btnNybruker.Size = New System.Drawing.Size(193, 57)
         Me.btnNybruker.TabIndex = 85
@@ -306,77 +292,62 @@ Partial Class NyAnsatt
         Me.lblPersonnummer.TabIndex = 109
         Me.lblPersonnummer.Text = "Ansatt-id"
         '
-        'headerpanel
-        '
-        Me.headerpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.headerpanel.Controls.Add(Me.PictureBox6)
-        Me.headerpanel.Controls.Add(Me.Button4)
-        Me.headerpanel.Dock = System.Windows.Forms.DockStyle.Top
-        Me.headerpanel.Location = New System.Drawing.Point(172, 0)
-        Me.headerpanel.Name = "headerpanel"
-        Me.headerpanel.Size = New System.Drawing.Size(681, 75)
-        Me.headerpanel.TabIndex = 130
-        '
         'sidepanel
         '
         Me.sidepanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.sidepanel.Controls.Add(Me.PictureBox5)
-        Me.sidepanel.Controls.Add(Me.PictureBox4)
-        Me.sidepanel.Controls.Add(Me.PictureBox3)
+        Me.sidepanel.Controls.Add(Me.GroupBox9)
+        Me.sidepanel.Controls.Add(Me.Panel9)
+        Me.sidepanel.Controls.Add(Me.Panel1)
+        Me.sidepanel.Controls.Add(Me.Panel2)
         Me.sidepanel.Controls.Add(Me.PictureBox2)
         Me.sidepanel.Controls.Add(Me.sidetoppanel)
-        Me.sidepanel.Controls.Add(Me.btnKontakt)
-        Me.sidepanel.Controls.Add(Me.Button2)
-        Me.sidepanel.Controls.Add(Me.Button3)
-        Me.sidepanel.Controls.Add(Me.btnEgenerklæring)
+        Me.sidepanel.Controls.Add(Me.btnStatistikk)
+        Me.sidepanel.Controls.Add(Me.btnNyAnsatt)
+        Me.sidepanel.Controls.Add(Me.btnMinSide)
         Me.sidepanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.sidepanel.Location = New System.Drawing.Point(0, 0)
         Me.sidepanel.Name = "sidepanel"
-        Me.sidepanel.Size = New System.Drawing.Size(172, 561)
-        Me.sidepanel.TabIndex = 129
+        Me.sidepanel.Size = New System.Drawing.Size(172, 600)
+        Me.sidepanel.TabIndex = 131
         '
-        'PictureBox5
+        'GroupBox9
         '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(146, 390)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 119
-        Me.PictureBox5.TabStop = False
+        Me.GroupBox9.Location = New System.Drawing.Point(172, 200)
+        Me.GroupBox9.Name = "GroupBox9"
+        Me.GroupBox9.Size = New System.Drawing.Size(646, 46)
+        Me.GroupBox9.TabIndex = 117
+        Me.GroupBox9.TabStop = False
         '
-        'PictureBox4
+        'Panel9
         '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(146, 307)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 119
-        Me.PictureBox4.TabStop = False
+        Me.Panel9.Location = New System.Drawing.Point(172, 437)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(612, 27)
+        Me.Panel9.TabIndex = 110
         '
-        'PictureBox3
+        'Panel1
         '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(146, 224)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 119
-        Me.PictureBox3.TabStop = False
+        Me.Panel1.Location = New System.Drawing.Point(172, 439)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(612, 28)
+        Me.Panel1.TabIndex = 109
+        '
+        'Panel2
+        '
+        Me.Panel2.Location = New System.Drawing.Point(172, 365)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(599, 39)
+        Me.Panel2.TabIndex = 105
         '
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(146, 137)
+        Me.PictureBox2.Location = New System.Drawing.Point(149, 115)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(20, 20)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 119
+        Me.PictureBox2.TabIndex = 118
         Me.PictureBox2.TabStop = False
         '
         'sidetoppanel
@@ -384,6 +355,7 @@ Partial Class NyAnsatt
         Me.sidetoppanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.sidetoppanel.Controls.Add(Me.logo)
         Me.sidetoppanel.Dock = System.Windows.Forms.DockStyle.Top
+        Me.sidetoppanel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.sidetoppanel.Location = New System.Drawing.Point(0, 0)
         Me.sidetoppanel.Name = "sidetoppanel"
         Me.sidetoppanel.Size = New System.Drawing.Size(172, 75)
@@ -399,85 +371,107 @@ Partial Class NyAnsatt
         Me.logo.TabIndex = 0
         Me.logo.TabStop = False
         '
-        'btnKontakt
+        'btnStatistikk
         '
-        Me.btnKontakt.BackColor = System.Drawing.Color.Transparent
-        Me.btnKontakt.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnKontakt.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnKontakt.FlatAppearance.BorderSize = 0
-        Me.btnKontakt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnKontakt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnKontakt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnKontakt.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnKontakt.ForeColor = System.Drawing.Color.White
-        Me.btnKontakt.Location = New System.Drawing.Point(0, 374)
-        Me.btnKontakt.Name = "btnKontakt"
-        Me.btnKontakt.Size = New System.Drawing.Size(195, 54)
-        Me.btnKontakt.TabIndex = 8
-        Me.btnKontakt.TabStop = False
-        Me.btnKontakt.Text = "Kontakt oss"
-        Me.btnKontakt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnKontakt.UseVisualStyleBackColor = False
+        Me.btnStatistikk.BackColor = System.Drawing.Color.Transparent
+        Me.btnStatistikk.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnStatistikk.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnStatistikk.FlatAppearance.BorderSize = 0
+        Me.btnStatistikk.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnStatistikk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnStatistikk.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnStatistikk.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnStatistikk.ForeColor = System.Drawing.Color.White
+        Me.btnStatistikk.Location = New System.Drawing.Point(0, 256)
+        Me.btnStatistikk.Name = "btnStatistikk"
+        Me.btnStatistikk.Size = New System.Drawing.Size(172, 54)
+        Me.btnStatistikk.TabIndex = 0
+        Me.btnStatistikk.TabStop = False
+        Me.btnStatistikk.Text = "Statistikk"
+        Me.btnStatistikk.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnStatistikk.UseVisualStyleBackColor = False
         '
-        'Button2
+        'btnNyAnsatt
         '
-        Me.Button2.BackColor = System.Drawing.Color.Transparent
-        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.ForeColor = System.Drawing.Color.White
-        Me.Button2.Location = New System.Drawing.Point(0, 121)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(195, 54)
-        Me.Button2.TabIndex = 0
-        Me.Button2.TabStop = False
-        Me.Button2.Text = "Hjem"
-        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button2.UseVisualStyleBackColor = False
+        Me.btnNyAnsatt.BackColor = System.Drawing.Color.Transparent
+        Me.btnNyAnsatt.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnNyAnsatt.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnNyAnsatt.FlatAppearance.BorderSize = 0
+        Me.btnNyAnsatt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnNyAnsatt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnNyAnsatt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNyAnsatt.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnNyAnsatt.ForeColor = System.Drawing.Color.White
+        Me.btnNyAnsatt.Location = New System.Drawing.Point(0, 173)
+        Me.btnNyAnsatt.Name = "btnNyAnsatt"
+        Me.btnNyAnsatt.Size = New System.Drawing.Size(172, 54)
+        Me.btnNyAnsatt.TabIndex = 0
+        Me.btnNyAnsatt.TabStop = False
+        Me.btnNyAnsatt.Text = "Ny ansatt"
+        Me.btnNyAnsatt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnNyAnsatt.UseVisualStyleBackColor = False
         '
-        'Button3
+        'btnMinSide
         '
-        Me.Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Button3.FlatAppearance.BorderSize = 0
-        Me.Button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.White
-        Me.Button3.Location = New System.Drawing.Point(0, 206)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(195, 54)
-        Me.Button3.TabIndex = 7
-        Me.Button3.TabStop = False
-        Me.Button3.Text = "Registrer deg"
-        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button3.UseVisualStyleBackColor = False
+        Me.btnMinSide.BackColor = System.Drawing.Color.Transparent
+        Me.btnMinSide.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnMinSide.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnMinSide.FlatAppearance.BorderSize = 0
+        Me.btnMinSide.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnMinSide.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnMinSide.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMinSide.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnMinSide.ForeColor = System.Drawing.Color.White
+        Me.btnMinSide.Location = New System.Drawing.Point(0, 99)
+        Me.btnMinSide.Name = "btnMinSide"
+        Me.btnMinSide.Size = New System.Drawing.Size(172, 54)
+        Me.btnMinSide.TabIndex = 0
+        Me.btnMinSide.TabStop = False
+        Me.btnMinSide.Text = "Min side"
+        Me.btnMinSide.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnMinSide.UseVisualStyleBackColor = False
         '
-        'btnEgenerklæring
+        'headerpanel
         '
-        Me.btnEgenerklæring.BackColor = System.Drawing.Color.Transparent
-        Me.btnEgenerklæring.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnEgenerklæring.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnEgenerklæring.FlatAppearance.BorderSize = 0
-        Me.btnEgenerklæring.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnEgenerklæring.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnEgenerklæring.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnEgenerklæring.Font = New System.Drawing.Font("Century Gothic", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnEgenerklæring.ForeColor = System.Drawing.Color.White
-        Me.btnEgenerklæring.Location = New System.Drawing.Point(0, 288)
-        Me.btnEgenerklæring.Name = "btnEgenerklæring"
-        Me.btnEgenerklæring.Size = New System.Drawing.Size(195, 54)
-        Me.btnEgenerklæring.TabIndex = 0
-        Me.btnEgenerklæring.TabStop = False
-        Me.btnEgenerklæring.Text = "Egenerklæring"
-        Me.btnEgenerklæring.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnEgenerklæring.UseVisualStyleBackColor = False
+        Me.headerpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
+        Me.headerpanel.Controls.Add(Me.Button1)
+        Me.headerpanel.Controls.Add(Me.PictureBox6)
+        Me.headerpanel.Controls.Add(Me.Button4)
+        Me.headerpanel.Dock = System.Windows.Forms.DockStyle.Top
+        Me.headerpanel.Location = New System.Drawing.Point(172, 0)
+        Me.headerpanel.Name = "headerpanel"
+        Me.headerpanel.Size = New System.Drawing.Size(628, 75)
+        Me.headerpanel.TabIndex = 132
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Button1.FlatAppearance.BorderSize = 0
+        Me.Button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(513, 19)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(99, 31)
+        Me.Button1.TabIndex = 133
+        Me.Button1.TabStop = False
+        Me.Button1.Text = "Logg ut"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(6, 19)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(47, 40)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 121
+        Me.PictureBox6.TabStop = False
         '
         'Button4
         '
@@ -499,23 +493,12 @@ Partial Class NyAnsatt
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button4.UseVisualStyleBackColor = False
         '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(6, 19)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(47, 40)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 121
-        Me.PictureBox6.TabStop = False
-        '
         'NyAnsatt
         '
         Me.AcceptButton = Me.btnNybruker
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(853, 561)
+        Me.ClientSize = New System.Drawing.Size(800, 600)
         Me.Controls.Add(Me.headerpanel)
         Me.Controls.Add(Me.sidepanel)
         Me.Controls.Add(Me.txtTelefon)
@@ -538,31 +521,27 @@ Partial Class NyAnsatt
         Me.Controls.Add(Me.lblPassord)
         Me.Controls.Add(Me.lblMail)
         Me.Controls.Add(Me.lblPersonnummer)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnNybruker)
         Me.Controls.Add(Me.lblNybruker)
         Me.Controls.Add(Me.btnTilbake)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimizeBox = False
         Me.Name = "NyAnsatt"
+        Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "NyAnsatt"
-        Me.headerpanel.ResumeLayout(False)
         Me.sidepanel.ResumeLayout(False)
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.sidetoppanel.ResumeLayout(False)
         CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.headerpanel.ResumeLayout(False)
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents btnTilbake As Button
-    Friend WithEvents Button1 As Button
     Private WithEvents btnNybruker As Button
     Friend WithEvents lblNybruker As Label
     Friend WithEvents txtTelefon As TextBox
@@ -585,18 +564,19 @@ Partial Class NyAnsatt
     Friend WithEvents lblPassord As Label
     Friend WithEvents lblMail As Label
     Friend WithEvents lblPersonnummer As Label
-    Friend WithEvents headerpanel As Panel
-    Friend WithEvents Button4 As Button
     Friend WithEvents sidepanel As Panel
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents GroupBox9 As GroupBox
+    Friend WithEvents Panel9 As Panel
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents sidetoppanel As Panel
     Friend WithEvents logo As PictureBox
-    Friend WithEvents btnKontakt As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents btnEgenerklæring As Button
+    Friend WithEvents btnStatistikk As Button
+    Friend WithEvents btnNyAnsatt As Button
+    Friend WithEvents btnMinSide As Button
+    Friend WithEvents headerpanel As Panel
     Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button1 As Button
 End Class

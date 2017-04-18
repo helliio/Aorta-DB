@@ -186,7 +186,7 @@ Partial Class InnkallingBaserPaaBehov
         Me.btnStatestikk.Size = New System.Drawing.Size(172, 54)
         Me.btnStatestikk.TabIndex = 18
         Me.btnStatestikk.TabStop = False
-        Me.btnStatestikk.Text = "Statestikk"
+        Me.btnStatestikk.Text = "Statistikk"
         Me.btnStatestikk.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnStatestikk.UseVisualStyleBackColor = False
         '
@@ -403,6 +403,7 @@ Partial Class InnkallingBaserPaaBehov
         Me.Controls.Add(Me.ListBox2)
         Me.Controls.Add(Me.listboxBlodgivere)
         Me.Controls.Add(Me.ComboBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.Name = "InnkallingBaserPaaBehov"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

@@ -37,34 +37,34 @@ Partial Class BrukerHovedside
         Me.lblBruker = New System.Windows.Forms.Label()
         Me.btnLoggUt = New System.Windows.Forms.Button()
         Me.headerpanel = New System.Windows.Forms.Panel()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.btnBestill = New System.Windows.Forms.Button()
         Me.btnEgenerklaring = New System.Windows.Forms.Button()
         Me.btnMinSide = New System.Windows.Forms.Button()
         Me.btnTimeinfo = New System.Windows.Forms.Button()
         Me.sidetoppanel = New System.Windows.Forms.Panel()
+        Me.logo = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel9 = New System.Windows.Forms.Panel()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.sidepanel = New System.Windows.Forms.Panel()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.logo = New System.Windows.Forms.PictureBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel6.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.headerpanel.SuspendLayout()
-        Me.sidetoppanel.SuspendLayout()
-        Me.sidepanel.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.sidetoppanel.SuspendLayout()
+        CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.sidepanel.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'listboxGivinger
@@ -221,6 +221,17 @@ Partial Class BrukerHovedside
         Me.headerpanel.Size = New System.Drawing.Size(612, 75)
         Me.headerpanel.TabIndex = 123
         '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(6, 24)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 119
+        Me.PictureBox6.TabStop = False
+        '
         'btnBestill
         '
         Me.btnBestill.BackColor = System.Drawing.Color.Transparent
@@ -312,6 +323,16 @@ Partial Class BrukerHovedside
         Me.sidetoppanel.Size = New System.Drawing.Size(172, 75)
         Me.sidetoppanel.TabIndex = 17
         '
+        'logo
+        '
+        Me.logo.Image = Global.Aorta_DB.My.Resources.Resources.Logomakr_2plwp5
+        Me.logo.Location = New System.Drawing.Point(39, 24)
+        Me.logo.Name = "logo"
+        Me.logo.Size = New System.Drawing.Size(89, 26)
+        Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.logo.TabIndex = 0
+        Me.logo.TabStop = False
+        '
         'Panel2
         '
         Me.Panel2.Location = New System.Drawing.Point(172, 365)
@@ -363,17 +384,6 @@ Partial Class BrukerHovedside
         Me.sidepanel.Size = New System.Drawing.Size(172, 561)
         Me.sidepanel.TabIndex = 122
         '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(6, 24)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(40, 40)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 119
-        Me.PictureBox6.TabStop = False
-        '
         'PictureBox5
         '
         Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
@@ -419,16 +429,6 @@ Partial Class BrukerHovedside
         Me.PictureBox2.TabIndex = 118
         Me.PictureBox2.TabStop = False
         '
-        'logo
-        '
-        Me.logo.Image = Global.Aorta_DB.My.Resources.Resources.Logomakr_2plwp5
-        Me.logo.Location = New System.Drawing.Point(39, 24)
-        Me.logo.Name = "logo"
-        Me.logo.Size = New System.Drawing.Size(89, 26)
-        Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.logo.TabIndex = 0
-        Me.logo.TabStop = False
-        '
         'Button2
         '
         Me.Button2.BackColor = System.Drawing.Color.White
@@ -462,7 +462,7 @@ Partial Class BrukerHovedside
         Me.Controls.Add(Me.Panel4)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel6)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimizeBox = False
         Me.Name = "BrukerHovedside"
@@ -474,14 +474,14 @@ Partial Class BrukerHovedside
         Me.Panel4.PerformLayout()
         Me.headerpanel.ResumeLayout(False)
         Me.headerpanel.PerformLayout()
-        Me.sidetoppanel.ResumeLayout(False)
-        Me.sidepanel.ResumeLayout(False)
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.sidetoppanel.ResumeLayout(False)
+        CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.sidepanel.ResumeLayout(False)
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -145,7 +145,7 @@ Partial Class BlodGivning
         Me.sidepanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.sidepanel.Location = New System.Drawing.Point(0, 0)
         Me.sidepanel.Name = "sidepanel"
-        Me.sidepanel.Size = New System.Drawing.Size(172, 561)
+        Me.sidepanel.Size = New System.Drawing.Size(172, 600)
         Me.sidepanel.TabIndex = 120
         '
         'GroupBox5
@@ -193,7 +193,7 @@ Partial Class BlodGivning
         Me.btnStatestikk.Size = New System.Drawing.Size(172, 54)
         Me.btnStatestikk.TabIndex = 18
         Me.btnStatestikk.TabStop = False
-        Me.btnStatestikk.Text = "Statestikk"
+        Me.btnStatestikk.Text = "Statistikk"
         Me.btnStatestikk.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnStatestikk.UseVisualStyleBackColor = False
         '
@@ -298,7 +298,7 @@ Partial Class BlodGivning
         Me.headerpanel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
         Me.headerpanel.Location = New System.Drawing.Point(172, 0)
         Me.headerpanel.Name = "headerpanel"
-        Me.headerpanel.Size = New System.Drawing.Size(612, 75)
+        Me.headerpanel.Size = New System.Drawing.Size(628, 75)
         Me.headerpanel.TabIndex = 130
         '
         'lblOsk
@@ -411,7 +411,7 @@ Partial Class BlodGivning
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.ClientSize = New System.Drawing.Size(800, 600)
         Me.ControlBox = False
         Me.Controls.Add(Me.btnTilbake)
         Me.Controls.Add(Me.headerpanel)

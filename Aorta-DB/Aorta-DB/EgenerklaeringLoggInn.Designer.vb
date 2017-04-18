@@ -386,7 +386,7 @@ Partial Class EgenerklaeringLoggInn
         Me.Controls.Add(Me.btnLogginn)
         Me.Controls.Add(Me.TxtPersonnummer)
         Me.Controls.Add(Me.txtPassord)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.Name = "EgenerklaeringLoggInn"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

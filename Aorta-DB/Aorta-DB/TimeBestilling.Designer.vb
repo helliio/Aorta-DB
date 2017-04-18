@@ -431,7 +431,7 @@ Partial Class TimeBestilling
         Me.Controls.Add(Me.DateTimePicker1)
         Me.Controls.Add(Me.headerpanel)
         Me.Controls.Add(Me.sidepanel)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "TimeBestilling"
