@@ -120,14 +120,13 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PictureBox6.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAFWSURBVGhD7ZgxS8RAEEZT3z+xsBE7OxHBUrC8TrAQQbGxVa6xs9PGxsIfYSHYip2V9lYKhyii
-        oCa+kQmEsEVyS5KLfg8eC0lmdr5bLgeXCCGEEFXIsmwel1tywbeNh2ajNE0fWdOWfcZjHPgo9aH40Jt1
-        6bmPUw8KB3zyL6VmXfiJcz5WdShaKTVZ8luNw16zOPa9zR2/VR2KhnkDOwm/3BrseZ/vj/t+uToUKUAM
-        CkCRAsSgABQpQAwKQJECxKAAFClADApAUe8DLBYafOEWhv5BaMIhAV5Z8/03fax60OSp0KQr33HGR6oH
-        hbv47Y268sjHmQwarHMSt6xvhaZN+4F3uOdj/GFIeYA3PfXEApxh6Bj74KUFOC1djNZfgSO00819wODz
-        kwoXFmAV7VUVfGiKtd+m7fx7sIZXJLL3vt0IFUyD9kofM+c168bv8EIIIf4xSfIDotjH/BHbKaAAAAAA
-        SUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAVZJREFUaEPt
+        mDFLxEAQRlPfP7GwETs7EcFSsLxOsBBBsbFVrrGz08bGwh9hIdiKnZX2VgqHKKKgJr6RCYSwRXJLkot+
+        Dx4LSWZ2vlsuB5cIIYQQVciybB6XW3LBt42HZqM0TR9Z05Z9xmMc+Cj1ofjQm3XpuY9TDwoHfPIvpWZd
+        +IlzPlZ1KFopNVnyW43DXrM49r3NHb9VHYqGeQM7Cb/cGux5n++P+365OhQpQAwKQJECxKAAFClADApA
+        kQLEoAAUKUAMCkBR7wMsFhp84RaG/kFowiEBXlnz/Td9rHrQ5KnQpCvfccZHqgeFu/jtjbryyMeZDBqs
+        cxK3rG+Fpk37gXe452P8YUh5gDc99cQCnGHoGPvgpQU4LV2M1l+BI7TTzX3A4POTChcWYBXtVRV8aIq1
+        36bt/Huwhlcksve+3QgVTIP2Sh8z5zXrxu/wQggh/jFJ8gOi2Mf8EdspoAAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="PictureBox5.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

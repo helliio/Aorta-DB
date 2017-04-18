@@ -15,7 +15,26 @@
         Next
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
+        Main.Show()
+        Me.Hide()
+    End Sub
+    Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
+        blodbank.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnStatestikk_Click(sender As Object, e As EventArgs) Handles btnStatestikk.Click
+        Statestikk.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnSjekkBlod_Click(sender As Object, e As EventArgs) Handles btnSjekkBlod.Click
+        InnkallingBaserPaaBehov.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
         Ansatt.Show()
         Me.Hide()
     End Sub

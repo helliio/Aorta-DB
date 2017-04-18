@@ -2,8 +2,15 @@
 
 Public Class EgenErklaering
     Private Sub EgenErklaering_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        BrukerHovedside.Show()
         Me.Hide()
+        Me.clear()
+        EgenErklaering2.clear()
+        EgenErklaering3.clear()
+        EgenErklaering4.clear()
+        EgenErklaering5.clear()
+        EgenErklaering6.clear()
+        EgenErklaering7.clear()
+        EgenErklaering8.clear()
     End Sub
 
     Private Sub EgenErklaering_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -82,6 +89,22 @@ Public Class EgenErklaering
         Me.Hide()
     End Sub
 
+    Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
+        Main.Show()
+        Me.Close()
+    End Sub
 
+    Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
+        MsgBox("Du kan ikke ha mer enn en time")
+    End Sub
 
+    Private Sub btnTimeinfo_Click(sender As Object, e As EventArgs) Handles btnTimeinfo.Click
+        InfoBruker.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
+        BrukerHovedside.Show()
+        Me.Close()
+    End Sub
 End Class

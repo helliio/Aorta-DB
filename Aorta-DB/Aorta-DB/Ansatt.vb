@@ -2,7 +2,6 @@
 
 Public Class Ansatt
     Private Sub Ansatt_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        Logginn.Show()
         Me.Hide()
     End Sub
 
@@ -25,27 +24,32 @@ Public Class Ansatt
             If bruker.getUserType = 0 Then
                 AnsattBrukerOversikt.Show()
                 Me.Hide()
+                txtSok.Text = ""
             End If
         End If
 
     End Sub
-
-    Private Sub btnGivninger_Click(sender As Object, e As EventArgs) Handles btnGivninger.Click
-        AnsattKalender.Show()
-        Me.Hide()
-    End Sub
-
     Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
+        Me.Close()
+        Main.Show()
+    End Sub
+    Private Sub btnKalender_Click(sender As Object, e As EventArgs) Handles btnKalender.Click
+        AnsattKalender.Show()
         Me.Close()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
         blodbank.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnStatestikk_Click(sender As Object, e As EventArgs) Handles btnStatestikk.Click
+        Statestikk.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnSjekkBlod_Click(sender As Object, e As EventArgs) Handles btnSjekkBlod.Click
         InnkallingBaserPaaBehov.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 End Class

@@ -253,6 +253,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SMS_module.vb" />
+    <Compile Include="Statestikk.Designer.vb">
+      <DependentUpon>Statestikk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Statestikk.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TimeBestilling.Designer.vb">
       <DependentUpon>TimeBestilling.vb</DependentUpon>
     </Compile>
@@ -271,19 +277,7 @@
     <Compile Include="TimeInfoAnsatt.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TimeInfoDonør.Designer.vb">
-      <DependentUpon>TimeInfoDonør.vb</DependentUpon>
-    </Compile>
-    <Compile Include="TimeInfoDonør.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="User.vb" />
-    <Compile Include="VelgTime.Designer.vb">
-      <DependentUpon>VelgTime.vb</DependentUpon>
-    </Compile>
-    <Compile Include="VelgTime.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Ansatt.resx">
@@ -370,6 +364,9 @@
     <EmbeddedResource Include="NyBruker.resx">
       <DependentUpon>NyBruker.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Statestikk.resx">
+      <DependentUpon>Statestikk.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TimeBestilling.resx">
       <DependentUpon>TimeBestilling.vb</DependentUpon>
     </EmbeddedResource>
@@ -378,12 +375,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TimeInfoAnsatt.resx">
       <DependentUpon>TimeInfoAnsatt.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TimeInfoDonør.resx">
-      <DependentUpon>TimeInfoDonør.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VelgTime.resx">
-      <DependentUpon>VelgTime.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

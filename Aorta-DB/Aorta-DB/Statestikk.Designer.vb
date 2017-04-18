@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class TimeInfoAnsatt
+Partial Class Statestikk
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,11 @@ Partial Class TimeInfoAnsatt
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(TimeInfoAnsatt))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Statestikk))
+        Me.headerpanel = New System.Windows.Forms.Panel()
+        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.btnLoggUt = New System.Windows.Forms.Button()
+        Me.lblAnsatt = New System.Windows.Forms.Label()
         Me.sidepanel = New System.Windows.Forms.Panel()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.Panel9 = New System.Windows.Forms.Panel()
@@ -39,18 +43,8 @@ Partial Class TimeInfoAnsatt
         Me.btnMinSide = New System.Windows.Forms.Button()
         Me.btnBestill = New System.Windows.Forms.Button()
         Me.btnKalender = New System.Windows.Forms.Button()
-        Me.headerpanel = New System.Windows.Forms.Panel()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.btnLoggUt = New System.Windows.Forms.Button()
-        Me.lblOsk = New System.Windows.Forms.Label()
-        Me.listboxGivningsInfo = New System.Windows.Forms.ListBox()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.listboxTimer = New System.Windows.Forms.ListBox()
-        Me.listboxHelsesjekk = New System.Windows.Forms.ListBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.btnTilbake = New System.Windows.Forms.Button()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.headerpanel.SuspendLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.sidepanel.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,9 +52,60 @@ Partial Class TimeInfoAnsatt
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.sidetoppanel.SuspendLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.headerpanel.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'headerpanel
+        '
+        Me.headerpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
+        Me.headerpanel.Controls.Add(Me.PictureBox6)
+        Me.headerpanel.Controls.Add(Me.btnLoggUt)
+        Me.headerpanel.Controls.Add(Me.lblAnsatt)
+        Me.headerpanel.Dock = System.Windows.Forms.DockStyle.Top
+        Me.headerpanel.Location = New System.Drawing.Point(172, 0)
+        Me.headerpanel.Name = "headerpanel"
+        Me.headerpanel.Size = New System.Drawing.Size(612, 75)
+        Me.headerpanel.TabIndex = 121
+        '
+        'PictureBox6
+        '
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
+        Me.PictureBox6.Location = New System.Drawing.Point(6, 24)
+        Me.PictureBox6.Name = "PictureBox6"
+        Me.PictureBox6.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox6.TabIndex = 119
+        Me.PictureBox6.TabStop = False
+        '
+        'btnLoggUt
+        '
+        Me.btnLoggUt.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnLoggUt.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btnLoggUt.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnLoggUt.FlatAppearance.BorderSize = 0
+        Me.btnLoggUt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnLoggUt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
+        Me.btnLoggUt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLoggUt.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLoggUt.ForeColor = System.Drawing.Color.White
+        Me.btnLoggUt.Location = New System.Drawing.Point(501, 19)
+        Me.btnLoggUt.Name = "btnLoggUt"
+        Me.btnLoggUt.Size = New System.Drawing.Size(99, 31)
+        Me.btnLoggUt.TabIndex = 6
+        Me.btnLoggUt.TabStop = False
+        Me.btnLoggUt.Text = "Logg ut"
+        Me.btnLoggUt.UseVisualStyleBackColor = False
+        '
+        'lblAnsatt
+        '
+        Me.lblAnsatt.AutoSize = True
+        Me.lblAnsatt.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblAnsatt.ForeColor = System.Drawing.Color.White
+        Me.lblAnsatt.Location = New System.Drawing.Point(52, 31)
+        Me.lblAnsatt.Name = "lblAnsatt"
+        Me.lblAnsatt.Size = New System.Drawing.Size(138, 33)
+        Me.lblAnsatt.TabIndex = 0
+        Me.lblAnsatt.Text = "Statestikk"
         '
         'sidepanel
         '
@@ -83,7 +128,7 @@ Partial Class TimeInfoAnsatt
         Me.sidepanel.Location = New System.Drawing.Point(0, 0)
         Me.sidepanel.Name = "sidepanel"
         Me.sidepanel.Size = New System.Drawing.Size(172, 561)
-        Me.sidepanel.TabIndex = 122
+        Me.sidepanel.TabIndex = 120
         '
         'GroupBox5
         '
@@ -279,165 +324,20 @@ Partial Class TimeInfoAnsatt
         Me.btnKalender.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnKalender.UseVisualStyleBackColor = False
         '
-        'headerpanel
-        '
-        Me.headerpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.headerpanel.Controls.Add(Me.PictureBox6)
-        Me.headerpanel.Controls.Add(Me.btnLoggUt)
-        Me.headerpanel.Controls.Add(Me.lblOsk)
-        Me.headerpanel.Dock = System.Windows.Forms.DockStyle.Top
-        Me.headerpanel.Location = New System.Drawing.Point(172, 0)
-        Me.headerpanel.Name = "headerpanel"
-        Me.headerpanel.Size = New System.Drawing.Size(612, 75)
-        Me.headerpanel.TabIndex = 128
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(6, 24)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(40, 40)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 119
-        Me.PictureBox6.TabStop = False
-        '
-        'btnLoggUt
-        '
-        Me.btnLoggUt.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnLoggUt.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnLoggUt.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnLoggUt.FlatAppearance.BorderSize = 0
-        Me.btnLoggUt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnLoggUt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnLoggUt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLoggUt.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLoggUt.ForeColor = System.Drawing.Color.White
-        Me.btnLoggUt.Location = New System.Drawing.Point(501, 19)
-        Me.btnLoggUt.Name = "btnLoggUt"
-        Me.btnLoggUt.Size = New System.Drawing.Size(99, 31)
-        Me.btnLoggUt.TabIndex = 6
-        Me.btnLoggUt.TabStop = False
-        Me.btnLoggUt.Text = "Logg ut"
-        Me.btnLoggUt.UseVisualStyleBackColor = False
-        '
-        'lblOsk
-        '
-        Me.lblOsk.AutoSize = True
-        Me.lblOsk.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOsk.ForeColor = System.Drawing.Color.White
-        Me.lblOsk.Location = New System.Drawing.Point(52, 31)
-        Me.lblOsk.Name = "lblOsk"
-        Me.lblOsk.Size = New System.Drawing.Size(203, 33)
-        Me.lblOsk.TabIndex = 0
-        Me.lblOsk.Text = "Info om bruker"
-        '
-        'listboxGivningsInfo
-        '
-        Me.listboxGivningsInfo.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.listboxGivningsInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.listboxGivningsInfo.FormattingEnabled = True
-        Me.listboxGivningsInfo.ItemHeight = 21
-        Me.listboxGivningsInfo.Location = New System.Drawing.Point(565, 337)
-        Me.listboxGivningsInfo.Name = "listboxGivningsInfo"
-        Me.listboxGivningsInfo.Size = New System.Drawing.Size(178, 151)
-        Me.listboxGivningsInfo.TabIndex = 131
-        '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(215, 494)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(178, 42)
-        Me.Button1.TabIndex = 130
-        Me.Button1.Text = "Sjekk info om timen"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'listboxTimer
-        '
-        Me.listboxTimer.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.listboxTimer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.listboxTimer.FormattingEnabled = True
-        Me.listboxTimer.ItemHeight = 21
-        Me.listboxTimer.Location = New System.Drawing.Point(215, 337)
-        Me.listboxTimer.Name = "listboxTimer"
-        Me.listboxTimer.Size = New System.Drawing.Size(178, 151)
-        Me.listboxTimer.TabIndex = 129
-        '
-        'listboxHelsesjekk
-        '
-        Me.listboxHelsesjekk.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.listboxHelsesjekk.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.listboxHelsesjekk.FormattingEnabled = True
-        Me.listboxHelsesjekk.ItemHeight = 21
-        Me.listboxHelsesjekk.Location = New System.Drawing.Point(215, 147)
-        Me.listboxHelsesjekk.Name = "listboxHelsesjekk"
-        Me.listboxHelsesjekk.Size = New System.Drawing.Size(178, 151)
-        Me.listboxHelsesjekk.TabIndex = 134
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(252, 123)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(85, 21)
-        Me.Label1.TabIndex = 133
-        Me.Label1.Text = "Helsesjekk"
-        '
-        'btnTilbake
-        '
-        Me.btnTilbake.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTilbake.Location = New System.Drawing.Point(672, 81)
-        Me.btnTilbake.Name = "btnTilbake"
-        Me.btnTilbake.Size = New System.Drawing.Size(99, 30)
-        Me.btnTilbake.TabIndex = 132
-        Me.btnTilbake.Text = "Tilbake"
-        Me.btnTilbake.UseVisualStyleBackColor = True
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(252, 313)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(89, 21)
-        Me.Label2.TabIndex = 133
-        Me.Label2.Text = "Dine timer"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(580, 313)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(147, 21)
-        Me.Label3.TabIndex = 133
-        Me.Label3.Text = "Info om valg time"
-        '
-        'TimeInfoAnsatt
+        'Statestikk
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(784, 561)
         Me.ControlBox = False
-        Me.Controls.Add(Me.listboxHelsesjekk)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.btnTilbake)
-        Me.Controls.Add(Me.listboxGivningsInfo)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.listboxTimer)
         Me.Controls.Add(Me.headerpanel)
         Me.Controls.Add(Me.sidepanel)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MaximizeBox = False
-        Me.Name = "TimeInfoAnsatt"
+        Me.Name = "Statestikk"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "TimeInfo"
+        Me.Text = "Statestikk"
+        Me.headerpanel.ResumeLayout(False)
+        Me.headerpanel.PerformLayout()
+        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.sidepanel.ResumeLayout(False)
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -445,13 +345,14 @@ Partial Class TimeInfoAnsatt
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.sidetoppanel.ResumeLayout(False)
         CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.headerpanel.ResumeLayout(False)
-        Me.headerpanel.PerformLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
+
+    Friend WithEvents headerpanel As Panel
+    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents btnLoggUt As Button
+    Friend WithEvents lblAnsatt As Label
     Friend WithEvents sidepanel As Panel
     Friend WithEvents GroupBox5 As GroupBox
     Friend WithEvents Panel9 As Panel
@@ -468,16 +369,4 @@ Partial Class TimeInfoAnsatt
     Friend WithEvents btnMinSide As Button
     Friend WithEvents btnBestill As Button
     Friend WithEvents btnKalender As Button
-    Friend WithEvents headerpanel As Panel
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents btnLoggUt As Button
-    Friend WithEvents lblOsk As Label
-    Friend WithEvents listboxGivningsInfo As ListBox
-    Friend WithEvents Button1 As Button
-    Friend WithEvents listboxTimer As ListBox
-    Friend WithEvents listboxHelsesjekk As ListBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents btnTilbake As Button
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
 End Class

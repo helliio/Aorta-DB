@@ -6,12 +6,20 @@ Public Class EgenErklaering2
     End Sub
 
     Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
-        Close()
+        EgenErklaering.Show()
+        Me.Hide()
     End Sub
 
     Private Sub EgenErklaering2_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        EgenErklaering.Show()
-        Me.Hide()
+        Me.Close()
+        EgenErklaering.clear()
+        Me.clear()
+        EgenErklaering3.clear()
+        EgenErklaering4.clear()
+        EgenErklaering5.clear()
+        EgenErklaering6.clear()
+        EgenErklaering7.clear()
+        EgenErklaering8.clear()
     End Sub
     Public Sub clear()
         radbtnja12.Checked = False
@@ -40,5 +48,28 @@ Public Class EgenErklaering2
         erklaring.setAns(18, radbtnja18.Checked)
         EgenErklaering3.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
+        Main.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
+        MsgBox("Du kan ikke ha mer enn en time")
+    End Sub
+
+    Private Sub btnAvbestill2_Click(sender As Object, e As EventArgs)
+        MsgBox("Du kan ikke avbestille timen på dette tidspunktet. Gå ut av egenerklæringen og prøv igjen")
+    End Sub
+
+    Private Sub btnTimeinfo_Click(sender As Object, e As EventArgs) Handles btnTimeinfo.Click
+        InfoBruker.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
+        BrukerHovedside.Show()
+        Me.Close()
     End Sub
 End Class
