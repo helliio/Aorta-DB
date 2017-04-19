@@ -22,4 +22,8 @@ Public Class statestikk
         InnkallingBaserPaaBehov.Show()
         Me.Close()
     End Sub
+
+    Private Sub statestikk_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
