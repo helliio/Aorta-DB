@@ -132,7 +132,7 @@ Partial Class EgenerklaeringLoggInn
         Me.header.Dock = System.Windows.Forms.DockStyle.Top
         Me.header.Location = New System.Drawing.Point(172, 0)
         Me.header.Name = "header"
-        Me.header.Size = New System.Drawing.Size(612, 75)
+        Me.header.Size = New System.Drawing.Size(628, 75)
         Me.header.TabIndex = 29
         '
         'textheader
@@ -178,7 +178,7 @@ Partial Class EgenerklaeringLoggInn
         Me.sidepanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.sidepanel.Location = New System.Drawing.Point(0, 0)
         Me.sidepanel.Name = "sidepanel"
-        Me.sidepanel.Size = New System.Drawing.Size(172, 561)
+        Me.sidepanel.Size = New System.Drawing.Size(172, 600)
         Me.sidepanel.TabIndex = 27
         '
         'PictureBox7
@@ -310,7 +310,7 @@ Partial Class EgenerklaeringLoggInn
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(238, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.ClientSize = New System.Drawing.Size(800, 600)
         Me.Controls.Add(Me.header)
         Me.Controls.Add(Me.sidetoppanel)
         Me.Controls.Add(Me.sidepanel)

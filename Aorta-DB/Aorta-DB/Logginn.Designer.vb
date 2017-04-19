@@ -154,7 +154,7 @@ Partial Class Logginn
         Me.header.Dock = System.Windows.Forms.DockStyle.Top
         Me.header.Location = New System.Drawing.Point(172, 0)
         Me.header.Name = "header"
-        Me.header.Size = New System.Drawing.Size(612, 75)
+        Me.header.Size = New System.Drawing.Size(628, 75)
         Me.header.TabIndex = 23
         '
         'textheader
@@ -200,7 +200,7 @@ Partial Class Logginn
         Me.sidepanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.sidepanel.Location = New System.Drawing.Point(0, 0)
         Me.sidepanel.Name = "sidepanel"
-        Me.sidepanel.Size = New System.Drawing.Size(172, 561)
+        Me.sidepanel.Size = New System.Drawing.Size(172, 600)
         Me.sidepanel.TabIndex = 21
         '
         'PictureBox7
@@ -343,7 +343,7 @@ Partial Class Logginn
         Me.Button2.Size = New System.Drawing.Size(122, 33)
         Me.Button2.TabIndex = 24
         Me.Button2.TabStop = False
-        Me.Button2.Text = "Bytt passord"
+        Me.Button2.Text = "Send nytt passord"
         Me.Button2.UseVisualStyleBackColor = False
         Me.Button2.Visible = False
         '
@@ -375,7 +375,7 @@ Partial Class Logginn
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(238, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.ClientSize = New System.Drawing.Size(800, 600)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button2)

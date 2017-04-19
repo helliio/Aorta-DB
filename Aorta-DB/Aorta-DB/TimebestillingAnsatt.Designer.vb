@@ -26,15 +26,21 @@ Partial Class TimebestillingAnsatt
         Me.sidepanel = New System.Windows.Forms.Panel()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnStatestikk = New System.Windows.Forms.Button()
         Me.btnSjekkBlod = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.sidetoppanel = New System.Windows.Forms.Panel()
+        Me.logo = New System.Windows.Forms.PictureBox()
         Me.btnMinSide = New System.Windows.Forms.Button()
         Me.btnBestill = New System.Windows.Forms.Button()
         Me.btnKalender = New System.Windows.Forms.Button()
         Me.headerpanel = New System.Windows.Forms.Panel()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.btnLoggUt = New System.Windows.Forms.Button()
         Me.lblAnsatt = New System.Windows.Forms.Label()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
@@ -48,21 +54,15 @@ Partial Class TimebestillingAnsatt
         Me.btnTilbake = New System.Windows.Forms.Button()
         Me.btnBestillTime = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.logo = New System.Windows.Forms.PictureBox()
         Me.sidepanel.SuspendLayout()
-        Me.sidetoppanel.SuspendLayout()
-        Me.headerpanel.SuspendLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.sidetoppanel.SuspendLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.headerpanel.SuspendLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'sidepanel
@@ -85,7 +85,7 @@ Partial Class TimebestillingAnsatt
         Me.sidepanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.sidepanel.Location = New System.Drawing.Point(0, 0)
         Me.sidepanel.Name = "sidepanel"
-        Me.sidepanel.Size = New System.Drawing.Size(172, 561)
+        Me.sidepanel.Size = New System.Drawing.Size(172, 600)
         Me.sidepanel.TabIndex = 121
         '
         'GroupBox5
@@ -103,6 +103,17 @@ Partial Class TimebestillingAnsatt
         Me.Panel9.Size = New System.Drawing.Size(612, 27)
         Me.Panel9.TabIndex = 110
         '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(146, 365)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 120
+        Me.PictureBox4.TabStop = False
+        '
         'Panel1
         '
         Me.Panel1.Location = New System.Drawing.Point(172, 439)
@@ -116,6 +127,28 @@ Partial Class TimebestillingAnsatt
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(599, 39)
         Me.Panel2.TabIndex = 105
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(146, 200)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 119
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(146, 278)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 1
+        Me.PictureBox1.TabStop = False
         '
         'btnStatestikk
         '
@@ -157,6 +190,17 @@ Partial Class TimebestillingAnsatt
         Me.btnSjekkBlod.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnSjekkBlod.UseVisualStyleBackColor = False
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(149, 115)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox2.TabIndex = 118
+        Me.PictureBox2.TabStop = False
+        '
         'sidetoppanel
         '
         Me.sidetoppanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
@@ -167,6 +211,16 @@ Partial Class TimebestillingAnsatt
         Me.sidetoppanel.Name = "sidetoppanel"
         Me.sidetoppanel.Size = New System.Drawing.Size(172, 75)
         Me.sidetoppanel.TabIndex = 17
+        '
+        'logo
+        '
+        Me.logo.Image = Global.Aorta_DB.My.Resources.Resources.Logomakr_2plwp5
+        Me.logo.Location = New System.Drawing.Point(39, 24)
+        Me.logo.Name = "logo"
+        Me.logo.Size = New System.Drawing.Size(89, 26)
+        Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.logo.TabIndex = 0
+        Me.logo.TabStop = False
         '
         'btnMinSide
         '
@@ -237,8 +291,19 @@ Partial Class TimebestillingAnsatt
         Me.headerpanel.Dock = System.Windows.Forms.DockStyle.Top
         Me.headerpanel.Location = New System.Drawing.Point(172, 0)
         Me.headerpanel.Name = "headerpanel"
-        Me.headerpanel.Size = New System.Drawing.Size(612, 75)
+        Me.headerpanel.Size = New System.Drawing.Size(628, 75)
         Me.headerpanel.TabIndex = 122
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(17, 24)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(38, 40)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 120
+        Me.PictureBox5.TabStop = False
         '
         'btnLoggUt
         '
@@ -381,76 +446,11 @@ Partial Class TimebestillingAnsatt
         Me.Button2.Text = "Sjekk timer"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'PictureBox5
-        '
-        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(17, 24)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(38, 40)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox5.TabIndex = 120
-        Me.PictureBox5.TabStop = False
-        '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(146, 365)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 120
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(146, 200)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 119
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(146, 278)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(149, 115)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 118
-        Me.PictureBox2.TabStop = False
-        '
-        'logo
-        '
-        Me.logo.Image = Global.Aorta_DB.My.Resources.Resources.Logomakr_2plwp5
-        Me.logo.Location = New System.Drawing.Point(39, 24)
-        Me.logo.Name = "logo"
-        Me.logo.Size = New System.Drawing.Size(89, 26)
-        Me.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.logo.TabIndex = 0
-        Me.logo.TabStop = False
-        '
         'TimebestillingAnsatt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.ClientSize = New System.Drawing.Size(800, 600)
         Me.ControlBox = False
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnBestillTime)
@@ -472,15 +472,15 @@ Partial Class TimebestillingAnsatt
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TimebestillingAnsatt"
         Me.sidepanel.ResumeLayout(False)
-        Me.sidetoppanel.ResumeLayout(False)
-        Me.headerpanel.ResumeLayout(False)
-        Me.headerpanel.PerformLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.sidetoppanel.ResumeLayout(False)
         CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.headerpanel.ResumeLayout(False)
+        Me.headerpanel.PerformLayout()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
