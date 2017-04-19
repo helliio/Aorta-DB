@@ -228,6 +228,16 @@ Module DB_module
         End Try
     End Function
 
+    Public Function get_stat_amount_users()
+        connect_db()
+        Dim sqlSporring = "SELECT Count(*) FROM users WHERE type = 0"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        Dim reader As MySqlDataReader = sql.ExecuteReader
+        reader.Read()
+        Return reader.Item(0)
+        close_db()
+    End Function
+
     Public Function get_appointment_date(user As Decimal)
         Dim ret As New ArrayList
         connect_db()
@@ -511,7 +521,7 @@ Module DB_module
             Dim outrad As String
             btype = rad("type")
             count = rad("Count(*)")
-            outrad = btype & ": " & count
+            outrad = btype & " : " & count
             type.Add(outrad)
         Next
         Return type
