@@ -143,12 +143,43 @@ Public Class BlodGivning
         get_erklaring()
     End Sub
 
-    Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
-        Close()
+    Private Sub btnTilbake_Click(sender As Object, e As EventArgs)
+        Me.Close()
+        AnsattBrukerOversikt.Show()
     End Sub
 
     Private Sub BlodGivning_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        AnsattBrukerOversikt.Show()
+        Me.Hide()
         listboxEgenerklæring.Items.Clear()
     End Sub
+    Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
+        Main.Show()
+        Me.Close()
+        Ansatt.Close()
+    End Sub
+    Private Sub btnKalender_Click(sender As Object, e As EventArgs) Handles btnKalender.Click
+        AnsattKalender.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
+        blodbank.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnStatestikk_Click(sender As Object, e As EventArgs) Handles btnStatestikk.Click
+        Statestikk.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnSjekkBlod_Click(sender As Object, e As EventArgs) Handles btnSjekkBlod.Click
+        InnkallingBaserPaaBehov.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
+        Ansatt.Show()
+        Me.Close()
+    End Sub
+
 End Class

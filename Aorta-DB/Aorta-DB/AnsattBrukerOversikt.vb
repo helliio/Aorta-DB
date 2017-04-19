@@ -2,10 +2,6 @@
 
 Public Class AnsattBrukerOversikt
     Dim timer As Integer = 0
-    Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
-        Me.Close()
-        Ansatt.Show()
-    End Sub
 
     Private Sub AnsattBrukerOversikt_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim list As ArrayList = get_appointment_date(bruker.getPersonnr)
@@ -29,7 +25,7 @@ Public Class AnsattBrukerOversikt
         lblBruker.Text = "Donør: " & bruker.getFornavn() & " " & bruker.getEtternavn()
     End Sub
 
-    Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
+    Private Sub btnBestillTime_Click(sender As Object, e As EventArgs) Handles btnBestillTime.Click
         If timer = 1 Then
             MsgBox("Du kan ikke ha mer enn en time")
         Else
@@ -79,5 +75,34 @@ Public Class AnsattBrukerOversikt
     Private Sub btnFørstegangsInfo_Click(sender As Object, e As EventArgs) Handles btnFørstegangsInfo.Click
         Me.Close()
         InfoDonor.Show()
+    End Sub
+    Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
+        Main.Show()
+        Me.Close()
+        Ansatt.Close()
+    End Sub
+    Private Sub btnKalender_Click(sender As Object, e As EventArgs) Handles btnKalender.Click
+        AnsattKalender.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
+        blodbank.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnStatestikk_Click(sender As Object, e As EventArgs) Handles btnStatestikk.Click
+        Statestikk.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnSjekkBlod_Click(sender As Object, e As EventArgs) Handles btnSjekkBlod.Click
+        InnkallingBaserPaaBehov.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
+        Ansatt.Show()
+        Me.Close()
     End Sub
 End Class

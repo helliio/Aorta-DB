@@ -2,7 +2,7 @@
 Imports System.Text.RegularExpressions
 
 Public Class NyBruker
-    Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
+    Private Sub btnTilbake_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
     Function validateEmail(emailAddress) As Boolean
@@ -65,7 +65,25 @@ Public Class NyBruker
     End Sub
 
     Private Sub NyBruker_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        Main.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+        Me.Close()
+        Main.Show()
+    End Sub
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        Logginn.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub logo_Click(sender As Object, e As EventArgs) Handles logo.Click
+        Main.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnEgenerklæring_Click(sender As Object, e As EventArgs) Handles btnEgenerklæring.Click
+        EgenerklaeringLoggInn.Show()
+        Me.Close()
     End Sub
 End Class

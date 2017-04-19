@@ -193,6 +193,12 @@
     <Compile Include="IktHovedside.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="IktStatestikk.Designer.vb">
+      <DependentUpon>IktStatestikk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IktStatestikk.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="InfoBruker.Designer.vb">
       <DependentUpon>InfoBruker.vb</DependentUpon>
     </Compile>
@@ -204,6 +210,12 @@
       <DependentUpon>InfoDonor.vb</DependentUpon>
     </Compile>
     <Compile Include="InfoDonor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InnkallingBaserPaaBehov.Designer.vb">
+      <DependentUpon>InnkallingBaserPaaBehov.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InnkallingBaserPaaBehov.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Logginn.Designer.vb">
@@ -247,6 +259,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SMS_module.vb" />
+    <Compile Include="statestikk.Designer.vb">
+      <DependentUpon>statestikk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="statestikk.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="TimeBestilling.Designer.vb">
       <DependentUpon>TimeBestilling.vb</DependentUpon>
     </Compile>
@@ -265,19 +283,7 @@
     <Compile Include="TimeInfoAnsatt.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TimeInfoDonør.Designer.vb">
-      <DependentUpon>TimeInfoDonør.vb</DependentUpon>
-    </Compile>
-    <Compile Include="TimeInfoDonør.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="User.vb" />
-    <Compile Include="VelgTime.Designer.vb">
-      <DependentUpon>VelgTime.vb</DependentUpon>
-    </Compile>
-    <Compile Include="VelgTime.vb">
-      <SubType>Form</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Ansatt.resx">
@@ -337,11 +343,17 @@
     <EmbeddedResource Include="IktHovedside.resx">
       <DependentUpon>IktHovedside.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="IktStatestikk.resx">
+      <DependentUpon>IktStatestikk.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InfoBruker.resx">
       <DependentUpon>InfoBruker.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InfoDonor.resx">
       <DependentUpon>InfoDonor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InnkallingBaserPaaBehov.resx">
+      <DependentUpon>InnkallingBaserPaaBehov.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Logginn.resx">
       <DependentUpon>Logginn.vb</DependentUpon>
@@ -361,6 +373,9 @@
     <EmbeddedResource Include="NyBruker.resx">
       <DependentUpon>NyBruker.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="statestikk.resx">
+      <DependentUpon>statestikk.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TimeBestilling.resx">
       <DependentUpon>TimeBestilling.vb</DependentUpon>
     </EmbeddedResource>
@@ -369,12 +384,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TimeInfoAnsatt.resx">
       <DependentUpon>TimeInfoAnsatt.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TimeInfoDonør.resx">
-      <DependentUpon>TimeInfoDonør.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VelgTime.resx">
-      <DependentUpon>VelgTime.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

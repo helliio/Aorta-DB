@@ -38,7 +38,7 @@ Public Class TimebestillingAnsatt
         End If
     End Function
 
-    Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
+    Private Sub btnBestillTime_Click(sender As Object, e As EventArgs) Handles btnBestillTime.Click
         Dim list As ArrayList = get_appointment_date(bruker.getPersonnr)
         Dim time As String = ComboBox1.Text & "." & ComboBox2.Text
         If list.Count > 0 Then
@@ -48,6 +48,7 @@ Public Class TimebestillingAnsatt
                     If result = DialogResult.Yes Then
                         create_appointment(bruker.getPersonnr, time, DateTimePicker1.Text)
                         Me.Close()
+                        AnsattBrukerOversikt.Show()
                     End If
                 ElseIf get_appointment_user(time, DateTimePicker1.Text) = bruker.getPersonnr Then
                     MsgBox("Du har allerede bestillt denne timen")
@@ -63,6 +64,7 @@ Public Class TimebestillingAnsatt
                 If result = DialogResult.Yes Then
                     create_appointment(bruker.getPersonnr, time, DateTimePicker1.Text)
                     Me.Close()
+                    AnsattBrukerOversikt.Show()
                 End If
             ElseIf get_appointment_user(time, DateTimePicker1.Text) = bruker.getPersonnr Then
                 MsgBox("Du har allerede bestillt denne timen")
@@ -72,12 +74,51 @@ Public Class TimebestillingAnsatt
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ListBox1.Items.Clear()
+        Dim Timer As ArrayList
+        Timer = get_appointments_user(DateTimePicker1.Text)
+        For Each item In Timer
+            ListBox1.Items.Add(item(0))
+        Next
+        Label3.Text = "Disse timene er tatt " & DateTimePicker1.Text
+    End Sub
+
+    Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
+        AnsattBrukerOversikt.Show()
         Me.Close()
     End Sub
 
-    Private Sub TimeBestilling_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        AnsattBrukerOversikt.Show()
+    Private Sub TimebestillingAnsatt_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Me.Hide()
+    End Sub
+
+    Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
+        Main.Show()
+        Me.Close()
+    End Sub
+    Private Sub btnKalender_Click(sender As Object, e As EventArgs) Handles btnKalender.Click
+        AnsattKalender.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
+        blodbank.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnStatestikk_Click(sender As Object, e As EventArgs) Handles btnStatestikk.Click
+        Statestikk.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnSjekkBlod_Click(sender As Object, e As EventArgs) Handles btnSjekkBlod.Click
+        InnkallingBaserPaaBehov.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
+        Ansatt.Show()
+        Me.Close()
     End Sub
 End Class
