@@ -376,7 +376,7 @@ Module DB_module
     Public Function get_appointments_ansatt(dates As String)
         Dim timer As New ArrayList
         connect_db()
-        Dim sqlSporring = "SELECT time, first_name, last_name FROM appointments a, users u WHERE a.username = u.username AND date = @date ORDER BY time"
+        Dim sqlSporring = "SELECT time, first_name, last_name, a.username FROM appointments a, users u WHERE a.username = u.username AND date = @date ORDER BY time"
         Dim da As New MySqlDataAdapter
         Dim interntabell As New DataTable
         Dim sql As New MySqlCommand(sqlSporring, tilkobling)
@@ -385,15 +385,17 @@ Module DB_module
         da.Fill(interntabell)
         close_db()
         Dim rad As DataRow
-        Dim time, first_name, last_name As String
+        Dim time, first_name, last_name, user_name As String
         For Each rad In interntabell.Rows
             Dim timer_rad As New ArrayList
             time = rad("time")
             first_name = rad("first_name")
             last_name = rad("last_name")
+            user_name = rad("username")
             timer_rad.Add(time)
             timer_rad.Add(first_name)
             timer_rad.Add(last_name)
+            timer_rad.Add(user_name)
             timer.Add(timer_rad)
         Next
         Return timer
