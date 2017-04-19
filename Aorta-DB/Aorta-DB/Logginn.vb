@@ -1,26 +1,30 @@
 ﻿Imports System.ComponentModel
 
 Public Class Logginn
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnLogginn.Click
+    Private Sub btnLogginn_Click(sender As Object, e As EventArgs) Handles btnLogginn.Click
         'Debug.Print(login(TxtPersonnummer.Text, txtPassord.Text))
-        Dim id As Decimal = login(TxtPersonnummer.Text, txtPassord.Text)
-        If id <> 0 Then
-            Global_val.bruker = New User(id)
-            If bruker.getUserType = 0 Then
-                BrukerHovedside.Show()
-                Me.Close()
-            ElseIf bruker.getUserType = 1 Then
-                Ansatt.Show()
-                Me.Close()
-            ElseIf bruker.getUserType = 2 Then
-                IktHovedside.Show()
-                Me.Close()
+        Try
+            Dim id As Decimal = login(TxtPersonnummer.Text, txtPassord.Text)
+            If id <> 0 Then
+                Global_val.bruker = New User(id)
+                If bruker.getUserType = 0 Then
+                    BrukerHovedside.Show()
+                    Me.Close()
+                ElseIf bruker.getUserType = 1 Then
+                    Ansatt.Show()
+                    Me.Close()
+                ElseIf bruker.getUserType = 2 Then
+                    IktHovedside.Show()
+                    Me.Close()
+                End If
+                TxtPersonnummer.Clear()
+                txtPassord.Clear()
+            Else
+                MsgBox("Ugyldig brukernavn eller passord")
             End If
-            TxtPersonnummer.Clear()
-            txtPassord.Clear()
-        Else
-            MsgBox("Ugyldig brukernavn eller passord")
-        End If
+        Catch ex As Exception
+            MsgBox("Feil brukernavn eller passord")
+        End Try
     End Sub
 
     Private Sub btnNyBruker_Click(sender As Object, e As EventArgs)
@@ -29,7 +33,9 @@ Public Class Logginn
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnGlemtpassord.Click
-        GlemtPassord.Show()
+        Label4.Visible = True
+        TextBox1.Visible = True
+        Button2.Visible = True
     End Sub
 
 
@@ -44,7 +50,7 @@ Public Class Logginn
         NyBruker.Show()
     End Sub
 
-    Private Sub btnEgenerklæring_Click(sender As Object, e As EventArgs)
+    Private Sub btnEgenerklæring_Click(sender As Object, e As EventArgs) Handles btnEgenerklæring.Click
         EgenerklaeringLoggInn.Show()
         Me.Close()
     End Sub
@@ -62,12 +68,19 @@ Public Class Logginn
         Me.Close()
     End Sub
 
-    Private Sub btnEgenerklæring_Click_1(sender As Object, e As EventArgs) Handles btnEgenerklæring.Click
-        EgenerklaeringLoggInn.Show()
-        Me.Close()
-    End Sub
     Private Sub logo_Click(sender As Object, e As EventArgs) Handles logo.Click
         Main.Show()
         Me.Close()
+    End Sub
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim persnr As Decimal
+        If IsNumeric(TextBox1.Text) And TextBox1.Text.Length = 11 Then
+            persnr = Convert.ToDecimal(TextBox1.Text)
+        Else
+            'some error
+            MsgBox("invalid personnummer")
+            Exit Sub
+        End If
+        send_new_password(persnr)
     End Sub
 End Class
