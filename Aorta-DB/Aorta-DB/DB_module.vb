@@ -48,7 +48,7 @@ Module DB_module
     End Function
     Public Sub create_user(user As Decimal, pass As String, first_name As String, last_name As String, bruker_type As Integer, tlf As Decimal, mail As String, adress As String, post_code As Integer, city As String)
         connect_db()
-        Dim password = Hash512(pass)
+        Dim password = hash512(pass)
         Dim sqlSporring = "INSERT INTO users (username, password, first_name, last_name, type, tlf, mail, adress, post_code, city) VALUES (@username, @password, @first_name, @last_name, @type, @tlf, @mail, @adress, @post_code, @city)"
         Dim sql As New MySqlCommand(sqlSporring, tilkobling)
 
@@ -63,6 +63,17 @@ Module DB_module
         sql.Parameters.AddWithValue("@post_code", post_code)
         sql.Parameters.AddWithValue("@city", city)
 
+        sql.ExecuteNonQuery()
+        close_db()
+    End Sub
+
+    Public Sub update_pass(user As Decimal, pass As String)
+        connect_db()
+        Dim password = hash512(pass)
+        Dim sqlSporring = "UPDATE users SET password = @password WHERE username = @username;"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@username", user)
+        sql.Parameters.AddWithValue("@password", password)
         sql.ExecuteNonQuery()
         close_db()
     End Sub
@@ -166,6 +177,17 @@ Module DB_module
         Catch
             Return 0
         End Try
+    End Function
+
+    Public Function get_user_tlf(user As Decimal)
+        connect_db()
+        Dim sqlSporring = "SELECT tlf FROM users WHERE username = @user"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@user", user)
+        Dim reader As MySqlDataReader = sql.ExecuteReader
+        reader.Read()
+        Return reader.Item(0)
+        close_db()
     End Function
 
     Public Function get_appointment_id(time As String, dates As String)
@@ -428,5 +450,26 @@ Module DB_module
         ret = reader.Item(0)
         close_db()
         Return ret
+    End Function
+    Public Function get_appointments_user(dates As String)
+        Dim timer As New ArrayList
+        connect_db()
+        Dim sqlSporring = "SELECT time FROM appointments WHERE date = @date ORDER BY time"
+        Dim da As New MySqlDataAdapter
+        Dim interntabell As New DataTable
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@date", dates)
+        da.SelectCommand = sql
+        da.Fill(interntabell)
+        close_db()
+        Dim rad As DataRow
+        Dim time As String
+        For Each rad In interntabell.Rows
+            Dim timer_rad As New ArrayList
+            time = rad("time")
+            timer_rad.Add(time)
+            timer.Add(timer_rad)
+        Next
+        Return timer
     End Function
 End Module

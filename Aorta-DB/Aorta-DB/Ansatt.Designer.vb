@@ -53,6 +53,7 @@ Partial Class Ansatt
         Me.btnBestill = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.btnGivninger = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.headerpanel.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.sidepanel.SuspendLayout()
@@ -456,12 +457,22 @@ Partial Class Ansatt
         Me.btnGivninger.Text = "Kalender"
         Me.btnGivninger.UseVisualStyleBackColor = False
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(230, 277)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 121
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'Ansatt
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnGivninger)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.headerpanel)
@@ -524,4 +535,5 @@ Partial Class Ansatt
     Friend WithEvents Button2 As Button
     Friend WithEvents btnGivninger As Button
     Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents Button1 As Button
 End Class

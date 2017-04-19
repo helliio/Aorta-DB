@@ -6,28 +6,28 @@
     Dim timer As Integer = 0
 
     Private Sub BrukerHovedside_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Dim list As ArrayList = get_appointment_date(bruker.getPersonnr)
-        'Dim dt_list As New ArrayList
-        'Dim d = DateTime.Now
-        'For Each item In list
-        '    dt_list.Add(CDate(item))
-        'Next
-        'For Each item As Date In dt_list
-        '    If item < d Then
-        '        Dim i As String = item.ToString("HH.mm dd.MM.yyyy")
-        '        listboxGivinger.Items.Add(i)
-        '    Else
-        '        Dim i As String = item.ToString("HH.mm dd.MM.yyyy")
-        '        lblNesteTime.Text = i
-        '        timer += 1
-        '    End If
-        'Next
+        Dim list As ArrayList = get_appointment_date(bruker.getPersonnr)
+        Dim dt_list As New ArrayList
+        Dim d = DateTime.Now
+        For Each item In list
+            dt_list.Add(CDate(item))
+        Next
+        For Each item As Date In dt_list
+            If item < d Then
+                Dim i As String = item.ToString("HH.mm dd.MM.yyyy")
+                listboxGivinger.Items.Add(i)
+            Else
+                Dim i As String = item.ToString("HH.mm dd.MM.yyyy")
+                lblNesteTime.Text = i
+                timer += 1
+            End If
+        Next
 
 
-        'lblBruker.Text = "Velkommen, " & bruker.getFornavn() & " " & bruker.getEtternavn()
-        'listboxInfo.Items.Add("Blodtype: ")
-        'listboxInfo.Items.Add("Antall givninger: " & list.Count)
-        'listboxInfo.Items.Add("Neste givning: "
+        lblBruker.Text = "Velkommen, " & bruker.getFornavn() & " " & bruker.getEtternavn()
+        listboxInfo.Items.Add("Blodtype: ")
+        listboxInfo.Items.Add("Antall givninger: " & list.Count)
+        listboxInfo.Items.Add("Neste givning: "
 
     End Sub
 
@@ -92,4 +92,9 @@
     End Sub
 
 
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ChangePass.Show()
+    End Sub
 End Class

@@ -81,11 +81,13 @@ Public Class TimeBestilling
         Me.Hide()
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ListBox1.Items.Clear()
+        Dim Timer As ArrayList
+        Timer = get_appointments_user(DateTimePicker1.Text)
+        For Each item In Timer
+            ListBox1.Items.Add(item(0))
+        Next
+        Label3.Text = "Disse timene er tatt " & DateTimePicker1.Text
     End Sub
 End Class
