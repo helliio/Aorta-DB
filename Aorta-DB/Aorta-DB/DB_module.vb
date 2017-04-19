@@ -486,6 +486,29 @@ Module DB_module
         Next
         Return timer
     End Function
+
+    Public Function get_stat_blood_type()
+        Dim type As New ArrayList
+        connect_db()
+        Dim sqlSporring = "SELECT type, Count(*) FROM helsesjekk group by type"
+        Dim da As New MySqlDataAdapter
+        Dim interntabell As New DataTable
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        da.SelectCommand = sql
+        da.Fill(interntabell)
+        close_db()
+        Dim rad As DataRow
+        Dim btype, count As String
+        For Each rad In interntabell.Rows
+            Dim outrad As String
+            btype = rad("type")
+            count = rad("Count(*)")
+            outrad = btype & ": " & count
+            type.Add(outrad)
+        Next
+        Return type
+    End Function
+
     Public Function get_Antallblod(blodtype As String)
         Dim ret As New ArrayList
         connect_db()
