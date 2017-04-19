@@ -38,7 +38,7 @@ Public Class TimeBestilling
         End If
     End Function
 
-    Private Sub btnBestill_Click(sender As Object, e As EventArgs)
+    Private Sub btnBestillTime_Click(sender As Object, e As EventArgs) Handles btnBestillTime.Click
         Dim list As ArrayList = get_appointment_date(bruker.getPersonnr)
         Dim time As String = ComboBox1.Text & "." & ComboBox2.Text
         If list.Count > 0 Then
@@ -74,15 +74,11 @@ Public Class TimeBestilling
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-        Me.Close()
-    End Sub
-
     Private Sub TimeBestilling_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Me.Hide()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         ListBox1.Items.Clear()
         Dim Timer As ArrayList
         Timer = get_appointments_user(DateTimePicker1.Text)
