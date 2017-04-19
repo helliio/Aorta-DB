@@ -38,7 +38,7 @@ Public Class TimeBestilling
         End If
     End Function
 
-    Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
+    Private Sub btnBestill_Click(sender As Object, e As EventArgs)
         Dim list As ArrayList = get_appointment_date(bruker.getPersonnr)
         Dim time As String = ComboBox1.Text & "." & ComboBox2.Text
         If list.Count > 0 Then
@@ -47,6 +47,7 @@ Public Class TimeBestilling
                     Dim result As Integer = MessageBox.Show("Er du sikker på at du vil ha time " & DateTimePicker1.Text & " klokka " & ComboBox1.Text & ":" & ComboBox2.Text, "Timebestilling", MessageBoxButtons.YesNo)
                     If result = DialogResult.Yes Then
                         create_appointment(bruker.getPersonnr, time, DateTimePicker1.Text)
+                        BrukerHovedside.Show()
                         Me.Close()
                     End If
                 ElseIf get_appointment_user(time, DateTimePicker1.Text) = bruker.getPersonnr Then
@@ -62,6 +63,7 @@ Public Class TimeBestilling
                 Dim result As Integer = MessageBox.Show("Er du sikker på at du vil ha time " & DateTimePicker1.Text & " klokka " & ComboBox1.Text & ":" & ComboBox2.Text, "Timebestilling", MessageBoxButtons.YesNo)
                 If result = DialogResult.Yes Then
                     create_appointment(bruker.getPersonnr, time, DateTimePicker1.Text)
+                    BrukerHovedside.Show()
                     Me.Close()
                 End If
             ElseIf get_appointment_user(time, DateTimePicker1.Text) = bruker.getPersonnr Then
@@ -72,16 +74,15 @@ Public Class TimeBestilling
         End If
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 
     Private Sub TimeBestilling_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        BrukerHovedside.Show()
         Me.Hide()
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs)
         ListBox1.Items.Clear()
         Dim Timer As ArrayList
         Timer = get_appointments_user(DateTimePicker1.Text)
@@ -89,5 +90,23 @@ Public Class TimeBestilling
             ListBox1.Items.Add(item(0))
         Next
         Label3.Text = "Disse timene er tatt " & DateTimePicker1.Text
+    End Sub
+    Private Sub btnLoggUt_Click_1(sender As Object, e As EventArgs) Handles btnLoggUt.Click
+        Main.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
+        BrukerHovedside.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnEgenerklaring_Click(sender As Object, e As EventArgs) Handles btnEgenerklaring.Click
+        MsgBox("Du må bestille en time før du kan gjøre egenerklæringen")
+    End Sub
+
+    Private Sub btnTimeinfo_Click(sender As Object, e As EventArgs) Handles btnTimeinfo.Click
+        InfoBruker.Show()
+        Me.Close()
     End Sub
 End Class

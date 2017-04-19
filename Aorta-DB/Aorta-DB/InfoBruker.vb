@@ -1,10 +1,25 @@
-﻿Public Class InfoBruker
+﻿Imports System.ComponentModel
+
+Public Class InfoBruker
+    Dim timer
     Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
         BrukerHovedside.Show()
         Me.Hide()
     End Sub
 
     Private Sub InfoBruker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim list1 As ArrayList = get_appointment_date(bruker.getPersonnr)
+        Dim dt_list1 As New ArrayList
+        Dim d1 = DateTime.Now
+        For Each item In list1
+            dt_list1.Add(CDate(item))
+        Next
+        For Each item As Date In dt_list1
+            If item >= d1 Then
+                Dim i As String = item.ToString("HH.mm dd.MM.yyyy")
+                timer += 1
+            End If
+        Next
         Dim helsesjekk As New ArrayList
         Try
             helsesjekk = find_helsesjekk(bruker.getPersonnr)
@@ -74,5 +89,33 @@
         Catch ex As Exception
             listboxGivningsInfo.Items.Add("denne timen har ikke fått noe svar fra labben")
         End Try
+    End Sub
+
+    Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
+        BrukerHovedside.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnEgenerklaring_Click(sender As Object, e As EventArgs) Handles btnEgenerklaring.Click
+        If timer <> 1 Then
+            MsgBox("Du må ha bestilt en time for å gjøre egenerklæringen")
+        Else
+            EgenErklaering.Show()
+            Me.Hide()
+        End If
+    End Sub
+
+    Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
+        If timer = 1 Then
+            MsgBox("Du kan ikke ha mer enn en time")
+        Else
+            TimeBestilling.Show()
+            Me.Close()
+        End If
+    End Sub
+
+    Private Sub InfoBruker_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        BrukerHovedside.Show()
+        Me.Hide()
     End Sub
 End Class

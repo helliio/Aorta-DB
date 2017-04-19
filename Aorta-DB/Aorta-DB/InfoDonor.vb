@@ -33,4 +33,39 @@ Public Class InfoDonor
         AnsattBrukerOversikt.Show()
         Me.Hide()
     End Sub
+    Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
+        Main.Show()
+        Me.Close()
+        Ansatt.Close()
+    End Sub
+    Private Sub btnKalender_Click(sender As Object, e As EventArgs) Handles btnKalender.Click
+        AnsattKalender.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
+        blodbank.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnStatestikk_Click(sender As Object, e As EventArgs) Handles btnStatestikk.Click
+        Statestikk.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnSjekkBlod_Click(sender As Object, e As EventArgs) Handles btnSjekkBlod.Click
+        InnkallingBaserPaaBehov.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
+        Ansatt.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnLoggUt_Click_1(sender As Object, e As EventArgs) Handles btnLoggUt.Click
+        Main.Show()
+        Ansatt.Close()
+        Me.Close()
+    End Sub
 End Class

@@ -2,49 +2,63 @@
 Module DB_module
     Private tilkobling As MySqlConnection
     Private Sub connect_db()
-        tilkobling = New MySqlConnection("Server=mysql.stud.iie.ntnu.no;" & "Database=liangzh;" & "Uid=liangzh;" & "Pwd=vdAZFdty;")
-        tilkobling.Open()
+        Try
+            tilkobling = New MySqlConnection("Server=mysql.stud.iie.ntnu.no;" & "Database=liangzh;" & "Uid=liangzh;" & "Pwd=vdAZFdty;")
+            tilkobling.Open()
+        Catch ex As Exception
+            MsgBox("Du er ikke kobla til internett eller databasen er nede")
+        End Try
     End Sub
     Private Sub close_db()
         tilkobling.Close()
         tilkobling.Dispose()
     End Sub
     Public Function login(user As Decimal, pass As String)
-        connect_db()
-        Dim username As String = user.ToString
-        Dim password As String = Hash512(pass)
-        Dim sqlSporring = "select * from users where username=@username " &
-                          "and password=@password"
-        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        Try
+            connect_db()
+            Dim username As String = user.ToString
+            Dim password As String = hash512(pass)
+            Dim sqlSporring = "select * from users where username=@username " &
+                              "and password=@password"
+            Dim sql As New MySqlCommand(sqlSporring, tilkobling)
 
-        sql.Parameters.AddWithValue("@username", username)
-        sql.Parameters.AddWithValue("@password", password)
+            sql.Parameters.AddWithValue("@username", username)
+            sql.Parameters.AddWithValue("@password", password)
 
-        Dim leser = sql.ExecuteReader()
-        If leser.HasRows Then
-            close_db()
-            Return user
-        Else
-            close_db()
+            Dim leser = sql.ExecuteReader()
+            If leser.HasRows Then
+                close_db()
+                Return user
+            Else
+                close_db()
+                Return 0
+            End If
+        Catch ex As Exception
+            MsgBox("Feil brukernavn eller passord")
             Return 0
-        End If
+        End Try
     End Function
     Public Function login2(user As Decimal)
-        connect_db()
-        Dim username As String = user.ToString
-        Dim sqlSporring = "select * from users where username=@username "
-        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        Try
+            connect_db()
+            Dim username As String = user.ToString
+            Dim sqlSporring = "select * from users where username=@username "
+            Dim sql As New MySqlCommand(sqlSporring, tilkobling)
 
-        sql.Parameters.AddWithValue("@username", username)
+            sql.Parameters.AddWithValue("@username", username)
 
-        Dim leser = sql.ExecuteReader()
-        If leser.HasRows Then
-            close_db()
-            Return user
-        Else
-            close_db()
+            Dim leser = sql.ExecuteReader()
+            If leser.HasRows Then
+                close_db()
+                Return user
+            Else
+                close_db()
+                Return 0
+            End If
+        Catch ex As Exception
+            MsgBox("Ingen brukere har dette personnummeret")
             Return 0
-        End If
+        End Try
     End Function
     Public Sub create_user(user As Decimal, pass As String, first_name As String, last_name As String, bruker_type As Integer, tlf As Decimal, mail As String, adress As String, post_code As Integer, city As String)
         connect_db()
@@ -471,5 +485,44 @@ Module DB_module
             timer.Add(timer_rad)
         Next
         Return timer
+    End Function
+    Public Function get_Antallblod(blodtype As String)
+        Dim ret As New ArrayList
+        connect_db()
+        Dim sqlSporring = "SELECT type, rode_blodlegemer, plasma, blodplater from blodprod where type = @blodtype"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@blodtype", blodtype)
+        Dim reader As MySqlDataReader = sql.ExecuteReader
+        reader.Read()
+        For i As Integer = 0 To 3
+            ret.Add(reader.Item(i))
+        Next
+        close_db()
+        Return ret
+    End Function
+    Public Function get_blodgiver(type As String)
+        Dim blodgiver As New ArrayList
+        connect_db()
+        Dim sqlSporring = "SELECT first_name, last_name, tlf FROM helsesjekk h, users u WHERE u.username = h.user AND h.type = @type"
+        Dim da As New MySqlDataAdapter
+        Dim interntabell As New DataTable
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        sql.Parameters.AddWithValue("@type", type)
+        da.SelectCommand = sql
+        da.Fill(interntabell)
+        close_db()
+        Dim rad As DataRow
+        Dim first_name, last_name, tlf As String
+        For Each rad In interntabell.Rows
+            Dim blodgiver_rad As New ArrayList
+            first_name = rad("first_name")
+            last_name = rad("last_name")
+            tlf = rad("tlf")
+            blodgiver_rad.Add(first_name)
+            blodgiver_rad.Add(last_name)
+            blodgiver_rad.Add(tlf)
+            blodgiver.Add(blodgiver_rad)
+        Next
+        Return blodgiver
     End Function
 End Module

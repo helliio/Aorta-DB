@@ -1,6 +1,6 @@
 ﻿Public Class BlodGivning2
     Private Sub BlodGivning2_Closed(sender As Object, e As EventArgs) Handles Me.Closed
-        Ansatt.Show()
+        Me.Hide()
     End Sub
 
     Private Sub BlodGivning2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -19,6 +19,36 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         blod = New Blod_pakke(giver_id, ComboBox1.Text, NumericUpDown1.Value, CheckHiv.Checked, CheckHepatittB.Checked, CheckHepatittC.Checked, TextBox1.Text)
         blod.send()
-        Close()
+        Me.Close()
+        AnsattBrukerOversikt.Show()
+    End Sub
+    Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
+        Main.Show()
+        Me.Close()
+        Ansatt.Close()
+    End Sub
+    Private Sub btnKalender_Click(sender As Object, e As EventArgs) Handles btnKalender.Click
+        AnsattKalender.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
+        blodbank.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnStatestikk_Click(sender As Object, e As EventArgs) Handles btnStatestikk.Click
+        Statestikk.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnSjekkBlod_Click(sender As Object, e As EventArgs) Handles btnSjekkBlod.Click
+        InnkallingBaserPaaBehov.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
+        Ansatt.Show()
+        Me.Close()
     End Sub
 End Class

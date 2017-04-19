@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class IktHovedside
+Partial Class IktStatestikk
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class IktHovedside
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(IktHovedside))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(IktStatestikk))
         Me.sidepanel = New System.Windows.Forms.Panel()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.Panel9 = New System.Windows.Forms.Panel()
@@ -62,7 +62,7 @@ Partial Class IktHovedside
         Me.sidepanel.Location = New System.Drawing.Point(0, 0)
         Me.sidepanel.Name = "sidepanel"
         Me.sidepanel.Size = New System.Drawing.Size(172, 561)
-        Me.sidepanel.TabIndex = 132
+        Me.sidepanel.TabIndex = 133
         '
         'GroupBox9
         '
@@ -195,7 +195,7 @@ Partial Class IktHovedside
         Me.headerpanel.Location = New System.Drawing.Point(172, 0)
         Me.headerpanel.Name = "headerpanel"
         Me.headerpanel.Size = New System.Drawing.Size(612, 75)
-        Me.headerpanel.TabIndex = 133
+        Me.headerpanel.TabIndex = 134
         '
         'PictureBox6
         '
@@ -238,20 +238,16 @@ Partial Class IktHovedside
         Me.lblOsk.TabIndex = 0
         Me.lblOsk.Text = "IKT-Hovedside"
         '
-        'IktHovedside
+        'IktStatestikk
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(784, 561)
-        Me.ControlBox = False
         Me.Controls.Add(Me.headerpanel)
         Me.Controls.Add(Me.sidepanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MaximizeBox = False
-        Me.Name = "IktHovedside"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "IktHovedside"
+        Me.Name = "IktStatestikk"
+        Me.Text = "IktStatestikk"
         Me.sidepanel.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.sidetoppanel.ResumeLayout(False)

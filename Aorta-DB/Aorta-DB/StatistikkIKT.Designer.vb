@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class IktHovedside
+Partial Class StatistikkIKT
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class IktHovedside
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(IktHovedside))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(StatistikkIKT))
         Me.sidepanel = New System.Windows.Forms.Panel()
         Me.GroupBox9 = New System.Windows.Forms.GroupBox()
         Me.Panel9 = New System.Windows.Forms.Panel()
@@ -34,16 +34,10 @@ Partial Class IktHovedside
         Me.btnStatistikk = New System.Windows.Forms.Button()
         Me.btnNyAnsatt = New System.Windows.Forms.Button()
         Me.btnMinSide = New System.Windows.Forms.Button()
-        Me.headerpanel = New System.Windows.Forms.Panel()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
-        Me.btnLoggUt = New System.Windows.Forms.Button()
-        Me.lblOsk = New System.Windows.Forms.Label()
         Me.sidepanel.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.sidetoppanel.SuspendLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.headerpanel.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'sidepanel
@@ -61,8 +55,8 @@ Partial Class IktHovedside
         Me.sidepanel.Dock = System.Windows.Forms.DockStyle.Left
         Me.sidepanel.Location = New System.Drawing.Point(0, 0)
         Me.sidepanel.Name = "sidepanel"
-        Me.sidepanel.Size = New System.Drawing.Size(172, 561)
-        Me.sidepanel.TabIndex = 132
+        Me.sidepanel.Size = New System.Drawing.Size(172, 600)
+        Me.sidepanel.TabIndex = 125
         '
         'GroupBox9
         '
@@ -185,80 +179,19 @@ Partial Class IktHovedside
         Me.btnMinSide.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnMinSide.UseVisualStyleBackColor = False
         '
-        'headerpanel
-        '
-        Me.headerpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.headerpanel.Controls.Add(Me.PictureBox6)
-        Me.headerpanel.Controls.Add(Me.btnLoggUt)
-        Me.headerpanel.Controls.Add(Me.lblOsk)
-        Me.headerpanel.Dock = System.Windows.Forms.DockStyle.Top
-        Me.headerpanel.Location = New System.Drawing.Point(172, 0)
-        Me.headerpanel.Name = "headerpanel"
-        Me.headerpanel.Size = New System.Drawing.Size(612, 75)
-        Me.headerpanel.TabIndex = 133
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(6, 24)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(40, 40)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 119
-        Me.PictureBox6.TabStop = False
-        '
-        'btnLoggUt
-        '
-        Me.btnLoggUt.BackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnLoggUt.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnLoggUt.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnLoggUt.FlatAppearance.BorderSize = 0
-        Me.btnLoggUt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnLoggUt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.btnLoggUt.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLoggUt.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLoggUt.ForeColor = System.Drawing.Color.White
-        Me.btnLoggUt.Location = New System.Drawing.Point(501, 19)
-        Me.btnLoggUt.Name = "btnLoggUt"
-        Me.btnLoggUt.Size = New System.Drawing.Size(99, 31)
-        Me.btnLoggUt.TabIndex = 6
-        Me.btnLoggUt.TabStop = False
-        Me.btnLoggUt.Text = "Logg ut"
-        Me.btnLoggUt.UseVisualStyleBackColor = False
-        '
-        'lblOsk
-        '
-        Me.lblOsk.AutoSize = True
-        Me.lblOsk.Font = New System.Drawing.Font("Century Gothic", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblOsk.ForeColor = System.Drawing.Color.White
-        Me.lblOsk.Location = New System.Drawing.Point(52, 31)
-        Me.lblOsk.Name = "lblOsk"
-        Me.lblOsk.Size = New System.Drawing.Size(200, 33)
-        Me.lblOsk.TabIndex = 0
-        Me.lblOsk.Text = "IKT-Hovedside"
-        '
-        'IktHovedside
+        'StatistikkIKT
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(784, 561)
-        Me.ControlBox = False
-        Me.Controls.Add(Me.headerpanel)
+        Me.ClientSize = New System.Drawing.Size(800, 600)
         Me.Controls.Add(Me.sidepanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MaximizeBox = False
-        Me.Name = "IktHovedside"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "IktHovedside"
+        Me.Name = "StatistikkIKT"
+        Me.Text = "StatistikkIKT"
         Me.sidepanel.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.sidetoppanel.ResumeLayout(False)
         CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.headerpanel.ResumeLayout(False)
-        Me.headerpanel.PerformLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -274,8 +207,4 @@ Partial Class IktHovedside
     Friend WithEvents btnStatistikk As Button
     Friend WithEvents btnNyAnsatt As Button
     Friend WithEvents btnMinSide As Button
-    Friend WithEvents headerpanel As Panel
-    Friend WithEvents PictureBox6 As PictureBox
-    Friend WithEvents btnLoggUt As Button
-    Friend WithEvents lblOsk As Label
 End Class

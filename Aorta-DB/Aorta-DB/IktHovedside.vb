@@ -16,12 +16,12 @@ Public Class IktHovedside
         Me.Close()
     End Sub
 
-    Private Sub IktHovedside_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub IktHovedside_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Logginn.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub sidepanel_Paint(sender As Object, e As PaintEventArgs) Handles sidepanel.Paint
+
     End Sub
 End Class
