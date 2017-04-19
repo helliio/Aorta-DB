@@ -81,4 +81,5 @@ Public Class NyBruker
         EgenerklaeringLoggInn.Show()
         Me.Close()
     End Sub
+
 End Class
