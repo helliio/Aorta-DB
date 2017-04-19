@@ -66,9 +66,9 @@ Public Class InnkallingBaserPaaBehov
             listboxBlodMengde.Items.Clear()
             Dim blodMengde As ArrayList = get_Antallblod(ComboBox1.Text)
             listboxBlodMengde.Items.Add("Valgt blodtype er: " & blodMengde(0))
-            listboxBlodMengde.Items.Add("Antall Milliliter røde blodlegemer er: " & blodMengde(1))
-            listboxBlodMengde.Items.Add("Antall milliliter plasma er: " & blodMengde(2))
-            listboxBlodMengde.Items.Add("Antall milliliter blodplater er: " & blodMengde(3))
+            listboxBlodMengde.Items.Add("Antall ml røde blodlegemer er: " & blodMengde(1))
+            listboxBlodMengde.Items.Add("Antall ml plasma er: " & blodMengde(2))
+            listboxBlodMengde.Items.Add("Antall ml blodplater er: " & blodMengde(3))
         Else
             MsgBox("Du må velge en blodtype")
         End If
