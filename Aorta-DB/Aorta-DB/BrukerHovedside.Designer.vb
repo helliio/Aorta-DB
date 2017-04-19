@@ -74,12 +74,13 @@ Partial Class BrukerHovedside
         '
         'listboxGivinger
         '
+        Me.listboxGivinger.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.listboxGivinger.Font = New System.Drawing.Font("Century Gothic", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.listboxGivinger.FormattingEnabled = True
         Me.listboxGivinger.ItemHeight = 16
         Me.listboxGivinger.Location = New System.Drawing.Point(12, 39)
         Me.listboxGivinger.Name = "listboxGivinger"
-        Me.listboxGivinger.Size = New System.Drawing.Size(146, 84)
+        Me.listboxGivinger.Size = New System.Drawing.Size(146, 80)
         Me.listboxGivinger.TabIndex = 2
         '
         'Label3

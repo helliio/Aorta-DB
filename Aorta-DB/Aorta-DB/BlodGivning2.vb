@@ -51,4 +51,9 @@
         Ansatt.Show()
         Me.Close()
     End Sub
+
+    Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
+        BlodGivning.Show()
+        Me.Close()
+    End Sub
 End Class

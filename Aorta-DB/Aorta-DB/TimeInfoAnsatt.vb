@@ -106,8 +106,8 @@ Public Class TimeInfoAnsatt
         Try
             Dim timeinfo As New ArrayList
             timeinfo = get_appointment_info(bruker.getPersonnr, listboxTimer.SelectedItem)
-            listboxGivningsInfo.Items.Add("Din blodtype er :" & timeinfo(0))
-            listboxGivningsInfo.Items.Add("Din blodprosent er :" & timeinfo(1))
+            listboxGivningsInfo.Items.Add("Din blodtype er: " & timeinfo(0))
+            listboxGivningsInfo.Items.Add("Din blodprosent er: " & timeinfo(1))
             If timeinfo(2) = False Then
                 listboxGivningsInfo.Items.Add("Du har ikke HIV")
             Else
@@ -125,7 +125,8 @@ Public Class TimeInfoAnsatt
             End If
             listboxGivningsInfo.Items.Add("Kommentar: " & timeinfo(5))
         Catch ex As Exception
-            listboxGivningsInfo.Items.Add("denne timen har ikke fått noe svar fra labben")
+            listboxGivningsInfo.Items.Add("denne timen har ikke")
+            listboxGivningsInfo.Items.Add("fått noe svar fra labben")
         End Try
     End Sub
 End Class
