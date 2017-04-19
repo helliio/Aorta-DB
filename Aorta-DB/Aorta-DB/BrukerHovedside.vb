@@ -28,20 +28,6 @@
 
     End Sub
 
-    Private Sub btnInfo_Click(sender As Object, e As EventArgs)
-        InfoBruker.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub btnNyBruker_Click(sender As Object, e As EventArgs)
-        If timer <> 1 Then
-            MsgBox("Du må ha bestilt en time for å gjøre egenerklæringen")
-        Else
-            EgenErklaering.Show()
-            Me.Close()
-        End If
-    End Sub
-
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Label2.Visible = True
         Label6.Visible = True
@@ -55,7 +41,7 @@
         Me.Close()
     End Sub
 
-    Private Sub btnEgenerklaring_Click_1(sender As Object, e As EventArgs) Handles btnEgenerklaring.Click
+    Private Sub btnEgenerklaring_Click(sender As Object, e As EventArgs) Handles btnEgenerklaring.Click
         If timer <> 1 Then
             MsgBox("Du må ha bestilt en time for å gjøre egenerklæringen")
         Else
@@ -64,7 +50,7 @@
         End If
     End Sub
 
-    Private Sub btnBestill_Click_1(sender As Object, e As EventArgs) Handles btnBestill.Click
+    Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
         If timer = 1 Then
             MsgBox("Du kan ikke ha mer enn en time")
         Else

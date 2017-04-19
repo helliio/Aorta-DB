@@ -23,7 +23,6 @@ Partial Class InfoBruker
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(InfoBruker))
-        Me.btnTilbake = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.listboxHelsesjekk = New System.Windows.Forms.ListBox()
         Me.listboxTimer = New System.Windows.Forms.ListBox()
@@ -58,16 +57,6 @@ Partial Class InfoBruker
         Me.sidetoppanel.SuspendLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'btnTilbake
-        '
-        Me.btnTilbake.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTilbake.Location = New System.Drawing.Point(673, 81)
-        Me.btnTilbake.Name = "btnTilbake"
-        Me.btnTilbake.Size = New System.Drawing.Size(99, 30)
-        Me.btnTilbake.TabIndex = 0
-        Me.btnTilbake.Text = "Tilbake"
-        Me.btnTilbake.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -386,7 +375,6 @@ Partial Class InfoBruker
         Me.Controls.Add(Me.listboxTimer)
         Me.Controls.Add(Me.listboxHelsesjekk)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.btnTilbake)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
@@ -407,8 +395,6 @@ Partial Class InfoBruker
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents btnTilbake As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents listboxHelsesjekk As ListBox
     Friend WithEvents listboxTimer As ListBox

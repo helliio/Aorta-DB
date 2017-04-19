@@ -2,11 +2,6 @@
 
 Public Class InfoBruker
     Dim timer
-    Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
-        BrukerHovedside.Show()
-        Me.Hide()
-    End Sub
-
     Private Sub InfoBruker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim list1 As ArrayList = get_appointment_date(bruker.getPersonnr)
         Dim dt_list1 As New ArrayList
@@ -93,7 +88,7 @@ Public Class InfoBruker
 
     Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
         BrukerHovedside.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub btnEgenerklaring_Click(sender As Object, e As EventArgs) Handles btnEgenerklaring.Click
@@ -101,7 +96,7 @@ Public Class InfoBruker
             MsgBox("Du må ha bestilt en time for å gjøre egenerklæringen")
         Else
             EgenErklaering.Show()
-            Me.Hide()
+            Me.Close()
         End If
     End Sub
 
@@ -115,7 +110,11 @@ Public Class InfoBruker
     End Sub
 
     Private Sub InfoBruker_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        BrukerHovedside.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Main.Show()
+        Me.Close()
     End Sub
 End Class

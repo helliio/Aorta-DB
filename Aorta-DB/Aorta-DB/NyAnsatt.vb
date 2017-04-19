@@ -60,18 +60,15 @@ Public Class NyAnsatt
 
     Private Sub NyAnsatt_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Me.Hide()
-        Logginn.Show()
     End Sub
 
-    Private Sub NyAnsatt_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+    Private Sub btnStatistikk_Click(sender As Object, e As EventArgs) Handles btnStatistikk.Click
+        IktStatestikk.Show()
+        Me.Close()
     End Sub
 
-    Private Sub txtAdresse_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label5_Click(sender As Object, e As EventArgs)
-
+    Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
+        IktHovedside.Show()
+        Me.Close()
     End Sub
 End Class
