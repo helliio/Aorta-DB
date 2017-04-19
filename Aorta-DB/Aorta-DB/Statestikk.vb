@@ -36,6 +36,8 @@ Public Class statestikk
         ListBox1.Items.Add(" ")
         ListBox1.Items.Add("Mengde regristrete brukere: " & get_stat_amount_users())
         ListBox1.Items.Add(" ")
+        ListBox1.Items.Add("Totale donasjoner: " & get_stat_amount_donations())
+        ListBox1.Items.Add(" ")
         ListBox1.Items.Add("Blodbank Status")
         ListBox1.Items.Add("--------------------")
         populate_list("A+")

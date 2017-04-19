@@ -238,6 +238,16 @@ Module DB_module
         close_db()
     End Function
 
+    Public Function get_stat_amount_donations()
+        connect_db()
+        Dim sqlSporring = "SELECT Count(*) FROM blodpakke"
+        Dim sql As New MySqlCommand(sqlSporring, tilkobling)
+        Dim reader As MySqlDataReader = sql.ExecuteReader
+        reader.Read()
+        Return reader.Item(0)
+        close_db()
+    End Function
+
     Public Function get_appointment_date(user As Decimal)
         Dim ret As New ArrayList
         connect_db()
