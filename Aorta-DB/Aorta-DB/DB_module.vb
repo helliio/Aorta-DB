@@ -140,9 +140,10 @@ Module DB_module
         sql.Parameters.AddWithValue("@hepatittC", hepatittC)
         sql.Parameters.AddWithValue("@kommentar", kommentar)
         sql.ExecuteNonQuery()
-        Dim sqlSporring2 = "UPDATE helsesjekk SET hiv = @hiv, hepatittB = @hepatittB, hepatittC = @hepatittC WHERE user = @user"
+        Dim sqlSporring2 = "UPDATE helsesjekk SET type = @type, hiv = @hiv, hepatittB = @hepatittB, hepatittC = @hepatittC WHERE user = @user"
         Dim sql2 As New MySqlCommand(sqlSporring2, tilkobling)
         sql2.Parameters.AddWithValue("@user", user)
+        sql2.Parameters.AddWithValue("@type", type)
         sql2.Parameters.AddWithValue("@hiv", hiv)
         sql2.Parameters.AddWithValue("@hepatittB", hepatittB)
         sql2.Parameters.AddWithValue("@hepatittC", hepatittC)
