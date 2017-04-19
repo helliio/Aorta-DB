@@ -340,14 +340,14 @@ Partial Class TimeInfoAnsatt
         Me.listboxGivningsInfo.ItemHeight = 21
         Me.listboxGivningsInfo.Location = New System.Drawing.Point(565, 337)
         Me.listboxGivningsInfo.Name = "listboxGivningsInfo"
-        Me.listboxGivningsInfo.Size = New System.Drawing.Size(178, 151)
+        Me.listboxGivningsInfo.Size = New System.Drawing.Size(203, 151)
         Me.listboxGivningsInfo.TabIndex = 131
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(215, 494)
+        Me.Button1.Location = New System.Drawing.Point(230, 494)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(178, 42)
         Me.Button1.TabIndex = 130
@@ -362,7 +362,7 @@ Partial Class TimeInfoAnsatt
         Me.listboxTimer.ItemHeight = 21
         Me.listboxTimer.Location = New System.Drawing.Point(215, 337)
         Me.listboxTimer.Name = "listboxTimer"
-        Me.listboxTimer.Size = New System.Drawing.Size(178, 151)
+        Me.listboxTimer.Size = New System.Drawing.Size(207, 151)
         Me.listboxTimer.TabIndex = 129
         '
         'listboxHelsesjekk
@@ -373,7 +373,7 @@ Partial Class TimeInfoAnsatt
         Me.listboxHelsesjekk.ItemHeight = 21
         Me.listboxHelsesjekk.Location = New System.Drawing.Point(215, 147)
         Me.listboxHelsesjekk.Name = "listboxHelsesjekk"
-        Me.listboxHelsesjekk.Size = New System.Drawing.Size(178, 151)
+        Me.listboxHelsesjekk.Size = New System.Drawing.Size(207, 151)
         Me.listboxHelsesjekk.TabIndex = 134
         '
         'Label1
