@@ -42,7 +42,7 @@
         End If
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs)
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         ChangePass.Show()
     End Sub
 
@@ -75,7 +75,7 @@
         Me.Close()
     End Sub
 
-    Private Sub btnAvbesill_Click(sender As Object, e As EventArgs) Handles btnAvbesill.Click, Button2.Click
+    Private Sub btnAvbesill_Click(sender As Object, e As EventArgs) Handles btnAvbesill.Click
         Dim dato As String = lblNesteTime.Text
         If timer <> 1 Then
             MsgBox("Du har ingen timer å avbestille")
