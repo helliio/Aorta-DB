@@ -48,7 +48,7 @@ Public Class BlodGivning
         liste.Add("- hatt seksuell kontakt med person med HIVinfeksjon eller hepatitt B eller hepatitt C, ") '17'
         liste.Add("- eller med person som har hatt positiv test for en av disse sykdommene?") '18'15
         liste.Add("- hatt seksuell kontakt med person som bruker eller") '19'
-        liste.Add("har brukt dopingmidler eller narkotiske midler som sprøyter?") '20'16
+        liste.Add("- har brukt dopingmidler eller narkotiske midler som sprøyter?") '20'16
         liste.Add("- hatt seksuell kontakt med prostituerte eller tidligere prostituerte?") '21'17
         liste.Add("- blitt tatovert, fått piercing eller tatt hull i ørene?") '22'18
         liste.Add("- fått akupunktur?") '23'19
@@ -87,7 +87,7 @@ Public Class BlodGivning
         liste.Add("- Har du vært gravid i løpet av de siste tolv måneder, eller ammer du nå?") '53'46
         liste.Add("- Hvis du har gitt blod tidligere, har du vært gravid siden forrige blodgivning?") '54'47
         liste.Add("- Har du i løpet av de siste seks måneder hatt seksuell kontakt med en mann-") '55'
-        liste.Add("som du vet har hatt seksuell kontakt med andre menn?") '56'48
+        liste.Add("- som du vet har hatt seksuell kontakt med andre menn?") '56'48
         '----------'
         liste.Add("Besvares av menn:") '57'
         liste.Add("- Har eller har du hatt seksuell kontakt med andre menn?") '58'49
