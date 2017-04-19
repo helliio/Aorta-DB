@@ -43,7 +43,11 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        ChangePass.Show()
+        Label2.Visible = True
+        Label6.Visible = True
+        TextBox1.Visible = True
+        TextBox2.Visible = True
+        Button1.Visible = True
     End Sub
 
     Private Sub btnLoggUt_Click_1(sender As Object, e As EventArgs) Handles btnLoggUt.Click
@@ -88,5 +92,23 @@
                 timer = 0
             End If
         End If
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If Not TextBox1.Text.Length >= 8 Then
+            MsgBox("Passord må være lengre enn 8 tegn")
+            Exit Sub
+        End If
+        If TextBox1.Text <> TextBox2.Text Then
+            'some error
+            Exit Sub
+        End If
+        update_pass(bruker.getPersonnr, TextBox1.Text)
+        MsgBox("Du har byttet passord")
+        Label2.Visible = False
+        Label6.Visible = False
+        TextBox1.Visible = False
+        TextBox2.Visible = False
+        Button1.Visible = False
     End Sub
 End Class
