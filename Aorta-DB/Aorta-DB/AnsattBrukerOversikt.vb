@@ -4,6 +4,7 @@ Public Class AnsattBrukerOversikt
     Dim timer As Integer = 0
 
     Private Sub AnsattBrukerOversikt_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        timer = 0
         Dim list As ArrayList = get_appointment_date(bruker.getPersonnr)
         Dim dt_list As New ArrayList
         Dim d = DateTime.Now
