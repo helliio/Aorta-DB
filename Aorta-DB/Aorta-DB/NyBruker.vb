@@ -67,11 +67,6 @@ Public Class NyBruker
     Private Sub NyBruker_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Me.Hide()
     End Sub
-
-    Private Sub Button1_Click(sender As Object, e As EventArgs)
-        Me.Close()
-        Main.Show()
-    End Sub
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
         Logginn.Show()
         Me.Hide()
