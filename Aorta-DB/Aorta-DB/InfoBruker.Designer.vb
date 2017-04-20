@@ -47,6 +47,9 @@ Partial Class InfoBruker
         Me.btnMinSide = New System.Windows.Forms.Button()
         Me.btnEgenerklaring = New System.Windows.Forms.Button()
         Me.btnBestill = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.headerpanel.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.sidepanel.SuspendLayout()
@@ -85,7 +88,7 @@ Partial Class InfoBruker
         Me.listboxTimer.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.listboxTimer.FormattingEnabled = True
         Me.listboxTimer.ItemHeight = 21
-        Me.listboxTimer.Location = New System.Drawing.Point(230, 329)
+        Me.listboxTimer.Location = New System.Drawing.Point(230, 368)
         Me.listboxTimer.Name = "listboxTimer"
         Me.listboxTimer.Size = New System.Drawing.Size(208, 151)
         Me.listboxTimer.TabIndex = 3
@@ -94,7 +97,7 @@ Partial Class InfoBruker
         '
         Me.Button1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.Button1.Location = New System.Drawing.Point(249, 497)
+        Me.Button1.Location = New System.Drawing.Point(240, 525)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(178, 42)
         Me.Button1.TabIndex = 4
@@ -107,7 +110,7 @@ Partial Class InfoBruker
         Me.listboxGivningsInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.listboxGivningsInfo.FormattingEnabled = True
         Me.listboxGivningsInfo.ItemHeight = 21
-        Me.listboxGivningsInfo.Location = New System.Drawing.Point(532, 308)
+        Me.listboxGivningsInfo.Location = New System.Drawing.Point(527, 347)
         Me.listboxGivningsInfo.Name = "listboxGivningsInfo"
         Me.listboxGivningsInfo.Size = New System.Drawing.Size(208, 172)
         Me.listboxGivningsInfo.TabIndex = 5
@@ -362,12 +365,45 @@ Partial Class InfoBruker
         Me.btnBestill.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnBestill.UseVisualStyleBackColor = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(277, 123)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(85, 21)
+        Me.Label2.TabIndex = 134
+        Me.Label2.Text = "Helsesjekk"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(277, 341)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(89, 21)
+        Me.Label3.TabIndex = 135
+        Me.Label3.Text = "Dine timer"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(554, 323)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(147, 21)
+        Me.Label4.TabIndex = 136
+        Me.Label4.Text = "Info om valg time"
+        '
         'InfoBruker
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 600)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.headerpanel)
         Me.Controls.Add(Me.sidepanel)
         Me.Controls.Add(Me.listboxGivningsInfo)
@@ -419,4 +455,7 @@ Partial Class InfoBruker
     Friend WithEvents btnMinSide As Button
     Friend WithEvents btnEgenerklaring As Button
     Friend WithEvents btnBestill As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
 End Class

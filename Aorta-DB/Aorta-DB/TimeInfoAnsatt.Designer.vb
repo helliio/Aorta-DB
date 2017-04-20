@@ -338,9 +338,9 @@ Partial Class TimeInfoAnsatt
         Me.listboxGivningsInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.listboxGivningsInfo.FormattingEnabled = True
         Me.listboxGivningsInfo.ItemHeight = 21
-        Me.listboxGivningsInfo.Location = New System.Drawing.Point(565, 337)
+        Me.listboxGivningsInfo.Location = New System.Drawing.Point(530, 316)
         Me.listboxGivningsInfo.Name = "listboxGivningsInfo"
-        Me.listboxGivningsInfo.Size = New System.Drawing.Size(203, 151)
+        Me.listboxGivningsInfo.Size = New System.Drawing.Size(208, 172)
         Me.listboxGivningsInfo.TabIndex = 131
         '
         'Button1
@@ -410,7 +410,7 @@ Partial Class TimeInfoAnsatt
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(580, 313)
+        Me.Label3.Location = New System.Drawing.Point(558, 292)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(147, 21)
         Me.Label3.TabIndex = 133
