@@ -556,7 +556,7 @@ Module DB_module
     Public Function get_blodgiver(type As String)
         Dim blodgiver As New ArrayList
         connect_db()
-        Dim sqlSporring = "SELECT first_name, last_name, tlf FROM helsesjekk h, users u WHERE u.username = h.user AND h.type = @type"
+        Dim sqlSporring = "SELECT first_name, last_name, tlf, user FROM helsesjekk h, users u WHERE u.username = h.user AND h.type = @type"
         Dim da As New MySqlDataAdapter
         Dim interntabell As New DataTable
         Dim sql As New MySqlCommand(sqlSporring, tilkobling)
@@ -565,15 +565,17 @@ Module DB_module
         da.Fill(interntabell)
         close_db()
         Dim rad As DataRow
-        Dim first_name, last_name, tlf As String
+        Dim first_name, last_name, tlf, bruker As String
         For Each rad In interntabell.Rows
             Dim blodgiver_rad As New ArrayList
             first_name = rad("first_name")
             last_name = rad("last_name")
             tlf = rad("tlf")
+            bruker = rad("user")
             blodgiver_rad.Add(first_name)
             blodgiver_rad.Add(last_name)
             blodgiver_rad.Add(tlf)
+            blodgiver_rad.Add(bruker)
             blodgiver.Add(blodgiver_rad)
         Next
         Return blodgiver
