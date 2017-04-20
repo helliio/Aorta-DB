@@ -44,7 +44,7 @@ Public Class Ansatt
     End Sub
 
     Private Sub btnStatestikk_Click(sender As Object, e As EventArgs) Handles btnStatestikk.Click
-        Statestikk.Show()
+        statestikk.Show()
         Me.Close()
     End Sub
 
@@ -66,4 +66,5 @@ Public Class Ansatt
             Me.Hide()
         End If
     End Sub
+
 End Class
