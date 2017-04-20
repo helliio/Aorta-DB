@@ -107,9 +107,9 @@ Partial Class InfoBruker
         Me.listboxGivningsInfo.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
         Me.listboxGivningsInfo.FormattingEnabled = True
         Me.listboxGivningsInfo.ItemHeight = 21
-        Me.listboxGivningsInfo.Location = New System.Drawing.Point(535, 329)
+        Me.listboxGivningsInfo.Location = New System.Drawing.Point(532, 308)
         Me.listboxGivningsInfo.Name = "listboxGivningsInfo"
-        Me.listboxGivningsInfo.Size = New System.Drawing.Size(208, 151)
+        Me.listboxGivningsInfo.Size = New System.Drawing.Size(208, 172)
         Me.listboxGivningsInfo.TabIndex = 5
         '
         'headerpanel

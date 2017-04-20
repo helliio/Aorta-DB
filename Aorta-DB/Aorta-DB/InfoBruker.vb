@@ -80,7 +80,8 @@ Public Class InfoBruker
             Else
                 listboxGivningsInfo.Items.Add("Du har hepatitt C")
             End If
-            listboxGivningsInfo.Items.Add("Kommentar: " & timeinfo(5))
+            listboxGivningsInfo.Items.Add("Kommentar:")
+            listboxGivningsInfo.Items.Add(timeinfo(5))
         Catch ex As Exception
             listboxGivningsInfo.Items.Add("denne timen har ikke fått")
             listboxGivningsInfo.Items.Add("noe svar fra labben")

@@ -14,7 +14,7 @@ Public Class NyAnsatt
         Dim persnr As Decimal
         Dim tlf As Decimal
         Dim postnr As Integer
-        If IsNumeric(txtPersonnummer.Text) And txtPersonnummer.Text.Length = 11 Then
+        If IsNumeric(txtPersonnummer.Text) Then
             persnr = Convert.ToDecimal(txtPersonnummer.Text)
         Else
             'some error
@@ -69,6 +69,11 @@ Public Class NyAnsatt
 
     Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
         IktHovedside.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Main.Show()
         Me.Close()
     End Sub
 End Class
