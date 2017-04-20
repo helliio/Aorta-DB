@@ -50,6 +50,7 @@ Partial Class Ansatt
         Me.btnMinSide = New System.Windows.Forms.Button()
         Me.btnBestill = New System.Windows.Forms.Button()
         Me.btnKalender = New System.Windows.Forms.Button()
+        Me.btnVelgBruker = New System.Windows.Forms.Button()
         Me.headerpanel.SuspendLayout()
         CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.sidepanel.SuspendLayout()
@@ -407,6 +408,20 @@ Partial Class Ansatt
         Me.btnKalender.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnKalender.UseVisualStyleBackColor = False
         '
+        'btnVelgBruker
+        '
+        Me.btnVelgBruker.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
+        Me.btnVelgBruker.FlatAppearance.BorderSize = 0
+        Me.btnVelgBruker.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVelgBruker.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVelgBruker.ForeColor = System.Drawing.Color.White
+        Me.btnVelgBruker.Location = New System.Drawing.Point(418, 473)
+        Me.btnVelgBruker.Name = "btnVelgBruker"
+        Me.btnVelgBruker.Size = New System.Drawing.Size(99, 32)
+        Me.btnVelgBruker.TabIndex = 120
+        Me.btnVelgBruker.Text = "Velg"
+        Me.btnVelgBruker.UseVisualStyleBackColor = False
+        '
         'Ansatt
         '
         Me.AcceptButton = Me.btnSok
@@ -415,6 +430,7 @@ Partial Class Ansatt
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(798, 598)
         Me.ControlBox = False
+        Me.Controls.Add(Me.btnVelgBruker)
         Me.Controls.Add(Me.headerpanel)
         Me.Controls.Add(Me.sidepanel)
         Me.Controls.Add(Me.txtSok)
@@ -470,4 +486,5 @@ Partial Class Ansatt
     Friend WithEvents btnLoggUt As Button
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents btnStatestikk As Button
+    Friend WithEvents btnVelgBruker As Button
 End Class
