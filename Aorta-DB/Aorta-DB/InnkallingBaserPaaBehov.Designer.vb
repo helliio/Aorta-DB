@@ -49,6 +49,7 @@ Partial Class InnkallingBaserPaaBehov
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.btnLoggUt = New System.Windows.Forms.Button()
         Me.lblAnsatt = New System.Windows.Forms.Label()
+        Me.btnVelgBruker = New System.Windows.Forms.Button()
         Me.sidepanel.SuspendLayout()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -388,6 +389,20 @@ Partial Class InnkallingBaserPaaBehov
         Me.lblAnsatt.TabIndex = 0
         Me.lblAnsatt.Text = "Ansatt"
         '
+        'btnVelgBruker
+        '
+        Me.btnVelgBruker.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
+        Me.btnVelgBruker.FlatAppearance.BorderSize = 0
+        Me.btnVelgBruker.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnVelgBruker.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnVelgBruker.ForeColor = System.Drawing.Color.White
+        Me.btnVelgBruker.Location = New System.Drawing.Point(398, 401)
+        Me.btnVelgBruker.Name = "btnVelgBruker"
+        Me.btnVelgBruker.Size = New System.Drawing.Size(99, 32)
+        Me.btnVelgBruker.TabIndex = 125
+        Me.btnVelgBruker.Text = "Velg"
+        Me.btnVelgBruker.UseVisualStyleBackColor = False
+        '
         'InnkallingBaserPaaBehov
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -395,6 +410,7 @@ Partial Class InnkallingBaserPaaBehov
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 600)
         Me.ControlBox = False
+        Me.Controls.Add(Me.btnVelgBruker)
         Me.Controls.Add(Me.headerpanel)
         Me.Controls.Add(Me.sidepanel)
         Me.Controls.Add(Me.listboxBlodMengde)
@@ -448,4 +464,5 @@ Partial Class InnkallingBaserPaaBehov
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents btnLoggUt As Button
     Friend WithEvents lblAnsatt As Label
+    Friend WithEvents btnVelgBruker As Button
 End Class

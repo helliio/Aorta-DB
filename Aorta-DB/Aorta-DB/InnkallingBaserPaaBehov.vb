@@ -53,7 +53,7 @@ Public Class InnkallingBaserPaaBehov
             Dim blodgivere As ArrayList = get_blodgiver(ComboBox1.Text)
             For Each item In blodgivere
                 Dim out As String
-                out = item(0) & " " & item(1) & " " & item(2)
+                out = item(0) & " " & item(1) & " tlf: " & item(2) & "                                                                          " & item(3)
                 listboxBlodgivere.Items.Add(out)
             Next
         Else
@@ -99,5 +99,19 @@ Public Class InnkallingBaserPaaBehov
 
     Private Sub InnkallingBaserPaaBehov_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Me.Hide()
+    End Sub
+
+    Private Sub btnVelgBruker_Click(sender As Object, e As EventArgs) Handles btnVelgBruker.Click
+        If listboxBlodgivere.SelectedIndex() < 0 Then
+            MessageBox.Show("Du må velge noe")
+            Exit Sub
+        End If
+        Dim selected As String = listboxBlodgivere.SelectedItem.ToString
+        Dim id As Decimal = CDec(selected.Substring(selected.Length - 11))
+        Global_val.bruker = New User(id)
+        If bruker.getUserType = 0 Then
+            AnsattBrukerOversikt.Show()
+            Me.Hide()
+        End If
     End Sub
 End Class
