@@ -343,6 +343,7 @@ Partial Class statestikk
         Me.Controls.Add(Me.sidepanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "statestikk"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "statestikk"
         Me.headerpanel.ResumeLayout(False)
         Me.headerpanel.PerformLayout()

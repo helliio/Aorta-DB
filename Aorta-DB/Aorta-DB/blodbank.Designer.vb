@@ -32,7 +32,6 @@ Partial Class blodbank
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.RadioButtonPlus = New System.Windows.Forms.RadioButton()
         Me.RadioButtonMinus = New System.Windows.Forms.RadioButton()
         Me.NumericRode = New System.Windows.Forms.NumericUpDown()
@@ -177,18 +176,6 @@ Partial Class blodbank
         Me.Label2.TabIndex = 15
         Me.Label2.Text = "blodprodukt i ml."
         '
-        'Button3
-        '
-        Me.Button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Button3.Location = New System.Drawing.Point(698, 379)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(74, 24)
-        Me.Button3.TabIndex = 16
-        Me.Button3.Text = "min side"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'RadioButtonPlus
         '
         Me.RadioButtonPlus.AutoSize = True
@@ -248,7 +235,7 @@ Partial Class blodbank
         Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Button4.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(41, Byte), Integer), CType(CType(53, Byte), Integer), CType(CType(65, Byte), Integer))
-        Me.Button4.Location = New System.Drawing.Point(617, 379)
+        Me.Button4.Location = New System.Drawing.Point(698, 377)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(74, 24)
         Me.Button4.TabIndex = 22
@@ -539,7 +526,6 @@ Partial Class blodbank
         Me.Controls.Add(Me.NumericRode)
         Me.Controls.Add(Me.RadioButtonMinus)
         Me.Controls.Add(Me.RadioButtonPlus)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.CheckBox3)
         Me.Controls.Add(Me.CheckBox2)
@@ -581,7 +567,6 @@ Partial Class blodbank
     Friend WithEvents CheckBox2 As CheckBox
     Friend WithEvents CheckBox3 As CheckBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button3 As Button
     Friend WithEvents RadioButtonPlus As RadioButton
     Friend WithEvents RadioButtonMinus As RadioButton
     Friend WithEvents NumericRode As NumericUpDown

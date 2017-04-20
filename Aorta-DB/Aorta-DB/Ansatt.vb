@@ -7,7 +7,7 @@ Public Class Ansatt
 
     Private Sub Ansatt_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim dag = Format(Date.Now(), "dd.MM.yyyy")
-        lblAnsatt.Text = "Velkommen " & bruker.getFornavn() & " " & bruker.getEtternavn()
+        lblAnsatt.Text = bruker.getFornavn() & " " & bruker.getEtternavn()
         Dim dagensTimer As ArrayList
         dagensTimer = get_appointments_ansatt(dag)
         For Each item In dagensTimer

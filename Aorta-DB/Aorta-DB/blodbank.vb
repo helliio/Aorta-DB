@@ -35,12 +35,6 @@
         End If
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Ansatt.Show()
-        Me.Hide()
-    End Sub
-
-
 
     Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
         NumericPlater.Enabled = CheckBox3.Checked

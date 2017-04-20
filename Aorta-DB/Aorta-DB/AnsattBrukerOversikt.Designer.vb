@@ -254,9 +254,9 @@ Partial Class AnsattBrukerOversikt
         Me.lblAnsatt.ForeColor = System.Drawing.Color.White
         Me.lblAnsatt.Location = New System.Drawing.Point(52, 31)
         Me.lblAnsatt.Name = "lblAnsatt"
-        Me.lblAnsatt.Size = New System.Drawing.Size(98, 33)
+        Me.lblAnsatt.Size = New System.Drawing.Size(203, 33)
         Me.lblAnsatt.TabIndex = 0
-        Me.lblAnsatt.Text = "Ansatt"
+        Me.lblAnsatt.Text = "Bruker oversikt"
         '
         'sidepanel
         '

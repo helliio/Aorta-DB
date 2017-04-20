@@ -66,7 +66,7 @@ Partial Class Logginn
         Me.TxtPersonnummer.Name = "TxtPersonnummer"
         Me.TxtPersonnummer.Size = New System.Drawing.Size(122, 21)
         Me.TxtPersonnummer.TabIndex = 1
-        Me.TxtPersonnummer.Text = "12345678920"
+        Me.TxtPersonnummer.Text = "12345678910"
         '
         'txtPassord
         '
@@ -78,7 +78,7 @@ Partial Class Logginn
         Me.txtPassord.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
         Me.txtPassord.Size = New System.Drawing.Size(122, 21)
         Me.txtPassord.TabIndex = 10
-        Me.txtPassord.Text = "12345678"
+        Me.txtPassord.Text = "123456"
         '
         'btnGlemtpassord
         '

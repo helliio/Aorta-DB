@@ -25,7 +25,7 @@
         Next
 
 
-        lblBruker.Text = "Velkommen, " & bruker.getFornavn() & " " & bruker.getEtternavn()
+        lblBruker.Text = bruker.getFornavn() & " " & bruker.getEtternavn()
 
     End Sub
 
