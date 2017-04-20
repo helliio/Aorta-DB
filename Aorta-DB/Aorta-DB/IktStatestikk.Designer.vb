@@ -38,6 +38,7 @@ Partial Class IktStatestikk
         Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.btnLoggUt = New System.Windows.Forms.Button()
         Me.lblOsk = New System.Windows.Forms.Label()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.sidepanel.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.sidetoppanel.SuspendLayout()
@@ -238,15 +239,25 @@ Partial Class IktStatestikk
         Me.lblOsk.TabIndex = 0
         Me.lblOsk.Text = "IKT-Hovedside"
         '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(207, 127)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(561, 420)
+        Me.ListBox1.TabIndex = 135
+        '
         'IktStatestikk
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 600)
+        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.headerpanel)
         Me.Controls.Add(Me.sidepanel)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "IktStatestikk"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "IktStatestikk"
         Me.sidepanel.ResumeLayout(False)
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
@@ -274,4 +285,5 @@ Partial Class IktStatestikk
     Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents btnLoggUt As Button
     Friend WithEvents lblOsk As Label
+    Friend WithEvents ListBox1 As ListBox
 End Class
