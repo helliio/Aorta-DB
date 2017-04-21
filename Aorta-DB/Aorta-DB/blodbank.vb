@@ -1,4 +1,5 @@
 ﻿Public Class blodbank
+    'vindu for å hente eller sette inn blodprodukter
     Private Sub blodbank_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox1.Items.Add("A")
         ComboBox1.Items.Add("B")
@@ -6,7 +7,7 @@
         ComboBox1.Items.Add("AB")
         refresh_list()
     End Sub
-
+    'knapp for å legge inn verdier inn i blod prod db
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If RadioButtonPlus.Checked And ComboBox1.Text <> "Velg blodtype" Then
             Dim type As String = ComboBox1.Text & "+"
@@ -20,7 +21,7 @@
             MsgBox("Må velge blodtype")
         End If
     End Sub
-
+    'knapp for å trekke fra verdier i blodprod db
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If RadioButtonPlus.Checked And ComboBox1.Text <> "Velg blodtype" Then
             Dim type As String = ComboBox1.Text & "+"
@@ -34,14 +35,12 @@
             MsgBox("Må velge blodtype")
         End If
     End Sub
-
+    'går tilbake til hoved siden
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Ansatt.Show()
         Me.Hide()
     End Sub
-
-
-
+    ' checkbokser for å markere hva som blir endret
     Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
         NumericPlater.Enabled = CheckBox3.Checked
         NumericPlater.Value = 0
@@ -56,7 +55,7 @@
         NumericRode.Enabled = CheckBox1.Checked
         NumericRode.Value = 0
     End Sub
-
+    'refreasher listboksen
     Private Sub refresh_list()
         ListBox1.Items.Clear()
         populate_list("A+")
@@ -75,6 +74,7 @@
         ListBox1.Items.Add("--------------------")
         populate_list("AB-")
     End Sub
+    'leggerverdier inn i listboksen basert på type fårespørsel
     Private Sub populate_list(type As String)
         Dim liste As ArrayList
         liste = return_bank(type)
@@ -82,7 +82,7 @@
             ListBox1.Items.Add(item)
         Next
     End Sub
-
+    'navigerings knapper
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         refresh_list()
     End Sub
@@ -96,7 +96,7 @@
         Me.Hide()
     End Sub
     Private Sub btnStatestikk_Click(sender As Object, e As EventArgs) Handles btnStatestikk.Click
-        Statestikk.Show()
+        statestikk.Show()
         Me.Hide()
     End Sub
 
