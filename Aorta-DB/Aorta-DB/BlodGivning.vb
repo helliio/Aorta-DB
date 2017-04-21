@@ -9,7 +9,7 @@ Public Class BlodGivning
         Dim list As ArrayList = get_appointment_date(giver_id)
         'Debug.Print(giver_id)
         Dim dt_list As New ArrayList
-        Dim d = DateTime.Now
+        Dim d = DateTime.Now.AddDays(-1)
         For Each item In list
             dt_list.Add(CDate(item))
         Next
@@ -139,11 +139,11 @@ Public Class BlodGivning
         End If
     End Sub
 
-    Private Sub btnOppdater_Click(sender As Object, e As EventArgs) Handles btnOppdater.Click
+    Private Sub btnOppdater_Click(sender As Object, e As EventArgs)
         get_erklaring()
     End Sub
 
-    Private Sub btnTilbake_Click(sender As Object, e As EventArgs)
+    Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
         Me.Close()
         AnsattBrukerOversikt.Show()
     End Sub
@@ -181,5 +181,4 @@ Public Class BlodGivning
         Ansatt.Show()
         Me.Close()
     End Sub
-
 End Class
