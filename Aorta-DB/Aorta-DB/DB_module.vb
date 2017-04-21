@@ -1,6 +1,8 @@
 ﻿Imports MySql.Data.MySqlClient
+'Alt av kobling til database er håntert her i denne modulen
 Module DB_module
     Private tilkobling As MySqlConnection
+    'Tilkoble databasen
     Private Sub connect_db()
         Try
             tilkobling = New MySqlConnection("Server=mysql.stud.iie.ntnu.no;" & "Database=liangzh;" & "Uid=liangzh;" & "Pwd=vdAZFdty;")
@@ -9,10 +11,12 @@ Module DB_module
             MsgBox("Du er ikke kobla til internett eller databasen er nede")
         End Try
     End Sub
+    'Avslutte kobling til databasen
     Private Sub close_db()
         tilkobling.Close()
         tilkobling.Dispose()
     End Sub
+    'Skjekke om brukernavn og passord er riktig, hvis brukern eksisterer og passord er riktig så retunerer den id-en til brukern, eller så retunerer den 0
     Public Function login(user As Decimal, pass As String)
         Try
             connect_db()
@@ -38,6 +42,7 @@ Module DB_module
             Return 0
         End Try
     End Function
+    'Denne funsjonen leter etter en bruker og retunerer id-en hvis brukern eksisterer ellers så retunerer den en 0
     Public Function login2(user As Decimal)
         Try
             connect_db()
@@ -60,6 +65,7 @@ Module DB_module
             Return 0
         End Try
     End Function
+    'Lager en ny bruker i databasen
     Public Sub create_user(user As Decimal, pass As String, first_name As String, last_name As String, bruker_type As Integer, tlf As Decimal, mail As String, adress As String, post_code As Integer, city As String)
         connect_db()
         Dim password = hash512(pass)
@@ -80,7 +86,7 @@ Module DB_module
         sql.ExecuteNonQuery()
         close_db()
     End Sub
-
+    'Sub for å endre passord
     Public Sub update_pass(user As Decimal, pass As String)
         connect_db()
         Dim password = hash512(pass)
@@ -91,7 +97,7 @@ Module DB_module
         sql.ExecuteNonQuery()
         close_db()
     End Sub
-
+    'Sub for å legge inn egenerklaring
     Public Sub create_erklaring(personnr As Decimal, date_id As Integer, inn As Array, land As String)
         Try
             Dim sqlSporring = "INSERT INTO erklaring (pers, date_id"
@@ -103,7 +109,6 @@ Module DB_module
                 sqlSporring = sqlSporring & ", " & inn(i - 1).ToString
             Next
             sqlSporring = sqlSporring & ", @land)"
-            'Debug.Print(sqlSporring)
             connect_db()
             Dim sql As New MySqlCommand(sqlSporring, tilkobling)
             sql.Parameters.AddWithValue("@pers", personnr)
@@ -115,7 +120,7 @@ Module DB_module
             MsgBox("Du har alledrede gjort egenerklæringen for denne timen")
         End Try
     End Sub
-
+    'Sub for å bestille time
     Public Sub create_appointment(user As Decimal, time As String, dates As String)
         connect_db()
         Dim sqlSporring = "INSERT INTO appointments (username, time, date) VALUES (@username, @time, @date)"
@@ -126,7 +131,7 @@ Module DB_module
         sql.ExecuteNonQuery()
         close_db()
     End Sub
-
+    'Sub for å legge inn blodbapkke
     Public Sub create_blodpack(user As Decimal, dato As Integer, type As String, hemoglobin As Decimal, hiv As Boolean, hepatittB As Boolean, hepatittC As Boolean, kommentar As String)
         connect_db()
         Dim sqlSporring = "INSERT INTO blodpakke (pernr, dato, type, hemoglobin, hiv, hepatittB, hepatittC, kommentar) VALUES (@pernr, @dato, @type, @hemoglobin, @hiv, @hepatittB, @hepatittC, @kommentar)"
@@ -150,7 +155,7 @@ Module DB_module
         sql2.ExecuteNonQuery()
         close_db()
     End Sub
-
+    'funsjon for å lese blodpakke
     Public Function get_blodpack(persnr As Decimal, dato As Integer)
         Dim ret As New ArrayList
         connect_db()
@@ -167,7 +172,7 @@ Module DB_module
         close_db()
         Return ret
     End Function
-
+    'Sub for å kanselere en time
     Public Sub cancel_appointment(user As Decimal, time As String, dates As String)
         Try
             connect_db()
@@ -178,13 +183,11 @@ Module DB_module
             sql.Parameters.AddWithValue("@date", dates)
             sql.ExecuteNonQuery()
             close_db()
-            'Debug.Print(user.ToString + time + dates)
         Catch
-            'Debug.Print("oh no")
-            'Debug.Print(user.ToString + time + dates)
+
         End Try
     End Sub
-
+    'funsjon for å finne brukere basert opå dato
     Public Function get_appointment_user(time As String, dates As String)
         Try
             connect_db()
@@ -200,7 +203,7 @@ Module DB_module
             Return 0
         End Try
     End Function
-
+    'henter telefon nummer fra bruker
     Public Function get_user_tlf(user As Decimal)
         connect_db()
         Dim sqlSporring = "SELECT tlf FROM users WHERE username = @user"
@@ -211,7 +214,7 @@ Module DB_module
         Return reader.Item(0)
         close_db()
     End Function
-
+    'funsjon for å finne time id basert på dato
     Public Function get_appointment_id(time As String, dates As String)
         Try
             connect_db()
@@ -227,7 +230,7 @@ Module DB_module
             Return 0
         End Try
     End Function
-
+    'funsjon for å hente mengde regidtrerte donor
     Public Function get_stat_amount_users()
         connect_db()
         Dim sqlSporring = "SELECT Count(*) FROM users WHERE type = 0"
@@ -237,7 +240,7 @@ Module DB_module
         Return reader.Item(0)
         close_db()
     End Function
-
+    'funsjon for å hente mengde donasjoner som har blitt gjort
     Public Function get_stat_amount_donations()
         connect_db()
         Dim sqlSporring = "SELECT Count(*) FROM blodpakke"
@@ -247,7 +250,7 @@ Module DB_module
         Return reader.Item(0)
         close_db()
     End Function
-
+    'fusnjon for å hente time dato basert på bruker
     Public Function get_appointment_date(user As Decimal)
         Dim ret As New ArrayList
         connect_db()
@@ -268,6 +271,7 @@ Module DB_module
         Next
         Return ret
     End Function
+    'funsjon som bare henter dato basert på bruker
     Public Function get_appointment_date_only(user As Decimal)
         Dim ret As New ArrayList
         connect_db()
@@ -287,7 +291,7 @@ Module DB_module
         Next
         Return ret
     End Function
-
+    'henter time info
     Public Function get_appointment_info(user As Decimal, dato As String)
         Dim ret As New ArrayList
         connect_db()
@@ -303,7 +307,7 @@ Module DB_module
         close_db()
         Return ret
     End Function
-
+    'funsjon som retunerer all info om brukern basert på bruker id
     Public Function return_user(persnr As Decimal)
         Dim ret As New ArrayList
         connect_db()
@@ -318,7 +322,7 @@ Module DB_module
         close_db()
         Return ret
     End Function
-
+    'funsjon som henter egenerklaring basert på bruker og dato
     Public Function return_erklaring(persnr As Decimal, dato As Integer)
         Dim ret As New ArrayList
         connect_db()
@@ -335,7 +339,7 @@ Module DB_module
         close_db()
         Return ret
     End Function
-
+    'setter godkjenning på egenerklaring
     Public Sub update_erklaring_godkjenning(persnr As Decimal, dato As Integer, godkjen As Boolean)
         connect_db()
         Dim sqlSporring = "UPDATE erklaring SET godkjent = @godkjen WHERE pers = @persnr AND date_id = @date_id;"
@@ -346,7 +350,7 @@ Module DB_module
         sql.ExecuteNonQuery()
         close_db()
     End Sub
-
+    'oppdaterer blodprodukter
     Public Sub update_bank_db(type As String, rode As Integer, plasma As Integer, plater As Integer)
         connect_db()
         Dim sqlSporring = "UPDATE blodprod SET rode_blodlegemer = @rode, plasma = @plasma, blodplater  = @plater WHERE  type  = @type;"
@@ -358,7 +362,7 @@ Module DB_module
         sql.ExecuteNonQuery()
         close_db()
     End Sub
-
+    'henter blodprodukter
     Public Function get_bank_db(type As String)
         Dim ret As New ArrayList
         connect_db()
@@ -373,6 +377,7 @@ Module DB_module
         close_db()
         Return ret
     End Function
+    'henter timer for ansatte basert på dato
     Public Function get_appointments_ansatt(dates As String)
         Dim timer As New ArrayList
         connect_db()
@@ -400,6 +405,7 @@ Module DB_module
         Next
         Return timer
     End Function
+    'for ansatte til å sette helseskjekk
     Public Sub set_helsesjekk(user As Decimal, type As String, hemoglobin As Decimal, syfilis As Boolean, hiv As Boolean, hepatittB As Boolean, hepatittC As Boolean)
         connect_db()
         Dim sqlSporring = "INSERT INTO helsesjekk (user, type, hemoglobin, syfilis, hiv, hepatittB, hepatittC) VALUES (@user, @type, @hemoglobin, @syfilis, @hiv, @hepatittB, @hepatittC)"
@@ -414,6 +420,7 @@ Module DB_module
         sql.ExecuteNonQuery()
         close_db()
     End Sub
+    'for ansatte til å oppdatere helseskjekk
     Public Sub update_helsesjekk(user As Decimal, type As String, hemoglobin As Decimal, syfilis As Boolean, hiv As Boolean, hepatittB As Boolean, hepatittC As Boolean)
         connect_db()
         Dim sqlSporring = "UPDATE helsesjekk SET type= @type, hemoglobin = @hemoglobin, syfilis = @syfilis, hiv = @hiv, hepatittB = @hepatittB, hepatittC = @hepatittC WHERE user = @user"
@@ -428,6 +435,7 @@ Module DB_module
         sql.ExecuteNonQuery()
         close_db()
     End Sub
+    'finner ut om en donor har gjort helseskjekk
     Public Function check_helsesjekk(user As Decimal)
         connect_db()
         Dim username As String = user.ToString
@@ -445,6 +453,7 @@ Module DB_module
             Return False
         End If
     End Function
+    'retunerer helseskjekk
     Public Function find_helsesjekk(user As Decimal)
         Try
             connect_db()
@@ -465,6 +474,7 @@ Module DB_module
             Return 0
         End Try
     End Function
+    'skjekker om egenerklaring er gjort
     Public Function check_egenerklaering(user As Decimal)
         connect_db()
         Dim username As String = user.ToString
@@ -482,6 +492,7 @@ Module DB_module
             Return False
         End If
     End Function
+    'finner ut om blodtype til bruker
     Public Function find_blodtype(user As String)
         Dim ret As String
         connect_db()
@@ -495,6 +506,7 @@ Module DB_module
         close_db()
         Return ret
     End Function
+    'henter tid på timer basert på dato
     Public Function get_appointments_user(dates As String)
         Dim timer As New ArrayList
         connect_db()
@@ -516,7 +528,7 @@ Module DB_module
         Next
         Return timer
     End Function
-
+    'Henter mengde blod donor basert på blodtype
     Public Function get_stat_blood_type()
         Dim type As New ArrayList
         connect_db()
@@ -538,7 +550,7 @@ Module DB_module
         Next
         Return type
     End Function
-
+    'henter blodprodukter basert på blodtype
     Public Function get_Antallblod(blodtype As String)
         Dim ret As New ArrayList
         connect_db()
@@ -553,6 +565,7 @@ Module DB_module
         close_db()
         Return ret
     End Function
+    'finne donor basert på blodtype
     Public Function get_blodgiver(type As String)
         Dim blodgiver As New ArrayList
         connect_db()
