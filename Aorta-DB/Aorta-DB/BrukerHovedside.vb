@@ -1,10 +1,11 @@
-﻿Public Class BrukerHovedside
+﻿'hovedside til brukere
+Public Class BrukerHovedside
     Private Sub BrukerHovedside_Closing(sender As Object, e As EventArgs) Handles Me.Closing
         Me.Hide()
     End Sub
 
     Dim timer As Integer = 0
-
+    'laster inn informasjon
     Private Sub BrukerHovedside_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         timer = 0
         Dim list As ArrayList = get_appointment_date(bruker.getPersonnr)
@@ -28,7 +29,7 @@
         lblBruker.Text = "Velkommen, " & bruker.getFornavn() & " " & bruker.getEtternavn()
 
     End Sub
-
+    'viser bytt passord fletene
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Label2.Visible = True
         Label6.Visible = True
@@ -36,12 +37,12 @@
         TextBox2.Visible = True
         Button1.Visible = True
     End Sub
-
+    'loggut knapp
     Private Sub btnLoggUt_Click_1(sender As Object, e As EventArgs) Handles btnLoggUt.Click
         Main.Show()
         Me.Close()
     End Sub
-
+    'tar deg til egenerklarings skjema
     Private Sub btnEgenerklaring_Click(sender As Object, e As EventArgs) Handles btnEgenerklaring.Click
         If timer <> 1 Then
             MsgBox("Du må ha bestilt en time for å gjøre egenerklæringen")
@@ -50,7 +51,7 @@
             Me.Close()
         End If
     End Sub
-
+    'bestill time hvis brukern ikke allerede har en time
     Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
         If timer = 1 Then
             MsgBox("Du kan ikke ha mer enn en time")
@@ -60,12 +61,12 @@
             Main.Hide()
         End If
     End Sub
-
+    'tar deg til time info side
     Private Sub btnTimeinfo_Click(sender As Object, e As EventArgs) Handles btnTimeinfo.Click
         InfoBruker.Show()
         Me.Close()
     End Sub
-
+    'avbestill time
     Private Sub btnAvbesill_Click(sender As Object, e As EventArgs) Handles btnAvbesill.Click
         Dim dato As String = lblNesteTime.Text
         If timer <> 1 Then
@@ -80,7 +81,7 @@
             End If
         End If
     End Sub
-
+    'knapp for å bytte passord
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If Not TextBox1.Text.Length >= 8 Then
             MsgBox("Passord må være lengre enn 8 tegn")
