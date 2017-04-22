@@ -1,11 +1,12 @@
 ﻿Imports System.ComponentModel
-
+'siste side til egenerklaringen
 Public Class EgenErklaering8
+    'knapp tilbake
     Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
         EgenErklaering7.Show()
         Me.Hide()
     End Sub
-
+    'hånterer lunking av siden
     Private Sub EgenErklaering8_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Me.Hide()
         Me.clear()
@@ -17,11 +18,7 @@ Public Class EgenErklaering8
         EgenErklaering7.clear()
         EgenErklaering.clear()
     End Sub
-
-    Private Sub EgenErklaering8_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
+    'sneder egenerklaringen ti databasen
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If TextBox1.Text <> "" Then
             erklaring.setAns(50, radbtnja50.Checked)
@@ -42,9 +39,7 @@ Public Class EgenErklaering8
             MsgBox("Du må skrive inn et land i tekstboksen")
         End If
     End Sub
-    Private Sub send()
-        EgenErklaering7.Close()
-    End Sub
+    'resetter radiokanppene
     Public Sub clear()
         radbtnja50.Checked = False
         radbtnja51.Checked = False
@@ -68,7 +63,7 @@ Public Class EgenErklaering8
         radbtnnei59.Checked = True
         TextBox1.Text = ""
     End Sub
-
+    'navigerings knapper
     Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
         Main.Show()
         Me.Close()

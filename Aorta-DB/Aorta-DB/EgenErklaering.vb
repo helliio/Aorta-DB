@@ -73,7 +73,7 @@ Public Class EgenErklaering
         radbtnnei10.Checked = True
         radbtnnei11.Checked = True
     End Sub
-    'knapp til neste side
+    'knapp til neste side alle neste knapper i egenerklaring setter også verdier i egenerklarings klassen
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         erklaring.setAns(1, radbtnja1.Checked)
         erklaring.setAns(2, radbtnja2.Checked)

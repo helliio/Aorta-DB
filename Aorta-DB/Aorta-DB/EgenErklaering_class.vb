@@ -5,7 +5,7 @@ Public Class EgenErklaering_class
     Private land As String
     Private dato As String
     Private godkjent As Boolean = False
-    'konstruktor som legger inn personnommer til erklaringen
+    'konstruktor som legger inn personnommer til erklaringen, den lager også en liste med svar og defaulter den til false.
     Public Sub New(ByVal personnummer As Decimal)
         pers = personnummer
         For index As Integer = 0 To 58
