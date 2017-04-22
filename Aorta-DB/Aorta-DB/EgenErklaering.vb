@@ -18,7 +18,7 @@ Public Class EgenErklaering
         Dim timer = 0
         Dim list As ArrayList = get_appointment_date(bruker.getPersonnr)
         Dim dt_list As New ArrayList
-        Dim d = DateTime.Now
+        Dim d = DateTime.Now.AddDays(-1)
         For Each item In list
             dt_list.Add(CDate(item))
         Next
@@ -28,11 +28,13 @@ Public Class EgenErklaering
                 Label14.Text = i
                 erklaring.setDate(i)
                 timer += 1
+                BrukerHovedside.Close()
             End If
         Next
         If timer <> 1 Then
             MsgBox("Du har ingen time, bestill en time før du kan gjøre egenerklæringen")
             Me.Close()
+            BrukerHovedside.Show()
         End If
     End Sub
 

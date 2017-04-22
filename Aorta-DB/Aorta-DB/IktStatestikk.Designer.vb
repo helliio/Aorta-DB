@@ -35,21 +35,27 @@ Partial Class IktStatestikk
         Me.btnNyAnsatt = New System.Windows.Forms.Button()
         Me.btnMinSide = New System.Windows.Forms.Button()
         Me.headerpanel = New System.Windows.Forms.Panel()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.btnLoggUt = New System.Windows.Forms.Button()
         Me.lblOsk = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.sidepanel.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.sidetoppanel.SuspendLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.headerpanel.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'sidepanel
         '
         Me.sidepanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
+        Me.sidepanel.Controls.Add(Me.PictureBox3)
+        Me.sidepanel.Controls.Add(Me.PictureBox5)
         Me.sidepanel.Controls.Add(Me.GroupBox9)
         Me.sidepanel.Controls.Add(Me.Panel9)
         Me.sidepanel.Controls.Add(Me.Panel1)
@@ -98,7 +104,7 @@ Partial Class IktStatestikk
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(149, 115)
+        Me.PictureBox2.Location = New System.Drawing.Point(145, 115)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(20, 20)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -189,7 +195,7 @@ Partial Class IktStatestikk
         'headerpanel
         '
         Me.headerpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.headerpanel.Controls.Add(Me.PictureBox6)
+        Me.headerpanel.Controls.Add(Me.PictureBox1)
         Me.headerpanel.Controls.Add(Me.btnLoggUt)
         Me.headerpanel.Controls.Add(Me.lblOsk)
         Me.headerpanel.Dock = System.Windows.Forms.DockStyle.Top
@@ -197,17 +203,6 @@ Partial Class IktStatestikk
         Me.headerpanel.Name = "headerpanel"
         Me.headerpanel.Size = New System.Drawing.Size(628, 75)
         Me.headerpanel.TabIndex = 134
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(6, 24)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(40, 40)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 119
-        Me.PictureBox6.TabStop = False
         '
         'btnLoggUt
         '
@@ -247,6 +242,39 @@ Partial Class IktStatestikk
         Me.ListBox1.Size = New System.Drawing.Size(561, 420)
         Me.ListBox1.TabIndex = 135
         '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(145, 276)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 136
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(6, 27)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(48, 37)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 122
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(145, 191)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 137
+        Me.PictureBox3.TabStop = False
+        '
         'IktStatestikk
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -265,7 +293,9 @@ Partial Class IktStatestikk
         CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.headerpanel.ResumeLayout(False)
         Me.headerpanel.PerformLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -282,8 +312,10 @@ Partial Class IktStatestikk
     Friend WithEvents btnNyAnsatt As Button
     Friend WithEvents btnMinSide As Button
     Friend WithEvents headerpanel As Panel
-    Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents btnLoggUt As Button
     Friend WithEvents lblOsk As Label
     Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
 End Class

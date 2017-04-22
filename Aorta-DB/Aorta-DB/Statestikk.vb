@@ -63,4 +63,9 @@ Public Class statestikk
             ListBox1.Items.Add(item)
         Next
     End Sub
+
+    Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
+        Ansatt.Show()
+        Me.Close()
+    End Sub
 End Class

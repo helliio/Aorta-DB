@@ -1,10 +1,12 @@
 ﻿Imports System.ComponentModel
 
 Public Class BlodGivning
+    Dim i As Integer = 0
     Dim liste As New ArrayList
     Private Sub BlodGivning_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox1.Items.Add("Ja")
         ComboBox1.Items.Add("Nei")
+        ComboBox1.Text = "Ja/Nei"
         Global_val.erklaring = New EgenErklaering_class(giver_id)
         Dim list As ArrayList = get_appointment_date(giver_id)
         'Debug.Print(giver_id)
@@ -22,9 +24,16 @@ Public Class BlodGivning
             End If
         Next
         get_erklaring()
+        If i = 1 Then
+            MsgBox("Egenerklæringen finnes ikke, brukeren må gjøre den før han/hun kan gi blod")
+            Me.Close()
+        Else
+            AnsattBrukerOversikt.Close()
+        End If
     End Sub
 
     Private Sub get_erklaring()
+        i = 0
         listboxEgenerklæring.Items.Clear()
         liste.Add("Vennligst besvar:") '0'
         liste.Add("- Har du fått informasjon om blodgivning?") '1'1
@@ -126,6 +135,7 @@ Public Class BlodGivning
         Catch ex As Exception
             listboxEgenerklæring.Items.Clear()
             listboxEgenerklæring.Items.Add("Egen Erklaering finnes ikke")
+            i = 1
         End Try
     End Sub
 
@@ -171,7 +181,7 @@ Public Class BlodGivning
     End Sub
 
     Private Sub btnStatestikk_Click(sender As Object, e As EventArgs) Handles btnStatestikk.Click
-        Statestikk.Show()
+        statestikk.Show()
         Me.Close()
     End Sub
 

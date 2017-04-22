@@ -41,10 +41,6 @@ Public Class EgenErklaering7
         MsgBox("Du kan ikke ha mer enn en time")
     End Sub
 
-    Private Sub btnAvbestill2_Click(sender As Object, e As EventArgs)
-        MsgBox("Du kan ikke avbestille timen på dette tidspunktet. Gå ut av egenerklæringen og prøv igjen")
-    End Sub
-
     Private Sub btnTimeinfo_Click(sender As Object, e As EventArgs) Handles btnTimeinfo.Click
         InfoBruker.Show()
         Me.Close()
