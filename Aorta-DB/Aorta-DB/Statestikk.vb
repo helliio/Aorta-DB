@@ -1,6 +1,7 @@
 ﻿Imports System.ComponentModel
-
+'statistikk side
 Public Class statestikk
+    'navigerings knapper
     Private Sub statestikk_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Me.Hide()
     End Sub
@@ -22,10 +23,11 @@ Public Class statestikk
         InnkallingBaserPaaBehov.Show()
         Me.Close()
     End Sub
-
+    'laster inn liste
     Private Sub statestikk_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         refresh_list()
     End Sub
+    'legger inn statistikk i listboksen
     Private Sub refresh_list()
         ListBox1.Items.Clear()
         ListBox1.Items.Add("Mengde donor pr blod type")
@@ -56,6 +58,7 @@ Public Class statestikk
         ListBox1.Items.Add("--------------------")
         populate_list("AB-")
     End Sub
+    'henter data fra blodbanken
     Private Sub populate_list(type As String)
         Dim liste As ArrayList
         liste = return_bank(type)
@@ -63,7 +66,7 @@ Public Class statestikk
             ListBox1.Items.Add(item)
         Next
     End Sub
-
+    'navigerings knapp
     Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
         Ansatt.Show()
         Me.Close()

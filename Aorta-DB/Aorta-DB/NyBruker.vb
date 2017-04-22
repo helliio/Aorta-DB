@@ -1,12 +1,13 @@
 ﻿Imports System.ComponentModel
 Imports System.Text.RegularExpressions
-
+'side for å lage ny bruker
 Public Class NyBruker
+    'knapp tilbake
     Private Sub btnTilbake_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
+    'funsjon for å skjekke om eposten er valid
     Function validateEmail(emailAddress) As Boolean
-
         Dim email As New Regex("([\w-+]+(?:\.[\w-+]+)*@(?:[\w-]+\.)+[a-zA-Z]{2,7})")
         If email.IsMatch(emailAddress) Then
             Return True
@@ -14,6 +15,7 @@ Public Class NyBruker
             Return False
         End If
     End Function
+    'lager ny bruker ved å sende info ti databasen
     Private Sub btnNybruker_Click(sender As Object, e As EventArgs) Handles btnNybruker.Click
         Dim persnr As Decimal
         Dim tlf As Decimal
@@ -63,7 +65,7 @@ Public Class NyBruker
         Logginn.Show()
         Me.Hide()
     End Sub
-
+    'navigerings knapper
     Private Sub NyBruker_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Me.Hide()
     End Sub

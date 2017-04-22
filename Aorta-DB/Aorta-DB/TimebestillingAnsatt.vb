@@ -1,7 +1,7 @@
 ﻿Imports System.ComponentModel
-
+'side for ansatte til å bestille time for brukern
 Public Class TimebestillingAnsatt
-
+    'laster inn comboboks og formaterer dato
     Private Sub TimebestillingAnsatt_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DateTimePicker1.Format = DateTimePickerFormat.Custom
         DateTimePicker1.CustomFormat = "dd.MM.yyyy"
@@ -27,6 +27,7 @@ Public Class TimebestillingAnsatt
 
         DateTimePicker1.MinDate = DateTime.Now.AddDays(1)
     End Sub
+    'skjekker om du har en time innen 90 dager
     Public Function check_date(date_pick As String)
         Dim siste_time As Date = CDate(date_pick)
         Dim valgt_time As Date = CDate(DateTimePicker1.Text)
@@ -37,7 +38,7 @@ Public Class TimebestillingAnsatt
             Return 1
         End If
     End Function
-
+    'knapp for å bestille time
     Private Sub btnBestillTime_Click(sender As Object, e As EventArgs) Handles btnBestillTime.Click
         Dim list As ArrayList = get_appointment_date(bruker.getPersonnr)
         Dim time As String = ComboBox1.Text & "." & ComboBox2.Text
@@ -73,7 +74,7 @@ Public Class TimebestillingAnsatt
             End If
         End If
     End Sub
-
+    'leter etter tilengelige timer
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         ListBox1.Items.Clear()
         Dim Timer As ArrayList
@@ -83,7 +84,7 @@ Public Class TimebestillingAnsatt
         Next
         Label3.Text = "Disse timene er tatt " & DateTimePicker1.Text
     End Sub
-
+    'navigerings knapper
     Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
         AnsattBrukerOversikt.Show()
         Me.Close()
