@@ -95,12 +95,8 @@ Public Class InfoBruker
     End Sub
 
     Private Sub btnEgenerklaring_Click(sender As Object, e As EventArgs) Handles btnEgenerklaring.Click
-        If timer <> 1 Then
-            MsgBox("Du må ha bestilt en time for å gjøre egenerklæringen")
-        Else
-            EgenErklaering.Show()
-            Me.Close()
-        End If
+        EgenErklaering.Show()
+        Me.Close()
     End Sub
 
     Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click

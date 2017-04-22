@@ -307,6 +307,7 @@ Partial Class EgenerklaeringLoggInn
         '
         'EgenerklaeringLoggInn
         '
+        Me.AcceptButton = Me.btnLogginn
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(227, Byte), Integer), CType(CType(230, Byte), Integer), CType(CType(238, Byte), Integer))

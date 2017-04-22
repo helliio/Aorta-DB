@@ -35,11 +35,6 @@
             MsgBox("Må velge blodtype")
         End If
     End Sub
-    'går tilbake til hoved siden
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Ansatt.Show()
-        Me.Hide()
-    End Sub
     ' checkbokser for å markere hva som blir endret
     Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
         NumericPlater.Enabled = CheckBox3.Checked

@@ -11,7 +11,7 @@ Public Class EgenErklaering2
     End Sub
     'hånterer lukking av side
     Private Sub EgenErklaering2_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        Me.Close()
+        Me.Hide()
         EgenErklaering.clear()
         Me.clear()
         EgenErklaering3.clear()
@@ -58,10 +58,6 @@ Public Class EgenErklaering2
 
     Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
         MsgBox("Du kan ikke ha mer enn en time")
-    End Sub
-
-    Private Sub btnAvbestill2_Click(sender As Object, e As EventArgs)
-        MsgBox("Du kan ikke avbestille timen på dette tidspunktet. Gå ut av egenerklæringen og prøv igjen")
     End Sub
 
     Private Sub btnTimeinfo_Click(sender As Object, e As EventArgs) Handles btnTimeinfo.Click

@@ -38,11 +38,6 @@ Public Class EgenErklaering4
     Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
         MsgBox("Du kan ikke ha mer enn en time")
     End Sub
-
-    Private Sub btnAvbestill2_Click(sender As Object, e As EventArgs)
-        MsgBox("Du kan ikke avbestille timen på dette tidspunktet. Gå ut av egenerklæringen og prøv igjen")
-    End Sub
-
     Private Sub btnTimeinfo_Click(sender As Object, e As EventArgs) Handles btnTimeinfo.Click
         InfoBruker.Show()
         Me.Close()
@@ -51,9 +46,5 @@ Public Class EgenErklaering4
     Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
         BrukerHovedside.Show()
         Me.Close()
-    End Sub
-
-    Private Sub EgenErklaering4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
     End Sub
 End Class

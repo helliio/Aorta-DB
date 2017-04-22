@@ -32,11 +32,8 @@ Partial Class InnkallingBaserPaaBehov
         Me.sidepanel = New System.Windows.Forms.Panel()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
         Me.Panel9 = New System.Windows.Forms.Panel()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnStatestikk = New System.Windows.Forms.Button()
         Me.btnSjekkBlod = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
@@ -46,19 +43,24 @@ Partial Class InnkallingBaserPaaBehov
         Me.btnBestill = New System.Windows.Forms.Button()
         Me.btnKalender = New System.Windows.Forms.Button()
         Me.headerpanel = New System.Windows.Forms.Panel()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
         Me.btnLoggUt = New System.Windows.Forms.Button()
         Me.lblAnsatt = New System.Windows.Forms.Label()
         Me.btnVelgBruker = New System.Windows.Forms.Button()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox7 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.sidepanel.SuspendLayout()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.sidetoppanel.SuspendLayout()
         CType(Me.logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.headerpanel.SuspendLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'ComboBox1
@@ -122,13 +124,14 @@ Partial Class InnkallingBaserPaaBehov
         'sidepanel
         '
         Me.sidepanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
+        Me.sidepanel.Controls.Add(Me.PictureBox3)
+        Me.sidepanel.Controls.Add(Me.PictureBox7)
+        Me.sidepanel.Controls.Add(Me.PictureBox1)
+        Me.sidepanel.Controls.Add(Me.PictureBox5)
         Me.sidepanel.Controls.Add(Me.GroupBox5)
         Me.sidepanel.Controls.Add(Me.Panel9)
-        Me.sidepanel.Controls.Add(Me.PictureBox4)
         Me.sidepanel.Controls.Add(Me.Panel1)
         Me.sidepanel.Controls.Add(Me.Panel2)
-        Me.sidepanel.Controls.Add(Me.PictureBox3)
-        Me.sidepanel.Controls.Add(Me.PictureBox1)
         Me.sidepanel.Controls.Add(Me.btnStatestikk)
         Me.sidepanel.Controls.Add(Me.btnSjekkBlod)
         Me.sidepanel.Controls.Add(Me.PictureBox2)
@@ -157,17 +160,6 @@ Partial Class InnkallingBaserPaaBehov
         Me.Panel9.Size = New System.Drawing.Size(612, 27)
         Me.Panel9.TabIndex = 110
         '
-        'PictureBox4
-        '
-        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(146, 365)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox4.TabIndex = 120
-        Me.PictureBox4.TabStop = False
-        '
         'Panel1
         '
         Me.Panel1.Location = New System.Drawing.Point(172, 439)
@@ -181,28 +173,6 @@ Partial Class InnkallingBaserPaaBehov
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(599, 39)
         Me.Panel2.TabIndex = 105
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(146, 200)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox3.TabIndex = 119
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(146, 278)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(20, 20)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 1
-        Me.PictureBox1.TabStop = False
         '
         'btnStatestikk
         '
@@ -248,7 +218,7 @@ Partial Class InnkallingBaserPaaBehov
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(149, 115)
+        Me.PictureBox2.Location = New System.Drawing.Point(146, 115)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(20, 20)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -339,7 +309,7 @@ Partial Class InnkallingBaserPaaBehov
         'headerpanel
         '
         Me.headerpanel.BackColor = System.Drawing.Color.FromArgb(CType(CType(42, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(125, Byte), Integer))
-        Me.headerpanel.Controls.Add(Me.PictureBox6)
+        Me.headerpanel.Controls.Add(Me.PictureBox4)
         Me.headerpanel.Controls.Add(Me.btnLoggUt)
         Me.headerpanel.Controls.Add(Me.lblAnsatt)
         Me.headerpanel.Dock = System.Windows.Forms.DockStyle.Top
@@ -347,17 +317,6 @@ Partial Class InnkallingBaserPaaBehov
         Me.headerpanel.Name = "headerpanel"
         Me.headerpanel.Size = New System.Drawing.Size(628, 75)
         Me.headerpanel.TabIndex = 124
-        '
-        'PictureBox6
-        '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(6, 24)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(40, 40)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 119
-        Me.PictureBox6.TabStop = False
         '
         'btnLoggUt
         '
@@ -385,9 +344,9 @@ Partial Class InnkallingBaserPaaBehov
         Me.lblAnsatt.ForeColor = System.Drawing.Color.White
         Me.lblAnsatt.Location = New System.Drawing.Point(52, 31)
         Me.lblAnsatt.Name = "lblAnsatt"
-        Me.lblAnsatt.Size = New System.Drawing.Size(98, 33)
+        Me.lblAnsatt.Size = New System.Drawing.Size(148, 33)
         Me.lblAnsatt.TabIndex = 0
-        Me.lblAnsatt.Text = "Ansatt"
+        Me.lblAnsatt.Text = "Sjekk blod"
         '
         'btnVelgBruker
         '
@@ -402,6 +361,61 @@ Partial Class InnkallingBaserPaaBehov
         Me.btnVelgBruker.TabIndex = 125
         Me.btnVelgBruker.Text = "Velg"
         Me.btnVelgBruker.UseVisualStyleBackColor = False
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
+        Me.PictureBox5.Location = New System.Drawing.Point(146, 447)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox5.TabIndex = 126
+        Me.PictureBox5.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(146, 278)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox1.TabIndex = 131
+        Me.PictureBox1.TabStop = False
+        '
+        'PictureBox7
+        '
+        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
+        Me.PictureBox7.Location = New System.Drawing.Point(146, 200)
+        Me.PictureBox7.Name = "PictureBox7"
+        Me.PictureBox7.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox7.TabIndex = 132
+        Me.PictureBox7.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
+        Me.PictureBox3.Location = New System.Drawing.Point(146, 365)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(20, 20)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox3.TabIndex = 133
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
+        Me.PictureBox4.Location = New System.Drawing.Point(10, 24)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(40, 40)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.PictureBox4.TabIndex = 120
+        Me.PictureBox4.TabStop = False
         '
         'InnkallingBaserPaaBehov
         '
@@ -425,15 +439,16 @@ Partial Class InnkallingBaserPaaBehov
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "InnkallingBaserPaaBehov"
         Me.sidepanel.ResumeLayout(False)
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.sidetoppanel.ResumeLayout(False)
         CType(Me.logo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.headerpanel.ResumeLayout(False)
         Me.headerpanel.PerformLayout()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -447,11 +462,8 @@ Partial Class InnkallingBaserPaaBehov
     Friend WithEvents sidepanel As Panel
     Friend WithEvents GroupBox5 As GroupBox
     Friend WithEvents Panel9 As Panel
-    Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents PictureBox3 As PictureBox
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents btnStatestikk As Button
     Friend WithEvents btnSjekkBlod As Button
     Friend WithEvents PictureBox2 As PictureBox
@@ -461,8 +473,12 @@ Partial Class InnkallingBaserPaaBehov
     Friend WithEvents btnBestill As Button
     Friend WithEvents btnKalender As Button
     Friend WithEvents headerpanel As Panel
-    Friend WithEvents PictureBox6 As PictureBox
     Friend WithEvents btnLoggUt As Button
     Friend WithEvents lblAnsatt As Label
     Friend WithEvents btnVelgBruker As Button
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
 End Class

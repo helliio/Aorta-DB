@@ -7,7 +7,7 @@ Public Class Ansatt
     'Laster inn all info som skal vise i vinduet, setter også inn dagens donorere i en liste boks
     Private Sub Ansatt_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim dag = Format(Date.Now(), "dd.MM.yyyy")
-        lblAnsatt.Text = "Velkommen " & bruker.getFornavn() & " " & bruker.getEtternavn()
+        lblAnsatt.Text = bruker.getFornavn() & " " & bruker.getEtternavn()
         Dim dagensTimer As ArrayList
         dagensTimer = get_appointments_ansatt(dag)
         For Each item In dagensTimer
@@ -46,7 +46,7 @@ Public Class Ansatt
     End Sub
     'viser statistikk
     Private Sub btnStatestikk_Click(sender As Object, e As EventArgs) Handles btnStatestikk.Click
-        Statestikk.Show()
+        statestikk.Show()
         Me.Close()
     End Sub
     'tar deg til siden hvor det fises behov til blodbanken
@@ -68,4 +68,5 @@ Public Class Ansatt
             Me.Hide()
         End If
     End Sub
+
 End Class
