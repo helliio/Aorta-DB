@@ -1,8 +1,9 @@
 ﻿Imports System.ComponentModel
-
+'viser egenerklaringen før blodtapping
 Public Class BlodGivning
     Dim i As Integer = 0
     Dim liste As New ArrayList
+    'laster inn egenrklaring
     Private Sub BlodGivning_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox1.Items.Add("Ja")
         ComboBox1.Items.Add("Nei")
@@ -31,7 +32,7 @@ Public Class BlodGivning
             AnsattBrukerOversikt.Close()
         End If
     End Sub
-
+    'henter egenerklaringen
     Private Sub get_erklaring()
         i = 0
         listboxEgenerklæring.Items.Clear()
@@ -138,7 +139,7 @@ Public Class BlodGivning
             i = 1
         End Try
     End Sub
-
+    'neste knapp
     Private Sub btnNeste_Click(sender As Object, e As EventArgs) Handles btnNeste.Click
         If ComboBox1.Text = "Nei" Then
             Ansatt.Show()
@@ -151,11 +152,7 @@ Public Class BlodGivning
             MsgBox("Velg Godkjenning")
         End If
     End Sub
-
-    Private Sub btnOppdater_Click(sender As Object, e As EventArgs)
-        get_erklaring()
-    End Sub
-
+    'navigerings knapper
     Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
         Me.Close()
         AnsattBrukerOversikt.Show()

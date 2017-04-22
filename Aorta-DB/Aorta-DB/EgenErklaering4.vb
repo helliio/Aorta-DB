@@ -1,11 +1,12 @@
 ﻿Imports System.ComponentModel
-
+'fjerde side i egenerklaringen
 Public Class EgenErklaering4
+    'tilbake knapp
     Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
         EgenErklaering3.Show()
         Me.Hide()
     End Sub
-
+    'hånterer lukking av side
     Private Sub EgenErklaering4_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Me.Hide()
         Me.clear()
@@ -17,18 +18,18 @@ Public Class EgenErklaering4
         EgenErklaering7.clear()
         EgenErklaering8.clear()
     End Sub
-
+    'resetter radioknappene
     Public Sub clear()
         radbtnja29.Checked = False
         radbtnnei29.Checked = True
     End Sub
-
+    'tar deg til neste side
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         erklaring.setAns(29, radbtnja29.Checked)
         EgenErklaering5.Show()
         Me.Hide()
     End Sub
-
+    'navigerings knapper
     Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
         Main.Show()
         Me.Close()

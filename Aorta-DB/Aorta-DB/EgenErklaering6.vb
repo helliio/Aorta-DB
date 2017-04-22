@@ -1,12 +1,11 @@
 ﻿Imports System.ComponentModel
-
+'sjette side av egenerklaringen
 Public Class EgenErklaering6
     Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
         EgenErklaering5.Show()
         Me.Hide()
     End Sub
-
-
+    'resetter radioknappene
     Public Sub clear()
         radbtnja45.Checked = False
         radbtnja46.Checked = False
@@ -17,7 +16,7 @@ Public Class EgenErklaering6
         radbtnnei47.Checked = True
         radbtnnei48.Checked = True
     End Sub
-
+    'knapp til netse side
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         erklaring.setAns(45, radbtnja45.Checked)
         erklaring.setAns(46, radbtnja46.Checked)
@@ -26,7 +25,7 @@ Public Class EgenErklaering6
         EgenErklaering7.Show()
         Me.Hide()
     End Sub
-
+    'hånterer lukking av side
     Private Sub EgenErklaering6_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Me.Hide()
         Me.clear()
@@ -38,12 +37,11 @@ Public Class EgenErklaering6
         EgenErklaering7.clear()
         EgenErklaering8.clear()
     End Sub
-
+    'navigerings knapper
     Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
         Main.Show()
         Me.Close()
     End Sub
-
     Private Sub btnBestill_Click(sender As Object, e As EventArgs) Handles btnBestill.Click
         MsgBox("Du kan ikke ha mer enn en time")
     End Sub

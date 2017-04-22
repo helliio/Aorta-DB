@@ -1,4 +1,5 @@
-﻿Public Class Blod_pakke
+﻿'klasse for blodpakkene
+Public Class Blod_pakke
     Private persnr As Decimal
     Private dato As String
     Private type As String
@@ -7,6 +8,7 @@
     Private hiv As Boolean
     Private hepatittB As Boolean
     Private hepatittC As Boolean
+    'konstruktor for å sette verdiene i klassevariablene
     Public Sub New(ByVal personnummer As Decimal, ByVal type As String, ByVal hemoglobin As Decimal, ByVal hiv As Boolean, ByVal hepatittB As Boolean, ByVal hepatittC As Boolean, ByVal kommentar As String)
         persnr = personnummer
         Me.kommentar = kommentar
@@ -17,6 +19,7 @@
         Me.hepatittC = hepatittC
         dato = erklaring.getDate()
     End Sub
+    'sneder infor til db via db modulen
     Public Sub send()
         Dim tmp = Split(dato, " ")
         Dim dato_id = CInt(get_appointment_id(tmp(0), tmp(1)))

@@ -1,10 +1,10 @@
 ﻿Imports System.ComponentModel
-
+'login side som tar deg rett til egenerklaring utfylling
 Public Class EgenerklaeringLoggInn
     Private Sub EgenerklaeringLoggInn_Closing(sender As Object, e As CancelEventArgs) Handles MyBase.Closing
         Me.Hide()
     End Sub
-
+    'navigerings knapper
     Private Sub btnNyBruker_Click(sender As Object, e As EventArgs) Handles btnNyBruker.Click
         NyBruker.Show()
         Me.Close()
@@ -19,7 +19,7 @@ Public Class EgenerklaeringLoggInn
         Main.Show()
         Me.Close()
     End Sub
-
+    'login knapp, fungerer samme som den på login siden
     Private Sub btnLogginn_Click(sender As Object, e As EventArgs) Handles btnLogginn.Click
         Try
             Dim id As Decimal = login(TxtPersonnummer.Text, txtPassord.Text)
