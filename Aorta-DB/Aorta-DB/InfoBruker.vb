@@ -1,7 +1,8 @@
 ﻿Imports System.ComponentModel
-
+'side hvor bruken kan se sine egene info
 Public Class InfoBruker
     Dim timer
+    'laster inn info om brukern fra database
     Private Sub InfoBruker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim list1 As ArrayList = get_appointment_date(bruker.getPersonnr)
         Dim dt_list1 As New ArrayList
@@ -57,7 +58,7 @@ Public Class InfoBruker
         Next
 
     End Sub
-
+    'skjekk info om blod givning
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         listboxGivningsInfo.Items.Clear()
         Try
@@ -87,7 +88,7 @@ Public Class InfoBruker
             listboxGivningsInfo.Items.Add("noe svar fra labben")
         End Try
     End Sub
-
+    'navigerings knapper
     Private Sub btnMinSide_Click(sender As Object, e As EventArgs) Handles btnMinSide.Click
         BrukerHovedside.Show()
         Me.Close()

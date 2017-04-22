@@ -1,5 +1,5 @@
 ﻿Imports System.ComponentModel
-
+'egenerklarings skjema første side
 Public Class EgenErklaering
     Private Sub EgenErklaering_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Me.Hide()
@@ -12,7 +12,7 @@ Public Class EgenErklaering
         EgenErklaering7.clear()
         EgenErklaering8.clear()
     End Sub
-
+    'laster inn data som paker til hvilken bruker og time egenerklaringen tilhører også generer en nytt object som er en egenerklaring
     Private Sub EgenErklaering_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Global_val.erklaring = New EgenErklaering_class(bruker.getPersonnr)
         Dim timer = 0
@@ -37,7 +37,7 @@ Public Class EgenErklaering
             BrukerHovedside.Show()
         End If
     End Sub
-
+    'knapp tilbake
     Private Sub btnTilbake_Click(sender As Object, e As EventArgs) Handles btnTilbake.Click
         BrukerHovedside.Show()
         Me.Hide()
@@ -50,6 +50,7 @@ Public Class EgenErklaering
         EgenErklaering7.clear()
         EgenErklaering8.clear()
     End Sub
+    'reset radio knapper
     Public Sub clear()
         radbtnja1.Checked = False
         radbtnja2.Checked = False
@@ -74,7 +75,7 @@ Public Class EgenErklaering
         radbtnnei10.Checked = True
         radbtnnei11.Checked = True
     End Sub
-
+    'knapp til neste side alle neste knapper i egenerklaring setter også verdier i egenerklarings klassen
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         erklaring.setAns(1, radbtnja1.Checked)
         erklaring.setAns(2, radbtnja2.Checked)
@@ -90,7 +91,7 @@ Public Class EgenErklaering
         EgenErklaering2.Show()
         Me.Hide()
     End Sub
-
+    'navigerings knapper
     Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
         Main.Show()
         Me.Close()

@@ -1,10 +1,11 @@
 ﻿Imports System.ComponentModel
-
+'statistikk side for ikt ansatte
 Public Class IktStatestikk
+    'hånterer lukking av side
     Private Sub IktStatestikk_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Me.Hide()
     End Sub
-
+    'navigerings knnapper
     Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
         Main.Show()
         Me.Close()
@@ -19,10 +20,11 @@ Public Class IktStatestikk
         IktHovedside.Show()
         Me.Close()
     End Sub
-
+    'laster inn info
     Private Sub IktStatestikk_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         refresh_list()
     End Sub
+    'funsjon for å sette verdier inn i listboksen
     Private Sub refresh_list()
         ListBox1.Items.Clear()
         ListBox1.Items.Add("Mengde donor pr blod type")
@@ -53,6 +55,7 @@ Public Class IktStatestikk
         ListBox1.Items.Add("--------------------")
         populate_list("AB-")
     End Sub
+    'henter verdier fra blodbanken
     Private Sub populate_list(type As String)
         Dim liste As ArrayList
         liste = return_bank(type)

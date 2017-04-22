@@ -1,8 +1,8 @@
 ﻿Imports System.ComponentModel
-
+'loginn side for brukere
 Public Class Logginn
+    'funsjon for å logge inn brukern til riktig gui
     Private Sub btnLogginn_Click(sender As Object, e As EventArgs) Handles btnLogginn.Click
-        'Debug.Print(login(TxtPersonnummer.Text, txtPassord.Text))
         Try
             Dim id As Decimal = login(TxtPersonnummer.Text, txtPassord.Text)
             If id <> 0 Then
@@ -26,30 +26,13 @@ Public Class Logginn
             MsgBox("Feil brukernavn eller passord")
         End Try
     End Sub
-
-    Private Sub btnNyBruker_Click(sender As Object, e As EventArgs)
-        NyBruker.Show()
-        Me.Close()
-    End Sub
-
+    'viser glemt passord felter
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnGlemtpassord.Click
         Label4.Visible = True
         TextBox1.Visible = True
         Button2.Visible = True
     End Sub
-
-
-
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs)
-        Me.Close()
-        Main.Show()
-    End Sub
-
-    Private Sub btnNyBruker_Click_1(sender As Object, e As EventArgs)
-        Me.Close()
-        NyBruker.Show()
-    End Sub
-
+    'navigerings knapper
     Private Sub btnEgenerklæring_Click(sender As Object, e As EventArgs) Handles btnEgenerklæring.Click
         EgenerklaeringLoggInn.Show()
         Me.Close()
@@ -72,6 +55,7 @@ Public Class Logginn
         Main.Show()
         Me.Close()
     End Sub
+    'sender nytt passord til brukern
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim persnr As Decimal
         If IsNumeric(TextBox1.Text) And TextBox1.Text.Length = 11 Then

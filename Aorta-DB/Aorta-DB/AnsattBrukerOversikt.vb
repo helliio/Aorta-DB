@@ -1,8 +1,8 @@
 ﻿Imports System.ComponentModel
-
+'denne siden er for instilliger og registreringer til en spesifikk bruker for ansatte
 Public Class AnsattBrukerOversikt
     Dim timer As Integer = 0
-
+    'når siden laster inn henter denne funsjonen infor om brukern og setter dem i riktige listboksene
     Private Sub AnsattBrukerOversikt_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         timer = 0
         Dim list As ArrayList = get_appointment_date(bruker.getPersonnr)
@@ -25,7 +25,7 @@ Public Class AnsattBrukerOversikt
 
         lblBruker.Text = "Donør: " & bruker.getFornavn() & " " & bruker.getEtternavn()
     End Sub
-
+    'knappen sender brukern til timebestllings side for å bestill time for brukern
     Private Sub btnBestillTime_Click(sender As Object, e As EventArgs) Handles btnBestillTime.Click
         If timer = 1 Then
             MsgBox("Du kan ikke ha mer enn en time")
@@ -34,7 +34,7 @@ Public Class AnsattBrukerOversikt
             Me.Close()
         End If
     End Sub
-
+    'denne knappen avbestiller neste timen for brukern.
     Private Sub btnAvbestill_Click(sender As Object, e As EventArgs) Handles btnAvbestill.Click
         Dim dato As String = lblNesteTime.Text
         If timer <> 1 Then
@@ -49,11 +49,11 @@ Public Class AnsattBrukerOversikt
             End If
         End If
     End Sub
-
+    'lukker programmet
     Private Sub AnsattBrukerOversikt_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Me.Hide()
     End Sub
-
+    'setter opp nytt blodgivning(hvis bruken har allerede fullført egenerklaring og helseskjekk)
     Private Sub btnNyGivning_Click(sender As Object, e As EventArgs) Handles btnNyGivning.Click
         If timer = 1 Then
             If check_helsesjekk(bruker.getPersonnr) = True Then
@@ -70,7 +70,7 @@ Public Class AnsattBrukerOversikt
             MsgBox("Brukeren må ha en time for å gi blod")
         End If
     End Sub
-
+    'knapper for å bytte faner
     Private Sub btnInfo_Click(sender As Object, e As EventArgs) Handles btnInfo.Click
         Me.Close()
         TimeInfoAnsatt.Show()

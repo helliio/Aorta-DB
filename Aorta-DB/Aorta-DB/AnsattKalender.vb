@@ -1,9 +1,10 @@
 ﻿Public Class AnsattKalender
+    'formaterer date time picker
     Private Sub AnsattKalender_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DateTimePicker1.Format = DateTimePickerFormat.Custom
         DateTimePicker1.CustomFormat = "dd.MM.yyyy"
     End Sub
-
+    'fyller listboksen med timer etter valgt dato
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         ListBox1.Items.Clear()
         Dim Timer As ArrayList
@@ -14,7 +15,7 @@
             ListBox1.Items.Add(out)
         Next
     End Sub
-
+    'knapper for å bytte faner
     Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
         Main.Show()
         Me.Hide()
@@ -25,7 +26,7 @@
     End Sub
 
     Private Sub btnStatestikk_Click(sender As Object, e As EventArgs) Handles btnStatestikk.Click
-        Statestikk.Show()
+        statestikk.Show()
         Me.Hide()
     End Sub
 

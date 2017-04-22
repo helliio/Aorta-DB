@@ -1,6 +1,7 @@
 ﻿Imports System.ComponentModel
-
+'side so skjekker bekovet til blodbanken
 Public Class InnkallingBaserPaaBehov
+    'laster inn verdier til komboboksen og leter gjennom databasen for mengder av blod i forskjelige type som mangler
     Private Sub InnkallingBaserPaaBehov_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ComboBox1.Items.Add("O+")
         ComboBox1.Items.Add("O-")
@@ -46,7 +47,7 @@ Public Class InnkallingBaserPaaBehov
         End If
     End Sub
 
-
+    'lister opp blodgivere
     Private Sub btnBlodgivere_Click(sender As Object, e As EventArgs) Handles btnBlodgivere.Click
         If ComboBox1.Text <> "Velg blodtype" Then
             listboxBlodgivere.Items.Clear()
@@ -60,7 +61,7 @@ Public Class InnkallingBaserPaaBehov
             MsgBox("Du må velge en blodtype")
         End If
     End Sub
-
+    'finne mengde blod for et spesifikt blod type
     Private Sub btnMengdeBlod_Click(sender As Object, e As EventArgs) Handles btnMengdeBlod.Click
         If ComboBox1.Text <> "Velg blodtype" Then
             listboxBlodMengde.Items.Clear()
@@ -73,6 +74,7 @@ Public Class InnkallingBaserPaaBehov
             MsgBox("Du må velge en blodtype")
         End If
     End Sub
+    'navigasjons knapper
     Private Sub btnLoggUt_Click(sender As Object, e As EventArgs) Handles btnLoggUt.Click
         Me.Close()
         Main.Show()
@@ -93,14 +95,14 @@ Public Class InnkallingBaserPaaBehov
     End Sub
 
     Private Sub btnStatestikk_Click(sender As Object, e As EventArgs) Handles btnStatestikk.Click
-        Statestikk.Show()
+        statestikk.Show()
         Me.Close()
     End Sub
 
     Private Sub InnkallingBaserPaaBehov_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
         Me.Hide()
     End Sub
-
+    'knapp som tar deg til menyen til et spesifikt bruker som er valgt i listboksen
     Private Sub btnVelgBruker_Click(sender As Object, e As EventArgs) Handles btnVelgBruker.Click
         If listboxBlodgivere.SelectedIndex() < 0 Then
             MessageBox.Show("Du må velge noe")
