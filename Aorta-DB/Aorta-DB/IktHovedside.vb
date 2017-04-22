@@ -1,5 +1,5 @@
 ﻿Imports System.ComponentModel
-
+' hoved side for ikt ansatte
 Public Class IktHovedside
     Private Sub btnNyAnsatt_Click(sender As Object, e As EventArgs) Handles btnNyAnsatt.Click
         NyAnsatt.Show()
