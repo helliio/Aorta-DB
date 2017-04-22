@@ -1,8 +1,11 @@
-﻿Module SMS_module
+﻿'her simulerers en sms api, med message boks
+Module SMS_module
+    'funsjon som sender på minnelse
     Public Sub send_reminder(id As Decimal)
         Dim tlf As Integer = get_user_tlf(id)
         MsgBox("msg sent to " & tlf)
     End Sub
+    'lager et nytt passord og sender det på sms
     Public Sub send_new_password(user As Decimal)
         Try
             Dim tlf As Integer = get_user_tlf(user)
