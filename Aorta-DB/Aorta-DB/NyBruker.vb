@@ -53,13 +53,14 @@ Public Class NyBruker
 
         If txtPassord.Text <> txtBekreftpass.Text Then
             'some error
+            MsgBox("Din gjentatt passord er ulik orginalen")
             Exit Sub
         End If
         Try
             create_user(persnr, txtPassord.Text, txtFornavn.Text, txtEtternavn.Text, 0, tlf, txtMail.Text, txtAdresse.Text, postnr, txtPoststed.Text)
             Me.Close()
         Catch ex As Exception
-            MsgBox("DB error")
+            MsgBox("Bruker allerede eksisterer")
             Exit Sub
         End Try
         Logginn.Show()
