@@ -20,26 +20,26 @@ Public Class NyAnsatt
             persnr = Convert.ToDecimal(txtPersonnummer.Text)
         Else
             'some error
-            MsgBox("invalid personnummer")
+            MsgBox("Ugyldig personnummer")
             Exit Sub
         End If
         If IsNumeric(txtTelefon.Text) And txtTelefon.Text.Length >= 8 Then
             tlf = Convert.ToDecimal(txtTelefon.Text)
         Else
             'some error
-            MsgBox("invalid telefonnummer")
+            MsgBox("Ugyldig telefonnummer")
             Exit Sub
         End If
         If Not validateEmail(txtMail.Text) Then
             'some error
-            MsgBox("invalid email")
+            MsgBox("Ugyldig email")
             Exit Sub
         End If
         If IsNumeric(txtPostnummer.Text) And txtPostnummer.Text.Length = 4 Then
             postnr = CInt(txtPostnummer.Text)
         Else
             'some error
-            MsgBox("invalid postnummer")
+            MsgBox("Ugyldig postnummer")
             Exit Sub
         End If
         If Not txtPassord.Text.Length >= 8 Then
