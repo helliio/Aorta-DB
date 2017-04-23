@@ -67,4 +67,8 @@ Public Class Logginn
         End If
         send_new_password(persnr)
     End Sub
+
+    Private Sub btnKontakt_Click(sender As Object, e As EventArgs) Handles btnKontakt.Click
+        MsgBox("Tlf: 12345678" & vbNewLine & "Epost: kontakt@aorta.db")
+    End Sub
 End Class

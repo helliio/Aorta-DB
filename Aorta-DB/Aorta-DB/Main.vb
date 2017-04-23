@@ -15,4 +15,8 @@ Public Class Main
         NyBruker.Show()
         Me.Hide()
     End Sub
+
+    Private Sub btnKontakt_Click(sender As Object, e As EventArgs) Handles btnKontakt.Click
+        MsgBox("Tlf: 12345678" & vbNewLine & "Epost: kontakt@aorta.db")
+    End Sub
 End Class
