@@ -1,7 +1,9 @@
 ﻿Imports System.ComponentModel
-
+'Siden som lar ansatte sjekke den siste helsesjekken og tilbakemelding på givningstimer
 Public Class TimeInfoAnsatt
     Dim timer As Integer = 0
+
+    'Navigerins knapper
     Private Sub btnTilbake_Click(sender As Object, e As EventArgs)
         Me.Close()
         AnsattBrukerOversikt.Show()
@@ -45,6 +47,7 @@ Public Class TimeInfoAnsatt
         Me.Hide()
     End Sub
 
+    'Laster inn helsesjekken
     Private Sub TimeInfoAnsatt_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim list1 As ArrayList = get_appointment_date(bruker.getPersonnr)
         Dim dt_list1 As New ArrayList
@@ -101,6 +104,7 @@ Public Class TimeInfoAnsatt
 
     End Sub
 
+    'Laster inn info om valgt givningstime
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         listboxGivningsInfo.Items.Clear()
         Try
