@@ -54,7 +54,9 @@ Public Class NyAnsatt
         End If
         Try
             create_user(persnr, txtPassord.Text, txtFornavn.Text, txtEtternavn.Text, 1, tlf, txtMail.Text, txtAdresse.Text, postnr, txtPoststed.Text)
+            MsgBox("Registrering vellykket")
             Me.Close()
+            IktHovedside.Show()
         Catch ex As Exception
             MsgBox("Bruker allerede eksisterer")
             Exit Sub
